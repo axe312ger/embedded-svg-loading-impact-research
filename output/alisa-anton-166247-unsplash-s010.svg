@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1024" height="512"><style>@keyframes a{ from {opacity: 0} to {opacity: 1} } g > * { opacity: 0; animation: a .5s forwards; }</style>
+<rect x="0" y="0" width="1024" height="512" fill="#514946"/>
+<g transform="scale(4.000000) translate(0.5 0.5)">
+<g transform="translate(165.812977 76.527095) rotate(368.421771) scale(36.706542 23.962841)" style="animation-delay: 0.000s;"><ellipse fill="#d5e8f6" fill-opacity="0.501961" cx="0" cy="0" rx="1" ry="1" style="animation-delay: 0.001s;"/></g>
+<g transform="translate(76.504143 51.294398) rotate(16.704345) scale(22.794611 49.599085)" style="animation-delay: 0.008s;"><ellipse fill="#070910" fill-opacity="0.501961" cx="0" cy="0" rx="1" ry="1" style="animation-delay: 0.026s;"/></g>
+<g transform="translate(123.755550 127.000000) rotate(286.576852) scale(12.254041 90.135715)" style="animation-delay: 0.063s;"><ellipse fill="#c9ad8d" fill-opacity="0.501961" cx="0" cy="0" rx="1" ry="1" style="animation-delay: 0.122s;"/></g>
+<g transform="translate(239.051093 45.474282) rotate(241.605508) scale(184.229676 53.763801)" style="animation-delay: 0.211s;"><ellipse fill="#28251e" fill-opacity="0.501961" cx="0" cy="0" rx="1" ry="1" style="animation-delay: 0.335s;"/></g>
+<ellipse fill="#b9b0ac" fill-opacity="0.501961" cx="157" cy="66" rx="28" ry="28" style="animation-delay: 0.500s;"/>
+<polygon fill="#b5b5aa" fill-opacity="0.501961" points="29,89 57,44 -2,99" style="animation-delay: 0.665s;"/>
+<g transform="translate(21 127) rotate(196) scale(62 41)" style="animation-delay: 0.789s;"><rect fill="#080000" fill-opacity="0.501961" x="-0.5" y="-0.5" width="1" height="1" style="animation-delay: 0.878s;"/></g>
+<g transform="translate(125.929114 23.382507) rotate(126.165087) scale(25.565709 5.624743)" style="animation-delay: 0.938s;"><ellipse fill="#94acb4" fill-opacity="0.501961" cx="0" cy="0" rx="1" ry="1" style="animation-delay: 0.974s;"/></g>
+<ellipse fill="#bab4a3" fill-opacity="0.501961" cx="62" cy="4" rx="20" ry="7" style="animation-delay: 0.992s;"/>
+<rect fill="#9d4932" fill-opacity="0.501961" x="111" y="62" width="26" height="49" style="animation-delay: 0.999s;"/>
+</g>
+</svg>

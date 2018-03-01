@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1024" height="512"><style>@keyframes a{ from {opacity: 0} to {opacity: 1} } g > * { opacity: 0; animation: a .5s forwards; }</style>
+<rect x="0" y="0" width="1024" height="512" fill="#aac0c9"/>
+<g transform="scale(4.000000) translate(0.5 0.5)">
+<polygon fill="#faf4eb" fill-opacity="0.501961" points="23,115 271,69 248,143" style="animation-delay: 0.000s;"/>
+<polygon fill="#6496ad" fill-opacity="0.501961" points="-16,-2 5,124 90,-8" style="animation-delay: 0.004s;"/>
+<polygon fill="#72a0b9" fill-opacity="0.501961" points="271,3 191,93 145,-16" style="animation-delay: 0.032s;"/>
+<polygon fill="#d4dad7" fill-opacity="0.501961" points="112,-12 44,139 154,118" style="animation-delay: 0.108s;"/>
+<polygon fill="#9ab0b7" fill-opacity="0.501961" points="87,76 252,75 135,23" style="animation-delay: 0.256s;"/>
+<polygon fill="#9cbeca" fill-opacity="0.501961" points="6,74 -13,137 70,116" style="animation-delay: 0.500s;"/>
+<polygon fill="#3f8cb0" fill-opacity="0.501961" points="-16,3 43,-16 8,28" style="animation-delay: 0.744s;"/>
+<polygon fill="#000100" fill-opacity="0.501961" points="236,43 229,44 232,37" style="animation-delay: 0.892s;"/>
+<polygon fill="#000000" fill-opacity="0.501961" points="250,58 246,51 249,47" style="animation-delay: 0.968s;"/>
+<polygon fill="#f2eee8" fill-opacity="0.501961" points="231,143 98,127 237,96" style="animation-delay: 0.996s;"/>
+</g>
+</svg>

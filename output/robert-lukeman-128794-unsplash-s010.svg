@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1024" height="512"><style>@keyframes a{ from {opacity: 0} to {opacity: 1} } g > * { opacity: 0; animation: a .5s forwards; }</style>
+<rect x="0" y="0" width="1024" height="512" fill="#687a3a"/>
+<g transform="scale(4.000000) translate(0.5 0.5)">
+<rect fill="#feedff" fill-opacity="0.501961" x="62" y="6" width="99" height="39" style="animation-delay: 0.000s;"/>
+<rect fill="#002111" fill-opacity="0.501961" x="213" y="0" width="43" height="128" style="animation-delay: 0.004s;"/>
+<rect fill="#081600" fill-opacity="0.501961" x="0" y="30" width="42" height="98" style="animation-delay: 0.032s;"/>
+<rect fill="#a4c106" fill-opacity="0.501961" x="28" y="76" width="197" height="47" style="animation-delay: 0.108s;"/>
+<rect fill="#fff5ab" fill-opacity="0.501961" x="112" y="24" width="45" height="40" style="animation-delay: 0.256s;"/>
+<rect fill="#4c80d6" fill-opacity="0.501961" x="0" y="0" width="255" height="24" style="animation-delay: 0.500s;"/>
+<rect fill="#161e00" fill-opacity="0.501961" x="160" y="27" width="96" height="39" style="animation-delay: 0.744s;"/>
+<rect fill="#263800" fill-opacity="0.501961" x="0" y="44" width="97" height="41" style="animation-delay: 0.892s;"/>
+<rect fill="#ffefe7" fill-opacity="0.501961" x="96" y="17" width="52" height="23" style="animation-delay: 0.968s;"/>
+<rect fill="#acab00" fill-opacity="0.501961" x="112" y="54" width="80" height="34" style="animation-delay: 0.996s;"/>
+</g>
+</svg>

@@ -14,7 +14,8 @@
     "eases": "^1.0.8",
     "jsdom": "^11.6.2",
     "mini-svg-data-uri": "^1.0.0",
-    "svg.js": "^2.6.4"
+    "svg.js": "^2.6.4",
+    "svgo": "^1.0.5"
   },
   "devDependencies": {
     "eslint": "^4.18.1",

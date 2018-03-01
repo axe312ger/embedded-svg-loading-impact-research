@@ -7,7 +7,7 @@ const svgToMiniDataURI = require('mini-svg-data-uri')
 
 // Animation config
 const easing = eases['cubicInOut']
-const totalAnimationTime = 1.5
+const totalAnimationTime = 1
 
 if (!easing) {
   throw new Error('Easing does not exist. Check: https://www.npmjs.com/package/eases & http://easings.net/')
@@ -58,8 +58,9 @@ files.forEach((filename) => {
   const original = `./originals/${filename.replace(/-s[0-9]+\.svg/, '')}.jpg`
 
   $html('#grid').append(`
-<div style="">
-  <img style="width: 100%; height: auto;background: url(&quot;${svgEncoded}&quot;) no-repeat; background-size: contain;" src="${original}" />
+<div style="position: relative; background: url(&quot;${svgEncoded}&quot;) no-repeat; background-size: contain;" ">
+  <div style="padding-bottom: 50%;"/>
+  <img style="position: absolute; left: 0; top: 0; bottom: 0; width: 100%; height: auto;" src="${original}" />
 </div>
 `)
 

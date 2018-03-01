@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1024" height="512"><style>@keyframes a{ from {opacity: 0} to {opacity: 1} } g > * { opacity: 0; animation: a .5s forwards; }</style>
+<rect x="0" y="0" width="1024" height="512" fill="#aac0c9"/>
+<g transform="scale(4.000000) translate(0.5 0.5)">
+<polygon fill="#fbf5eb" fill-opacity="0.501961" points="247,143 26,115 271,69" style="animation-delay: 0.000s;"/>
+<polygon fill="#6396ac" fill-opacity="0.501961" points="85,-2 -16,-1 7,122" style="animation-delay: 0.000s;"/>
+<polygon fill="#72a0b9" fill-opacity="0.501961" points="151,-16 271,3 190,95" style="animation-delay: 0.002s;"/>
+<polygon fill="#d5dad8" fill-opacity="0.501961" points="47,137 154,141 111,-12" style="animation-delay: 0.007s;"/>
+<polygon fill="#91abb6" fill-opacity="0.501961" points="226,74 106,76 152,17" style="animation-delay: 0.016s;"/>
+<polygon fill="#3f554e" fill-opacity="0.501961" points="48,72 57,58 52,79" style="animation-delay: 0.032s;"/>
+<polygon fill="#082013" fill-opacity="0.501961" points="252,53 246,47 248,57" style="animation-delay: 0.055s;"/>
+<polygon fill="#9dbdc9" fill-opacity="0.501961" points="-11,142 6,71 69,114" style="animation-delay: 0.088s;"/>
+<polygon fill="#c7d1d2" fill-opacity="0.501961" points="99,75 271,79 173,106" style="animation-delay: 0.131s;"/>
+<polygon fill="#3e8bb0" fill-opacity="0.501961" points="-16,5 38,-16 10,27" style="animation-delay: 0.187s;"/>
+<polygon fill="#0a211a" fill-opacity="0.501961" points="236,44 229,47 232,36" style="animation-delay: 0.256s;"/>
+<polygon fill="#000000" fill-opacity="0.501961" points="91,73 90,80 95,70" style="animation-delay: 0.341s;"/>
+<polygon fill="#f2efe8" fill-opacity="0.501961" points="238,99 83,130 230,143" style="animation-delay: 0.442s;"/>
+<polygon fill="#c5cbcd" fill-opacity="0.501961" points="186,53 261,89 271,52" style="animation-delay: 0.558s;"/>
+<polygon fill="#000000" fill-opacity="0.501961" points="111,73 112,80 109,76" style="animation-delay: 0.659s;"/>
+<polygon fill="#000c06" fill-opacity="0.501961" points="167,71 168,81 163,71" style="animation-delay: 0.744s;"/>
+<polygon fill="#0d2519" fill-opacity="0.501961" points="188,81 191,77 186,70" style="animation-delay: 0.813s;"/>
+<polygon fill="#000000" fill-opacity="0.501961" points="217,72 222,73 218,75" style="animation-delay: 0.869s;"/>
+<polygon fill="#536661" fill-opacity="0.501961" points="14,78 15,70 43,73" style="animation-delay: 0.912s;"/>
+<polygon fill="#000200" fill-opacity="0.501961" points="121,39 119,45 116,42" style="animation-delay: 0.945s;"/>
+<polygon fill="#000801" fill-opacity="0.501961" points="132,40 137,41 135,47" style="animation-delay: 0.968s;"/>
+<polygon fill="#000000" fill-opacity="0.501961" points="71,47 72,41 70,39" style="animation-delay: 0.984s;"/>
+<polygon fill="#000e00" fill-opacity="0.501961" points="35,60 36,64 28,66" style="animation-delay: 0.993s;"/>
+<polygon fill="#acbec4" fill-opacity="0.501961" points="32,70 55,72 52,19" style="animation-delay: 0.998s;"/>
+<polygon fill="#132e24" fill-opacity="0.501961" points="83,40 89,42 84,46" style="animation-delay: 1.000s;"/>
+</g>
+</svg>
