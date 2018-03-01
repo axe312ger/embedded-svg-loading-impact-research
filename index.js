@@ -6,8 +6,8 @@ const eases = require('eases')
 const svgToMiniDataURI = require('mini-svg-data-uri')
 
 // Animation config
-const easing = eases['cubicInOut']
-const totalAnimationTime = 1
+const easing = eases['sineOut']
+const totalAnimationTime = 3
 
 if (!easing) {
   throw new Error('Easing does not exist. Check: https://www.npmjs.com/package/eases & http://easings.net/')

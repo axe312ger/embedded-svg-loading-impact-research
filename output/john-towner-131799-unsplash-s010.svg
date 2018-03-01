@@ -2,14 +2,14 @@
 <rect x="0" y="0" width="1024" height="512" fill="#7e7e79"/>
 <g transform="scale(4.000000) translate(0.5 0.5)">
 <polygon fill="#020000" fill-opacity="0.501961" points="268,126 2,68 -16,143" style="animation-delay: 0.000s;"/>
-<polygon fill="#d1d5d4" fill-opacity="0.501961" points="180,112 271,50 -16,20" style="animation-delay: 0.004s;"/>
-<polygon fill="#ede8d6" fill-opacity="0.501961" points="-16,62 80,8 96,69" style="animation-delay: 0.032s;"/>
-<polygon fill="#4b4841" fill-opacity="0.501961" points="159,-13 100,-16 87,143" style="animation-delay: 0.108s;"/>
-<polygon fill="#bbc0c3" fill-opacity="0.501961" points="181,17 130,87 271,97" style="animation-delay: 0.256s;"/>
-<polygon fill="#b0ac98" fill-opacity="0.501961" points="86,12 -16,80 7,5" style="animation-delay: 0.500s;"/>
-<polygon fill="#545853" fill-opacity="0.501961" points="105,88 243,140 271,101" style="animation-delay: 0.744s;"/>
-<polygon fill="#929695" fill-opacity="0.501961" points="159,28 271,-5 270,85" style="animation-delay: 0.892s;"/>
-<polygon fill="#dcdfde" fill-opacity="0.501961" points="76,106 66,19 95,31" style="animation-delay: 0.968s;"/>
-<polygon fill="#201d09" fill-opacity="0.501961" points="64,122 -1,143 -16,57" style="animation-delay: 0.996s;"/>
+<polygon fill="#d1d5d4" fill-opacity="0.501961" points="180,112 271,50 -16,20" style="animation-delay: 0.469s;"/>
+<polygon fill="#ede8d6" fill-opacity="0.501961" points="-16,62 80,8 96,69" style="animation-delay: 0.927s;"/>
+<polygon fill="#4b4841" fill-opacity="0.501961" points="159,-13 100,-16 87,143" style="animation-delay: 1.362s;"/>
+<polygon fill="#bbc0c3" fill-opacity="0.501961" points="181,17 130,87 271,97" style="animation-delay: 1.763s;"/>
+<polygon fill="#b0ac98" fill-opacity="0.501961" points="86,12 -16,80 7,5" style="animation-delay: 2.121s;"/>
+<polygon fill="#545853" fill-opacity="0.501961" points="105,88 243,140 271,101" style="animation-delay: 2.427s;"/>
+<polygon fill="#929695" fill-opacity="0.501961" points="159,28 271,-5 270,85" style="animation-delay: 2.673s;"/>
+<polygon fill="#dcdfde" fill-opacity="0.501961" points="76,106 66,19 95,31" style="animation-delay: 2.853s;"/>
+<polygon fill="#201d09" fill-opacity="0.501961" points="64,122 -1,143 -16,57" style="animation-delay: 2.963s;"/>
 </g>
 </svg>
