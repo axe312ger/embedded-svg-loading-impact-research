@@ -55,7 +55,7 @@ files.forEach((filename) => {
   $('svg').prepend(`<style>${animation.replace(/\s+/g, ' ')}</style>`)
   const outputSVG = $.html()
   const svgEncoded = svgToMiniDataURI(outputSVG)
-  const original = `./originals/${filename.replace(/-s[0-9]+\.svg/, '')}.jpg`
+  const original = `./originals/${filename.replace(/-s[0-9]+\.svg/, '')}.jpg?cache=busted${Math.random()}`
 
   $html('#grid').append(`
 <div style="position: relative; background: url(&quot;${svgEncoded}&quot;) no-repeat; background-size: contain;" ">
