@@ -1,3 +1,6 @@
 module.exports = {
-    "extends": "standard"
-};
+  extends: 'standard',
+  rules: {
+    'no-debugger': 0
+  }
+}

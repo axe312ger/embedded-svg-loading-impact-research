@@ -1,0 +1,15 @@
+include mixins/image.pug
+doctype html
+html(lang="en")
+  head
+    title #{title} - SVG image preview
+    style
+      include style.css
+  body
+    h1 #{title}
+    p
+      button(onClick=`document.querySelector('body').className = document.querySelector('body').className ? '' : 'hide-images'`) Toggle images
+    div(class='grid')
+      each image in images
+        div
+          +image(image)

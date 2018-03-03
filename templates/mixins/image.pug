@@ -1,0 +1,10 @@
+mixin image(image)
+  div(class='image-wrapper' style=`background: url("${image.dataURI}");`)
+    div(style='padding-bottom: 50%;')
+      img(class='image', src=`./prepared/${image.name}.jpg`)
+  ul
+    li= image.name
+    li= `Primitive time: ${(image.primitiveTime / 1000).toFixed(2)}s`
+    li= `dataURI length: ${image.dataURI.length}`
+    li= `input width: ${image.width}px`
+    li= `Primitive options: ${JSON.stringify(primitiveOptions)}`

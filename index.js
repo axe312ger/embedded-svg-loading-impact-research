@@ -1,70 +1,122 @@
-const { readFileSync, writeFileSync, readdirSync } = require('fs')
-const { join } = require('path')
+const { ensureDir, readdirSync, writeFile, readFile } = require('fs-extra')
+const { join, parse } = require('path')
 
-const cheerio = require('cheerio')
-const eases = require('eases')
-const svgToMiniDataURI = require('mini-svg-data-uri')
+const sharp = require('sharp')
 
-// Animation config
-const easing = eases['sineOut']
-const totalAnimationTime = 3
+const pug = require('pug')
 
-if (!easing) {
-  throw new Error('Easing does not exist. Check: https://www.npmjs.com/package/eases & http://easings.net/')
+const originalDir = join(__dirname, 'originals')
+const primitiveDir = join(__dirname, 'primitives')
+const preparedDir = join(__dirname, 'prepared')
+// const outputDir = join(__dirname, 'output') - animated?
+
+ensureDir(primitiveDir)
+ensureDir(preparedDir)
+
+async function createGridPage ({ slug, title, images }) {
+  const dest = join(__dirname, `${slug}.html`)
+  try {
+    const html = pug.renderFile(join(__dirname, 'templates', 'grid.pug'), {
+      pretty: true,
+      title,
+      images
+    })
+    await writeFile(dest, html)
+  } catch (err) {
+    throw err
+  }
 }
 
-const inputDir = join(__dirname, 'input')
-const outputDir = join(__dirname, 'output')
+async function prepareImage (file, width = 256) {
+  const { originalPath, name, ext } = file
+  const filename = `${name}-${width}px`
+  const preparedPath = join(preparedDir, `${filename}${ext}`)
 
-const files = readdirSync(inputDir)
-  .sort((a, b) => a.localeCompare(b))
+  try {
+    const inputBuffer = await readFile(originalPath)
 
-const $html = cheerio.load('<html><body></body></html>')
-
-$html('body').append(`
-<div id="grid" style="display: grid; grid-template-columns: repeat(3, 1fr);"/>
-`)
-
-files.forEach((filename) => {
-  const inputSVG = readFileSync(join(inputDir, filename))
-
-  if (!filename.match(/svg$/)) {
-    return
+    await sharp(inputBuffer)
+      .resize(width)
+      .toFile(preparedPath)
+    file.preparedPath = preparedPath
+    file.name = filename
+  } catch (err) {
+    throw err
   }
+}
 
-  const $ = cheerio.load(inputSVG, {xmlMode: true})
+async function generatePrimitives (file, options = {}) {
+  const sqip = require('sqip')
 
-  const animation = `@keyframes a{
-    from {opacity: 0}
-    to {opacity: 1}
+  const { preparedPath, name } = file
+  const primitivePath = join(primitiveDir, `${name}.svg`)
+  ensureDir(primitiveDir)
+
+  try {
+    const start = new Date().getTime()
+    const { final_svg: svg } = sqip({ filename: preparedPath, ...options })
+    const primitiveTime = new Date().getTime() - start
+    await writeFile(primitivePath, svg)
+    file.primitive = svg
+    file.primitivePath = primitivePath
+    file.primitiveTime = primitiveTime
+
+    return svg
+  } catch (err) {
+    throw err
   }
-  g > * {
-    opacity: 0;
-    animation: a .5s forwards;
-  }`
+}
 
-  const nodes = $('g > *')
+function encode (file) {
+  const svgToMiniDataURI = require('mini-svg-data-uri')
+  const dataURI = svgToMiniDataURI(file.primitive)
+  file.dataURI = dataURI
+}
 
-  nodes.map((index, element) => {
-    const linear = index / nodes.length
-    const eased = easing(linear)
-    const animationDelay = (totalAnimationTime * eased).toFixed(3)
-    $(element).css('animation-delay', `${animationDelay}s`)
-  })
+const widths = [16, 50, 100, 128, 200, 256, 400, 800, 2000]
 
-  $('svg').prepend(`<style>${animation.replace(/\s+/g, ' ')}</style>`)
-  const outputSVG = $.html()
-  const svgEncoded = svgToMiniDataURI(outputSVG)
-  const original = `./originals/${filename.replace(/-s[0-9]+\.svg/, '')}.jpg?cache=busted${Math.random()}`
+async function run () {
+  try {
+    const files = readdirSync(originalDir)
+      .filter(filename => filename.match(/jpe?g$/))
+      .sort((a, b) => a.localeCompare(b))
+      .map(filename => {
+        const { base, name, ext } = parse(filename)
+        const originalPath = join(originalDir, base)
+        return {
+          originalPath,
+          base,
+          name,
+          ext
+        }
+      })
+    const images = []
+    for (const file of files) {
+      for (const width of widths) {
+        console.log(`Processing ${file.name} with ${width}px`)
+        const primitiveOptions = {
+          blur: 0,
+          mode: 1,
+          numberOfPrimitives: 100
+        }
+        const image = {
+          ...file,
+          primitiveOptions,
+          width
+        }
+        await prepareImage(image, width)
+        await generatePrimitives(image, primitiveOptions)
+        encode(image)
+        images.push(image)
+      }
+    }
 
-  $html('#grid').append(`
-<div style="position: relative; background: url(&quot;${svgEncoded}&quot;) no-repeat; background-size: contain;" ">
-  <div style="padding-bottom: 50%;"/>
-  <img style="position: absolute; left: 0; top: 0; bottom: 0; width: 100%; height: auto;" src="${original}" />
-</div>
-`)
+    const title = 'Input dimension to performance inpact ratio'
+    const slug = 'performance-check'
+    await createGridPage({ slug, title, images })
+  } catch (err) {
+    throw err
+  }
+}
 
-  writeFileSync(join(outputDir, filename), outputSVG)
-})
-
-writeFileSync(join(__dirname, 'index.html'), $html.html())
+run()

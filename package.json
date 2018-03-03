@@ -12,9 +12,11 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "eases": "^1.0.8",
-    "jsdom": "^11.6.2",
+    "fs-extra": "^5.0.0",
     "mini-svg-data-uri": "^1.0.0",
-    "svg.js": "^2.6.4",
+    "pug": "^2.0.0-rc.4",
+    "sharp": "^0.19.1",
+    "sqip": "^0.3.2",
     "svgo": "^1.0.5"
   },
   "devDependencies": {
