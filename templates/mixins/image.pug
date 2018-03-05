@@ -7,4 +7,5 @@ mixin image(image)
     li= `Primitive time: ${(image.primitiveTime / 1000).toFixed(2)}s`
     li= `dataURI length: ${image.dataURI.length}`
     li= `input width: ${image.width}px`
-    li= `Primitive options: ${JSON.stringify(primitiveOptions)}`
+    li= `Primitive options: ${JSON.stringify(image.primitiveOptions)}`
+    li= `Primitive size: ${image.primitiveSize}`
