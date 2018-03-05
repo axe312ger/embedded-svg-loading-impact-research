@@ -10,8 +10,8 @@ html(lang="en")
     div(class='grid')
       each page in pages
         div
-          a(href=`/${page.pagename}`)= page.pagename
+          a(href=`./${page.pagename}`)= page.pagename
           ul
-            li= `Original size: ${page.sizes.original}`
-            li= `Gzip size: ${page.sizes.gzip}`
-            li= `Brotli size: ${page.sizes.brotli}`
+            li= `Original size: ${page.sizes.original} (${page.sizes.originalFormatted})`
+            li= `Gzip size: ${page.sizes.gzip} (${page.sizes.gzipFormatted})`
+            li= `Brotli size: ${page.sizes.brotli} (${page.sizes.brotliFormatted})`

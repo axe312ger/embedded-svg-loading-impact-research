@@ -12,9 +12,9 @@ async function run () {
 
     const pagenames = allFiles
       .filter(filename => filename.match(/\.html$/))
+      .filter(filename => filename !== 'index.html')
 
     const pages = []
-    console.log({pagenames})
     for (const pagename of pagenames) {
       const content = await readFile(join(baseDir, pagename))
       const sizes = getFileSizes(content)
@@ -31,7 +31,6 @@ async function run () {
       pages
     })
     await writeFile(join(baseDir, 'index.html'), html)
-    console.log('written')
   } catch (err) {
     console.error(err)
     throw err

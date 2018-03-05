@@ -17,6 +17,7 @@
     "fs-extra": "^5.0.0",
     "gzip-size": "^4.1.0",
     "mini-svg-data-uri": "^1.0.0",
+    "prettysize": "^1.1.0",
     "pug": "^2.0.0-rc.4",
     "sharp": "^0.20.0",
     "sqip": "^0.3.2",

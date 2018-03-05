@@ -71,7 +71,7 @@ async function run () {
       }
 
       const title = `Primitive mode ${mode.id} (${mode.name})`
-      const slug = `primitive-mode-${mode.id}-${mode.name}`
+      const slug = `primitive-mode-${mode.id}-${mode.name.toLowerCase().replace(' ', '-')}`
       await createGridPage({ slug, title, images })
     }
   } catch (err) {
