@@ -2,6 +2,7 @@ const readInputImages = require('./utils/read-input-images')
 const prepareImage = require('./utils/prepare-image')
 const generatePrimitives = require('./utils/generate-primitives')
 const optimizeSVG = require('./utils/optimize-svg')
+const animateSVG = require('./utils/animate-svg')
 const encodeSVG = require('./utils/encode-svg')
 const createGridPage = require('./utils/create-grid-page')
 
@@ -71,8 +72,25 @@ async function run () {
       }
 
       const title = `Primitive mode ${mode.id} (${mode.name})`
-      const slug = `primitive-mode-${mode.id}-${mode.name.toLowerCase().replace(' ', '-')}`
+      const slug = `primitive-mode-${mode.id}-${mode.name
+        .toLowerCase()
+        .replace(' ', '-')}`
       await createGridPage({ slug, title, images })
+
+      // Animated variant
+      for (const image of images) {
+        await animateSVG(image)
+        await optimizeSVG(image)
+        encodeSVG(image)
+      }
+
+      await createGridPage({
+        slug: `primitive-mode-${mode.id}-${mode.name
+          .toLowerCase()
+          .replace(' ', '-')}-animated`,
+        title: `Primitive mode ${mode.id} (${mode.name}) animated`,
+        images
+      })
     }
   } catch (err) {
     throw err
