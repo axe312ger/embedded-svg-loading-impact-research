@@ -9,7 +9,7 @@ module.exports = async function createGridPage ({ slug, title, images }) {
   const dest = join(baseDir, `${slug}.html`)
   try {
     const html = pug.renderFile(join(templatesDir, 'grid.pug'), {
-      pretty: true,
+      pretty: false,
       title,
       images
     })

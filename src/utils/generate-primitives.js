@@ -1,8 +1,8 @@
 const { join } = require('path')
-
 const { writeFile, ensureDir } = require('fs-extra')
 const sqip = require('sqip')
 
+const getFileSizes = require('./get-file-sizes')
 const { primitiveDir } = require('../config')
 
 module.exports = async function generatePrimitives (file, options = {}) {
@@ -21,7 +21,8 @@ module.exports = async function generatePrimitives (file, options = {}) {
     file.primitive = svg
     file.primitivePath = primitivePath
     file.primitiveTime = primitiveTime
-    file.primitiveSize = Buffer.byteLength(svg, 'utf8')
+    const sizes = getFileSizes(svg)
+    file.primitiveSizes = sizes
   } catch (err) {
     throw err
   }

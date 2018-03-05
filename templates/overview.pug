@@ -1,0 +1,17 @@
+include mixins/image.pug
+doctype html
+html(lang="en")
+  head
+    title #{title} - SVG image preview
+    style
+      include style.css
+  body
+    h1 #{title}
+    div(class='grid')
+      each page in pages
+        div
+          a(href=`/${page.pagename}`)= page.pagename
+          ul
+            li= `Original size: ${page.sizes.original}`
+            li= `Gzip size: ${page.sizes.gzip}`
+            li= `Brotli size: ${page.sizes.brotli}`

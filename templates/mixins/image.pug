@@ -8,4 +8,5 @@ mixin image(image)
     li= `dataURI length: ${image.dataURI.length}`
     li= `input width: ${image.width}px`
     li= `Primitive options: ${JSON.stringify(image.primitiveOptions)}`
-    li= `Primitive size: ${image.primitiveSize}`
+    li= `Primitive sizes: ${JSON.stringify(image.primitiveSizes)}`
+    li= `SVGO sizes: ${JSON.stringify(image.optimizedSizes)}`
