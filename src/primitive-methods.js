@@ -57,11 +57,11 @@ async function run () {
         const primitiveOptions = {
           blur: 0,
           mode: mode.id,
-          numberOfPrimitives: 5
+          numberOfPrimitives: 25
         }
         await prepareImage(image, width)
         await generatePrimitives(image, primitiveOptions)
-        encodeSVG(image)
+        image.dataURI = encodeSVG(image.primitive.optimizedSVG)
         images.push(image)
       }
 
@@ -74,7 +74,7 @@ async function run () {
       // Animated variant
       for (const image of images) {
         await animateSVG(image)
-        encodeSVG(image)
+        image.dataURI = encodeSVG(image.animated.optimizedSVG)
       }
 
       await createGridPage({

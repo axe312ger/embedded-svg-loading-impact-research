@@ -1,0 +1,36 @@
+{
+  "results": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#51564e\" d=\"M0 0h400v200H0z\"/><g transform=\"translate(.8 .8) scale(1.5625)\" fill-opacity=\".5\"><ellipse fill=\"#b1ae9f\" cx=\"187\" cy=\"61\" rx=\"35\" ry=\"35\"/><ellipse fill=\"#1a231b\" cx=\"11\" cy=\"44\" rx=\"44\" ry=\"44\"/><ellipse fill=\"#c1c3bc\" cx=\"70\" cy=\"53\" rx=\"16\" ry=\"16\"/><ellipse fill=\"#010100\" cx=\"255\" cy=\"29\" rx=\"27\" ry=\"27\"/><ellipse fill=\"#151105\" cx=\"255\" cy=\"119\" rx=\"42\" ry=\"42\"/><ellipse fill=\"#b5b0a7\" cx=\"171\" cy=\"16\" rx=\"17\" ry=\"17\"/><ellipse fill=\"#bcd0cf\" cx=\"201\" cy=\"63\" rx=\"18\" ry=\"18\"/><ellipse fill=\"#a39883\" cx=\"175\" cy=\"93\" rx=\"18\" ry=\"18\"/><ellipse fill=\"#261910\" cx=\"196\" cy=\"37\" rx=\"10\" ry=\"10\"/><ellipse fill=\"#131d12\" cx=\"6\" cy=\"127\" rx=\"27\" ry=\"27\"/><ellipse fill=\"#998f81\" cx=\"218\" cy=\"23\" rx=\"14\" ry=\"14\"/><ellipse fill=\"#b4b8ae\" cx=\"53\" rx=\"12\" ry=\"12\"/><ellipse fill=\"#536065\" cx=\"144\" cy=\"62\" rx=\"39\" ry=\"39\"/><ellipse fill=\"#343e37\" cx=\"75\" cy=\"125\" rx=\"44\" ry=\"44\"/><ellipse fill=\"#212316\" cx=\"81\" cy=\"59\" rx=\"8\" ry=\"8\"/><ellipse fill=\"#edeeed\" cx=\"65\" cy=\"57\" rx=\"8\" ry=\"8\"/><ellipse fill=\"#373d2e\" cx=\"57\" cy=\"31\" rx=\"20\" ry=\"20\"/><ellipse fill=\"#988e7e\" cx=\"176\" cy=\"127\" rx=\"17\" ry=\"17\"/><ellipse fill=\"#7d5c2c\" cx=\"207\" cy=\"98\" rx=\"18\" ry=\"18\"/><ellipse fill=\"#b7bcbc\" cx=\"31\" cy=\"102\" rx=\"7\" ry=\"7\"/><ellipse fill=\"#a1a39b\" cx=\"74\" cy=\"72\" rx=\"9\" ry=\"9\"/><ellipse fill=\"#a8a596\" cx=\"96\" cy=\"13\" rx=\"8\" ry=\"8\"/><ellipse fill=\"#2e2a1c\" cx=\"246\" cy=\"42\" rx=\"25\" ry=\"25\"/><ellipse fill=\"#1b180d\" cx=\"195\" cy=\"14\" rx=\"10\" ry=\"10\"/><ellipse fill=\"#c8cbc7\" cx=\"57\" cy=\"125\" rx=\"5\" ry=\"5\"/></g></svg>",
+    "optimizedSVG": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#51564e\" d=\"M0 0h400v200H0z\"/><g transform=\"translate(1 1) scale(1.5625)\"><ellipse fill=\"#b1ae9f\" cx=\"187\" cy=\"61\" rx=\"35\" ry=\"35\"/><ellipse fill=\"#1a231b\" cx=\"11\" cy=\"44\" rx=\"44\" ry=\"44\"/><ellipse fill=\"#c1c3bc\" cx=\"70\" cy=\"53\" rx=\"16\" ry=\"16\"/><ellipse fill=\"#010100\" cx=\"255\" cy=\"29\" rx=\"27\" ry=\"27\"/><ellipse fill=\"#151105\" cx=\"255\" cy=\"119\" rx=\"42\" ry=\"42\"/><ellipse fill=\"#b5b0a7\" cx=\"171\" cy=\"16\" rx=\"17\" ry=\"17\"/><ellipse fill=\"#bcd0cf\" cx=\"201\" cy=\"63\" rx=\"18\" ry=\"18\"/><ellipse fill=\"#a39883\" cx=\"175\" cy=\"93\" rx=\"18\" ry=\"18\"/><ellipse fill=\"#261910\" cx=\"196\" cy=\"37\" rx=\"10\" ry=\"10\"/><ellipse fill=\"#131d12\" cx=\"6\" cy=\"127\" rx=\"27\" ry=\"27\"/><ellipse fill=\"#998f81\" cx=\"218\" cy=\"23\" rx=\"14\" ry=\"14\"/><ellipse fill=\"#b4b8ae\" cx=\"53\" rx=\"12\" ry=\"12\"/><ellipse fill=\"#536065\" cx=\"144\" cy=\"62\" rx=\"39\" ry=\"39\"/><ellipse fill=\"#343e37\" cx=\"75\" cy=\"125\" rx=\"44\" ry=\"44\"/><ellipse fill=\"#212316\" cx=\"81\" cy=\"59\" rx=\"8\" ry=\"8\"/><ellipse fill=\"#edeeed\" cx=\"65\" cy=\"57\" rx=\"8\" ry=\"8\"/><ellipse fill=\"#373d2e\" cx=\"57\" cy=\"31\" rx=\"20\" ry=\"20\"/><ellipse fill=\"#988e7e\" cx=\"176\" cy=\"127\" rx=\"17\" ry=\"17\"/><ellipse fill=\"#7d5c2c\" cx=\"207\" cy=\"98\" rx=\"18\" ry=\"18\"/><ellipse fill=\"#b7bcbc\" cx=\"31\" cy=\"102\" rx=\"7\" ry=\"7\"/><ellipse fill=\"#a1a39b\" cx=\"74\" cy=\"72\" rx=\"9\" ry=\"9\"/><ellipse fill=\"#a8a596\" cx=\"96\" cy=\"13\" rx=\"8\" ry=\"8\"/><ellipse fill=\"#2e2a1c\" cx=\"246\" cy=\"42\" rx=\"25\" ry=\"25\"/><ellipse fill=\"#1b180d\" cx=\"195\" cy=\"14\" rx=\"10\" ry=\"10\"/><ellipse fill=\"#c8cbc7\" cx=\"57\" cy=\"125\" rx=\"5\" ry=\"5\"/></g></svg>"
+  },
+  "runs": {
+    "Intel® Core™ i5-5257U": [
+      {
+        "duration": 5590,
+        "sizes": {
+          "original": 1601,
+          "brotli": 460,
+          "gzip": 552
+        },
+        "optimizedSizes": {
+          "original": 1581,
+          "brotli": 444,
+          "gzip": 537
+        }
+      },
+      {
+        "duration": 5571,
+        "sizes": {
+          "original": 1591,
+          "brotli": 456,
+          "gzip": 550
+        },
+        "optimizedSizes": {
+          "original": 1571,
+          "brotli": 440,
+          "gzip": 534
+        }
+      }
+    ]
+  }
+}

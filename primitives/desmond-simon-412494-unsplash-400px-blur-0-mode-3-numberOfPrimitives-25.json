@@ -1,0 +1,36 @@
+{
+  "results": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#51564e\" d=\"M0 0h400v200H0z\"/><g transform=\"translate(.8 .8) scale(1.5625)\" fill-opacity=\".5\"><ellipse fill=\"#9e9786\" cx=\"187\" cy=\"54\" rx=\"34\" ry=\"71\"/><ellipse fill=\"#131108\" cx=\"251\" cy=\"99\" rx=\"23\" ry=\"132\"/><ellipse fill=\"#19221a\" cx=\"11\" cy=\"35\" rx=\"38\" ry=\"58\"/><ellipse fill=\"#ecece8\" cx=\"67\" cy=\"57\" rx=\"11\" ry=\"12\"/><ellipse fill=\"#c4d9d9\" cx=\"201\" cy=\"64\" rx=\"19\" ry=\"18\"/><ellipse fill=\"#1d1911\" cx=\"198\" rx=\"13\" ry=\"46\"/><ellipse fill=\"#4a3411\" cx=\"211\" cy=\"110\" rx=\"23\" ry=\"26\"/><ellipse fill=\"#162015\" cx=\"1\" cy=\"127\" rx=\"49\" ry=\"23\"/><ellipse fill=\"#d5d4cc\" cx=\"80\" cy=\"47\" rx=\"10\" ry=\"6\"/><ellipse fill=\"#a8aba1\" cx=\"57\" rx=\"16\" ry=\"12\"/><ellipse fill=\"#fff\" cx=\"198\" cy=\"76\" rx=\"16\" ry=\"4\"/><ellipse fill=\"#bdc2c1\" cx=\"31\" cy=\"103\" rx=\"5\" ry=\"10\"/><ellipse fill=\"#333d37\" cx=\"82\" cy=\"105\" rx=\"37\" ry=\"24\"/><ellipse fill=\"#415965\" cx=\"132\" cy=\"65\" rx=\"27\" ry=\"147\"/><ellipse fill=\"#97968f\" cx=\"171\" cy=\"20\" rx=\"17\" ry=\"24\"/><ellipse fill=\"#6c7266\" cx=\"214\" cy=\"67\" rx=\"86\" ry=\"7\"/><ellipse fill=\"#94968f\" cx=\"70\" cy=\"74\" rx=\"12\" ry=\"9\"/><ellipse fill=\"#99968d\" cx=\"222\" cy=\"17\" rx=\"7\" ry=\"15\"/><ellipse fill=\"#202718\" cx=\"50\" cy=\"22\" rx=\"28\" ry=\"10\"/><ellipse fill=\"#272f24\" cx=\"48\" cy=\"70\" rx=\"16\" ry=\"10\"/><ellipse fill=\"#3a3429\" cx=\"210\" cy=\"42\" rx=\"30\" ry=\"5\"/><ellipse fill=\"#958f80\" cx=\"175\" cy=\"124\" rx=\"19\" ry=\"9\"/><ellipse fill=\"#b8b3a1\" cx=\"95\" cy=\"15\" rx=\"6\" ry=\"7\"/><ellipse fill=\"#6c776b\" cx=\"5\" cy=\"7\" rx=\"16\" ry=\"9\"/><ellipse fill=\"#242417\" cx=\"178\" cy=\"56\" rx=\"4\" ry=\"13\"/></g></svg>",
+    "optimizedSVG": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#51564e\" d=\"M0 0h400v200H0z\"/><g transform=\"translate(1 1) scale(1.5625)\"><ellipse fill=\"#9e9786\" cx=\"187\" cy=\"54\" rx=\"34\" ry=\"71\"/><ellipse fill=\"#131108\" cx=\"251\" cy=\"99\" rx=\"23\" ry=\"132\"/><ellipse fill=\"#19221a\" cx=\"11\" cy=\"35\" rx=\"38\" ry=\"58\"/><ellipse fill=\"#ecece8\" cx=\"67\" cy=\"57\" rx=\"11\" ry=\"12\"/><ellipse fill=\"#c4d9d9\" cx=\"201\" cy=\"64\" rx=\"19\" ry=\"18\"/><ellipse fill=\"#1d1911\" cx=\"198\" rx=\"13\" ry=\"46\"/><ellipse fill=\"#4a3411\" cx=\"211\" cy=\"110\" rx=\"23\" ry=\"26\"/><ellipse fill=\"#162015\" cx=\"1\" cy=\"127\" rx=\"49\" ry=\"23\"/><ellipse fill=\"#d5d4cc\" cx=\"80\" cy=\"47\" rx=\"10\" ry=\"6\"/><ellipse fill=\"#a8aba1\" cx=\"57\" rx=\"16\" ry=\"12\"/><ellipse fill=\"#fff\" cx=\"198\" cy=\"76\" rx=\"16\" ry=\"4\"/><ellipse fill=\"#bdc2c1\" cx=\"31\" cy=\"103\" rx=\"5\" ry=\"10\"/><ellipse fill=\"#333d37\" cx=\"82\" cy=\"105\" rx=\"37\" ry=\"24\"/><ellipse fill=\"#415965\" cx=\"132\" cy=\"65\" rx=\"27\" ry=\"147\"/><ellipse fill=\"#97968f\" cx=\"171\" cy=\"20\" rx=\"17\" ry=\"24\"/><ellipse fill=\"#6c7266\" cx=\"214\" cy=\"67\" rx=\"86\" ry=\"7\"/><ellipse fill=\"#94968f\" cx=\"70\" cy=\"74\" rx=\"12\" ry=\"9\"/><ellipse fill=\"#99968d\" cx=\"222\" cy=\"17\" rx=\"7\" ry=\"15\"/><ellipse fill=\"#202718\" cx=\"50\" cy=\"22\" rx=\"28\" ry=\"10\"/><ellipse fill=\"#272f24\" cx=\"48\" cy=\"70\" rx=\"16\" ry=\"10\"/><ellipse fill=\"#3a3429\" cx=\"210\" cy=\"42\" rx=\"30\" ry=\"5\"/><ellipse fill=\"#958f80\" cx=\"175\" cy=\"124\" rx=\"19\" ry=\"9\"/><ellipse fill=\"#b8b3a1\" cx=\"95\" cy=\"15\" rx=\"6\" ry=\"7\"/><ellipse fill=\"#6c776b\" cx=\"5\" cy=\"7\" rx=\"16\" ry=\"9\"/><ellipse fill=\"#242417\" cx=\"178\" cy=\"56\" rx=\"4\" ry=\"13\"/></g></svg>"
+  },
+  "runs": {
+    "Intel® Core™ i5-5257U": [
+      {
+        "duration": 4609,
+        "sizes": {
+          "original": 1589,
+          "brotli": 467,
+          "gzip": 552
+        },
+        "optimizedSizes": {
+          "original": 1569,
+          "brotli": 451,
+          "gzip": 538
+        }
+      },
+      {
+        "duration": 5470,
+        "sizes": {
+          "original": 1598,
+          "brotli": 488,
+          "gzip": 568
+        },
+        "optimizedSizes": {
+          "original": 1578,
+          "brotli": 462,
+          "gzip": 553
+        }
+      }
+    ]
+  }
+}

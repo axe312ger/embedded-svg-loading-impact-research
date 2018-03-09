@@ -1,12 +1,24 @@
+const { ensureDir } = require('fs-extra')
+
 const readInputImages = require('./utils/read-input-images')
 const prepareImage = require('./utils/prepare-image')
 const generatePrimitives = require('./utils/generate-primitives')
 const encodeSVG = require('./utils/encode-svg')
 const createGridPage = require('./utils/create-grid-page')
+const {
+  preparedDir,
+  optimizedDir,
+  animatedDir,
+  primitiveDir
+} = require('./config')
 
 const widths = [16, 50, 100, 128, 200, 256, 400, 800, 2000]
 
 async function run () {
+  await ensureDir(preparedDir)
+  await ensureDir(optimizedDir)
+  await ensureDir(animatedDir)
+  await ensureDir(primitiveDir)
   try {
     const inputImages = await readInputImages()
     const images = []
@@ -21,7 +33,7 @@ async function run () {
         }
         await prepareImage(image, width)
         await generatePrimitives(image, primitiveOptions)
-        encodeSVG(image)
+        image.dataURI = encodeSVG(image.primitive.optimizedSVG)
         images.push(image)
       }
     }

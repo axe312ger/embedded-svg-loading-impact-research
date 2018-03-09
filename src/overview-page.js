@@ -2,6 +2,7 @@ const { join, parse } = require('path')
 
 const { titleCase } = require('change-case')
 const { readdir, readFile, writeFile } = require('fs-extra')
+const prettysize = require('prettysize')
 const pug = require('pug')
 
 const { baseDir, templatesDir } = require('./config')
@@ -32,7 +33,8 @@ async function run () {
     const html = pug.renderFile(join(templatesDir, 'overview.pug'), {
       pretty: true,
       title,
-      pages
+      pages,
+      prettysize: size => prettysize(size, { places: 2 })
     })
     await writeFile(join(baseDir, 'index.html'), html)
   } catch (err) {

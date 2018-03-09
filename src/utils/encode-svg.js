@@ -1,6 +1,5 @@
 const svgToMiniDataURI = require('mini-svg-data-uri')
 
-module.exports = function encode (file) {
-  const { svg } = file
-  file.dataURI = svgToMiniDataURI(svg)
+module.exports = function encode (svg) {
+  return svgToMiniDataURI(svg)
 }

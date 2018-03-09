@@ -1,0 +1,36 @@
+{
+  "results": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#857a71\" d=\"M0 0h400v200H0z\"/><g stroke-opacity=\".5\" fill=\"none\" stroke-width=\".8\"><path stroke=\"#fff\" d=\"M305.5 2q-177.4.2-329.7.9m364-20.8q-20.6 41.7-364 28M16.4 16Q246-24.3 279.2 33.4m51.4-34.9q-91.9 12.4-354.8 10M-2 19.6q185.4-.5 300.6-13m-18.5-4.1Q150 6-24.2 5.5m0 16.3q153.7-14.4 325.7-15m8.6 3.2Q143.1 21-7.4 22.2M295.5 5Q209 5.8 2.7 7.2m-15.3 5Q145.2 29 424.2-16.7M-11.5 35.6q48-15.2 270.2-18.4m-279.7-4Q108.4 9 279.3 10.6\"/><path stroke=\"#f6ffff\" d=\"M297 3.5Q139.3-24.2 91.5 136.2\"/><path stroke=\"#fff\" d=\"M271 13.3Q40.3 31.7-24.3 19.7M305.5 2.6q-202 16-329.7 14.6\"/><path stroke=\"#fbffff\" d=\"M-17.3 15.7q283-40 265 125.2\"/><path stroke=\"#fff\" d=\"M-21.6 8q182.4-10 315-1m12.6-.8Q5 27.4-24.2 26.5\"/><path stroke=\"#fcffff\" d=\"M37 15.8q239.2-40 220.4 128.5\"/><path stroke=\"#fff\" d=\"M250.4 20.2q-266-3-274.6 5.7M292.6 9Q180 19.3-.1 12.5\"/><path stroke=\"#eff\" d=\"M-19.7 8q292-32.2 267.4 131.7\"/><path stroke=\"#fff\" d=\"M-.3 14.9q271 33.6 277.6-22.3\"/><path stroke=\"#e7ffff\" d=\"M240.2 178Q285.5-24.2 1.3 16.5\"/><path stroke=\"#fff\" d=\"M-24.2 14.3Q6.3 3.3 283 5.6\"/></g></svg>",
+    "optimizedSVG": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#857a71\" d=\"M0 0h400v200H0z\"/><g fill=\"none\"><path stroke=\"#fff\" d=\"M306 2L-24 3m364-21Q319 24-24 10m40 6q230-40 263 17m52-34Q239 11-24 9m22 11q185-1 301-13m-19-4Q150 6-24 6m0 16Q130 7 302 7m8 3Q143 21-7 22M296 5L3 7m-16 5q158 17 437-29M-11 36q48-16 270-19m-280-4q129-4 300-2\"/><path stroke=\"#f6ffff\" d=\"M297 4Q139-24 92 136\"/><path stroke=\"#fff\" d=\"M271 13Q40 32-24 20M306 3Q104 19-24 17\"/><path stroke=\"#fbffff\" d=\"M-17 16q283-40 265 125\"/><path stroke=\"#fff\" d=\"M-22 8Q161-2 293 7m13-1Q5 27-24 27\"/><path stroke=\"#fcffff\" d=\"M37 16q239-40 220 128\"/><path stroke=\"#fff\" d=\"M250 20q-266-3-274 6M293 9Q180 19 0 13\"/><path stroke=\"#eff\" d=\"M-20 8q292-32 268 132\"/><path stroke=\"#fff\" d=\"M0 15Q271 49 277-7\"/><path stroke=\"#e7ffff\" d=\"M240 178Q286-24 1 17\"/><path stroke=\"#fff\" d=\"M-24 14Q6 3 283 6\"/></g></svg>"
+  },
+  "runs": {
+    "Intel® Core™ i5-5257U": [
+      {
+        "duration": 4745,
+        "sizes": {
+          "original": 1150,
+          "brotli": 538,
+          "gzip": 585
+        },
+        "optimizedSizes": {
+          "original": 883,
+          "brotli": 418,
+          "gzip": 447
+        }
+      },
+      {
+        "duration": 4452,
+        "sizes": {
+          "original": 1044,
+          "brotli": 527,
+          "gzip": 581
+        },
+        "optimizedSizes": {
+          "original": 773,
+          "brotli": 400,
+          "gzip": 431
+        }
+      }
+    ]
+  }
+}

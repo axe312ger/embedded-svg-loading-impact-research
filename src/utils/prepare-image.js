@@ -14,7 +14,7 @@ module.exports = async function prepareImage (file, width = 256) {
     const inputBuffer = await readFile(originalPath)
 
     await sharp(inputBuffer)
-      .resize(width)
+      .resize(width, width / 2)
       .toFile(path)
     file.prepared = { path, name }
     file.width = width

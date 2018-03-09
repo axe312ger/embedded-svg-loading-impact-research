@@ -11,16 +11,16 @@ mixin image(image)
       table.table.table-hover
         tr
           td Original size:
-          td=`${image.optimized.sizes.original}B`
-          td=image.optimized.sizes.originalFormatted
+          td=`${image.primitive.optimizedSizes.original}B`
+          td=prettysize(image.primitive.optimizedSizes.original)
         tr
           td Gzip size:
-          td=`${image.optimized.sizes.gzip}B`
-          td=image.optimized.sizes.gzipFormatted
+          td=`${image.primitive.optimizedSizes.gzip}B`
+          td=prettysize(image.primitive.optimizedSizes.gzip)
         tr
         td Brotli size:
-        td=`${image.optimized.sizes.brotli}B`
-        td=image.optimized.sizes.brotliFormatted
+        td=`${image.primitive.optimizedSizes.brotli}B`
+        td=prettysize(image.primitive.optimizedSizes.brotli)
       button.btn(onClick=`document.getElementById('${image.hash}').className='modal active'`) Show Full Data
       .modal(id=image.hash)
         a.modal-overlay(href='#close', aria-label='Close', onClick=`document.getElementById('${image.hash}').className='modal'`)

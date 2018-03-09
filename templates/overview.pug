@@ -19,12 +19,12 @@ html(lang="en")
                 tr
                   td Original size:
                   td=`${page.sizes.original}B`
-                  td=page.sizes.originalFormatted
+                  td=prettysize(page.sizes.original)
                 tr
                   td Gzip size:
                   td=`${page.sizes.gzip}B`
-                  td=page.sizes.gzipFormatted
+                  td=prettysize(page.sizes.gzip)
                 tr
                 td Brotli size:
                 td=`${page.sizes.brotli}B`
-                td=page.sizes.brotliFormatted
+                td=prettysize(page.sizes.brotli)

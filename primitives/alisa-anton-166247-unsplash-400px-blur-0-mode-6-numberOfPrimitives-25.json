@@ -1,0 +1,36 @@
+{
+  "results": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#544b47\" d=\"M0 0h400v200H0z\"/><g stroke-opacity=\".5\" fill=\"none\" stroke-width=\".8\"><path stroke=\"#fdffff\" d=\"M312 112.9q-81.5 44.6-96.3-62.6\"/><path stroke=\"#e7f7fa\" d=\"M339.8 204Q74.6 121.9 62 143.6\"/><path stroke=\"azure\" d=\"M213.6 45.3q29.3 112.9 106.5 57.2\"/><path stroke=\"#e9ffff\" d=\"M319.3 103Q250 164 203.6 48.1\"/><path stroke=\"#f8ffff\" d=\"M311.6 101.4q-55.5-58.8-110.4 34.8\"/><path stroke=\"#dde3dd\" d=\"M68.7 141.2q59.6-5 327 83\"/><path stroke=\"#f9ffff\" d=\"M221.3 48.6q-11.9 87.9 66.9 81.5\"/><path stroke=\"#efffff\" d=\"M216.2 52q30.6 94.8 100.1 50.8\"/><path stroke=\"#ced0cf\" d=\"M109.2 178q137.3 46.2 151-137.9\"/><path stroke=\"#d2dde2\" d=\"M415.4 224.2q-283.5-88-350-88.4\"/><path stroke=\"#ccf1ff\" d=\"M274.6 141.2Q184.9 35.6 163.3 3\"/><path stroke=\"#e3ffff\" d=\"M315.2 98.7Q262 144.2 206 42\"/><path stroke=\"#e7edea\" d=\"M74.8 129.3q68.8 22.2 207.7 60.3\"/><path stroke=\"#eaffff\" d=\"M215.3 94.8q18 57.5 99.7 6.2\"/><path stroke=\"#dfffff\" d=\"M203 57q62.5 103 116.4 36.3\"/><path stroke=\"#f8ffff\" d=\"M276.5 50q11.4 88-72.7 56.6\"/><path stroke=\"#d4e2e3\" d=\"M421.8 220.5q-21.3-9.7-293.5-71.1\"/><path stroke=\"#e5ffff\" d=\"M317.4 98.5Q275.7 43.7 213.2 120\"/><path stroke=\"#e7f8ff\" d=\"M251.3 150.6Q189.8 93 273.8 43.3\"/><path stroke=\"#e9fdff\" d=\"M211.5 127.4q54.9-76 99.8-21.7\"/><path stroke=\"#dafaff\" d=\"M304.3 121.9q-82.6 30-89.5-75.8\"/><path stroke=\"#c8c9c9\" d=\"M109.3 181.7Q246.6 224.2 267 40.6\"/><path stroke=\"#f7ffff\" d=\"M201 100q60.1 40.6 80.2-45.7\"/><path stroke=\"#d7ffff\" d=\"M320.8 105.8Q234.4 150 214 105\"/><path stroke=\"#cad1d2\" d=\"M119.7 186q138.9 38.2 117.7-130.7\"/></g></svg>",
+    "optimizedSVG": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#544b47\" d=\"M0 0h400v200H0z\"/><g fill=\"none\"><path stroke=\"#fdffff\" d=\"M312 113q-81 45-96-63\"/><path stroke=\"#e7f7fa\" d=\"M340 204Q75 122 62 144\"/><path stroke=\"azure\" d=\"M214 45q29 113 106 58\"/><path stroke=\"#e9ffff\" d=\"M319 103q-69 61-115-55\"/><path stroke=\"#f8ffff\" d=\"M312 101q-56-58-111 35\"/><path stroke=\"#dde3dd\" d=\"M69 141q59-5 327 83\"/><path stroke=\"#f9ffff\" d=\"M221 49q-12 88 67 81\"/><path stroke=\"#efffff\" d=\"M216 52q31 95 100 51\"/><path stroke=\"#ced0cf\" d=\"M109 178q138 46 151-138\"/><path stroke=\"#d2dde2\" d=\"M415 224q-283-88-350-88\"/><path stroke=\"#ccf1ff\" d=\"M275 141Q185 36 163 3\"/><path stroke=\"#e3ffff\" d=\"M315 99q-53 45-109-57\"/><path stroke=\"#e7edea\" d=\"M75 129q69 23 208 61\"/><path stroke=\"#eaffff\" d=\"M215 95q18 57 100 6\"/><path stroke=\"#dfffff\" d=\"M203 57q63 103 116 36\"/><path stroke=\"#f8ffff\" d=\"M277 50q11 88-73 57\"/><path stroke=\"#d4e2e3\" d=\"M422 221q-21-10-294-72\"/><path stroke=\"#e5ffff\" d=\"M317 99q-41-55-104 21\"/><path stroke=\"#e7f8ff\" d=\"M251 151q-61-58 23-108\"/><path stroke=\"#e9fdff\" d=\"M212 127q54-76 99-21\"/><path stroke=\"#dafaff\" d=\"M304 122q-82 30-89-76\"/><path stroke=\"#c8c9c9\" d=\"M109 182q138 42 158-141\"/><path stroke=\"#f7ffff\" d=\"M201 100q60 41 80-46\"/><path stroke=\"#d7ffff\" d=\"M321 106q-87 44-107-1\"/><path stroke=\"#cad1d2\" d=\"M120 186q139 38 117-131\"/></g></svg>"
+  },
+  "runs": {
+    "Intel® Core™ i5-5257U": [
+      {
+        "duration": 4034,
+        "sizes": {
+          "original": 1651,
+          "brotli": 646,
+          "gzip": 725
+        },
+        "optimizedSizes": {
+          "original": 1379,
+          "brotli": 515,
+          "gzip": 571
+        }
+      },
+      {
+        "duration": 3685,
+        "sizes": {
+          "original": 1649,
+          "brotli": 642,
+          "gzip": 713
+        },
+        "optimizedSizes": {
+          "original": 1377,
+          "brotli": 518,
+          "gzip": 567
+        }
+      }
+    ]
+  }
+}

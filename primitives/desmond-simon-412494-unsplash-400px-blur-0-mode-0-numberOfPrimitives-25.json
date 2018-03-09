@@ -1,0 +1,36 @@
+{
+  "results": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#51564e\" d=\"M0 0h400v200H0z\"/><g transform=\"translate(.8 .8) scale(1.5625)\" fill-opacity=\".5\"><ellipse fill=\"#bebdad\" rx=\"1\" ry=\"1\" transform=\"rotate(45.6 5.4 263) scale(22.22172 42.08338)\"/><path fill=\"#fff\" d=\"M71 75l8-29-25 5z\"/><ellipse fill=\"#171309\" rx=\"1\" ry=\"1\" transform=\"matrix(23.59472 3.95473 -19.643 117.19426 250.8 72.1)\"/><ellipse fill=\"#192119\" rx=\"1\" ry=\"1\" transform=\"matrix(-16.07675 44.77257 -28.9002 -10.37736 21.4 47.6)\"/><ellipse fill=\"#b4b0a6\" rx=\"1\" ry=\"1\" transform=\"rotate(-12.5 166.2 -771.4) scale(16.07488 28.85247)\"/><path fill=\"#bfd0d0\" d=\"M189.2 48l28.8 3.1-3.2 30.8-28.8-3z\"/><ellipse fill=\"#141e12\" rx=\"1\" ry=\"1\" transform=\"rotate(-155.1 19.9 58.9) scale(57.29653 15.49883)\"/><ellipse fill=\"#5b6569\" rx=\"1\" ry=\"1\" transform=\"matrix(-4.7834 -30.1915 37.45042 -5.93346 146.5 66.4)\"/><ellipse fill=\"#796749\" rx=\"1\" ry=\"1\" transform=\"matrix(-62.22562 39.03406 -4.99151 -7.95715 211 92.5)\"/><ellipse fill=\"#a09c91\" rx=\"1\" ry=\"1\" transform=\"matrix(7.0041 -15.73148 7.2716 3.23753 218.1 20.7)\"/><path fill=\"#b3b3a8\" d=\"M90.1 44l-21.5-7 5.5 16.3L93.8 55z\"/><path fill=\"#b4b8ad\" d=\"M40 6l28 7-16-25z\"/><path fill=\"#2f3626\" d=\"M82 111l28-57-116 87z\"/><path fill=\"#808676\" d=\"M150.3 71l6.2-18.2 78.7 11.6-79 16z\"/><ellipse fill=\"#98978c\" cx=\"175\" cy=\"127\" rx=\"18\" ry=\"13\"/><path fill=\"#949a98\" d=\"M37.4 96.7L5.5 94.4 37.2 115l.5-22.8z\"/><path fill=\"#fff\" d=\"M189 73h23v6h-23z\"/><path fill=\"#221f14\" d=\"M196 27.4l-12.7-11.3 24.8-27.5L220.7-.1z\"/><path fill=\"#8a8b83\" d=\"M76.3 51l-2 4.2-17.6 29.2 27.9-5.8z\"/><ellipse fill=\"#9d998c\" rx=\"1\" ry=\"1\" transform=\"matrix(4.74016 3.61634 -6.94259 9.10007 95.7 12)\"/><path fill=\"#1f2719\" d=\"M45.9 43.8l-9-13.2L70.1 8.2l9 13.2z\"/><ellipse fill=\"#151b18\" cx=\"247\" cy=\"25\" rx=\"16\" ry=\"30\"/><ellipse fill=\"#3a515b\" rx=\"1\" ry=\"1\" transform=\"rotate(-90.6 120.9 -6.3) scale(153.59476 30.41533)\"/><path fill=\"#9a9d98\" d=\"M71.7 78.4L42.4 45.6l13.4-4 1 1z\"/><ellipse fill=\"#131d11\" rx=\"1\" ry=\"1\" transform=\"matrix(-2.18552 -5.84358 11.0189 -4.1211 48.7 76.8)\"/></g></svg>",
+    "optimizedSVG": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#51564e\" d=\"M0 0h400v200H0z\"/><g transform=\"translate(1 1) scale(1.5625)\"><ellipse fill=\"#bebdad\" rx=\"1\" ry=\"1\" transform=\"matrix(15.4365 15.98497 -30.27225 29.23357 191 77)\"/><path fill=\"#fff\" d=\"M71 75l8-29-25 5z\"/><ellipse fill=\"#171309\" rx=\"1\" ry=\"1\" transform=\"matrix(23.59472 3.95473 -19.643 117.19426 251 72)\"/><ellipse fill=\"#192119\" rx=\"1\" ry=\"1\" transform=\"matrix(-16.07675 44.77257 -28.9002 -10.37736 21 48)\"/><ellipse fill=\"#b4b0a6\" rx=\"1\" ry=\"1\" transform=\"matrix(15.66288 -3.61606 6.4904 28.11298 178 18)\"/><path fill=\"#bfd0d0\" d=\"M189 48l29 3-3 31-29-3z\"/><ellipse fill=\"#141e12\" rx=\"1\" ry=\"1\" transform=\"rotate(-155 20 59) scale(57.29653 15.49883)\"/><ellipse fill=\"#5b6569\" rx=\"1\" ry=\"1\" transform=\"matrix(-4.7834 -30.1915 37.45042 -5.93346 147 66)\"/><ellipse fill=\"#796749\" rx=\"1\" ry=\"1\" transform=\"matrix(-62.22562 39.03406 -4.99151 -7.95715 211 93)\"/><ellipse fill=\"#a09c91\" rx=\"1\" ry=\"1\" transform=\"matrix(7.0041 -15.73148 7.2716 3.23753 218 21)\"/><path fill=\"#b3b3a8\" d=\"M90 44l-21-7 5 16 20 2z\"/><path fill=\"#b4b8ad\" d=\"M40 6l28 7-16-25z\"/><path fill=\"#2f3626\" d=\"M82 111l28-57-116 87z\"/><path fill=\"#808676\" d=\"M150 71l7-18 78 11-79 16z\"/><ellipse fill=\"#98978c\" cx=\"175\" cy=\"127\" rx=\"18\" ry=\"13\"/><path fill=\"#949a98\" d=\"M37 97L6 94l31 21 1-23z\"/><path fill=\"#fff\" d=\"M189 73h23v6h-23z\"/><path fill=\"#221f14\" d=\"M196 27l-13-11 25-27 13 11z\"/><path fill=\"#8a8b83\" d=\"M76 51l-2 4-17 29 28-5z\"/><ellipse fill=\"#9d998c\" rx=\"1\" ry=\"1\" transform=\"matrix(4.74016 3.61634 -6.94259 9.10007 96 12)\"/><path fill=\"#1f2719\" d=\"M46 44l-9-13L70 8l9 13z\"/><ellipse fill=\"#151b18\" cx=\"247\" cy=\"25\" rx=\"16\" ry=\"30\"/><ellipse fill=\"#3a515b\" rx=\"1\" ry=\"1\" transform=\"rotate(-91 121 -6) scale(153.59476 30.41533)\"/><path fill=\"#9a9d98\" d=\"M72 78L42 46l14-4 1 1z\"/><ellipse fill=\"#131d11\" rx=\"1\" ry=\"1\" transform=\"matrix(-2.18552 -5.84358 11.0189 -4.1211 49 77)\"/></g></svg>"
+  },
+  "runs": {
+    "Intel® Core™ i5-5257U": [
+      {
+        "duration": 7277,
+        "sizes": {
+          "original": 2098,
+          "brotli": 807,
+          "gzip": 896
+        },
+        "optimizedSizes": {
+          "original": 1950,
+          "brotli": 729,
+          "gzip": 806
+        }
+      },
+      {
+        "duration": 6529,
+        "sizes": {
+          "original": 1894,
+          "brotli": 752,
+          "gzip": 834
+        },
+        "optimizedSizes": {
+          "original": 1778,
+          "brotli": 693,
+          "gzip": 756
+        }
+      }
+    ]
+  }
+}

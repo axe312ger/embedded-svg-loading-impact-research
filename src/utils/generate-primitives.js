@@ -1,11 +1,13 @@
 const { join } = require('path')
-const { writeFile, ensureDir } = require('fs-extra')
+const { writeFile, exists } = require('fs-extra')
 const sqip = require('sqip')
 const systeminformation = require('systeminformation')
 
 const getFileSizes = require('./get-file-sizes')
 const optimizeSVG = require('./optimize-svg')
 const { primitiveDir } = require('../config')
+
+const MINIMUM_RUNS = 2
 
 const modes = {
   0: 'Combination',
@@ -28,36 +30,66 @@ module.exports = async function generatePrimitives (file, options = {}) {
     .join('-')
 
   const cacheKey = `${preparedName}-${primitiveOptionsHash}`
-  const name = `${cacheKey}.svg`
-  const path = join(primitiveDir, name)
+  const name = cacheKey
+  const filename = `${cacheKey}.svg`
+  const path = join(primitiveDir, filename)
   const modeTitle = modes[parseInt(options.mode)]
 
-  await ensureDir(primitiveDir)
   const { manufacturer, brand } = await systeminformation.cpu()
+  const cachePath = join(primitiveDir, `${cacheKey}.json`)
   const cpuFingerprint = `${manufacturer} ${brand}`
-  // const cache = {
-  //   [cacheKey]: {
-  //     results: {},
-  //     runs: {
-  //       [cpuFingerprint]: [{ duration, sizes }]
-  //     }
-  //   }
-  // }
 
-  try {
-    const start = new Date().getTime()
-    const { final_svg: svg } = sqip({ filename: preparedPath, ...options })
-    const duration = new Date().getTime() - start
-    await writeFile(path, svg)
-    const sizes = getFileSizes(svg)
-    file.primitive = { svg, name, path, duration, sizes }
-    file.primitiveOptions = {
-      ...options,
-      modeTitle
-    }
-    file.svg = svg
-    await optimizeSVG(file)
-  } catch (err) {
-    throw err
+  let cache = {
+    results: null,
+    runs: {}
   }
+
+  if (await exists(cachePath)) {
+    cache = require(cachePath)
+  }
+  if (!(cpuFingerprint in cache.runs)) {
+    cache.runs[cpuFingerprint] = []
+  }
+
+  if (cache.runs[cpuFingerprint].length < MINIMUM_RUNS) {
+    try {
+      // Run sqip and measure duration
+      const start = new Date().getTime()
+      const { final_svg: svg } = sqip({ filename: preparedPath, ...options })
+      const duration = new Date().getTime() - start
+
+      // Optimize result
+      const optimizedSVG = await optimizeSVG(cacheKey, svg)
+
+      // Set initial result data and write first svg to disk
+      if (!cache.results) {
+        await writeFile(path, svg)
+        cache.results = { svg, optimizedSVG }
+      }
+
+      // Gather data
+      const sizes = getFileSizes(svg)
+      const optimizedSizes = getFileSizes(optimizedSVG)
+
+      // Update cache with new run and save it
+      const run = { duration, sizes, optimizedSizes }
+      cache.runs[cpuFingerprint].push(run)
+      await writeFile(cachePath, JSON.stringify(cache, null, 2))
+    } catch (err) {
+      throw err
+    }
+  }
+
+  file.primitive = {
+    ...cache.results,
+    // @todo Calc average instead of hacky grabbing first one
+    ...cache.runs[Object.keys(cache.runs)[0]][0],
+    name,
+    path
+  }
+  file.primitiveOptions = {
+    ...options,
+    modeTitle
+  }
+  file.svg = cache.results.svg
 }

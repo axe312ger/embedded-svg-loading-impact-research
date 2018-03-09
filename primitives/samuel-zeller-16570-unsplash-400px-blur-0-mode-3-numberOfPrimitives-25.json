@@ -1,0 +1,36 @@
+{
+  "results": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#857a71\" d=\"M0 0h400v200H0z\"/><g transform=\"translate(.8 .8) scale(1.5625)\" fill-opacity=\".5\"><ellipse fill=\"#fff\" cx=\"60\" rx=\"128\" ry=\"19\"/><ellipse fill=\"#2b341a\" cx=\"219\" cy=\"33\" rx=\"58\" ry=\"34\"/><ellipse fill=\"#fff\" cx=\"99\" cy=\"18\" rx=\"14\" ry=\"48\"/><ellipse fill=\"#353d2b\" cx=\"38\" cy=\"39\" rx=\"39\" ry=\"23\"/><ellipse fill=\"#a3cbfb\" cx=\"147\" cy=\"42\" rx=\"20\" ry=\"21\"/><ellipse fill=\"#5a3625\" cx=\"32\" cy=\"123\" rx=\"91\" ry=\"26\"/><ellipse fill=\"azure\" cx=\"16\" rx=\"173\" ry=\"16\"/><ellipse fill=\"#0b0e1b\" cx=\"107\" cy=\"79\" rx=\"10\" ry=\"18\"/><ellipse fill=\"#d6aa95\" cx=\"214\" cy=\"76\" rx=\"63\" ry=\"14\"/><ellipse fill=\"#080f05\" cx=\"206\" cy=\"57\" rx=\"50\" ry=\"6\"/><ellipse fill=\"#475978\" cx=\"123\" cy=\"57\" rx=\"16\" ry=\"34\"/><ellipse fill=\"#f3ffff\" cx=\"131\" rx=\"24\" ry=\"20\"/><ellipse fill=\"#c3a094\" cx=\"74\" cy=\"71\" rx=\"20\" ry=\"22\"/><ellipse fill=\"#494531\" cy=\"54\" rx=\"20\" ry=\"33\"/><ellipse fill=\"#797d82\" cx=\"92\" cy=\"16\" rx=\"31\" ry=\"4\"/><ellipse fill=\"#f8ffff\" cx=\"101\" cy=\"53\" rx=\"8\" ry=\"14\"/><ellipse fill=\"#d5e9ff\" cx=\"8\" rx=\"24\" ry=\"22\"/><ellipse fill=\"#b8aaa8\" cx=\"159\" cy=\"79\" rx=\"11\" ry=\"27\"/><ellipse fill=\"#c09f91\" cx=\"208\" cy=\"38\" rx=\"22\" ry=\"4\"/><ellipse fill=\"#3b2c2a\" cx=\"139\" cy=\"76\" rx=\"15\" ry=\"8\"/><ellipse fill=\"#986c59\" cx=\"219\" cy=\"113\" rx=\"105\" ry=\"31\"/><ellipse fill=\"#9cb0ca\" cx=\"140\" cy=\"44\" rx=\"25\" ry=\"12\"/><ellipse fill=\"#061808\" cx=\"179\" cy=\"52\" rx=\"14\" ry=\"9\"/><ellipse fill=\"#847863\" cx=\"185\" cy=\"13\" rx=\"20\" ry=\"9\"/><ellipse fill=\"#876454\" cx=\"47\" cy=\"99\" rx=\"58\" ry=\"14\"/></g></svg>",
+    "optimizedSVG": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#857a71\" d=\"M0 0h400v200H0z\"/><g transform=\"translate(1 1) scale(1.5625)\"><ellipse fill=\"#fff\" cx=\"60\" rx=\"128\" ry=\"19\"/><ellipse fill=\"#2b341a\" cx=\"219\" cy=\"33\" rx=\"58\" ry=\"34\"/><ellipse fill=\"#fff\" cx=\"99\" cy=\"18\" rx=\"14\" ry=\"48\"/><ellipse fill=\"#353d2b\" cx=\"38\" cy=\"39\" rx=\"39\" ry=\"23\"/><ellipse fill=\"#a3cbfb\" cx=\"147\" cy=\"42\" rx=\"20\" ry=\"21\"/><ellipse fill=\"#5a3625\" cx=\"32\" cy=\"123\" rx=\"91\" ry=\"26\"/><ellipse fill=\"azure\" cx=\"16\" rx=\"173\" ry=\"16\"/><ellipse fill=\"#0b0e1b\" cx=\"107\" cy=\"79\" rx=\"10\" ry=\"18\"/><ellipse fill=\"#d6aa95\" cx=\"214\" cy=\"76\" rx=\"63\" ry=\"14\"/><ellipse fill=\"#080f05\" cx=\"206\" cy=\"57\" rx=\"50\" ry=\"6\"/><ellipse fill=\"#475978\" cx=\"123\" cy=\"57\" rx=\"16\" ry=\"34\"/><ellipse fill=\"#f3ffff\" cx=\"131\" rx=\"24\" ry=\"20\"/><ellipse fill=\"#c3a094\" cx=\"74\" cy=\"71\" rx=\"20\" ry=\"22\"/><ellipse fill=\"#494531\" cy=\"54\" rx=\"20\" ry=\"33\"/><ellipse fill=\"#797d82\" cx=\"92\" cy=\"16\" rx=\"31\" ry=\"4\"/><ellipse fill=\"#f8ffff\" cx=\"101\" cy=\"53\" rx=\"8\" ry=\"14\"/><ellipse fill=\"#d5e9ff\" cx=\"8\" rx=\"24\" ry=\"22\"/><ellipse fill=\"#b8aaa8\" cx=\"159\" cy=\"79\" rx=\"11\" ry=\"27\"/><ellipse fill=\"#c09f91\" cx=\"208\" cy=\"38\" rx=\"22\" ry=\"4\"/><ellipse fill=\"#3b2c2a\" cx=\"139\" cy=\"76\" rx=\"15\" ry=\"8\"/><ellipse fill=\"#986c59\" cx=\"219\" cy=\"113\" rx=\"105\" ry=\"31\"/><ellipse fill=\"#9cb0ca\" cx=\"140\" cy=\"44\" rx=\"25\" ry=\"12\"/><ellipse fill=\"#061808\" cx=\"179\" cy=\"52\" rx=\"14\" ry=\"9\"/><ellipse fill=\"#847863\" cx=\"185\" cy=\"13\" rx=\"20\" ry=\"9\"/><ellipse fill=\"#876454\" cx=\"47\" cy=\"99\" rx=\"58\" ry=\"14\"/></g></svg>"
+  },
+  "runs": {
+    "Intel® Core™ i5-5257U": [
+      {
+        "duration": 5215,
+        "sizes": {
+          "original": 1567,
+          "brotli": 460,
+          "gzip": 553
+        },
+        "optimizedSizes": {
+          "original": 1547,
+          "brotli": 449,
+          "gzip": 538
+        }
+      },
+      {
+        "duration": 5689,
+        "sizes": {
+          "original": 1586,
+          "brotli": 473,
+          "gzip": 546
+        },
+        "optimizedSizes": {
+          "original": 1566,
+          "brotli": 453,
+          "gzip": 530
+        }
+      }
+    ]
+  }
+}

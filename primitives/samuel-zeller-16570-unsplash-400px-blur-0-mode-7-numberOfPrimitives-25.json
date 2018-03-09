@@ -1,0 +1,36 @@
+{
+  "results": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#857a71\" d=\"M0 0h400v200H0z\"/><ellipse fill=\"#fff\" fill-opacity=\".5\" rx=\"1\" ry=\"1\" transform=\"matrix(.00513 30.03455 -183.19642 .03127 112.1 .8)\"/><ellipse fill=\"#1d2a0e\" fill-opacity=\".5\" rx=\"1\" ry=\"1\" transform=\"rotate(-96.2 206.5 -130.6) scale(42.56184 101.18701)\"/><ellipse fill=\"#fff\" fill-opacity=\".5\" rx=\"1\" ry=\"1\" transform=\"matrix(-21.4824 .70257 -2.65367 -81.14061 153.7 20.7)\"/><ellipse fill=\"#3a3f2e\" fill-opacity=\".5\" rx=\"1\" ry=\"1\" transform=\"matrix(67.57589 -24.77418 12.27725 33.48834 56.3 67.2)\"/><ellipse fill=\"#c7daf2\" fill-opacity=\".5\" rx=\"1\" ry=\"1\" transform=\"matrix(17.80029 -9.09418 55.95982 109.53164 212 27.7)\"/><ellipse fill=\"#6a4334\" fill-opacity=\".5\" rx=\"1\" ry=\"1\" transform=\"matrix(2.6261 37.55505 -158.47448 11.08162 73.2 177.1)\"/><ellipse fill=\"#eaffff\" fill-opacity=\".5\" rx=\"1\" ry=\"1\" transform=\"matrix(242.26339 -2.42442 .27143 27.12327 61.2 .8)\"/><ellipse fill=\"#293248\" fill-opacity=\".5\" rx=\"1\" ry=\"1\" transform=\"matrix(-5.91403 -23.37203 36.39042 -9.2082 185.5 117.6)\"/><ellipse fill=\"#dbab95\" fill-opacity=\".5\" rx=\"1\" ry=\"1\" transform=\"rotate(.9 -7511 22412.9) scale(90.15922 16.36773)\"/><ellipse fill=\"#bf9b8e\" fill-opacity=\".5\" rx=\"1\" ry=\"1\" transform=\"matrix(23.58714 33.14905 -24.97579 17.77147 119.7 123.5)\"/><ellipse fill=\"#000600\" fill-opacity=\".5\" rx=\"1\" ry=\"1\" transform=\"matrix(18.22201 -7.4793 4.80912 11.71659 275 86.7)\"/><ellipse fill=\"#87a6cf\" fill-opacity=\".5\" rx=\"1\" ry=\"1\" transform=\"matrix(-37.467 10.20463 -7.09961 -26.06671 223.8 69)\"/><ellipse fill=\"#585746\" fill-opacity=\".5\" rx=\"1\" ry=\"1\" transform=\"matrix(.79664 30.36409 -93.87432 2.4629 341.3 30.6)\"/><ellipse fill=\"#d6e6ff\" fill-opacity=\".5\" rx=\"1\" ry=\"1\" transform=\"matrix(-71.3919 28.69936 -8.5552 -21.28173 51.2 .9)\"/><ellipse fill=\"#9f8d78\" fill-opacity=\".5\" rx=\"1\" ry=\"1\" transform=\"matrix(-.86303 5.98902 -69.1336 -9.9623 333.3 61.7)\"/><ellipse fill=\"#b58e7d\" fill-opacity=\".5\" rx=\"1\" ry=\"1\" transform=\"matrix(-4.48868 -20.5609 87.91762 -19.19345 267.2 141)\"/><ellipse fill=\"#151710\" fill-opacity=\".5\" rx=\"1\" ry=\"1\" transform=\"rotate(90.9 128.2 217) scale(6.71353 100.28903)\"/><ellipse fill=\"#7e7f85\" fill-opacity=\".5\" rx=\"1\" ry=\"1\" transform=\"matrix(-44.80729 .17988 -.02194 -5.4643 147 26.4)\"/><ellipse fill=\"#e9f0f6\" fill-opacity=\".5\" rx=\"1\" ry=\"1\" transform=\"matrix(10.93828 30.76414 -11.00746 3.91374 156.7 71.1)\"/><ellipse fill=\"#2c384b\" fill-opacity=\".5\" rx=\"1\" ry=\"1\" transform=\"matrix(-13.32684 71.10274 -4.62402 -.86668 178.6 89.2)\"/><ellipse fill=\"#40271a\" fill-opacity=\".5\" rx=\"1\" ry=\"1\" transform=\"matrix(-10.9097 20.95223 -28.62962 -14.90727 71.2 199.2)\"/><ellipse fill=\"#514d3b\" fill-opacity=\".5\" rx=\"1\" ry=\"1\" transform=\"rotate(94.1 -38.4 42) scale(48.71307 36.14742)\"/><ellipse fill=\"#fbffff\" fill-opacity=\".5\" rx=\"1\" ry=\"1\" transform=\"matrix(-3.37905 -9.15817 48.06053 -17.73267 238.9 13.6)\"/><ellipse fill=\"#293822\" fill-opacity=\".5\" rx=\"1\" ry=\"1\" transform=\"matrix(33.19156 -11.10574 4.92657 14.72397 85 74.4)\"/><ellipse fill=\"#906553\" fill-opacity=\".5\" rx=\"1\" ry=\"1\" transform=\"matrix(-5.051 -25.98517 118.73517 -23.07978 300.7 178)\"/></svg>",
+    "optimizedSVG": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#857a71\" d=\"M0 0h400v200H0z\"/><ellipse fill=\"#fff\" rx=\"1\" ry=\"1\" transform=\"matrix(.00513 30.03455 -183.19642 .03127 112 1)\"/><ellipse fill=\"#1d2a0e\" rx=\"1\" ry=\"1\" transform=\"rotate(-96 206 -131) scale(42.56184 101.18701)\"/><ellipse fill=\"#fff\" rx=\"1\" ry=\"1\" transform=\"matrix(-21.4824 .70257 -2.65367 -81.14061 154 21)\"/><ellipse fill=\"#3a3f2e\" rx=\"1\" ry=\"1\" transform=\"matrix(67.57589 -24.77418 12.27725 33.48834 56 67)\"/><ellipse fill=\"#c7daf2\" rx=\"1\" ry=\"1\" transform=\"matrix(17.80029 -9.09418 55.95982 109.53164 212 28)\"/><ellipse fill=\"#6a4334\" rx=\"1\" ry=\"1\" transform=\"matrix(2.6261 37.55505 -158.47448 11.08162 73 177)\"/><ellipse fill=\"#eaffff\" rx=\"1\" ry=\"1\" transform=\"matrix(242.26339 -2.42442 .27143 27.12327 61 1)\"/><ellipse fill=\"#293248\" rx=\"1\" ry=\"1\" transform=\"matrix(-5.91403 -23.37203 36.39042 -9.2082 186 118)\"/><ellipse fill=\"#dbab95\" rx=\"1\" ry=\"1\" transform=\"rotate(1 -7511 22413) scale(90.15922 16.36773)\"/><ellipse fill=\"#bf9b8e\" rx=\"1\" ry=\"1\" transform=\"matrix(23.58714 33.14905 -24.97579 17.77147 120 124)\"/><ellipse fill=\"#000600\" rx=\"1\" ry=\"1\" transform=\"matrix(18.22201 -7.4793 4.80912 11.71659 275 87)\"/><ellipse fill=\"#87a6cf\" rx=\"1\" ry=\"1\" transform=\"matrix(-37.467 10.20463 -7.09961 -26.06671 224 69)\"/><ellipse fill=\"#585746\" rx=\"1\" ry=\"1\" transform=\"matrix(.79664 30.36409 -93.87432 2.4629 341 31)\"/><ellipse fill=\"#d6e6ff\" rx=\"1\" ry=\"1\" transform=\"matrix(-71.3919 28.69936 -8.5552 -21.28173 51 1)\"/><ellipse fill=\"#9f8d78\" rx=\"1\" ry=\"1\" transform=\"matrix(-.86303 5.98902 -69.1336 -9.9623 333 62)\"/><ellipse fill=\"#b58e7d\" rx=\"1\" ry=\"1\" transform=\"matrix(-4.48868 -20.5609 87.91762 -19.19345 267 141)\"/><ellipse fill=\"#151710\" rx=\"1\" ry=\"1\" transform=\"rotate(91 128 217) scale(6.71353 100.28903)\"/><ellipse fill=\"#7e7f85\" rx=\"1\" ry=\"1\" transform=\"matrix(-44.80729 .17988 -.02194 -5.4643 147 26)\"/><ellipse fill=\"#e9f0f6\" rx=\"1\" ry=\"1\" transform=\"matrix(10.93828 30.76414 -11.00746 3.91374 157 71)\"/><ellipse fill=\"#2c384b\" rx=\"1\" ry=\"1\" transform=\"matrix(-13.32684 71.10274 -4.62402 -.86668 179 89)\"/><ellipse fill=\"#40271a\" rx=\"1\" ry=\"1\" transform=\"matrix(-10.9097 20.95223 -28.62962 -14.90727 71 199)\"/><ellipse fill=\"#514d3b\" rx=\"1\" ry=\"1\" transform=\"rotate(94 -38 42) scale(48.71307 36.14742)\"/><ellipse fill=\"#fbffff\" rx=\"1\" ry=\"1\" transform=\"matrix(-3.37905 -9.15817 48.06053 -17.73267 239 14)\"/><ellipse fill=\"#293822\" rx=\"1\" ry=\"1\" transform=\"matrix(33.19156 -11.10574 4.92657 14.72397 85 74)\"/><ellipse fill=\"#906553\" rx=\"1\" ry=\"1\" transform=\"matrix(-5.051 -25.98517 118.73517 -23.07978 301 178)\"/></svg>"
+  },
+  "runs": {
+    "Intel® Core™ i5-5257U": [
+      {
+        "duration": 9995,
+        "sizes": {
+          "original": 3155,
+          "brotli": 870,
+          "gzip": 989
+        },
+        "optimizedSizes": {
+          "original": 2621,
+          "brotli": 832,
+          "gzip": 925
+        }
+      },
+      {
+        "duration": 9669,
+        "sizes": {
+          "original": 3147,
+          "brotli": 869,
+          "gzip": 978
+        },
+        "optimizedSizes": {
+          "original": 2614,
+          "brotli": 808,
+          "gzip": 920
+        }
+      }
+    ]
+  }
+}

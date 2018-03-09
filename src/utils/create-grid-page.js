@@ -4,6 +4,7 @@ const { join } = require('path')
 const { titleCase } = require('change-case')
 const { writeFile } = require('fs-extra')
 const stringify = require('json-stringify-safe')
+const prettysize = require('prettysize')
 const pug = require('pug')
 
 const { baseDir, templatesDir } = require('../config')
@@ -22,7 +23,8 @@ module.exports = async function createGridPage ({ slug, title, images }) {
     const html = pug.renderFile(join(templatesDir, 'grid.pug'), {
       pretty: false,
       title,
-      images
+      images,
+      prettysize: size => prettysize(size, { places: 2 })
     })
     await writeFile(dest, html)
     console.log(`Generated ${slug}.html`)

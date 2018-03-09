@@ -1,0 +1,36 @@
+{
+  "results": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#cecec9\" d=\"M0 0h400v200H0z\"/><path fill-opacity=\".5\" d=\"M411 211.8l-171.8 6-1.7-50 171.7-6zM76.8 172.7l2.5 48.4-89 4.6-2.4-48.3z\"/><path fill-opacity=\".5\" d=\"M268.1 233.3l-3.2-60.8 140.4-7.4 3.2 60.9z\"/><path fill=\"#fff\" fill-opacity=\".5\" d=\"M271.2 171l-80-179.9 164.1-73 80.1 179.8z\"/><path fill=\"#896f52\" fill-opacity=\".5\" d=\"M108 94l87.7-57 41.7 64.3-87.8 57z\"/><path fill=\"#fff\" fill-opacity=\".5\" d=\"M-75.3 63l176-164.2L201.9 7.4l-176 164z\"/><path fill-opacity=\".5\" d=\"M76.8 217.4l-81.2 4.2-2-40.5 81-4.3z\"/><path fill=\"#4d2900\" fill-opacity=\".5\" d=\"M121.3 77.2l23.6 29.1-14.6 11.8L106.7 89z\"/><path fill=\"#bf9f6e\" fill-opacity=\".5\" d=\"M259.7 134l7 80.9-31 2.7-7.1-81z\"/><path fill=\"#feffff\" fill-opacity=\".5\" d=\"M378.9 21.6L-16.6 70l-7.6-62 395.5-48.6zm-220.7 91.2l-18.1-19.4L165.2 70l18.1 19.4z\"/><path fill=\"#f0f7f8\" fill-opacity=\".5\" d=\"M5.4 96.8l33.7-43 113.3 88.4-33.7 43.1z\"/><path fill=\"#180f00\" fill-opacity=\".5\" d=\"M414.9 168l2.8 54.7-146.6 7.7-2.9-54.6z\"/><path fill=\"#bcb8af\" fill-opacity=\".5\" d=\"M159.3 195.4l35.9-144 44 11-36 144z\"/><path fill=\"#f3f9fb\" fill-opacity=\".5\" d=\"M224.1 111.6L257.3-12l182.6 49-33.1 123.7z\"/><path fill=\"#643307\" fill-opacity=\".5\" d=\"M160.5 72.5l-4.6-10 38.2-17.8 4.7 10z\"/><path fill=\"#705534\" fill-opacity=\".5\" d=\"M148.3 180.2l-4.4-1.7 37.5-97.7 4.4 1.6z\"/><path fill=\"#412600\" fill-opacity=\".5\" d=\"M145.4 113.1l11.7 12.6-10.3 9.6-11.7-12.6z\"/><path fill=\"#2f1600\" fill-opacity=\".5\" d=\"M211.7 155.8l7.9-44.7 1.5.3-7.9 44.6z\"/><path fill=\"#9e790d\" fill-opacity=\".5\" d=\"M160 67.8l-15.8-6.7 3.6-8.6 15.8 6.7z\"/><path fill=\"#8a634e\" fill-opacity=\".5\" d=\"M214.9 57l8.9 3-18.4 56.4-8.9-2.9z\"/><path fill=\"#e6e9e8\" fill-opacity=\".5\" d=\"M213.2 4.9l9.1 2.2-34 136.5-9-2.3z\"/><path fill=\"#eff4f7\" fill-opacity=\".5\" d=\"M11.7-.3l103.7 14.6L93 173.7-10.7 159z\"/><path fill=\"#f7ffff\" fill-opacity=\".5\" d=\"M181.3 70.2l-22 22-7.8-7.7 22-22z\"/><path fill=\"#f8f9fa\" fill-opacity=\".5\" d=\"M140.4 33.4L172 7.8l23.6 29.1L164 62.5z\"/></svg>",
+    "optimizedSVG": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#cecec9\" d=\"M0 0h400v200H0z\"/><path d=\"M411 212l-172 6-2-50 172-6zM77 173l2 48-89 5-2-49z\"/><path d=\"M268 233l-3-60 140-8 4 61z\"/><path fill=\"#fff\" d=\"M271 171L191-9l164-73 80 180z\"/><path fill=\"#896f52\" d=\"M108 94l88-57 41 64-87 57z\"/><path fill=\"#fff\" d=\"M-75 63l176-164L202 7 26 171z\"/><path d=\"M77 217l-81 5-2-41 81-4z\"/><path fill=\"#4d2900\" d=\"M121 77l24 29-15 12-23-29z\"/><path fill=\"#bf9f6e\" d=\"M260 134l7 81-31 3-7-81z\"/><path fill=\"#feffff\" d=\"M379 22L-17 70l-7-62 395-49zm-221 91l-18-20 25-23 18 19z\"/><path fill=\"#f0f7f8\" d=\"M5 97l34-43 113 88-33 43z\"/><path fill=\"#180f00\" d=\"M415 168l3 55-147 7-3-54z\"/><path fill=\"#bcb8af\" d=\"M159 195l36-144 44 11-36 144z\"/><path fill=\"#f3f9fb\" d=\"M224 112l33-124 183 49-33 124z\"/><path fill=\"#643307\" d=\"M161 73l-5-10 38-18 5 10z\"/><path fill=\"#705534\" d=\"M148 180l-4-2 37-97 5 1z\"/><path fill=\"#412600\" d=\"M145 113l12 13-10 9-12-12z\"/><path fill=\"#2f1600\" d=\"M212 156l8-45h1l-8 45z\"/><path fill=\"#9e790d\" d=\"M160 68l-16-7 4-9 16 7z\"/><path fill=\"#8a634e\" d=\"M215 57l9 3-19 56-8-2z\"/><path fill=\"#e6e9e8\" d=\"M213 5l9 2-34 137-9-3z\"/><path fill=\"#eff4f7\" d=\"M12 0l103 14-22 160-104-15z\"/><path fill=\"#f7ffff\" d=\"M181 70l-22 22-7-7 22-22z\"/><path fill=\"#f8f9fa\" d=\"M140 33l32-25 24 29-32 26z\"/></svg>"
+  },
+  "runs": {
+    "Intel® Core™ i5-5257U": [
+      {
+        "duration": 3902,
+        "sizes": {
+          "original": 2040,
+          "brotli": 712,
+          "gzip": 786
+        },
+        "optimizedSizes": {
+          "original": 1321,
+          "brotli": 554,
+          "gzip": 601
+        }
+      },
+      {
+        "duration": 3208,
+        "sizes": {
+          "original": 2083,
+          "brotli": 715,
+          "gzip": 785
+        },
+        "optimizedSizes": {
+          "original": 1354,
+          "brotli": 553,
+          "gzip": 614
+        }
+      }
+    ]
+  }
+}
