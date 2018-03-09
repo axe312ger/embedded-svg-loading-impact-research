@@ -6,18 +6,18 @@ const sharp = require('sharp')
 const { preparedDir } = require('../config')
 
 module.exports = async function prepareImage (file, width = 256) {
-  const { originalPath, name, ext } = file
-  const filename = `${name}-${width}px`
-  const preparedPath = join(preparedDir, `${filename}${ext}`)
+  const { original: { path: originalPath, name: originalName, ext } } = file
+  const name = `${originalName}-${width}px`
+  const path = join(preparedDir, `${name}${ext}`)
 
   try {
     const inputBuffer = await readFile(originalPath)
 
     await sharp(inputBuffer)
       .resize(width)
-      .toFile(preparedPath)
-    file.preparedPath = preparedPath
-    file.name = filename
+      .toFile(path)
+    file.prepared = { path, name }
+    file.width = width
   } catch (err) {
     throw err
   }

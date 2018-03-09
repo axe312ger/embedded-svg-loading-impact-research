@@ -5,13 +5,26 @@ html(lang="en")
     title #{title} - SVG image preview
     style
       include style.css
+      include ../node_modules/spectre.css/dist/spectre.min.css
   body
-    h1 #{title}
-    div(class='grid')
-      each page in pages
-        div
-          a(href=`./${page.pagename}`)= page.pagename
-          ul
-            li= `Original size: ${page.sizes.original} (${page.sizes.originalFormatted})`
-            li= `Gzip size: ${page.sizes.gzip} (${page.sizes.gzipFormatted})`
-            li= `Brotli size: ${page.sizes.brotli} (${page.sizes.brotliFormatted})`
+    .container
+      h1 #{title}
+      div(class='grid')
+        each page in pages
+          .card
+            .card-header
+              a.card-title.h5(href=`./${page.pagename}`)= page.title
+            .card-body
+              table.table.table-hover
+                tr
+                  td Original size:
+                  td=`${page.sizes.original}B`
+                  td=page.sizes.originalFormatted
+                tr
+                  td Gzip size:
+                  td=`${page.sizes.gzip}B`
+                  td=page.sizes.gzipFormatted
+                tr
+                td Brotli size:
+                td=`${page.sizes.brotli}B`
+                td=page.sizes.brotliFormatted

@@ -1,12 +1,34 @@
 mixin image(image)
-  div(class='image-wrapper' style=`background: url("${image.dataURI}");`)
-    div(style='padding-bottom: 50%;')
-      img(class='image', src=`./prepared/${image.name}.jpg`)
-  ul
-    li= image.name
-    li= `Primitive time: ${(image.primitiveTime / 1000).toFixed(2)}s`
-    li= `dataURI length: ${image.dataURI.length}`
-    li= `input width: ${image.width}px`
-    li= `Primitive options: ${JSON.stringify(image.primitiveOptions)}`
-    li= `Primitive sizes: ${JSON.stringify(image.primitiveSizes)}`
-    li= `SVGO sizes: ${JSON.stringify(image.optimizedSizes)}`
+  .card
+    .card-image
+      div(class='image-wrapper' style=`background: url("${image.dataURI}");`)
+        div(style='padding-bottom: 50%;')
+          img(class='image', src=`./prepared/${image.prepared.name}.jpg`)
+    .card-header
+      div.card-title.h5= image.title
+      div.card-subtitle.text-gray= `${image.primitiveOptions.numberOfPrimitives} × ${image.primitiveOptions.modeTitle}`
+    .card-body
+      table.table.table-hover
+        tr
+          td Original size:
+          td=`${image.optimized.sizes.original}B`
+          td=image.optimized.sizes.originalFormatted
+        tr
+          td Gzip size:
+          td=`${image.optimized.sizes.gzip}B`
+          td=image.optimized.sizes.gzipFormatted
+        tr
+        td Brotli size:
+        td=`${image.optimized.sizes.brotli}B`
+        td=image.optimized.sizes.brotliFormatted
+      button.btn(onClick=`document.getElementById('${image.hash}').className='modal active'`) Show Full Data
+      .modal(id=image.hash)
+        a.modal-overlay(href='#close', aria-label='Close', onClick=`document.getElementById('${image.hash}').className='modal'`)
+        .modal-container
+          .modal-header
+            a.btn.btn-clear.float-right(href='#close', aria-label='Close', onClick=`document.getElementById('${image.hash}').className='modal'`)
+            .modal-title.h5= `${image.title} Data Set`
+          .modal-body
+            .content
+              pre.code(style='font-size: 0.8em;')
+                code= image.configString

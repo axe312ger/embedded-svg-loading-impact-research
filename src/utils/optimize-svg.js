@@ -7,19 +7,20 @@ const getFileSizes = require('./get-file-sizes')
 const { optimizedDir } = require('../config')
 
 module.exports = async function optimizeSVG (file) {
-  const { primitive, name } = file
-  const optimizedPath = join(optimizedDir, name)
+  const { svg, primitive, animated } = file
+  const source = animated || primitive
+  const { name: sourceName } = source
+  const path = join(optimizedDir, sourceName)
   await ensureDir(optimizedDir)
 
   try {
     const svgo = new SVGO({ multipass: true, floatPrecision: 0 })
-    const {data: svg} = await svgo.optimize(primitive)
+    const { data } = await svgo.optimize(svg)
 
-    await writeFile(optimizedPath, svg)
-    file.optimized = svg
-    file.optimizedPath = optimizedPath
+    await writeFile(path, data)
     const sizes = getFileSizes(svg)
-    file.optimizedSizes = sizes
+    file.optimized = { svg: data, path, sizes }
+    file.svg = data
   } catch (err) {
     throw err
   }

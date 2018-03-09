@@ -5,11 +5,13 @@ html(lang="en")
     title #{title} - SVG image preview
     style
       include style.css
-  body
-    h1 #{title}
-    p
-      button(onClick=`document.querySelector('body').className = document.querySelector('body').className ? '' : 'hide-images'`) Toggle images
-    div(class='grid')
-      each image in images
-        div
-          +image(image)
+      include ../node_modules/spectre.css/dist/spectre.min.css
+  body.hide-images
+    .container
+      h1 #{title}
+      p
+        button.btn(onClick=`document.querySelector('body').className = document.querySelector('body').className ? '' : 'hide-images'`) Toggle images
+      div.grid
+        each image in images
+          div
+            +image(image)

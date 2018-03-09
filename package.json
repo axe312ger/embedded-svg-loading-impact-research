@@ -16,20 +16,25 @@
     "eases": "^1.0.8",
     "fs-extra": "^5.0.0",
     "gzip-size": "^4.1.0",
+    "json-stringify-safe": "^5.0.1",
     "mini-svg-data-uri": "^1.0.0",
     "prettysize": "^1.1.0",
     "pug": "^2.0.0-rc.4",
     "sharp": "^0.20.0",
+    "spectre.css": "^0.5.1",
     "sqip": "^0.3.2",
     "svgo": "^1.0.5"
   },
   "devDependencies": {
+    "change-case": "^3.0.2",
     "eslint": "^4.18.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
-    "nodemon": "^1.17.1"
+    "nodemon": "^1.17.1",
+    "serve": "^6.5.2",
+    "systeminformation": "^3.37.4"
   }
 }

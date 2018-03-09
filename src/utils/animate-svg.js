@@ -6,6 +6,7 @@ const { ensureDir, writeFile } = require('fs-extra')
 
 const { animatedDir } = require('../config')
 const getFileSizes = require('./get-file-sizes')
+const optimizeSVG = require('./optimize-svg')
 
 module.exports = async function animate (
   file,
@@ -22,8 +23,10 @@ module.exports = async function animate (
     )
   }
 
-  const { name } = parse(file.primitivePath)
-  const animatedPath = join(animatedDir, `${name}-animated.svg`)
+  const { primitive: { name: primitiveName } } = file
+
+  const name = `${primitiveName}-animated.svg`
+  const path = join(animatedDir, name)
   await ensureDir(animatedDir)
 
   const $ = cheerio.load(file.primitive, { xmlMode: true })
@@ -48,9 +51,9 @@ module.exports = async function animate (
 
   $('svg').prepend(`<style>${animation.replace(/\s+/g, ' ')}</style>`)
   const svg = $.html()
-  await writeFile(animatedPath, svg)
-  file.primitive = svg
-  file.primitivePath = animatedPath
+  await writeFile(path, svg)
   const sizes = getFileSizes(svg)
-  file.primitiveSizes = sizes
+  file.animated = { svg, name, path, sizes }
+  file.svg = svg
+  await optimizeSVG(file)
 }

@@ -1,5 +1,6 @@
-const { join } = require('path')
+const { join, parse } = require('path')
 
+const { titleCase } = require('change-case')
 const { readdir, readFile, writeFile } = require('fs-extra')
 const pug = require('pug')
 
@@ -16,10 +17,13 @@ async function run () {
 
     const pages = []
     for (const pagename of pagenames) {
+      const { name } = parse(pagename)
       const content = await readFile(join(baseDir, pagename))
       const sizes = getFileSizes(content)
+      const title = titleCase(name)
       const page = {
         pagename,
+        title,
         sizes
       }
       pages.push(page)

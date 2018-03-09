@@ -11,12 +11,14 @@ module.exports = async function readInputImages () {
     .sort((a, b) => a.localeCompare(b))
     .map(filename => {
       const { base, name, ext } = parse(filename)
-      const originalPath = join(originalDir, base)
+      const path = join(originalDir, base)
       return {
-        originalPath,
-        base,
-        name,
-        ext
+        original: {
+          path,
+          base,
+          name,
+          ext
+        }
       }
     })
 

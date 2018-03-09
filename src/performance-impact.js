@@ -1,7 +1,6 @@
 const readInputImages = require('./utils/read-input-images')
 const prepareImage = require('./utils/prepare-image')
 const generatePrimitives = require('./utils/generate-primitives')
-const optimizeSVG = require('./utils/optimize-svg')
 const encodeSVG = require('./utils/encode-svg')
 const createGridPage = require('./utils/create-grid-page')
 
@@ -13,20 +12,15 @@ async function run () {
     const images = []
     for (const inputImage of inputImages) {
       for (const width of widths) {
-        console.log(`Processing ${inputImage.name} with ${width}px`)
+        const image = { ...inputImage }
+        console.log(`Processing ${image.original.name} with ${width}px`)
         const primitiveOptions = {
           blur: 0,
           mode: 1,
           numberOfPrimitives: 100
         }
-        const image = {
-          ...inputImage,
-          primitiveOptions,
-          width
-        }
         await prepareImage(image, width)
         await generatePrimitives(image, primitiveOptions)
-        await optimizeSVG(image)
         encodeSVG(image)
         images.push(image)
       }
