@@ -1,0 +1,36 @@
+{
+  "results": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><filter id=\"c\"><feGaussianBlur stdDeviation=\"55\" /></filter><path fill=\"#544b47\" d=\"M0 0h400v200H0z\"/><g filter='url(#c)' fill-opacity='.5'><path fill=\"#d4ecfc\" fill-opacity=\".5\" d=\"M203.7 95.9l66.8-54 49.2 60.6-66.8 54.1z\"/><path fill=\"#bdac93\" fill-opacity=\".5\" d=\"M286.6 237.4L86.5 187.5 99.3 136l200.2 49.9z\"/><path fill=\"#050812\" fill-opacity=\".5\" d=\"M71 108.6L94.3-23.7l77 13.5-23.4 132.4z\"/><path fill-opacity=\".5\" d=\"M4.7 135l117 52.2-31 70L-26.5 205z\"/><path fill=\"#c3b8b5\" fill-opacity=\".5\" d=\"M261.8 39.7l7.5 85.6-60.8 5.3-7.4-85.6z\"/><path fill=\"#31160d\" fill-opacity=\".5\" d=\"M349.6 75.4L459 184.7l-69.6 69.6L280 145z\"/><path fill=\"#1f1b10\" fill-opacity=\".5\" d=\"M434.3 78.6l-160-28.2L282.8 1l160 28.2z\"/><path fill=\"#000100\" fill-opacity=\".5\" d=\"M260.8 1.9L218.6 52 197 34l42.2-50.3z\"/><path fill=\"#bebfb4\" fill-opacity=\".5\" d=\"M64 69.6L74.1 79l-52.2 56-10.3-9.6z\"/><path fill=\"#b5c3c1\" fill-opacity=\".5\" d=\"M-4.6 89.5l49.5-43 8.2 9.3L3.6 99z\"/></g></svg>",
+    "optimizedSVG": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><filter id=\"a\"><feGaussianBlur stdDeviation=\"55\"/></filter><path fill=\"#544b47\" d=\"M0 0h400v200H0z\"/><g filter=\"url(#a)\"><path fill=\"#d4ecfc\" d=\"M204 96l66-54 50 61-67 54z\"/><path fill=\"#bdac93\" d=\"M287 237L87 188l12-52 201 50z\"/><path fill=\"#050812\" d=\"M71 109L94-24l77 14-23 132z\"/><path d=\"M5 135l117 52-31 70-117-52z\"/><path fill=\"#c3b8b5\" d=\"M262 40l7 85-60 6-8-86z\"/><path fill=\"#31160d\" d=\"M350 75l109 110-70 69-109-109z\"/><path fill=\"#1f1b10\" d=\"M434 79L274 50l9-49 160 28z\"/><path fill=\"#000100\" d=\"M261 2l-42 50-22-18 42-50z\"/><path fill=\"#bebfb4\" d=\"M64 70l10 9-52 56-10-10z\"/><path fill=\"#b5c3c1\" d=\"M-5 90l50-43 8 9L4 99z\"/></g></svg>"
+  },
+  "runs": {
+    "Intel® Core™ i5-5257U": [
+      {
+        "duration": 1666,
+        "sizes": {
+          "original": 1029,
+          "brotli": 455,
+          "gzip": 496
+        },
+        "optimizedSizes": {
+          "original": 709,
+          "brotli": 365,
+          "gzip": 403
+        }
+      },
+      {
+        "duration": 1465,
+        "sizes": {
+          "original": 1044,
+          "brotli": 464,
+          "gzip": 499
+        },
+        "optimizedSizes": {
+          "original": 716,
+          "brotli": 373,
+          "gzip": 409
+        }
+      }
+    ]
+  }
+}

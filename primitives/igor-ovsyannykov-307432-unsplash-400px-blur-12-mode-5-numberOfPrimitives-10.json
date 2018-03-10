@@ -1,0 +1,36 @@
+{
+  "results": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><filter id=\"c\"><feGaussianBlur stdDeviation=\"55\" /></filter><path fill=\"#6a676e\" d=\"M0 0h400v200H0z\"/><g filter='url(#c)' fill-opacity='.5'><path fill=\"#d2c4d2\" fill-opacity=\".5\" d=\"M54 7.8h293.7v148.4H53.9z\"/><path fill-opacity=\".5\" d=\"M385.3 234L-13 227l1.2-68.8 398.4 7z\"/><path fill-opacity=\".5\" d=\"M53.8 32.6l-3 171.8-62.5-1 3-171.9zm298.6 17.6l71.8 1.2-3.1 181.2-71.9-1.2z\"/><path fill=\"#cc392b\" fill-opacity=\".5\" d=\"M83.6 51.6V21.9h81.2v29.7z\"/><path fill-opacity=\".5\" d=\"M5.4 81.5L55.2 86l-6 68.5L-.5 150z\"/><path fill=\"#245c57\" fill-opacity=\".5\" d=\"M170 83.5l-1 26.5-128-4.4L42 79z\"/><path fill=\"#000b12\" fill-opacity=\".5\" d=\"M377.3-7v200h-25V-7z\"/><path fill=\"#83abce\" fill-opacity=\".5\" d=\"M381.9 17.7l32.7 2.3-4.3 60.8-32.7-2.3z\"/><path fill=\"#d15a51\" fill-opacity=\".5\" d=\"M184.1 81l150 5.2-1 28.1-150-5.2z\"/></g></svg>",
+    "optimizedSVG": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><filter id=\"a\"><feGaussianBlur stdDeviation=\"55\"/></filter><path fill=\"#6a676e\" d=\"M0 0h400v200H0z\"/><g filter=\"url(#a)\"><path fill=\"#d2c4d2\" d=\"M54 8h294v148H54z\"/><path d=\"M385 234l-398-7 1-69 399 7z\"/><path d=\"M54 33l-3 171-63-1 3-171zm298 17l72 1-3 182-72-2z\"/><path fill=\"#cc392b\" d=\"M84 52V22h81v30z\"/><path d=\"M5 82l50 4-6 69-49-5z\"/><path fill=\"#245c57\" d=\"M170 84l-1 26-128-4 1-27z\"/><path fill=\"#000b12\" d=\"M377-7v200h-25V-7z\"/><path fill=\"#83abce\" d=\"M382 18l33 2-5 61-32-3z\"/><path fill=\"#d15a51\" d=\"M184 81l150 5-1 28-150-5z\"/></g></svg>"
+  },
+  "runs": {
+    "Intel® Core™ i5-5257U": [
+      {
+        "duration": 2067,
+        "sizes": {
+          "original": 892,
+          "brotli": 415,
+          "gzip": 452
+        },
+        "optimizedSizes": {
+          "original": 612,
+          "brotli": 342,
+          "gzip": 370
+        }
+      },
+      {
+        "duration": 1988,
+        "sizes": {
+          "original": 940,
+          "brotli": 422,
+          "gzip": 455
+        },
+        "optimizedSizes": {
+          "original": 638,
+          "brotli": 346,
+          "gzip": 371
+        }
+      }
+    ]
+  }
+}
