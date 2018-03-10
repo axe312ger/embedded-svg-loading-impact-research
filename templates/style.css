@@ -2,6 +2,18 @@ body.hide-images img {
   display: none;
 }
 
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  background: white;
+  text-align: center;
+  padding: 0.5rem;
+  box-shadow: 0 0 6px rgba(85, 85, 85, 0.5);
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -20,4 +32,5 @@ body.hide-images img {
   bottom: 0;
   width: 100%;
   height: auto;
+  z-index: 1;
 }

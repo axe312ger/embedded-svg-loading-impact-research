@@ -9,9 +9,9 @@ html(lang="en")
   body.hide-images
     .container
       h1 #{title}
-      p
-        button.btn(onClick=`document.querySelector('body').className = document.querySelector('body').className ? '' : 'hide-images'`) Toggle images
       div.grid
         each image in images
           div
             +image(image)
+    footer
+      button.btn(onClick=`document.querySelector('body').className = document.querySelector('body').className ? '' : 'hide-images'`) Toggle images

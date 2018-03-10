@@ -6,7 +6,7 @@ mixin image(image)
           img(class='image', src=`./prepared/${image.prepared.name}.jpg`)
     .card-header
       div.card-title.h5= image.title
-      div.card-subtitle.text-gray= `${image.primitiveOptions.numberOfPrimitives} × ${image.primitiveOptions.modeTitle}`
+      div.card-subtitle.text-gray= `${image.primitiveOptions.numberOfPrimitives} × ${image.primitiveOptions.modeTitle} — ${image.width}px`
     .card-body
       table.table.table-hover
         tr

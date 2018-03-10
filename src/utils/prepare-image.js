@@ -5,7 +5,7 @@ const sharp = require('sharp')
 
 const { preparedDir } = require('../config')
 
-module.exports = async function prepareImage (file, width = 256) {
+module.exports = async function prepareImage (file, width = 400) {
   const { original: { path: originalPath, name: originalName, ext } } = file
   const name = `${originalName}-${width}px`
   const path = join(preparedDir, `${name}${ext}`)
