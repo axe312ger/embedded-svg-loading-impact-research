@@ -14,26 +14,41 @@ module.exports = async function createGridPage ({ slug, title, images }) {
   const dest = join(baseDir, `${slug}.html`)
   for (const image of images) {
     const preparedImage = await readFile(image.prepared.path)
-    const imageStats = {
+    let imageStats = {
       sourceImage: {
         name: image.prepared.base,
         sizes: {
           ...getFileSizes(preparedImage)
         }
       },
-      width: image.width,
-      primitiveOptions: image.primitiveOptions,
-      sizes: image.primitive.sizes,
-      optimizedSizes: image.primitive.optimizedSizes,
-      svgByteLength: Buffer.byteLength(image.svg, 'utf8'),
-      dataURI: {
-        ...getFileSizes(image.dataURI)
+      width: image.width
+    }
+    if (image.primitive) {
+      imageStats = {
+        ...imageStats,
+        primitiveOptions: image.primitiveOptions,
+        sizes: image.primitive.sizes,
+        optimizedSizes: image.primitive.optimizedSizes
+      }
+    }
+    if (image.svg) {
+      imageStats = {
+        ...imageStats,
+        svgByteLength: Buffer.byteLength(image.svg, 'utf8')
+      }
+    }
+    if (image.dataURI) {
+      imageStats = {
+        ...imageStats,
+        dataURI: {
+          ...getFileSizes(image.dataURI)
+        }
       }
     }
     image.configString = stringify(imageStats, null, 2)
     image.hash = crypto
       .createHash(`md5`)
-      .update(image.dataURI)
+      .update(image.dataURI || image.prepared.name)
       .digest(`hex`)
     image.title = titleCase(image.original.name)
   }

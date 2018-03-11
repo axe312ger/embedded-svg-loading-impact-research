@@ -1,26 +1,31 @@
 mixin image(image)
   .card
     .card-image
-      div(class='image-wrapper' style=`background: url("${image.dataURI}");`)
-        div(style='padding-bottom: 50%;')
-          img(class='image', src=`./prepared/${image.prepared.name}.jpg`)
+      if image.dataURI
+        div.image-wrapper(style=`background-image: url("${image.dataURI}");`)
+          div(style='padding-bottom: 50%;')
+            img.image(src=`./prepared/${image.prepared.name}.jpg`)
+      else
+        img(src=`./prepared/${image.prepared.name}.jpg` style=`display: block !important;`)
     .card-header
       div.card-title.h5= image.title
-      div.card-subtitle.text-gray= `${image.primitiveOptions.numberOfPrimitives} × ${image.primitiveOptions.modeTitle} — ${image.width}px`
+      if image.primitiveOptions
+        div.card-subtitle.text-gray= `${image.primitiveOptions.numberOfPrimitives} × ${image.primitiveOptions.modeTitle} — ${image.width}px`
     .card-body
-      table.table.table-hover
-        tr
-          td Original size:
-          td=`${image.primitive.optimizedSizes.original}B`
-          td=prettysize(image.primitive.optimizedSizes.original)
-        tr
-          td Gzip size:
-          td=`${image.primitive.optimizedSizes.gzip}B`
-          td=prettysize(image.primitive.optimizedSizes.gzip)
-        tr
-        td Brotli size:
-        td=`${image.primitive.optimizedSizes.brotli}B`
-        td=prettysize(image.primitive.optimizedSizes.brotli)
+      if image.primitive
+        table.table.table-hover
+          tr
+            td Original size:
+            td=`${image.primitive.optimizedSizes.original}B`
+            td=prettysize(image.primitive.optimizedSizes.original)
+          tr
+            td Gzip size:
+            td=`${image.primitive.optimizedSizes.gzip}B`
+            td=prettysize(image.primitive.optimizedSizes.gzip)
+          tr
+          td Brotli size:
+          td=`${image.primitive.optimizedSizes.brotli}B`
+          td=prettysize(image.primitive.optimizedSizes.brotli)
       button.btn(onClick=`document.getElementById('${image.hash}').className='modal active'`) Show Full Data
       .modal(id=image.hash)
         a.modal-overlay(href='#close', aria-label='Close', onClick=`document.getElementById('${image.hash}').className='modal'`)

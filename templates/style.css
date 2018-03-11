@@ -2,6 +2,11 @@ body.hide-images img {
   display: none;
 }
 
+body img {
+  width: 100%;
+  height: auto;
+}
+
 footer {
   position: fixed;
   left: 0;
