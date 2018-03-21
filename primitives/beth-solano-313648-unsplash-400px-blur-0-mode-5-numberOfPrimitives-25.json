@@ -31,6 +31,34 @@
           "gzip": 614
         }
       }
+    ],
+    "Intel® Core™ i7-6920HQ": [
+      {
+        "duration": 2077,
+        "sizes": {
+          "original": 2041,
+          "brotli": 713,
+          "gzip": 777
+        },
+        "optimizedSizes": {
+          "original": 1330,
+          "brotli": 555,
+          "gzip": 610
+        }
+      },
+      {
+        "duration": 1735,
+        "sizes": {
+          "original": 2041,
+          "brotli": 716,
+          "gzip": 791
+        },
+        "optimizedSizes": {
+          "original": 1328,
+          "brotli": 556,
+          "gzip": 612
+        }
+      }
     ]
   }
 }
