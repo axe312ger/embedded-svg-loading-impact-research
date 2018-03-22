@@ -29,11 +29,12 @@ async function run () {
       }
       pages.push(page)
     }
+
     const title = 'Overview'
     const html = pug.renderFile(join(templatesDir, 'overview.pug'), {
       pretty: true,
       title,
-      pages,
+      pages: pages.sort((a, b) => a.title.localeCompare(b.title, undefined, {numeric: true, sensitivity: 'base'})),
       prettysize: size => prettysize(size, { places: 2 })
     })
     await writeFile(join(publicDir, 'index.html'), html)

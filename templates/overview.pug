@@ -2,23 +2,23 @@ extends layout.pug
 include mixins/image.pug
 
 block content
-  h1 #{title}
+  h1 Embedded image preview research - LQIP & SQIP
   div(class='grid')
     each page in pages
       .card
         .card-header
           a.card-title.h5(href=`./${page.pagename}`)= page.title
         .card-body
-          table.table.table-hover
+          table.table
             tr
-              td Original size:
+              td Original
               td=`${page.sizes.original}B`
               td=prettysize(page.sizes.original)
             tr
-              td Gzip size:
+              td Gzip
               td=`${page.sizes.gzip}B`
               td=prettysize(page.sizes.gzip)
             tr
-            td Brotli size:
-            td=`${page.sizes.brotli}B`
-            td=prettysize(page.sizes.brotli)
+              td Brotli
+              td=`${page.sizes.brotli}B`
+              td=prettysize(page.sizes.brotli)
