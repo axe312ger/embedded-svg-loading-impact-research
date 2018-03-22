@@ -1,6 +1,6 @@
 const { join } = require('path')
 
-const { writeFile } = require('fs-extra')
+const { writeFile, access } = require('fs-extra')
 const SVGO = require('svgo')
 
 const { optimizedDir } = require('../config')
@@ -11,8 +11,11 @@ module.exports = async function optimizeSVG (name, svg) {
   try {
     const svgo = new SVGO({ multipass: true, floatPrecision: 0 })
     const { data } = await svgo.optimize(svg)
-
-    await writeFile(path, data)
+    try {
+      await access(path)
+    } catch (err) {
+      await writeFile(path, data)
+    }
     return data
   } catch (err) {
     throw err

@@ -2,7 +2,7 @@ const { join } = require('path')
 
 const cheerio = require('cheerio')
 const eases = require('eases')
-const { writeFile } = require('fs-extra')
+const { access, writeFile } = require('fs-extra')
 
 const { animatedDir } = require('../config')
 const getFileSizes = require('./get-file-sizes')
@@ -59,7 +59,11 @@ module.exports = async function animate (
   const sizes = getFileSizes(svg)
   const optimizedSizes = getFileSizes(optimizedSVG)
 
-  await writeFile(path, svg)
+  try {
+    await access(path)
+  } catch (err) {
+    await writeFile(path, svg)
+  }
   file.animated = { svg, optimizedSVG, name, path, sizes, optimizedSizes }
   file.svg = svg
 }

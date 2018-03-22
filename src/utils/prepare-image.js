@@ -1,4 +1,4 @@
-const { readFile } = require('fs-extra')
+const { access, readFile } = require('fs-extra')
 const { join } = require('path')
 
 const sharp = require('sharp')
@@ -10,15 +10,21 @@ module.exports = async function prepareImage (file, width = 400) {
   const name = `${originalName}-${width}px`
   const path = join(preparedDir, `${name}${ext}`)
 
-  try {
-    const inputBuffer = await readFile(originalPath)
+  file.prepared = { path, name }
+  file.width = width
 
-    await sharp(inputBuffer)
-      .resize(width, width / 2)
-      .toFile(path)
-    file.prepared = { path, name }
-    file.width = width
+  try {
+    await access(path)
+    return
   } catch (err) {
-    throw err
+    try {
+      const inputBuffer = await readFile(originalPath)
+
+      await sharp(inputBuffer)
+        .resize(width, width / 2)
+        .toFile(path)
+    } catch (err) {
+      throw err
+    }
   }
 }
