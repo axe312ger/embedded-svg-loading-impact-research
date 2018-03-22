@@ -1,0 +1,23 @@
+{
+  "results": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><filter id=\"c\"><feGaussianBlur stdDeviation=\"55\" /></filter><path fill=\"#cecec9\" d=\"M0 0h400v200H0z\"/><g filter='url(#c)' fill-opacity='.5'><path fill-opacity=\".5\" d=\"M421.5 207l-181.3 3.2-.7-43.8 181.2-3.1zM78.1 220.6l-115.5 4-1.7-46.8 115.6-4z\"/><path fill=\"#fff\" fill-opacity=\".5\" d=\"M261.1 169.4L208 6l188.7-61.4 53.1 163.5zm-159.8 9.2L-28 155.8 6.5-39.6l129.3 22.8z\"/><path fill-opacity=\".5\" d=\"M265 172.6l143.5-7.6 3.2 60.9-143.6 7.5z\"/><path fill=\"#927c60\" fill-opacity=\".5\" d=\"M107.5 87l88.8-49.2 47.8 86.1-88.9 49.2z\"/><path fill=\"#fff\" fill-opacity=\".5\" d=\"M-24.9 12.9L358.1-97l24.6 85.6L-.3 98.5z\"/><path fill-opacity=\".5\" d=\"M76.5 218.9l-81.2 2.8-1.5-42.1 81.2-2.9z\"/></g></svg>",
+    "optimizedSVG": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><filter id=\"a\"><feGaussianBlur stdDeviation=\"55\"/></filter><path fill=\"#cecec9\" d=\"M0 0h400v200H0z\"/><g filter=\"url(#a)\"><path d=\"M422 207l-182 3-1-44 182-3zM78 221l-115 4-2-47 116-4z\"/><path fill=\"#fff\" d=\"M261 169L208 6l189-61 53 163zm-160 10l-129-23L7-40l129 23z\"/><path d=\"M265 173l144-8 3 61-144 7z\"/><path fill=\"#927c60\" d=\"M108 87l88-49 48 86-89 49z\"/><path fill=\"#fff\" d=\"M-25 13L358-97l25 86L0 99z\"/><path d=\"M77 219l-82 3-1-42 81-3z\"/></g></svg>"
+  },
+  "runs": {
+    "Intel® Core™ i7-6920HQ": [
+      {
+        "duration": 636,
+        "sizes": {
+          "original": 752,
+          "brotli": 383,
+          "gzip": 421
+        },
+        "optimizedSizes": {
+          "original": 517,
+          "brotli": 312,
+          "gzip": 333
+        }
+      }
+    ]
+  }
+}

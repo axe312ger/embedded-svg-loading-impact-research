@@ -1,0 +1,23 @@
+{
+  "results": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#6a676e\" d=\"M0 0h400v200H0z\"/><path fill=\"#d2c4d2\" fill-opacity=\".5\" d=\"M348.4 158.6H56.3V8.6h292.1z\"/><path fill-opacity=\".5\" d=\"M397.7 241L-.6 234l1.3-76.5 398.4 7z\"/><path fill-opacity=\".5\" d=\"M-50 32.8H51.6V225H-50zm456.4 30.7l-5 142-53-1.8 4.9-142z\"/><path fill=\"#000d14\" fill-opacity=\".5\" d=\"M379-39.8V207h-28.2V-39.8z\"/><path fill=\"#cb372d\" fill-opacity=\".5\" d=\"M71 50.8V22.7h93.8v28z\"/><path fill=\"#000001\" fill-opacity=\".5\" d=\"M50.6 169l-25-.5 3.5-198.4 25 .4z\"/><path fill=\"#cbd1e2\" fill-opacity=\".5\" d=\"M323.1 48.3l.6 32.8-198.4 3.4-.6-32.8z\"/><path fill=\"#cd4e44\" fill-opacity=\".5\" d=\"M340 87.2l-.4 26.6-143.7-2.6.4-26.5z\"/><path fill=\"#205d57\" fill-opacity=\".5\" d=\"M171.3 106l-121.9 2-.4-21.8 122-2.1z\"/><path fill=\"#040604\" fill-opacity=\".5\" d=\"M31.4 157.7l140.6 5-1.9 53-140.5-4.9z\"/><path fill=\"#0a408d\" fill-opacity=\".5\" d=\"M232.8 143l-43.6 3-1.7-25 43.6-3z\"/><path fill-opacity=\".5\" d=\"M93.8 0h189v7.8h-189z\"/><path fill=\"#19191f\" fill-opacity=\".5\" d=\"M262.4 63.4l.1 3.1-173.3 6-.1-3z\"/><path fill=\"#588176\" fill-opacity=\".5\" d=\"M264 162.8l1.7-45.3 71.8 2.5-1.6 45.3z\"/></svg>",
+    "optimizedSVG": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#6a676e\" d=\"M0 0h400v200H0z\"/><path fill=\"#d2c4d2\" d=\"M348 159H56V9h292z\"/><path d=\"M398 241l-399-7 2-76 398 7z\"/><path d=\"M-50 33H52v192H-50zm456 30l-5 143-53-2 5-142z\"/><path fill=\"#000d14\" d=\"M379-40v247h-28V-40z\"/><path fill=\"#cb372d\" d=\"M71 51V23h94v28z\"/><path fill=\"#000001\" d=\"M51 169H26l3-199h25z\"/><path fill=\"#cbd1e2\" d=\"M323 48l1 33-199 3V53z\"/><path fill=\"#cd4e44\" d=\"M340 87v27l-144-3V85z\"/><path fill=\"#205d57\" d=\"M171 106l-122 2V86l122-2z\"/><path fill=\"#040604\" d=\"M31 158l141 5-2 53-140-5z\"/><path fill=\"#0a408d\" d=\"M233 143l-44 3-1-25 43-3z\"/><path d=\"M94 0h189v8H94z\"/><path fill=\"#19191f\" d=\"M262 63v3L90 74v-3z\"/><path fill=\"#588176\" d=\"M264 163l2-45 71 2-1 45z\"/></svg>"
+  },
+  "runs": {
+    "Intel® Core™ i7-6920HQ": [
+      {
+        "duration": 1231,
+        "sizes": {
+          "original": 1168,
+          "brotli": 451,
+          "gzip": 487
+        },
+        "optimizedSizes": {
+          "original": 765,
+          "brotli": 364,
+          "gzip": 389
+        }
+      }
+    ]
+  }
+}

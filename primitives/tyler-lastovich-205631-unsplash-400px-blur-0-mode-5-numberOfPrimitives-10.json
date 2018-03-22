@@ -1,0 +1,23 @@
+{
+  "results": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#9e8a6e\" d=\"M0 0h400v200H0z\"/><path fill=\"#ffffea\" fill-opacity=\".5\" d=\"M-6.2-48.9l398-20.8 6.6 126.4L.4 77.5z\"/><path fill=\"#271703\" fill-opacity=\".5\" d=\"M5.2 120.1L403 141l-6.7 128-398-21z\"/><path fill=\"#897255\" fill-opacity=\".5\" d=\"M395.3 157.8H-3v-51.5h398.4z\"/><path fill=\"#251a0c\" fill-opacity=\".5\" d=\"M454.9 202.2l-376.7 33-3.4-39 376.7-33z\"/><path fill=\"#f6ddb7\" fill-opacity=\".5\" d=\"M-21.6-54.6l293 20.4L263.8 75l-293-20.5z\"/><path fill=\"#ab8e6a\" fill-opacity=\".5\" d=\"M361.1 37.9l9.5 37.9L231 110.6l-9.5-38z\"/><path fill=\"#fff3d4\" fill-opacity=\".5\" d=\"M380.2 51.4L399-3.3l19.2 6.6L399.4 58z\"/><path fill=\"#ae9372\" fill-opacity=\".5\" d=\"M434.4 58.6l-6.7 76.3-123-10.7 6.7-76.3z\"/><path fill=\"#a08563\" fill-opacity=\".5\" d=\"M157 62.8l5.5 45L63.3 120l-5.5-45z\"/><path fill=\"#503e28\" fill-opacity=\".5\" d=\"M-189.4 139.2L206 187.7l-5.8 46.6-395.4-48.6z\"/></svg>",
+    "optimizedSVG": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#9e8a6e\" d=\"M0 0h400v200H0z\"/><path fill=\"#ffffea\" d=\"M-6-49l398-21 6 127L0 78z\"/><path fill=\"#271703\" d=\"M5 120l398 21-7 128-398-21z\"/><path fill=\"#897255\" d=\"M395 158H-3v-52h398z\"/><path fill=\"#251a0c\" d=\"M455 202L78 235l-3-39 377-33z\"/><path fill=\"#f6ddb7\" d=\"M-22-55l293 21-7 109-293-20z\"/><path fill=\"#ab8e6a\" d=\"M361 38l10 38-140 35-9-38z\"/><path fill=\"#fff3d4\" d=\"M380 51l19-54 19 6-19 55z\"/><path fill=\"#ae9372\" d=\"M434 59l-6 76-123-11 6-76z\"/><path fill=\"#a08563\" d=\"M157 63l6 45-100 12-5-45z\"/><path fill=\"#503e28\" d=\"M-189 139l395 49-6 46-395-48z\"/></svg>"
+  },
+  "runs": {
+    "Intel® Core™ i7-6920HQ": [
+      {
+        "duration": 1292,
+        "sizes": {
+          "original": 936,
+          "brotli": 385,
+          "gzip": 422
+        },
+        "optimizedSizes": {
+          "original": 640,
+          "brotli": 316,
+          "gzip": 336
+        }
+      }
+    ]
+  }
+}

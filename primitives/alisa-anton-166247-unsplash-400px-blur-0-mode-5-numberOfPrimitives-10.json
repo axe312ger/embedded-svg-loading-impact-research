@@ -1,0 +1,23 @@
+{
+  "results": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#544b47\" d=\"M0 0h400v200H0z\"/><path fill=\"#d2e4f2\" fill-opacity=\".5\" d=\"M253.2 157l-53.8-69L267 35.3l53.9 69z\"/><path fill=\"#c6b398\" fill-opacity=\".5\" d=\"M293 186.6l-11.4 42.2-191.7-51.3 11.3-42.3z\"/><path fill=\"#080a12\" fill-opacity=\".5\" d=\"M79.1-12.9l85.6 7.5-11 126-85.6-7.4z\"/><path fill=\"#050000\" fill-opacity=\".5\" d=\"M83.8 233.5l-112-34.2 21-68.8 112 34.3z\"/><path fill=\"#e2f4f9\" fill-opacity=\".5\" d=\"M254.5 131.3l-42.8-9 10.4-49 42.8 9.1z\"/><path fill=\"#31160c\" fill-opacity=\".5\" d=\"M473.7 137.5l-41 96.4-142.3-60.5 40.9-96.3z\"/><path fill=\"#bcb9aa\" fill-opacity=\".5\" d=\"M24.8 138.5L12 127l49.2-54.6L73.9 84z\"/><path fill=\"#322e27\" fill-opacity=\".5\" d=\"M226.4 14.5l79.4-88.3L453.3 59l-79.5 88.2z\"/><path fill=\"#b19991\" fill-opacity=\".5\" d=\"M274.3 61L209 77.2 202.3 50l65.2-16.3z\"/><path fill=\"#b0bfbf\" fill-opacity=\".5\" d=\"M52.5 56.7l-86.2 69.8-7.9-9.7L44.6 47z\"/></svg>",
+    "optimizedSVG": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#544b47\" d=\"M0 0h400v200H0z\"/><path fill=\"#d2e4f2\" d=\"M253 157l-54-69 68-53 54 69z\"/><path fill=\"#c6b398\" d=\"M293 187l-11 42-192-51 11-43z\"/><path fill=\"#080a12\" d=\"M79-13l86 8-11 126-86-8z\"/><path fill=\"#050000\" d=\"M84 234l-112-35 21-68 112 34z\"/><path fill=\"#e2f4f9\" d=\"M255 131l-43-9 10-49 43 9z\"/><path fill=\"#31160c\" d=\"M474 138l-41 96-143-61 41-96z\"/><path fill=\"#bcb9aa\" d=\"M25 139l-13-12 49-55 13 12z\"/><path fill=\"#322e27\" d=\"M226 15l80-89L453 59l-79 88z\"/><path fill=\"#b19991\" d=\"M274 61l-65 16-7-27 66-16z\"/><path fill=\"#b0bfbf\" d=\"M53 57l-87 70-8-10 87-70z\"/></svg>"
+  },
+  "runs": {
+    "Intel® Core™ i7-6920HQ": [
+      {
+        "duration": 735,
+        "sizes": {
+          "original": 951,
+          "brotli": 388,
+          "gzip": 433
+        },
+        "optimizedSizes": {
+          "original": 651,
+          "brotli": 311,
+          "gzip": 345
+        }
+      }
+    ]
+  }
+}
