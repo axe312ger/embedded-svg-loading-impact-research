@@ -27,6 +27,8 @@ footer {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2vmin;
+  margin-bottom: 4rem;
 }
 
 .image-wrapper {
@@ -45,41 +47,69 @@ footer {
   z-index: 1;
 }
 
+.table-nowrap td {
+  font-size: 0.8em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.center-text {
+  text-align: center;
+}
+
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>Primitive mode 8 (Polygons)</h1>
-      <div class="grid">
-        <div>
+      <header class="navbar">
+        <section class="navbar-section">
+          <div class="navbar-brand mr-2">SQIP Research</div><a class="btn btn-link" href="index.html">Home</a>
+        </section>
+      </header>
+      <div class="divider"></div>
+      <main>
+        <h1 class="h3">Primitive mode 8 (Polygons)</h1>
+        <div class="grid">
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23544b47' d='M0 0h400v200H0z'/%3e%3cpath fill='%23c3bfc0' d='M217 48l40-10 71 65-176 121z'/%3e%3cpath fill='%23b29f86' d='M354 201l-134-36-170-42 104 101z'/%3e%3cpath fill='%230a0911' d='M73 21l81-27 12 139-100-22z'/%3e%3cpath fill='%23dff9ff' d='M264 130l-1-47-43-11-8 52z'/%3e%3cpath fill='%23030000' d='M-13 224l-11-92 100 20 46 72z'/%3e%3cpath fill='%23331f13' d='M257 174l29-14L392-24l32 242z'/%3e%3cpath fill='%23622819' d='M281 181l-131-34 57-116 4 82z'/%3e%3cpath fill='%23acafa6' d='M86 51l4 1-68 97-12-26z'/%3e%3cpath fill='%23070c07' d='M239-24l-46 78 50-18 70 18z'/%3e%3cpath fill='%23adb9ba' d='M-24 132l3-48 86-41-34 32z'/%3e%3cpath fill='%2388a8ba' d='M234-24L166 79h22l-17-48z'/%3e%3cpath fill='%237e8788' d='M366 224l17-150 14-4-15 116z'/%3e%3cpath fill='%230d0d0c' d='M99 53L20 162l16 8L143 32z'/%3e%3cpath fill='%23895523' d='M206 188L40 137l144 28 230 59z'/%3e%3cpath d='M377 210l28-153 3 143-48 13z'/%3e%3cpath fill='%23c6cfce' d='M80 140l34-49-12 7-18 26z'/%3e%3cpath fill='%2319202a' d='M-24 9v80l92-55-14-58z'/%3e%3cpath fill='%230d141e' d='M109-2L7 104l-9 24 106-94z'/%3e%3cpath fill='%23bed1dc' d='M203 64V47l11-3 20 50z'/%3e%3cpath fill='%2333332c' d='M294 78l-36-64 166-28v86z'/%3e%3cpath fill='%23330a0a' d='M328 99l-52 52 117-42-110-42z'/%3e%3cpath fill='%238199ac' d='M296 78l-27-42-7 113 67-50z'/%3e%3cpath fill='%2375523a' d='M237 136l7-7 95 45-42 9z'/%3e%3cpath fill='%23ac573e' d='M227 126l-73 26 32-62 18 19z'/%3e%3cpath fill='%23502017' d='M111 111l98-42 11 21-38 17z'/%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/alisa-anton-166247-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Alisa Anton 166247 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Polygons — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Alisa Anton 166247 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 4.26s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Polygons</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>1438B</td>
-                  <td>1.40 kB</td>
+                  <td>Original</td>
+                  <td>1446B</td>
+                  <td>1.41 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>642B</td>
-                  <td>642.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>647B</td>
+                  <td>647.00 Bytes</td>
+                  <td>44.74 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>579B</td>
-                <td>579.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>581.25B</td>
+                  <td>581.25 Bytes</td>
+                  <td>40.20 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('3bb9826b7b1a23a8f92b32bbec2c2610').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('3bb9826b7b1a23a8f92b32bbec2c2610').className='modal active'">Show Full Data</button>
               <div class="modal" id="3bb9826b7b1a23a8f92b32bbec2c2610"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('3bb9826b7b1a23a8f92b32bbec2c2610').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('3bb9826b7b1a23a8f92b32bbec2c2610').className='modal'"></a>
@@ -102,16 +132,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Polygons&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1777,
-    &quot;brotli&quot;: 755,
-    &quot;gzip&quot;: 824
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 1438,
-    &quot;brotli&quot;: 579,
-    &quot;gzip&quot;: 642
-  },
   &quot;svgByteLength&quot;: 1777,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 1619,
@@ -125,36 +145,45 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23909b99' d='M0 0h400v200H0z'/%3e%3cpath fill='%23002a2f' d='M184 144l-17 17-191-98L3 39z'/%3e%3cpath fill='whiteff1' d='M-24-8l315 232h60L139 83z'/%3e%3cpath fill='%2394e6ff' d='M385-24H110l175 129 139-81z'/%3e%3cpath fill='white' d='M7 80l-31 19 150 73 27-15z'/%3e%3cpath fill='%2307343b' d='M195 211L-7 123l-17 39 116 44z'/%3e%3cpath fill='%23193c3b' d='M47 15l86 34 233 175L44 25z'/%3e%3cpath fill='%237f6257' d='M419 31l-4 137-110 33-66-73z'/%3e%3cpath fill='whitefe8' d='M215 84L62-24l64 73 176 99z'/%3e%3cpath fill='%231f322a' d='M260 97L85-24l51 51 155 107z'/%3e%3cpath fill='%236d625e' d='M172 127l61 28-6 69H85z'/%3e%3cpath fill='%231b1208' d='M424 161v-18l-93 34-28 25z'/%3e%3cpath fill='white' d='M40 189l-64-27 33 61 126 1z'/%3e%3cpath fill='white8f3' d='M10 2l-34 6 126 75 134 72z'/%3e%3cpath fill='%23ffeee4' d='M270 85l9-18-169-91 178 134z'/%3e%3cpath fill='whitebf4' d='M227 191l40 33 17-47 134-64z'/%3e%3cpath fill='%232c220f' d='M424 95l-26 23-135 58 12-9z'/%3e%3cpath fill='%23b37e4e' d='M58-9l140 95 79 56L53 17z'/%3e%3cpath fill='%23d59b62' d='M37 61l-61-19 61-1 211 134z'/%3e%3cpath fill='%23deccc2' d='M226 167l101-49 33-16-124 91z'/%3e%3cpath fill='whitecf7' d='M348 202l-97 22 173-60v5z'/%3e%3cpath fill='%232f2c1f' d='M249 130l31 9-31 16-74-69z'/%3e%3cpath fill='%230986ab' d='M82 48l157 100-27-29-106-72z'/%3e%3cpath fill='white3ec' d='M270 124L43-23l224 157 56-36z'/%3e%3cpath fill='%230e7fa1' d='M104 131L28 87l-5-23 174 102z'/%3e%3cpath fill='white7f0' d='M26 90l122 66-38 7-134-66z'/%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/anthony-esau-173126-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Anthony Esau 173126 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Polygons — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Anthony Esau 173126 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 4.63s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Polygons</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>1454B</td>
-                  <td>1.42 kB</td>
+                  <td>Original</td>
+                  <td>1448B</td>
+                  <td>1.41 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>642B</td>
-                  <td>642.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>638.75B</td>
+                  <td>638.75 Bytes</td>
+                  <td>44.11 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>579B</td>
-                <td>579.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>577.75B</td>
+                  <td>577.75 Bytes</td>
+                  <td>39.90 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('c5bb1a459c4a37e935536fb5ce8a7f3a').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('c5bb1a459c4a37e935536fb5ce8a7f3a').className='modal active'">Show Full Data</button>
               <div class="modal" id="c5bb1a459c4a37e935536fb5ce8a7f3a"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('c5bb1a459c4a37e935536fb5ce8a7f3a').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('c5bb1a459c4a37e935536fb5ce8a7f3a').className='modal'"></a>
@@ -177,16 +206,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Polygons&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1787,
-    &quot;brotli&quot;: 748,
-    &quot;gzip&quot;: 814
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 1454,
-    &quot;brotli&quot;: 579,
-    &quot;gzip&quot;: 642
-  },
   &quot;svgByteLength&quot;: 1787,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 1628,
@@ -200,36 +219,45 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23cecec9' d='M0 0h400v200H0z'/%3e%3cpath d='M230 220l7-54 167-3-5 61zM92 172l-31 49-85-20 5-22z'/%3e%3cpath fill='%238a6f50' d='M103 90l54 69 75-73-41-47z'/%3e%3cpath fill='white' d='M-24-24l36 204L152 53l272-35z'/%3e%3cpath d='M266 205l136 16 22-56-156 5z'/%3e%3cpath fill='white' d='M423 151l1-153-244-22 86 179z'/%3e%3cpath d='M-24 204v-21l103-7-8 48z'/%3e%3cpath fill='%234e2e02' d='M155 137l-20-51-28 3 19 26z'/%3e%3cpath fill='%23beb4a1' d='M264 224l2-64-58-98-86 9z'/%3e%3cpath fill='%23f7fdff' d='M102-24L-24 15 82 190l33-42z'/%3e%3cpath fill='%23faffff' d='M139 97l-20 17 57-50-8 48z'/%3e%3cpath fill='%23693b05' d='M192 66l-48-12 18 19 34-34z'/%3e%3cpath fill='%23191100' d='M373 163l-109 20 13 41 147-27z'/%3e%3cpath fill='%23674d2c' d='M151 157l-5 28 20-44 21-67z'/%3e%3cpath fill='%23f3f7f9' d='M424 115L213-24l-33 190 33-114z'/%3e%3cpath fill='%23928174' d='M229 78l-43 71 38-99-19 160z'/%3e%3cpath fill='%23f4f9f9' d='M234-12l181-12 9 125-195 20z'/%3e%3cpath fill='%23fbfeff' d='M-24 1l263-11-70 69 1 1z'/%3e%3cpath fill='%23ae8d5e' d='M256 138l13 75-50 11 33-95z'/%3e%3cpath fill='%23795947' d='M189 42l-25 96 38-97-80 65z'/%3e%3cpath fill='%23e8eded' d='M17 17l-41 140 151 25 24-40z'/%3e%3cpath fill='%23a18b7d' d='M207 50l16 7 3 5-31 86z'/%3e%3cpath fill='%23231f08' d='M70 177l12-6-20 53-86-24z'/%3e%3cpath fill='%23c6c9c4' d='M219 37l-17 53-17 117-29-43z'/%3e%3cpath fill='%23cbd8d6' d='M286 170l122-25-149-3 3 24z'/%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/beth-solano-313648-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Beth Solano 313648 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Polygons — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Beth Solano 313648 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 5.30s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Polygons</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>1380B</td>
-                  <td>1.35 kB</td>
+                  <td>Original</td>
+                  <td>1367.75B</td>
+                  <td>1.34 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>629B</td>
-                  <td>629.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>626.5B</td>
+                  <td>626.50 Bytes</td>
+                  <td>45.81 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>572B</td>
-                <td>572.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>569.25B</td>
+                  <td>569.25 Bytes</td>
+                  <td>41.62 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('9bf59fc7e0d992a5b046a95070d09a09').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('9bf59fc7e0d992a5b046a95070d09a09').className='modal active'">Show Full Data</button>
               <div class="modal" id="9bf59fc7e0d992a5b046a95070d09a09"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('9bf59fc7e0d992a5b046a95070d09a09').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('9bf59fc7e0d992a5b046a95070d09a09').className='modal'"></a>
@@ -252,16 +280,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Polygons&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1714,
-    &quot;brotli&quot;: 742,
-    &quot;gzip&quot;: 805
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 1380,
-    &quot;brotli&quot;: 572,
-    &quot;gzip&quot;: 629
-  },
   &quot;svgByteLength&quot;: 1714,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 1549,
@@ -275,36 +293,45 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%2351564e' d='M0 0h400v200H0z'/%3e%3cpath fill='%23aeaa9b' d='M293 170l70-73L247-24v197z'/%3e%3cpath fill='%23ecede9' d='M112 123L77 84l60-16-21 21z'/%3e%3cpath fill='%23161309' d='M374-24l50 29v185l-84 34z'/%3e%3cpath fill='%23151e15' d='M118 26L39 11l-57 35 9 136z'/%3e%3cpath fill='%23c4d5d1' d='M333 124l12-46-42-2-18 62z'/%3e%3cpath fill='%231c160c' d='M318 72h-44l6 48 25-133z'/%3e%3cpath fill='%232e3528' d='M93 224H5l-8-29L180 93z'/%3e%3cpath fill='%239b978d' d='M353 49l8-45-23 6-15 48z'/%3e%3cpath fill='%23989f9b' d='M55 186l-1-8-46-33 52 6z'/%3e%3cpath fill='%237e6a4a' d='M296 205l-83 19 139-118 72-18z'/%3e%3cpath fill='%23a4a89d' d='M88 23l69-39-98-8 9 33z'/%3e%3cpath fill='%239c9d94' d='M107 73l-11 91 52-154 22 3z'/%3e%3cpath fill='whiteffc' d='M339 118l-10 8-38-2 3-10z'/%3e%3cpath fill='%23161d17' d='M100 107l-124 22 27 12 86-17z'/%3e%3cpath fill='%23a5a8a1' d='M65 57l49 30 20 33-15 7z'/%3e%3cpath fill='%23485e66' d='M358 108l-81-13-78 129-25-97z'/%3e%3cpath fill='%23c5ccc9' d='M98 192l-18-2 15 34H74z'/%3e%3cpath fill='%233e525c' d='M242 90l42-6L175-24l-33 248z'/%3e%3cpath fill='%23d8d9d1' d='M94 82l56 2-20-15-36 31z'/%3e%3cpath fill='%231c251d' d='M38 214l8-47-64-12-6 37z'/%3e%3cpath fill='%232d2718' d='M355 213l61-237-61 170-53 56z'/%3e%3cpath fill='%238d8f88' d='M209 224l90-62-24-12 34 58z'/%3e%3cpath fill='%2312282f' d='M243 207l-13-18 8-30 18 9z'/%3e%3cpath fill='%23929087' d='M261 68l38-6-10-64-53 20z'/%3e%3cpath fill='%23202016' d='M334 14l36-38-77 45 4 23z'/%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/desmond-simon-412494-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Desmond Simon 412494 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Polygons — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Desmond Simon 412494 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 4.13s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Polygons</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>1429B</td>
+                  <td>Original</td>
+                  <td>1437.5B</td>
                   <td>1.40 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>633B</td>
-                  <td>633.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>637.5B</td>
+                  <td>637.50 Bytes</td>
+                  <td>44.35 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>568B</td>
-                <td>568.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>569.25B</td>
+                  <td>569.25 Bytes</td>
+                  <td>39.60 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('e9d7543db2483ec4d34b71c55dbf78f2').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('e9d7543db2483ec4d34b71c55dbf78f2').className='modal active'">Show Full Data</button>
               <div class="modal" id="e9d7543db2483ec4d34b71c55dbf78f2"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('e9d7543db2483ec4d34b71c55dbf78f2').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('e9d7543db2483ec4d34b71c55dbf78f2').className='modal'"></a>
@@ -327,16 +354,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Polygons&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1757,
-    &quot;brotli&quot;: 737,
-    &quot;gzip&quot;: 813
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 1429,
-    &quot;brotli&quot;: 568,
-    &quot;gzip&quot;: 633
-  },
   &quot;svgByteLength&quot;: 1757,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 1611,
@@ -350,36 +367,45 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%236a676e' d='M0 0h400v200H0z'/%3e%3cpath fill='%23d1c3d1' d='M358 12L55 8l-3 149 268 4z'/%3e%3cpath d='M44-24l-68 248 448-40-362-32z'/%3e%3cpath d='M424 203L355-24l-7 189-361 32z'/%3e%3cpath fill='black104' d='M8 66L51 7l4 217-79-47z'/%3e%3cpath fill='%23ca362b' d='M74 52l9-26 79-4 5 28z'/%3e%3cpath fill='%232e635d' d='M178 87l1 20-106 2-62-33z'/%3e%3cpath fill='%23010800' d='M388-15L18 5l102 4 211-1z'/%3e%3cpath fill='%23f5ffff' d='M246 64L51 61l117-12 186 5z'/%3e%3cpath fill='%23cd574e' d='M177 112l147-1 38-22-170-5z'/%3e%3cpath fill='%238c9aa6' d='M33 159l318-66 3 72-29-3z'/%3e%3cpath fill='%23030b0b' d='M386 224L374-24l-24 189-79-2z'/%3e%3cpath fill='%23e1ecff' d='M57 16l15-5 281 4-205 12z'/%3e%3cpath fill='%230b0b0a' d='M244 162l-205-1-26 31 376-26z'/%3e%3cpath fill='%23b6625d' d='M162 144H52l4-33 61 9z'/%3e%3cpath fill='%233e5c99' d='M129 145l120-1-4-27-54 4z'/%3e%3cpath fill='%23537f8d' d='M177 46l183 6 64-27-145-3z'/%3e%3cpath fill='%23dedeeb' d='M240 109l12 35-145 9 173 4z'/%3e%3cpath fill='%23d8e1f5' d='M289 83l-132 2-132-6 210-5z'/%3e%3cpath fill='%23487060' d='M270 117l4 38 62-1-5-34z'/%3e%3cpath fill='%237c5550' d='M183 166l74 53-45-53-54 56z'/%3e%3cpath fill='%231d282a' d='M337 61l-26 11 113 7v76z'/%3e%3cpath fill='%23ccd7f2' d='M64 144l80 4-90 5v-48z'/%3e%3cpath fill='%23dad8eb' d='M252 88l98-3-122-24 14-59z'/%3e%3cpath d='M54 88L-7 78l-17-27 73 136z'/%3e%3cpath fill='%23d8d0df' d='M342 77l-6 56 11 32V80z'/%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/igor-ovsyannykov-307432-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Igor Ovsyannykov 307432 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Polygons — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Igor Ovsyannykov 307432 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 5.33s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Polygons</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>1382B</td>
-                  <td>1.35 kB</td>
+                  <td>Original</td>
+                  <td>1375B</td>
+                  <td>1.34 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>631B</td>
-                  <td>631.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>625.5B</td>
+                  <td>625.50 Bytes</td>
+                  <td>45.49 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>572B</td>
-                <td>572.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>562.75B</td>
+                  <td>562.75 Bytes</td>
+                  <td>40.93 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('38ae7e8558df36cea982ba088027a53e').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('38ae7e8558df36cea982ba088027a53e').className='modal active'">Show Full Data</button>
               <div class="modal" id="38ae7e8558df36cea982ba088027a53e"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('38ae7e8558df36cea982ba088027a53e').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('38ae7e8558df36cea982ba088027a53e').className='modal'"></a>
@@ -402,16 +428,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Polygons&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1714,
-    &quot;brotli&quot;: 739,
-    &quot;gzip&quot;: 803
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 1382,
-    &quot;brotli&quot;: 572,
-    &quot;gzip&quot;: 631
-  },
   &quot;svgByteLength&quot;: 1714,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 1558,
@@ -425,36 +441,45 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23d2d2d3' d='M0 0h400v200H0z'/%3e%3cpath d='M143 2L44-24l2 92 96 36z'/%3e%3cpath fill='%232f0000' d='M71 85l64-22 9-87L37 30z'/%3e%3cpath fill='%23f2f6f9' d='M270-22L-24 215l420-17 12-214z'/%3e%3cpath fill='%23f3f9fc' d='M-16 197l-7-215 95 96 12 82z'/%3e%3cpath fill='%2395a09d' d='M157 133L49 80l67-3 44-43z'/%3e%3cpath fill='%23f2f4f6' d='M250 224l96-248H122l71 114z'/%3e%3cpath fill='%2342160f' d='M147 18l-21 52-33 13L40-24z'/%3e%3cpath fill='%23f5fcff' d='M58-12L-24 6l56 76 11-63z'/%3e%3cpath fill='%23929795' d='M185 85L75 81l41 43 26-72z'/%3e%3cpath fill='%23d0d1d6' d='M-2 148l147-48 23-62 21 114z'/%3e%3cpath fill='%23f8fbff' d='M317 179l-38-79-61 32 1 59z'/%3e%3cpath fill='%236c814f' d='M89 2l44-26-39 54 10 4z'/%3e%3cpath fill='%23a3a5a6' d='M341 149l-43-3 64-3 62 4z'/%3e%3cpath fill='%23474d41' d='M40 51l2-28 30-47-11 96z'/%3e%3cpath fill='%23b7b9ba' d='M410 83l-85-5-190 6 185 2z'/%3e%3cpath fill='%23dce7e6' d='M62 79l52 5-83 8-13-75z'/%3e%3cpath fill='%236b6d61' d='M144 72l11-16-62 39 25 2z'/%3e%3cpath fill='%23b8c8c2' d='M100 93l29-25 12-19 40-20z'/%3e%3cpath fill='%23100' d='M113 33l-11 8 13 12 22-2z'/%3e%3cpath fill='%2382384c' d='M38 13l45 16 44 39-53-35z'/%3e%3cpath fill='%23bfc1c2' d='M136 17l124 7 164-4-126-2z'/%3e%3cpath fill='%23cee4df' d='M-3 95l115-16 28-17-29 22z'/%3e%3cpath fill='%233e0f10' d='M54 61l82-3-34 20-56-51z'/%3e%3cpath fill='%23f8fafa' d='M221 18l53-41-189 2 81 37z'/%3e%3cpath fill='%23d8dada' d='M419 222l-210 2 147-77 60 5z'/%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/neven-krcmarek-264325-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Neven Krcmarek 264325 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Polygons — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Neven Krcmarek 264325 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 5.34s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Polygons</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>1411B</td>
-                  <td>1.38 kB</td>
+                  <td>Original</td>
+                  <td>1406.75B</td>
+                  <td>1.37 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>635B</td>
-                  <td>635.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>633.25B</td>
+                  <td>633.25 Bytes</td>
+                  <td>45.02 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>565B</td>
-                <td>565.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>567B</td>
+                  <td>567.00 Bytes</td>
+                  <td>40.31 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('a38a2c2b1286c032b1904dc8d716e354').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('a38a2c2b1286c032b1904dc8d716e354').className='modal active'">Show Full Data</button>
               <div class="modal" id="a38a2c2b1286c032b1904dc8d716e354"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('a38a2c2b1286c032b1904dc8d716e354').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('a38a2c2b1286c032b1904dc8d716e354').className='modal'"></a>
@@ -477,16 +502,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Polygons&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1739,
-    &quot;brotli&quot;: 733,
-    &quot;gzip&quot;: 817
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 1411,
-    &quot;brotli&quot;: 565,
-    &quot;gzip&quot;: 635
-  },
   &quot;svgByteLength&quot;: 1739,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 1592,
@@ -500,36 +515,45 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23494949' d='M0 0h400v200H0z'/%3e%3cpath fill='%23bcbcbc' d='M46-13l140 231-86-63 202-65z'/%3e%3cpath d='M379 108L239 60l160-84 25 169zM65 76l49 10L-10-24 1 96zM98-24l24 52 71 21 98-69z'/%3e%3cpath fill='%23b3b3b3' d='M303-24L230 86l-39-38 9-3z'/%3e%3cpath fill='%23050505' d='M239 135L311 7l-37 177-99-40z'/%3e%3cpath fill='%23d2d2d2' d='M120 41l10 100 25-25 20-81z'/%3e%3cpath fill='%238d8d8d' d='M269 224l52-141 103 52-69-3z'/%3e%3cpath d='M424 135l-58-33-117-36 161-90z'/%3e%3cpath fill='%237b7b7b' d='M191 156l31 68-139-4-65-88z'/%3e%3cpath d='M-1 88L-9-16l88 69 15 21zm163-18l56 3-9 9-27 10zm-38-47l-23-36 180-1-80 60z'/%3e%3cpath fill='%23141414' d='M109 91l-46 13-65 20 127 16z'/%3e%3cpath fill='%23969696' d='M267 103l-51 41-49-1 62-20z'/%3e%3cpath d='M413 39l-182 1 35 38 158 20z'/%3e%3cpath fill='%238e8e8e' d='M296 81l98 34-39 8-110-34z'/%3e%3cpath fill='%236d6d6d' d='M328 118l56 62-111 44-5-50z'/%3e%3cpath fill='%238f8f8f' d='M63 34l77 10-52-68L16-9z'/%3e%3cpath fill='%23c9c9c9' d='M259 66l-51-27 24 24-42 41z'/%3e%3cpath d='M278 150l32-46-110 53-62-12zM25 224l55-19-26-12-23-33zM182 63l49-63-103 41 45-65z'/%3e%3cpath fill='%233b3b3b' d='M183 120l-20-8-31 17 185-67z'/%3e%3cpath fill='%23101010' d='M392 180l8-15 5 4-84-55z'/%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/quino-al-101314-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Quino Al 101314 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Polygons — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Quino Al 101314 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 4.56s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Polygons</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>1218B</td>
-                  <td>1.19 kB</td>
+                  <td>Original</td>
+                  <td>1243.5B</td>
+                  <td>1.21 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>586B</td>
-                  <td>586.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>582.5B</td>
+                  <td>582.50 Bytes</td>
+                  <td>46.84 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>511B</td>
-                <td>511.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>525.5B</td>
+                  <td>525.50 Bytes</td>
+                  <td>42.26 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('8b05273cc87ca01d0106ea41977daab8').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('8b05273cc87ca01d0106ea41977daab8').className='modal active'">Show Full Data</button>
               <div class="modal" id="8b05273cc87ca01d0106ea41977daab8"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('8b05273cc87ca01d0106ea41977daab8').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('8b05273cc87ca01d0106ea41977daab8').className='modal'"></a>
@@ -552,16 +576,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Polygons&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1536,
-    &quot;brotli&quot;: 690,
-    &quot;gzip&quot;: 754
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 1218,
-    &quot;brotli&quot;: 511,
-    &quot;gzip&quot;: 586
-  },
   &quot;svgByteLength&quot;: 1536,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 1355,
@@ -575,36 +589,45 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23857a71' d='M0 0h400v200H0z'/%3e%3cpath fill='white' d='M-5-4l-19 26 200 22L310 1z'/%3e%3cpath fill='%231c290e' d='M256 98l168 3-28-117-129 61z'/%3e%3cpath fill='%23f8ffff' d='M149 100L120-3l71-21-25 130z'/%3e%3cpath fill='%233b3f2f' d='M127 24l14 41L1 129l-25-90z'/%3e%3cpath fill='%23cfe3f9' d='M272 157L248 33l44-57H163z'/%3e%3cpath fill='%234d332c' d='M132 152l50-65 7 137-213-32z'/%3e%3cpath fill='%23eff' d='M64 26L303 8 19-24l-43 64z'/%3e%3cpath fill='%23d1a590' d='M424 99l-25 31-174 27 35-54z'/%3e%3cpath fill='%236a6956' d='M345 92l72-116-238 64-4-20z'/%3e%3cpath fill='%232f3647' d='M148 107l12 46 86-37-30-17z'/%3e%3cpath fill='%23cda696' d='M45 133l81-62 9 95 24-43z'/%3e%3cpath fill='%23121a0f' d='M419 93l-108-8-42-29-13 46z'/%3e%3cpath fill='%238093b0' d='M178 158l61-123L81 11l110 36z'/%3e%3cpath fill='%23bd9b89' d='M359 51l-2 25 67-8-133-3z'/%3e%3cpath fill='%23815c4c' d='M-24 112l208 43 193 54-401-23z'/%3e%3cpath fill='%23122c4d' d='M191 35l-20 33 4 40 4 23z'/%3e%3cpath fill='%23eef0f5' d='M175 45l-34 2 6 57 13-3z'/%3e%3cpath fill='%2323361d' d='M110 55l3 25-29 14-43-22z'/%3e%3cpath fill='%238d6250' d='M298 192l121-23-22-25-134-12z'/%3e%3cpath fill='%23feffff' d='M329-24l-82 50-32-50-25 62z'/%3e%3cpath fill='%238fa8c8' d='M218 40l-35 33 75 37 3-67z'/%3e%3cpath fill='%23957a6f' d='M133 173l75 6L39 81l-21 48z'/%3e%3cpath fill='%237a716b' d='M137 26l-74-1-87 23 140 11z'/%3e%3cpath fill='%23192515' d='M352 95l72 4-69-50 69-35z'/%3e%3cpath fill='%23dcedff' d='M95-24L3 11l112 18 4-1z'/%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/samuel-zeller-16570-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Samuel Zeller 16570 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Polygons — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Samuel Zeller 16570 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 4.90s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Polygons</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>1444B</td>
+                  <td>Original</td>
+                  <td>1446.75B</td>
                   <td>1.41 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>642B</td>
-                  <td>642.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>642.75B</td>
+                  <td>642.75 Bytes</td>
+                  <td>44.43 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>569B</td>
-                <td>569.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>573.75B</td>
+                  <td>573.75 Bytes</td>
+                  <td>39.66 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('a63cc7524d90130ded0c404443f3ae7f').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('a63cc7524d90130ded0c404443f3ae7f').className='modal active'">Show Full Data</button>
               <div class="modal" id="a63cc7524d90130ded0c404443f3ae7f"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('a63cc7524d90130ded0c404443f3ae7f').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('a63cc7524d90130ded0c404443f3ae7f').className='modal'"></a>
@@ -627,16 +650,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Polygons&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1777,
-    &quot;brotli&quot;: 763,
-    &quot;gzip&quot;: 832
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 1444,
-    &quot;brotli&quot;: 569,
-    &quot;gzip&quot;: 642
-  },
   &quot;svgByteLength&quot;: 1777,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 1626,
@@ -650,36 +663,45 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%239e8a6e' d='M0 0h400v200H0z'/%3e%3cpath fill='whitefea' d='M424 53l-1-60-447 3L0 79z'/%3e%3cpath fill='%23281803' d='M406 224L0 213l-24-95 448 24z'/%3e%3cpath fill='%23271c0e' d='M345 171L-4 205l397 19 24-51z'/%3e%3cpath fill='%23846f52' d='M-20 100l444 31-16 26-432 5z'/%3e%3cpath fill='%23f5dcb6' d='M-24 58l8-57 352-25-87 98z'/%3e%3cpath fill='%23b19370' d='M326 44l68 13 30 53-221-30z'/%3e%3cpath fill='%239c8363' d='M-13 98l277 53-105-84-29-4z'/%3e%3cpath fill='white1cf' d='M411-3l-14 36-35 16 62 15z'/%3e%3cpath fill='%2353412b' d='M267 180L-6 164l-17-5 3 54z'/%3e%3cpath fill='%23d0bea1' d='M95 49l123-69-11 71-67-2z'/%3e%3cpath fill='%23f5e3c2' d='M249 69l-40-93 72 38-98 55z'/%3e%3cpath fill='%23ac9473' d='M406 100l4-40-75-13-117 25z'/%3e%3cpath fill='%237c6b4f' d='M424 172l-239-48 148 9 86-7z'/%3e%3cpath fill='%23735e45' d='M123 121l121 47-256-9 15-52z'/%3e%3cpath fill='%23f0dcbb' d='M122 23L-24-24 86 71l-110-4z'/%3e%3cpath fill='%23392c1b' d='M211 194l113-9 13-33 87 72z'/%3e%3cpath fill='%23ab926f' d='M-8 75l49-5 183 14-202 6z'/%3e%3cpath fill='%23dac3a2' d='M302-24l-52 70 95 2 79-35z'/%3e%3cpath fill='%2367533a' d='M199 194l202-50-194 14-37 39z'/%3e%3cpath fill='%23d2bfa2' d='M38 30l77 17-49-1-66-3z'/%3e%3cpath fill='%23a08868' d='M141 64L1 89l376 44-195-63z'/%3e%3cpath fill='%23827055' d='M388 141l-80-9-45-18-63 36z'/%3e%3cpath fill='%23eedab8' d='M297 52l-46-9L81 64h157z'/%3e%3cpath fill='%23f2e1c2' d='M98 19L-24-7l39 48 31-51z'/%3e%3cpath fill='%23ead4b4' d='M28 43l-48 10 81 24 79-18z'/%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/tyler-lastovich-205631-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Tyler Lastovich 205631 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Polygons — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Tyler Lastovich 205631 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 6.28s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Polygons</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>1451B</td>
+                  <td>Original</td>
+                  <td>1452.75B</td>
                   <td>1.42 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>648B</td>
-                  <td>648.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>646.75B</td>
+                  <td>646.75 Bytes</td>
+                  <td>44.52 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>576B</td>
-                <td>576.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>579.5B</td>
+                  <td>579.50 Bytes</td>
+                  <td>39.89 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('cc9b5271220f5293266dbb58218e76c9').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('cc9b5271220f5293266dbb58218e76c9').className='modal active'">Show Full Data</button>
               <div class="modal" id="cc9b5271220f5293266dbb58218e76c9"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('cc9b5271220f5293266dbb58218e76c9').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('cc9b5271220f5293266dbb58218e76c9').className='modal'"></a>
@@ -702,16 +724,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Polygons&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1775,
-    &quot;brotli&quot;: 747,
-    &quot;gzip&quot;: 822
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 1451,
-    &quot;brotli&quot;: 576,
-    &quot;gzip&quot;: 648
-  },
   &quot;svgByteLength&quot;: 1775,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 1632,
@@ -726,7 +738,7 @@ footer {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </div>
     <footer>
       <button class="btn" onClick="document.querySelector('body').className = document.querySelector('body').className ? '' : 'hide-images'">Toggle images</button>

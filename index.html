@@ -27,6 +27,8 @@ footer {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2vmin;
+  margin-bottom: 4rem;
 }
 
 .image-wrapper {
@@ -45,643 +47,782 @@ footer {
   z-index: 1;
 }
 
+.table-nowrap td {
+  font-size: 0.8em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.center-text {
+  text-align: center;
+}
+
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>Overview</h1>
-      <div class="grid">
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./count-impact-10.html">Count Impact 10</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>86971B</td>
-                <td>84.93 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>15424B</td>
-                <td>15.06 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>12825B</td>
-              <td>12.52 kB</td>
-            </table>
+      <header class="navbar">
+        <section class="navbar-section">
+          <div class="navbar-brand mr-2">SQIP Research</div><a class="btn btn-link" href="index.html">Home</a>
+        </section>
+      </header>
+      <div class="divider"></div>
+      <main>
+        <h1 class="h3">Overview of all generated pages</h1>
+        <div class="grid">
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./count-impact-10.html">Count Impact 10</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>89399B</td>
+                  <td>87.30 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>15607B</td>
+                  <td>15.24 kB</td>
+                  <td>17.46 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>13038B</td>
+                  <td>12.73 kB</td>
+                  <td>14.58 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./count-impact-25.html">Count Impact 25</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>95885B</td>
+                  <td>93.64 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>18239B</td>
+                  <td>17.81 kB</td>
+                  <td>19.02 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>15059B</td>
+                  <td>14.71 kB</td>
+                  <td>15.71 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./count-impact-50.html">Count Impact 50</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>108418B</td>
+                  <td>105.88 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>22467B</td>
+                  <td>21.94 kB</td>
+                  <td>20.72 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>18499B</td>
+                  <td>18.07 kB</td>
+                  <td>17.06 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./count-impact-75.html">Count Impact 75</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>120874B</td>
+                  <td>118.04 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>26537B</td>
+                  <td>25.92 kB</td>
+                  <td>21.95 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>21796B</td>
+                  <td>21.29 kB</td>
+                  <td>18.03 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./count-impact-100.html">Count Impact 100</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>133275B</td>
+                  <td>130.15 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>30335B</td>
+                  <td>29.62 kB</td>
+                  <td>22.76 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>24943B</td>
+                  <td>24.36 kB</td>
+                  <td>18.72 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./count-impact-200.html">Count Impact 200</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>183246B</td>
+                  <td>178.95 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>44853B</td>
+                  <td>43.80 kB</td>
+                  <td>24.48 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>37631B</td>
+                  <td>36.75 kB</td>
+                  <td>20.54 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./count-impact-500.html">Count Impact 500</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>330160B</td>
+                  <td>322.42 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>85680B</td>
+                  <td>83.67 kB</td>
+                  <td>25.95 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>72999B</td>
+                  <td>71.29 kB</td>
+                  <td>22.11 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./count-impact-750.html">Count Impact 750</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>451517B</td>
+                  <td>440.93 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>126231B</td>
+                  <td>123.27 kB</td>
+                  <td>27.96 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>100493B</td>
+                  <td>98.14 kB</td>
+                  <td>22.26 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./count-impact-1000.html">Count Impact 1000</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>572609B</td>
+                  <td>559.19 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>158122B</td>
+                  <td>154.42 kB</td>
+                  <td>27.61 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>126857B</td>
+                  <td>123.88 kB</td>
+                  <td>22.15 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./performance-check.html">Performance Check</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>727994B</td>
+                  <td>710.93 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>144579B</td>
+                  <td>141.19 kB</td>
+                  <td>19.86 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>118159B</td>
+                  <td>115.39 kB</td>
+                  <td>16.23 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./primitive-mode-0-combination.html">Primitive Mode 0 Combination</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>100056B</td>
+                  <td>97.71 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>19126B</td>
+                  <td>18.68 kB</td>
+                  <td>19.12 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>15824B</td>
+                  <td>15.45 kB</td>
+                  <td>15.82 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./primitive-mode-0-combination-animated.html">Primitive Mode 0 Combination Animated</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>108154B</td>
+                  <td>105.62 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>19789B</td>
+                  <td>19.33 kB</td>
+                  <td>18.30 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>16300B</td>
+                  <td>15.92 kB</td>
+                  <td>15.07 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./primitive-mode-1-triangles.html">Primitive Mode 1 Triangles</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>94839B</td>
+                  <td>92.62 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>17619B</td>
+                  <td>17.21 kB</td>
+                  <td>18.58 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>14634B</td>
+                  <td>14.29 kB</td>
+                  <td>15.43 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./primitive-mode-1-triangles-animated.html">Primitive Mode 1 Triangles Animated</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>102617B</td>
+                  <td>100.21 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>18356B</td>
+                  <td>17.93 kB</td>
+                  <td>17.89 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>15077B</td>
+                  <td>14.72 kB</td>
+                  <td>14.69 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./primitive-mode-2-rectangles.html">Primitive Mode 2 Rectangles</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>94022B</td>
+                  <td>91.82 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>17042B</td>
+                  <td>16.64 kB</td>
+                  <td>18.13 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>14199B</td>
+                  <td>13.87 kB</td>
+                  <td>15.10 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./primitive-mode-2-rectangles-animated.html">Primitive Mode 2 Rectangles Animated</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>101800B</td>
+                  <td>99.41 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>17793B</td>
+                  <td>17.38 kB</td>
+                  <td>17.48 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>14766B</td>
+                  <td>14.42 kB</td>
+                  <td>14.50 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./primitive-mode-3-ellipses.html">Primitive Mode 3 Ellipses</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>97513B</td>
+                  <td>95.23 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>16706B</td>
+                  <td>16.31 kB</td>
+                  <td>17.13 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>13856B</td>
+                  <td>13.53 kB</td>
+                  <td>14.21 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./primitive-mode-3-ellipses-animated.html">Primitive Mode 3 Ellipses Animated</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>105640B</td>
+                  <td>103.16 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>17365B</td>
+                  <td>16.96 kB</td>
+                  <td>16.44 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>14150B</td>
+                  <td>13.82 kB</td>
+                  <td>13.39 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./primitive-mode-4-circles.html">Primitive Mode 4 Circles</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>97384B</td>
+                  <td>95.10 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>16303B</td>
+                  <td>15.92 kB</td>
+                  <td>16.74 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>13576B</td>
+                  <td>13.26 kB</td>
+                  <td>13.94 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./primitive-mode-4-circles-animated.html">Primitive Mode 4 Circles Animated</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>105511B</td>
+                  <td>103.04 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>17030B</td>
+                  <td>16.63 kB</td>
+                  <td>16.14 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>14066B</td>
+                  <td>13.74 kB</td>
+                  <td>13.33 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./primitive-mode-5-rotated-rectangles.html">Primitive Mode 5 Rotated Rectangles</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>95919B</td>
+                  <td>93.67 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>18265B</td>
+                  <td>17.84 kB</td>
+                  <td>19.04 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>15058B</td>
+                  <td>14.71 kB</td>
+                  <td>15.70 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./primitive-mode-5-rotated-rectangles-animated.html">Primitive Mode 5 Rotated Rectangles Animated</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>97152B</td>
+                  <td>94.88 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>18347B</td>
+                  <td>17.92 kB</td>
+                  <td>18.88 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>15135B</td>
+                  <td>14.78 kB</td>
+                  <td>15.58 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./primitive-mode-6-bezier-curves.html">Primitive Mode 6 Bezier Curves</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>93243B</td>
+                  <td>91.06 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>17122B</td>
+                  <td>16.72 kB</td>
+                  <td>18.36 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>14183B</td>
+                  <td>13.85 kB</td>
+                  <td>15.21 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./primitive-mode-6-bezier-curves-animated.html">Primitive Mode 6 Bezier Curves Animated</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>99117B</td>
+                  <td>96.79 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>17791B</td>
+                  <td>17.37 kB</td>
+                  <td>17.95 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>14730B</td>
+                  <td>14.38 kB</td>
+                  <td>14.86 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./primitive-mode-7-rotated-ellipses.html">Primitive Mode 7 Rotated Ellipses</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>107028B</td>
+                  <td>104.52 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>20731B</td>
+                  <td>20.25 kB</td>
+                  <td>19.37 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>16782B</td>
+                  <td>16.39 kB</td>
+                  <td>15.68 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./primitive-mode-7-rotated-ellipses-animated.html">Primitive Mode 7 Rotated Ellipses Animated</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>108269B</td>
+                  <td>105.73 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>20823B</td>
+                  <td>20.33 kB</td>
+                  <td>19.23 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>16894B</td>
+                  <td>16.50 kB</td>
+                  <td>15.60 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./primitive-mode-8-polygons.html">Primitive Mode 8 Polygons</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>96260B</td>
+                  <td>94.00 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>18471B</td>
+                  <td>18.04 kB</td>
+                  <td>19.19 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>15182B</td>
+                  <td>14.83 kB</td>
+                  <td>15.77 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./primitive-mode-8-polygons-animated.html">Primitive Mode 8 Polygons Animated</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>104167B</td>
+                  <td>101.73 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>19177B</td>
+                  <td>18.73 kB</td>
+                  <td>18.41 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>15591B</td>
+                  <td>15.23 kB</td>
+                  <td>14.97 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./reference-lqip.html">Reference Lqip</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>73135B</td>
+                  <td>71.42 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>13862B</td>
+                  <td>13.54 kB</td>
+                  <td>18.95 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>11787B</td>
+                  <td>11.51 kB</td>
+                  <td>16.12 %</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><a class="card-title h5" href="./reference-plain-image.html">Reference Plain Image</a></div>
+            <div class="card-body">
+              <table class="table table-nowrap">
+                <tr>
+                  <td>Original</td>
+                  <td>66664B</td>
+                  <td>65.10 kB</td>
+                  <td>100.00 %</td>
+                </tr>
+                <tr>
+                  <td>Gzip</td>
+                  <td>12425B</td>
+                  <td>12.13 kB</td>
+                  <td>18.64 %</td>
+                </tr>
+                <tr>
+                  <td>Brotli</td>
+                  <td>10638B</td>
+                  <td>10.39 kB</td>
+                  <td>15.96 %</td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./count-impact-100.html">Count Impact 100</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>130897B</td>
-                <td>127.83 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>30208B</td>
-                <td>29.50 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>24793B</td>
-              <td>24.21 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./count-impact-1000.html">Count Impact 1000</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>570289B</td>
-                <td>556.92 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>157365B</td>
-                <td>153.68 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>126753B</td>
-              <td>123.78 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./count-impact-200.html">Count Impact 200</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>180885B</td>
-                <td>176.65 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>44724B</td>
-                <td>43.68 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>37447B</td>
-              <td>36.57 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./count-impact-25.html">Count Impact 25</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>93462B</td>
-                <td>91.27 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>18095B</td>
-                <td>17.67 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>14855B</td>
-              <td>14.51 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./count-impact-50.html">Count Impact 50</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>106029B</td>
-                <td>103.54 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>22300B</td>
-                <td>21.78 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>18307B</td>
-              <td>17.88 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./count-impact-500.html">Count Impact 500</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>327796B</td>
-                <td>320.11 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>85542B</td>
-                <td>83.54 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>72820B</td>
-              <td>71.11 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./count-impact-75.html">Count Impact 75</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>118496B</td>
-                <td>115.72 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>26391B</td>
-                <td>25.77 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>21565B</td>
-              <td>21.06 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./count-impact-750.html">Count Impact 750</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>449180B</td>
-                <td>438.65 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>125497B</td>
-                <td>122.56 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>100295B</td>
-              <td>97.94 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./performance-check.html">Performance Check</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>710471B</td>
-                <td>693.82 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>144585B</td>
-                <td>141.20 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>117861B</td>
-              <td>115.10 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./primitive-mode-0-combination-animated.html">Primitive Mode 0 Combination Animated</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>105731B</td>
-                <td>103.25 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>19624B</td>
-                <td>19.16 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>16142B</td>
-              <td>15.76 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./primitive-mode-0-combination.html">Primitive Mode 0 Combination</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>97633B</td>
-                <td>95.34 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>18953B</td>
-                <td>18.51 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>15634B</td>
-              <td>15.27 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./primitive-mode-1-triangles-animated.html">Primitive Mode 1 Triangles Animated</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>100194B</td>
-                <td>97.85 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>18202B</td>
-                <td>17.78 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>14873B</td>
-              <td>14.52 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./primitive-mode-1-triangles.html">Primitive Mode 1 Triangles</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>92416B</td>
-                <td>90.25 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>17467B</td>
-                <td>17.06 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>14412B</td>
-              <td>14.07 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./primitive-mode-2-rectangles-animated.html">Primitive Mode 2 Rectangles Animated</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>99380B</td>
-                <td>97.05 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>17632B</td>
-                <td>17.22 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>14543B</td>
-              <td>14.20 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./primitive-mode-2-rectangles.html">Primitive Mode 2 Rectangles</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>91602B</td>
-                <td>89.46 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>16856B</td>
-                <td>16.46 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>14014B</td>
-              <td>13.69 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./primitive-mode-3-ellipses-animated.html">Primitive Mode 3 Ellipses Animated</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>103211B</td>
-                <td>100.79 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>17182B</td>
-                <td>16.78 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>13963B</td>
-              <td>13.64 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./primitive-mode-3-ellipses.html">Primitive Mode 3 Ellipses</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>95084B</td>
-                <td>92.86 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>16501B</td>
-                <td>16.11 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>13551B</td>
-              <td>13.23 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./primitive-mode-4-circles-animated.html">Primitive Mode 4 Circles Animated</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>103097B</td>
-                <td>100.68 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>16869B</td>
-                <td>16.47 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>13869B</td>
-              <td>13.54 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./primitive-mode-4-circles.html">Primitive Mode 4 Circles</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>94970B</td>
-                <td>92.74 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>16132B</td>
-                <td>15.75 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>13352B</td>
-              <td>13.04 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./primitive-mode-5-rotated-rectangles-animated.html">Primitive Mode 5 Rotated Rectangles Animated</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>94729B</td>
-                <td>92.51 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>18209B</td>
-                <td>17.78 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>14945B</td>
-              <td>14.59 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./primitive-mode-5-rotated-rectangles.html">Primitive Mode 5 Rotated Rectangles</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>93496B</td>
-                <td>91.30 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>18120B</td>
-                <td>17.70 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>14903B</td>
-              <td>14.55 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./primitive-mode-6-bezier-curves-animated.html">Primitive Mode 6 Bezier Curves Animated</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>96698B</td>
-                <td>94.43 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>17627B</td>
-                <td>17.21 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>14466B</td>
-              <td>14.13 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./primitive-mode-6-bezier-curves.html">Primitive Mode 6 Bezier Curves</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>90824B</td>
-                <td>88.70 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>16940B</td>
-                <td>16.54 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>13993B</td>
-              <td>13.67 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./primitive-mode-7-rotated-ellipses-animated.html">Primitive Mode 7 Rotated Ellipses Animated</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>105863B</td>
-                <td>103.38 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>20672B</td>
-                <td>20.19 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>16718B</td>
-              <td>16.33 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./primitive-mode-7-rotated-ellipses.html">Primitive Mode 7 Rotated Ellipses</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>104622B</td>
-                <td>102.17 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>20560B</td>
-                <td>20.08 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>16651B</td>
-              <td>16.26 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./primitive-mode-8-polygons-animated.html">Primitive Mode 8 Polygons Animated</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>101748B</td>
-                <td>99.36 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>18990B</td>
-                <td>18.54 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>15349B</td>
-              <td>14.99 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./primitive-mode-8-polygons.html">Primitive Mode 8 Polygons</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>93841B</td>
-                <td>91.64 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>18284B</td>
-                <td>17.86 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>14991B</td>
-              <td>14.64 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./reference-lqip.html">Reference Lqip</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>74437B</td>
-                <td>72.69 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>13768B</td>
-                <td>13.45 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>11750B</td>
-              <td>11.47 kB</td>
-            </table>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header"><a class="card-title h5" href="./reference-plain-image.html">Reference Plain Image</a></div>
-          <div class="card-body">
-            <table class="table table-hover">
-              <tr>
-                <td>Original size:</td>
-                <td>67966B</td>
-                <td>66.37 kB</td>
-              </tr>
-              <tr>
-                <td>Gzip size:</td>
-                <td>12329B</td>
-                <td>12.04 kB</td>
-              </tr>
-              <tr></tr>
-              <td>Brotli size:</td>
-              <td>10517B</td>
-              <td>10.27 kB</td>
-            </table>
-          </div>
-        </div>
-      </div>
+      </main>
     </div>
   </body>
 </html>

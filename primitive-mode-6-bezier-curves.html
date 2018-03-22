@@ -27,6 +27,8 @@ footer {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2vmin;
+  margin-bottom: 4rem;
 }
 
 .image-wrapper {
@@ -45,41 +47,69 @@ footer {
   z-index: 1;
 }
 
+.table-nowrap td {
+  font-size: 0.8em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.center-text {
+  text-align: center;
+}
+
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>Primitive mode 6 (Bezier curves)</h1>
-      <div class="grid">
-        <div>
+      <header class="navbar">
+        <section class="navbar-section">
+          <div class="navbar-brand mr-2">SQIP Research</div><a class="btn btn-link" href="index.html">Home</a>
+        </section>
+      </header>
+      <div class="divider"></div>
+      <main>
+        <h1 class="h3">Primitive mode 6 (Bezier curves)</h1>
+        <div class="grid">
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23544b47' d='M0 0h400v200H0z'/%3e%3cg fill='none'%3e%3cpath stroke='%23fdffff' d='M312 113q-81 45-96-63'/%3e%3cpath stroke='%23e7f7fa' d='M340 204Q75 122 62 144'/%3e%3cpath stroke='azure' d='M214 45q29 113 106 58'/%3e%3cpath stroke='%23e9ffff' d='M319 103q-69 61-115-55'/%3e%3cpath stroke='%23f8ffff' d='M312 101q-56-58-111 35'/%3e%3cpath stroke='%23dde3dd' d='M69 141q59-5 327 83'/%3e%3cpath stroke='%23f9ffff' d='M221 49q-12 88 67 81'/%3e%3cpath stroke='%23efffff' d='M216 52q31 95 100 51'/%3e%3cpath stroke='%23ced0cf' d='M109 178q138 46 151-138'/%3e%3cpath stroke='%23d2dde2' d='M415 224q-283-88-350-88'/%3e%3cpath stroke='%23ccf1ff' d='M275 141Q185 36 163 3'/%3e%3cpath stroke='%23e3ffff' d='M315 99q-53 45-109-57'/%3e%3cpath stroke='%23e7edea' d='M75 129q69 23 208 61'/%3e%3cpath stroke='%23eaffff' d='M215 95q18 57 100 6'/%3e%3cpath stroke='%23dfffff' d='M203 57q63 103 116 36'/%3e%3cpath stroke='%23f8ffff' d='M277 50q11 88-73 57'/%3e%3cpath stroke='%23d4e2e3' d='M422 221q-21-10-294-72'/%3e%3cpath stroke='%23e5ffff' d='M317 99q-41-55-104 21'/%3e%3cpath stroke='%23e7f8ff' d='M251 151q-61-58 23-108'/%3e%3cpath stroke='%23e9fdff' d='M212 127q54-76 99-21'/%3e%3cpath stroke='%23dafaff' d='M304 122q-82 30-89-76'/%3e%3cpath stroke='%23c8c9c9' d='M109 182q138 42 158-141'/%3e%3cpath stroke='%23f7ffff' d='M201 100q60 41 80-46'/%3e%3cpath stroke='%23d7ffff' d='M321 106q-87 44-107-1'/%3e%3cpath stroke='%23cad1d2' d='M120 186q139 38 117-131'/%3e%3c/g%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/alisa-anton-166247-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Alisa Anton 166247 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Bezier curves — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Alisa Anton 166247 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 2.96s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Bezier curves</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>1379B</td>
-                  <td>1.35 kB</td>
+                  <td>Original</td>
+                  <td>1367.5B</td>
+                  <td>1.34 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>571B</td>
-                  <td>571.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>562.5B</td>
+                  <td>562.50 Bytes</td>
+                  <td>41.13 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>515B</td>
-                <td>515.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>514.5B</td>
+                  <td>514.50 Bytes</td>
+                  <td>37.62 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('7046a45691d200de383eedfa7e7ff10c').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('7046a45691d200de383eedfa7e7ff10c').className='modal active'">Show Full Data</button>
               <div class="modal" id="7046a45691d200de383eedfa7e7ff10c"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('7046a45691d200de383eedfa7e7ff10c').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('7046a45691d200de383eedfa7e7ff10c').className='modal'"></a>
@@ -102,16 +132,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Bezier curves&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1651,
-    &quot;brotli&quot;: 646,
-    &quot;gzip&quot;: 725
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 1379,
-    &quot;brotli&quot;: 515,
-    &quot;gzip&quot;: 571
-  },
   &quot;svgByteLength&quot;: 1651,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 1568,
@@ -125,36 +145,45 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23909b99' d='M0 0h400v200H0z'/%3e%3cg fill='none'%3e%3cpath stroke='white' d='M318 208Q188 115-24-2m0 5q343 186 334 221m32 0Q295 191-24 4'/%3e%3cpath stroke='black' d='M173 143Q53 61-2 61'/%3e%3cpath stroke='white' d='M332 224Q294 175-19-2M4 5q309 219 360 219M-6 10q67 43 330 197'/%3e%3cpath stroke='%2300333f' d='M388 109Q292 217 54 16'/%3e%3cpath stroke='%232a1300' d='M118 44q226 174 276 118'/%3e%3cpath stroke='black' d='M-19 85q35-42 194 56'/%3e%3cpath stroke='white' d='M-24 5l366 218m-63-88Q69-11 27-24'/%3e%3cpath stroke='%23381e00' d='M44 21Q81 8 314 185'/%3e%3cpath stroke='%23160000' d='M181 201Q-24 136-24 91'/%3e%3cpath stroke='%231a2422' d='M-9 170q168 40 414-93'/%3e%3cpath stroke='%2302353c' d='M42 19q221 121 281 183'/%3e%3cpath stroke='%23160600' d='M279 117Q174 37 110 0'/%3e%3cpath stroke='%23002e3f' d='M-24 47q213 151 321 83'/%3e%3cpath stroke='%2300303f' d='M320 119Q193 198 1 68'/%3e%3cpath stroke='%23191500' d='M-13 48q194 62 178 149'/%3e%3cpath stroke='blacke12' d='M290 133Q207 66 106 2'/%3e%3cpath stroke='white' d='M298 207Q81 45 1 9'/%3e%3cpath stroke='%23073b44' d='M48 19q279 205 353 145'/%3e%3cpath stroke='white' d='M274 132Q144 33 67-5m193 129Q147 53 52-24'/%3e%3c/g%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/anthony-esau-173126-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Anthony Esau 173126 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Bezier curves — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Anthony Esau 173126 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 3.45s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Bezier curves</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>1168B</td>
-                  <td>1.14 kB</td>
+                  <td>Original</td>
+                  <td>1195B</td>
+                  <td>1.17 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>524B</td>
-                  <td>524.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>528.25B</td>
+                  <td>528.25 Bytes</td>
+                  <td>44.21 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>488B</td>
-                <td>488.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>490.5B</td>
+                  <td>490.50 Bytes</td>
+                  <td>41.05 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('684f6cff9300b90f9a637aa036b11ee5').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('684f6cff9300b90f9a637aa036b11ee5').className='modal active'">Show Full Data</button>
               <div class="modal" id="684f6cff9300b90f9a637aa036b11ee5"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('684f6cff9300b90f9a637aa036b11ee5').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('684f6cff9300b90f9a637aa036b11ee5').className='modal'"></a>
@@ -177,16 +206,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Bezier curves&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1454,
-    &quot;brotli&quot;: 621,
-    &quot;gzip&quot;: 669
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 1168,
-    &quot;brotli&quot;: 488,
-    &quot;gzip&quot;: 524
-  },
   &quot;svgByteLength&quot;: 1454,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 1315,
@@ -200,36 +219,45 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23cecec9' d='M0 0h400v200H0z'/%3e%3cg fill='none'%3e%3cpath stroke='black' d='M-24 195q331 19 448-18m-189 1q156 46 169-16'/%3e%3cpath stroke='%23090100' d='M-24 173q98 51 448 1'/%3e%3cpath stroke='black' d='M227 178q96-16 197 33m-192-19q161-44 167 10'/%3e%3cpath stroke='%23160a00' d='M112 106q262 108 288 92'/%3e%3cpath stroke='%23190500' d='M403 168q-186 56-291-84'/%3e%3cpath stroke='%23040000' d='M424 160q-88 59-423 34'/%3e%3cpath stroke='%23190a00' d='M110 100q200 124 314 84'/%3e%3cpath stroke='%231c1501' d='M424 140q0 58-435 50'/%3e%3cpath stroke='%23130e00' d='M424 199Q-3 154-24 224'/%3e%3cpath stroke='black' d='M-24 168q2 54 435 25m13-28q-105 32-194 34'/%3e%3cpath stroke='%23080000' d='M208 92q-2 112 212 89'/%3e%3cpath stroke='black' d='M240 169q149 55 160 14'/%3e%3cpath stroke='%23241e0c' d='M-24 157q30 59 417 12'/%3e%3cpath stroke='black' d='M233 165q58 59 191 20m-180-5q126-20 180 1m-13-16q-239 58-435 26m268-24q168 56 180-35m-199 39q135-1 183 22'/%3e%3cpath stroke='%231d1805' d='M-12 186q334-25 436 13'/%3e%3cpath stroke='black' d='M235 173q35 51 189 5'/%3e%3cpath stroke='%23251500' d='M424 193q-201 31-306-99'/%3e%3cpath stroke='%23292514' d='M424 186q-261-44-438 16'/%3e%3c/g%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/beth-solano-313648-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Beth Solano 313648 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Bezier curves — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Beth Solano 313648 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 3.15s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Bezier curves</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>1170B</td>
+                  <td>Original</td>
+                  <td>1167.75B</td>
                   <td>1.14 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>514B</td>
-                  <td>514.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>508.25B</td>
+                  <td>508.25 Bytes</td>
+                  <td>43.52 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>466B</td>
-                <td>466.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>465.5B</td>
+                  <td>465.50 Bytes</td>
+                  <td>39.86 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('59ca846229311105943a421122f74b70').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('59ca846229311105943a421122f74b70').className='modal active'">Show Full Data</button>
               <div class="modal" id="59ca846229311105943a421122f74b70"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('59ca846229311105943a421122f74b70').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('59ca846229311105943a421122f74b70').className='modal'"></a>
@@ -252,16 +280,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Bezier curves&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1455,
-    &quot;brotli&quot;: 610,
-    &quot;gzip&quot;: 657
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 1170,
-    &quot;brotli&quot;: 466,
-    &quot;gzip&quot;: 514
-  },
   &quot;svgByteLength&quot;: 1455,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 1313,
@@ -275,36 +293,45 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%2351564e' d='M0 0h400v200H0z'/%3e%3cg fill='none'%3e%3cpath stroke='white' d='M338 122q-68-21-70 42'/%3e%3cpath stroke='whiteff6' d='M242 109q27 20 108 8'/%3e%3cpath stroke='%23fcfff5' d='M346 81q-4 58-97 30'/%3e%3cpath stroke='%23f9fdf0' d='M272 132q77-3 74-52'/%3e%3cpath stroke='whitefe9' d='M258 128q20-6 93-5'/%3e%3cpath stroke='%23e0e0d7' d='M291-24Q238 90 344 94'/%3e%3cpath stroke='%23eff0e4' d='M348 78q-18 50-100 70'/%3e%3cpath stroke='white' d='M144 83q-11-23-65 15m259-20q8 55-51 38'/%3e%3cpath stroke='%23e0e1d3' d='M290 224Q279 74 347 83'/%3e%3cpath stroke='%23d4d6cc' d='M289-24Q247 98 338 96'/%3e%3cpath stroke='white' d='M83 96q46-20 64-37'/%3e%3cpath stroke='%23c1bbae' d='M241 221q122-119-1-233'/%3e%3cpath stroke='white' d='M108 119q-24-39 28-46'/%3e%3cpath stroke='%23cac9bc' d='M251 162q65-15 100-144'/%3e%3cpath stroke='%23d9dacd' d='M346 77q-79 50-53 119'/%3e%3cpath stroke='%23beb7a9' d='M236-24q144 145-10 248'/%3e%3cpath stroke='whiteceb' d='M256 168q27-65 82-43'/%3e%3cpath stroke='%23e4eae2' d='M348 91q-27-4-103 8'/%3e%3cpath stroke='white' d='M86 97q43-23 55-22'/%3e%3cpath stroke='%23d1ccbc' d='M270-24q-46 148 78 150'/%3e%3cpath stroke='%23dae0d8' d='M243 111q55 33 102-29'/%3e%3cpath stroke='%23ccc9bb' d='M250 159q87-12 93-144'/%3e%3cpath stroke='%23d0d2ca' d='M345 93q-65 1-94-81'/%3e%3cpath stroke='white' d='M144 76q-43 8-58 8'/%3e%3c/g%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/desmond-simon-412494-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Desmond Simon 412494 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Bezier curves — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Desmond Simon 412494 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 2.83s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Bezier curves</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>1311B</td>
-                  <td>1.28 kB</td>
+                  <td>Original</td>
+                  <td>1293.25B</td>
+                  <td>1.26 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>561B</td>
-                  <td>561.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>553B</td>
+                  <td>553.00 Bytes</td>
+                  <td>42.76 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>515B</td>
-                <td>515.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>506B</td>
+                  <td>506.00 Bytes</td>
+                  <td>39.13 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('c3bf2734d624e2c28675fc829be798f9').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('c3bf2734d624e2c28675fc829be798f9').className='modal active'">Show Full Data</button>
               <div class="modal" id="c3bf2734d624e2c28675fc829be798f9"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('c3bf2734d624e2c28675fc829be798f9').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('c3bf2734d624e2c28675fc829be798f9').className='modal'"></a>
@@ -327,16 +354,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Bezier curves&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1590,
-    &quot;brotli&quot;: 645,
-    &quot;gzip&quot;: 709
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 1311,
-    &quot;brotli&quot;: 515,
-    &quot;gzip&quot;: 561
-  },
   &quot;svgByteLength&quot;: 1590,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 1487,
@@ -350,36 +367,45 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%236a676e' d='M0 0h400v200H0z'/%3e%3cg fill='none'%3e%3cpath stroke='white' d='M52 58h306m-7-2q-128-2-294 1m294-43Q75 16 50 13m-1 63q31 4 289 5m18-26q-1-2-284-1M58 77q285-6 290 19M66 15q2 8 283 4M44 79q180 3 304 7'/%3e%3cpath stroke='black' d='M4 85q10 139 408 105m-31 4Q-4 224 11 79m399 82q-4 11-420-2'/%3e%3cpath stroke='white' d='M57 61l295-2M63 112q81-1 288 6'/%3e%3cpath stroke='black' d='M414 175Q0 206 2 104'/%3e%3cpath stroke='white' d='M336 14q-156 9-293-2m13 48l292-5'/%3e%3cpath stroke='black' d='M-24 168q203-3 440 0m-6 18Q-7 224 6 67m398 129q-23-52-407-3m420-21Q13 224 0 177m-3 14q392 16 391-70'/%3e%3cpath stroke='white' d='M343 18Q66 10 57 26M40 79q235-5 309 11'/%3e%3cpath stroke='black' d='M424 168q-92 13-427 16'/%3e%3cpath stroke='white' d='M58 114l269 2'/%3e%3c/g%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/igor-ovsyannykov-307432-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Igor Ovsyannykov 307432 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Bezier curves — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Igor Ovsyannykov 307432 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 3.92s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Bezier curves</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>809B</td>
-                  <td>809.00 Bytes</td>
+                  <td>Original</td>
+                  <td>860.5B</td>
+                  <td>860.50 Bytes</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>427B</td>
-                  <td>427.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>439.5B</td>
+                  <td>439.50 Bytes</td>
+                  <td>51.07 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>402B</td>
-                <td>402.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>408.5B</td>
+                  <td>408.50 Bytes</td>
+                  <td>47.47 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('0886ad782e14421894d19bb20ebbbaed').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('0886ad782e14421894d19bb20ebbbaed').className='modal active'">Show Full Data</button>
               <div class="modal" id="0886ad782e14421894d19bb20ebbbaed"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('0886ad782e14421894d19bb20ebbbaed').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('0886ad782e14421894d19bb20ebbbaed').className='modal'"></a>
@@ -402,16 +428,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Bezier curves&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1095,
-    &quot;brotli&quot;: 530,
-    &quot;gzip&quot;: 579
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 809,
-    &quot;brotli&quot;: 402,
-    &quot;gzip&quot;: 427
-  },
   &quot;svgByteLength&quot;: 1095,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 895,
@@ -425,36 +441,45 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23d2d2d3' d='M0 0h400v200H0z'/%3e%3cpath d='M154 0Q95-3 78 77M44 25q51 72 101-13M44 51q97 51 96-52M41 44q83 58 98-38M39 34q73 69 99-30m-31 105Q148 2 44 3m2 19q108-17 75 89M42 35q84-59 103 31M69 77q87 1 64-73m7-7Q111 88 37 26m7 13q58 73 101 3m-29 53q15-99-77-65m104 67Q130-17 41 44m74 70Q149 43 46 6m94-2q-21 97-100 36m7-43q23 88 97 26m2-13Q83 97 40 22m82 78q21-87-78-90m15 63q-3-84 92-50m-18 71q22-118-89-82m2 41q76 56 100-46M61 72q10-96 86-53M129 2q-12 74-83 25m65 81q38-62-64-97m-1 16q61 67 91-21' stroke='black' fill='none'/%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/neven-krcmarek-264325-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Neven Krcmarek 264325 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Bezier curves — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Neven Krcmarek 264325 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 3.09s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Bezier curves</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>602B</td>
-                  <td>602.00 Bytes</td>
+                  <td>Original</td>
+                  <td>664.5B</td>
+                  <td>664.50 Bytes</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>409B</td>
-                  <td>409.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>420.25B</td>
+                  <td>420.25 Bytes</td>
+                  <td>63.24 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>363B</td>
-                <td>363.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>377.75B</td>
+                  <td>377.75 Bytes</td>
+                  <td>56.85 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('245bd279d4e8cb301e1d196048026757').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('245bd279d4e8cb301e1d196048026757').className='modal active'">Show Full Data</button>
               <div class="modal" id="245bd279d4e8cb301e1d196048026757"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('245bd279d4e8cb301e1d196048026757').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('245bd279d4e8cb301e1d196048026757').className='modal'"></a>
@@ -477,16 +502,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Bezier curves&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 855,
-    &quot;brotli&quot;: 473,
-    &quot;gzip&quot;: 536
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 602,
-    &quot;brotli&quot;: 363,
-    &quot;gzip&quot;: 409
-  },
   &quot;svgByteLength&quot;: 855,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 640,
@@ -500,36 +515,45 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23494949' d='M0 0h400v200H0z'/%3e%3cg fill='none'%3e%3cpath stroke='white' d='M245 54q-84 98-134-6'/%3e%3cpath stroke='%23dbdbdb' d='M34-5q200 57 59 205'/%3e%3cpath stroke='%23fefefe' d='M132 141Q151 9 251 72'/%3e%3cpath stroke='%23cacaca' d='M372 110Q90 44 28-9'/%3e%3cpath stroke='%23e3e3e3' d='M125 158Q199 28-1-8'/%3e%3cpath stroke='%23eee' d='M60-24q106 171 188 87'/%3e%3cpath stroke='%23ececec' d='M103 42q21 134 160 46'/%3e%3cpath stroke='%23cecece' d='M69 26q201 63 286 93'/%3e%3cpath stroke='%23dbdbdb' d='M281-4Q142 127 74 3'/%3e%3cpath stroke='%23e0e0e0' d='M33-7q179 51 93 174'/%3e%3cpath stroke='white' d='M239 56q-74 105-136-13'/%3e%3cpath stroke='%23ededed' d='M254 67q-110 83-145-36'/%3e%3cpath stroke='%23f7f7f7' d='M132 131q19-119 124-54'/%3e%3cpath stroke='%23bbb' d='M417 130Q40 12-2-15'/%3e%3cpath stroke='%23f6f6f6' d='M244 62q-124-47-114 71'/%3e%3cpath stroke='%23f7f7f7' d='M172 40q-69 5-24 131'/%3e%3cpath stroke='%23d0d0d0' d='M53 2q146 22 84 186'/%3e%3cpath stroke='%23fafafa' d='M109 76q74 64 127-20'/%3e%3cpath stroke='%23e2e2e2' d='M-8-11q187 31 150 143'/%3e%3cpath stroke='%23d3d3d3' d='M131 173Q209 27 48-3'/%3e%3cpath stroke='%23c7c7c7' d='M161 211Q73 94 285 2'/%3e%3cpath stroke='%23dadada' d='M158 178Q88 46 229 47'/%3e%3cpath stroke='white' d='M169 128q-79-29-18-92'/%3e%3cpath stroke='%23eee' d='M243 72q-122-48-124 40'/%3e%3cpath stroke='%23cdcdcd' d='M53 10q160 112 225-34'/%3e%3c/g%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/quino-al-101314-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Quino Al 101314 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Bezier curves — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Quino Al 101314 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 3.36s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Bezier curves</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>1346B</td>
-                  <td>1.31 kB</td>
+                  <td>Original</td>
+                  <td>1348.5B</td>
+                  <td>1.32 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>553B</td>
-                  <td>553.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>555.25B</td>
+                  <td>555.25 Bytes</td>
+                  <td>41.18 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>500B</td>
-                <td>500.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>505.5B</td>
+                  <td>505.50 Bytes</td>
+                  <td>37.49 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('9d71276241ac50878915445048191413').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('9d71276241ac50878915445048191413').className='modal active'">Show Full Data</button>
               <div class="modal" id="9d71276241ac50878915445048191413"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('9d71276241ac50878915445048191413').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('9d71276241ac50878915445048191413').className='modal'"></a>
@@ -552,16 +576,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Bezier curves&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1616,
-    &quot;brotli&quot;: 629,
-    &quot;gzip&quot;: 695
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 1346,
-    &quot;brotli&quot;: 500,
-    &quot;gzip&quot;: 553
-  },
   &quot;svgByteLength&quot;: 1616,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 1534,
@@ -575,36 +589,45 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23857a71' d='M0 0h400v200H0z'/%3e%3cg fill='none'%3e%3cpath stroke='white' d='M306 2L-24 3m364-21Q319 24-24 10m40 6q230-40 263 17m52-34Q239 11-24 9m22 11q185-1 301-13m-19-4Q150 6-24 6m0 16Q130 7 302 7m8 3Q143 21-7 22M296 5L3 7m-16 5q158 17 437-29M-11 36q48-16 270-19m-280-4q129-4 300-2'/%3e%3cpath stroke='%23f6ffff' d='M297 4Q139-24 92 136'/%3e%3cpath stroke='white' d='M271 13Q40 32-24 20M306 3Q104 19-24 17'/%3e%3cpath stroke='%23fbffff' d='M-17 16q283-40 265 125'/%3e%3cpath stroke='white' d='M-22 8Q161-2 293 7m13-1Q5 27-24 27'/%3e%3cpath stroke='%23fcffff' d='M37 16q239-40 220 128'/%3e%3cpath stroke='white' d='M250 20q-266-3-274 6M293 9Q180 19 0 13'/%3e%3cpath stroke='%23eff' d='M-20 8q292-32 268 132'/%3e%3cpath stroke='white' d='M0 15Q271 49 277-7'/%3e%3cpath stroke='%23e7ffff' d='M240 178Q286-24 1 17'/%3e%3cpath stroke='white' d='M-24 14Q6 3 283 6'/%3e%3c/g%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/samuel-zeller-16570-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Samuel Zeller 16570 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Bezier curves — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Samuel Zeller 16570 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 3.53s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Bezier curves</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>883B</td>
-                  <td>883.00 Bytes</td>
+                  <td>Original</td>
+                  <td>792.5B</td>
+                  <td>792.50 Bytes</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>447B</td>
-                  <td>447.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>433B</td>
+                  <td>433.00 Bytes</td>
+                  <td>54.64 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>418B</td>
-                <td>418.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>405.25B</td>
+                  <td>405.25 Bytes</td>
+                  <td>51.14 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('564517e82b4bd52c53394b1e1b931eda').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('564517e82b4bd52c53394b1e1b931eda').className='modal active'">Show Full Data</button>
               <div class="modal" id="564517e82b4bd52c53394b1e1b931eda"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('564517e82b4bd52c53394b1e1b931eda').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('564517e82b4bd52c53394b1e1b931eda').className='modal'"></a>
@@ -627,16 +650,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Bezier curves&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1150,
-    &quot;brotli&quot;: 538,
-    &quot;gzip&quot;: 585
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 883,
-    &quot;brotli&quot;: 418,
-    &quot;gzip&quot;: 447
-  },
   &quot;svgByteLength&quot;: 1150,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 984,
@@ -650,36 +663,45 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%239e8a6e' d='M0 0h400v200H0z'/%3e%3cg fill='none'%3e%3cpath stroke='black' d='M424 194q-148 3-435 4m435 0l-433 2m433-8H-3m-21-6h448'/%3e%3cpath stroke='whiteff4' d='M2 13q6-26 406-2'/%3e%3cpath stroke='black' d='M4 192q217 12 420-14'/%3e%3cpath stroke='%23080000' d='M424 162q-29 43-442 6'/%3e%3cpath stroke='black' d='M-24 186q328 18 427-1'/%3e%3cpath stroke='%23070000' d='M408 177q-168 10-432 7'/%3e%3cpath stroke='black' d='M422 200q-446 3-446-16'/%3e%3cpath stroke='whiteffa' d='M-24 45q75 20 430-2'/%3e%3cpath stroke='whiteff7' d='M424 14q-86 4-448 2'/%3e%3cpath stroke='whiteff3' d='M-5-9q20 130 429 23'/%3e%3cpath stroke='%23030000' d='M-24 196q68 4 429 1'/%3e%3cpath stroke='%23120400' d='M-24 157q18 43 448 13'/%3e%3cpath stroke='whiteff2' d='M-10 22q80-2 434-1'/%3e%3cpath stroke='%23050000' d='M39 189l385-1'/%3e%3cpath stroke='whiteff4' d='M-13 15q215-31 433 48'/%3e%3cpath stroke='%23180a00' d='M-24 186q208-26 448-3'/%3e%3cpath stroke='whiteff1' d='M424 13H5m2 11h417'/%3e%3cpath stroke='%23ffe' d='M424 11Q24 122-7-24'/%3e%3cpath stroke='whitefea' d='M3 26q163 2 410 2'/%3e%3cpath stroke='%23180900' d='M-24 162q411 40 418-3'/%3e%3cpath stroke='ivory' d='M395 16Q128-8-24 15'/%3e%3c/g%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/tyler-lastovich-205631-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Tyler Lastovich 205631 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Bezier curves — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Tyler Lastovich 205631 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 4.46s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Bezier curves</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>1160B</td>
-                  <td>1.13 kB</td>
+                  <td>Original</td>
+                  <td>1175.75B</td>
+                  <td>1.15 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>468B</td>
-                  <td>468.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>474.75B</td>
+                  <td>474.75 Bytes</td>
+                  <td>40.38 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>436B</td>
-                <td>436.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>436B</td>
+                  <td>436.00 Bytes</td>
+                  <td>37.08 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('e913eb888d859767ab22e2e14cc9b0b6').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('e913eb888d859767ab22e2e14cc9b0b6').className='modal active'">Show Full Data</button>
               <div class="modal" id="e913eb888d859767ab22e2e14cc9b0b6"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('e913eb888d859767ab22e2e14cc9b0b6').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('e913eb888d859767ab22e2e14cc9b0b6').className='modal'"></a>
@@ -702,16 +724,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Bezier curves&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1459,
-    &quot;brotli&quot;: 567,
-    &quot;gzip&quot;: 615
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 1160,
-    &quot;brotli&quot;: 436,
-    &quot;gzip&quot;: 468
-  },
   &quot;svgByteLength&quot;: 1459,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 1313,
@@ -726,7 +738,7 @@ footer {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </div>
     <footer>
       <button class="btn" onClick="document.querySelector('body').className = document.querySelector('body').className ? '' : 'hide-images'">Toggle images</button>

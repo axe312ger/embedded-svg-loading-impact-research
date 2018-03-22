@@ -27,6 +27,8 @@ footer {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2vmin;
+  margin-bottom: 4rem;
 }
 
 .image-wrapper {
@@ -45,41 +47,69 @@ footer {
   z-index: 1;
 }
 
+.table-nowrap td {
+  font-size: 0.8em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.center-text {
+  text-align: center;
+}
+
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>Primitive mode 4 (Circles)</h1>
-      <div class="grid">
-        <div>
+      <header class="navbar">
+        <section class="navbar-section">
+          <div class="navbar-brand mr-2">SQIP Research</div><a class="btn btn-link" href="index.html">Home</a>
+        </section>
+      </header>
+      <div class="divider"></div>
+      <main>
+        <h1 class="h3">Primitive mode 4 (Circles)</h1>
+        <div class="grid">
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23544b47' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='%23d4e3ef' cx='164' cy='59' rx='31' ry='31'/%3e%3cellipse fill='%23b69f8c' cx='113' cy='127' rx='42' ry='42'/%3e%3cellipse fill='%23070915' cx='75' cy='31' rx='34' ry='34'/%3e%3cellipse fill='%23050000' cx='22' cy='127' rx='39' ry='39'/%3e%3cellipse fill='%2330180f' cx='231' cy='91' rx='37' ry='37'/%3e%3cellipse fill='%232b2921' cx='217' cy='22' rx='40' ry='40'/%3e%3cellipse fill='%23e1f6fc' cx='153' cy='65' rx='16' ry='16'/%3e%3cellipse fill='black300' cx='151' cy='10' rx='15' ry='15'/%3e%3cellipse fill='%239d8b77' cx='75' cy='100' rx='19' ry='19'/%3e%3cellipse fill='%23772716' cx='110' cy='76' rx='22' ry='22'/%3e%3cellipse fill='%23bacacb' cx='5' cy='52' rx='9' ry='9'/%3e%3cellipse fill='%238cbae2' cx='196' cy='63' rx='9' ry='9'/%3e%3cellipse fill='%23b5b19f' cx='19' cy='76' rx='10' ry='10'/%3e%3cellipse fill='%23aaa4a3' cx='139' cy='37' rx='10' ry='10'/%3e%3cellipse fill='%231a202a' cx='5' cy='8' rx='32' ry='32'/%3e%3cellipse fill='%23916657' cx='157' cy='37' rx='14' ry='14'/%3e%3cellipse fill='%239a6e48' cx='181' cy='127' rx='28' ry='28'/%3e%3cellipse fill='%23cd8768' cx='127' cy='75' rx='12' ry='12'/%3e%3cellipse fill='%231c2122' cx='65' cy='62' rx='23' ry='23'/%3e%3cellipse fill='%237398b4' cx='114' cy='22' rx='10' ry='10'/%3e%3cellipse fill='%23a9aeaa' cx='129' cy='5' rx='9' ry='9'/%3e%3cellipse fill='%23a29c90' cx='54' cy='83' rx='9' ry='9'/%3e%3cellipse fill='%23b6b09f' cx='30' cy='63' rx='8' ry='8'/%3e%3cellipse fill='%231e3d4e' cx='161' cy='88' rx='7' ry='7'/%3e%3cellipse cx='137' cy='22' rx='8' ry='8'/%3e%3c/g%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/alisa-anton-166247-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Alisa Anton 166247 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Circles — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Alisa Anton 166247 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 5.12s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Circles</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>1570B</td>
+                  <td>Original</td>
+                  <td>1568.25B</td>
                   <td>1.53 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>534B</td>
-                  <td>534.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>531B</td>
+                  <td>531.00 Bytes</td>
+                  <td>33.86 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>445B</td>
-                <td>445.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>438.75B</td>
+                  <td>438.75 Bytes</td>
+                  <td>27.98 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('3d5880f82dec6e356ac2aa7697731b40').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('3d5880f82dec6e356ac2aa7697731b40').className='modal active'">Show Full Data</button>
               <div class="modal" id="3d5880f82dec6e356ac2aa7697731b40"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('3d5880f82dec6e356ac2aa7697731b40').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('3d5880f82dec6e356ac2aa7697731b40').className='modal'"></a>
@@ -102,16 +132,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Circles&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1590,
-    &quot;brotli&quot;: 460,
-    &quot;gzip&quot;: 550
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 1570,
-    &quot;brotli&quot;: 445,
-    &quot;gzip&quot;: 534
-  },
   &quot;svgByteLength&quot;: 1590,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 1758,
@@ -125,36 +145,45 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23909b99' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='%238ce3ff' cx='183' rx='58' ry='58'/%3e%3cellipse fill='white' cx='166' cy='126' rx='21' ry='21'/%3e%3cellipse fill='%2384675c' cx='222' cy='91' rx='43' ry='43'/%3e%3cellipse fill='%23070000' cx='10' cy='41' rx='12' ry='12'/%3e%3cellipse fill='%23003b4a' cx='17' cy='101' rx='16' ry='16'/%3e%3cellipse fill='whitefed' cx='26' cy='76' rx='15' ry='15'/%3e%3cellipse fill='%230c424b' cx='50' cy='120' rx='19' ry='19'/%3e%3cellipse fill='whiteff1' cx='60' cy='93' rx='14' ry='14'/%3e%3cellipse fill='%23443329' cx='93' cy='127' rx='23' ry='23'/%3e%3cellipse fill='%23003642' cx='37' cy='55' rx='12' ry='12'/%3e%3cellipse fill='%23003a48' cx='72' cy='75' rx='11' ry='11'/%3e%3cellipse fill='white' cx='9' cy='127' rx='15' ry='15'/%3e%3cellipse fill='%23261401' cx='157' cy='87' rx='10' ry='10'/%3e%3cellipse fill='white' cx='9' cy='65' rx='12' ry='12'/%3e%3cellipse fill='%2300393f' cx='92' cy='85' rx='11' ry='11'/%3e%3cellipse fill='white' cx='80' cy='100' rx='9' ry='9'/%3e%3cellipse fill='%23004151' cx='56' cy='66' rx='11' ry='11'/%3e%3cellipse fill='%23f4d7c0' cx='14' cy='19' rx='16' ry='16'/%3e%3cellipse fill='%23643911' cx='52' cy='19' rx='12' ry='12'/%3e%3cellipse fill='white' cx='46' cy='83' rx='11' ry='11'/%3e%3cellipse fill='whitede4' cx='65' cy='49' rx='11' ry='11'/%3e%3cellipse fill='white2d2' cx='43' cy='37' rx='11' ry='11'/%3e%3cellipse fill='whitecdd' cx='99' cy='70' rx='10' ry='10'/%3e%3cellipse fill='whitede9' cx='122' cy='84' rx='10' ry='10'/%3e%3cellipse fill='%237ac5ea' cx='226' cy='7' rx='31' ry='31'/%3e%3c/g%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/anthony-esau-173126-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Anthony Esau 173126 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Circles — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Anthony Esau 173126 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 4.12s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Circles</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>1567B</td>
+                  <td>Original</td>
+                  <td>1566.5B</td>
                   <td>1.53 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>481B</td>
-                  <td>481.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>484.75B</td>
+                  <td>484.75 Bytes</td>
+                  <td>30.94 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>406B</td>
-                <td>406.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>408B</td>
+                  <td>408.00 Bytes</td>
+                  <td>26.05 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('b8749df319c38d36cbf46f6c74889294').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('b8749df319c38d36cbf46f6c74889294').className='modal active'">Show Full Data</button>
               <div class="modal" id="b8749df319c38d36cbf46f6c74889294"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('b8749df319c38d36cbf46f6c74889294').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('b8749df319c38d36cbf46f6c74889294').className='modal'"></a>
@@ -177,16 +206,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Circles&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1587,
-    &quot;brotli&quot;: 420,
-    &quot;gzip&quot;: 496
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 1567,
-    &quot;brotli&quot;: 406,
-    &quot;gzip&quot;: 481
-  },
   &quot;svgByteLength&quot;: 1587,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 1747,
@@ -200,36 +219,45 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23cecec9' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse cx='218' cy='127' rx='38' ry='38'/%3e%3cellipse cx='24' cy='127' rx='24' ry='24'/%3e%3cellipse fill='white' cx='212' cy='54' rx='53' ry='53'/%3e%3cellipse fill='%23030000' cx='177' cy='127' rx='24' ry='24'/%3e%3cellipse fill='white' cx='19' cy='56' rx='57' ry='57'/%3e%3cellipse fill='%23958065' cx='109' cy='64' rx='36' ry='36'/%3e%3cellipse cx='235' cy='127' rx='25' ry='25'/%3e%3cellipse fill='white' cx='86' cy='6' rx='37' ry='37'/%3e%3cellipse fill='white' cx='196' rx='72' ry='72'/%3e%3cellipse fill='%23080000' cx='193' cy='127' rx='23' ry='23'/%3e%3cellipse cx='12' cy='127' rx='17' ry='17'/%3e%3cellipse fill='%23543101' cx='80' cy='61' rx='11' ry='11'/%3e%3cellipse fill='%23090400' cx='38' cy='123' rx='13' ry='13'/%3e%3cellipse fill='%23a18454' cx='158' cy='114' rx='15' ry='15'/%3e%3cellipse fill='%23fbffff' cx='48' cy='13' rx='48' ry='48'/%3e%3cellipse fill='%23e8f0ef' cx='232' cy='72' rx='34' ry='34'/%3e%3cellipse fill='%23130e00' cx='243' cy='127' rx='24' ry='24'/%3e%3cellipse fill='white' cx='102' cy='58' rx='9' ry='9'/%3e%3cellipse fill='%23784730' cx='119' cy='36' rx='9' ry='9'/%3e%3cellipse fill='%23e1eae7' cx='185' cy='83' rx='25' ry='25'/%3e%3cellipse fill='%235e421a' cx='92' cy='75' rx='8' ry='8'/%3e%3cellipse fill='%231d1700' cx='212' cy='127' rx='23' ry='23'/%3e%3cellipse fill='%23c4c6bd' cx='129' cy='98' rx='25' ry='25'/%3e%3cellipse fill='%23feffff' cx='146' rx='34' ry='34'/%3e%3cellipse fill='%23e3eae6' cx='72' cy='96' rx='22' ry='22'/%3e%3c/g%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/beth-solano-313648-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Beth Solano 313648 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Circles — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Beth Solano 313648 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 4.65s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Circles</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>1511B</td>
-                  <td>1.48 kB</td>
+                  <td>Original</td>
+                  <td>1510B</td>
+                  <td>1.47 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>491B</td>
-                  <td>491.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>495.75B</td>
+                  <td>495.75 Bytes</td>
+                  <td>32.83 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>407B</td>
-                <td>407.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>418B</td>
+                  <td>418.00 Bytes</td>
+                  <td>27.68 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('cf12227772b6a578e268a9086794f179').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('cf12227772b6a578e268a9086794f179').className='modal active'">Show Full Data</button>
               <div class="modal" id="cf12227772b6a578e268a9086794f179"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('cf12227772b6a578e268a9086794f179').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('cf12227772b6a578e268a9086794f179').className='modal'"></a>
@@ -252,16 +280,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Circles&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1531,
-    &quot;brotli&quot;: 421,
-    &quot;gzip&quot;: 506
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 1511,
-    &quot;brotli&quot;: 407,
-    &quot;gzip&quot;: 491
-  },
   &quot;svgByteLength&quot;: 1531,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 1689,
@@ -275,36 +293,45 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%2351564e' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='%23b1ae9f' cx='187' cy='61' rx='35' ry='35'/%3e%3cellipse fill='%231a231b' cx='11' cy='44' rx='44' ry='44'/%3e%3cellipse fill='%23c1c3bc' cx='70' cy='53' rx='16' ry='16'/%3e%3cellipse fill='%23010100' cx='255' cy='29' rx='27' ry='27'/%3e%3cellipse fill='%23151105' cx='255' cy='119' rx='42' ry='42'/%3e%3cellipse fill='%23b5b0a7' cx='171' cy='16' rx='17' ry='17'/%3e%3cellipse fill='%23bcd0cf' cx='201' cy='63' rx='18' ry='18'/%3e%3cellipse fill='%23a39883' cx='175' cy='93' rx='18' ry='18'/%3e%3cellipse fill='%23261910' cx='196' cy='37' rx='10' ry='10'/%3e%3cellipse fill='%23131d12' cx='6' cy='127' rx='27' ry='27'/%3e%3cellipse fill='%23998f81' cx='218' cy='23' rx='14' ry='14'/%3e%3cellipse fill='%23b4b8ae' cx='53' rx='12' ry='12'/%3e%3cellipse fill='%23536065' cx='144' cy='62' rx='39' ry='39'/%3e%3cellipse fill='%23343e37' cx='75' cy='125' rx='44' ry='44'/%3e%3cellipse fill='%23212316' cx='81' cy='59' rx='8' ry='8'/%3e%3cellipse fill='%23edeeed' cx='65' cy='57' rx='8' ry='8'/%3e%3cellipse fill='%23373d2e' cx='57' cy='31' rx='20' ry='20'/%3e%3cellipse fill='%23988e7e' cx='176' cy='127' rx='17' ry='17'/%3e%3cellipse fill='%237d5c2c' cx='207' cy='98' rx='18' ry='18'/%3e%3cellipse fill='%23b7bcbc' cx='31' cy='102' rx='7' ry='7'/%3e%3cellipse fill='%23a1a39b' cx='74' cy='72' rx='9' ry='9'/%3e%3cellipse fill='%23a8a596' cx='96' cy='13' rx='8' ry='8'/%3e%3cellipse fill='%232e2a1c' cx='246' cy='42' rx='25' ry='25'/%3e%3cellipse fill='%231b180d' cx='195' cy='14' rx='10' ry='10'/%3e%3cellipse fill='%23c8cbc7' cx='57' cy='125' rx='5' ry='5'/%3e%3c/g%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/desmond-simon-412494-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Desmond Simon 412494 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Circles — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Desmond Simon 412494 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 4.25s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Circles</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>1581B</td>
+                  <td>Original</td>
+                  <td>1577.75B</td>
                   <td>1.54 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>537B</td>
-                  <td>537.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>539B</td>
+                  <td>539.00 Bytes</td>
+                  <td>34.16 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>444B</td>
-                <td>444.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>441.25B</td>
+                  <td>441.25 Bytes</td>
+                  <td>27.97 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('be0ca39e8b34825ea893213ef4e6190e').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('be0ca39e8b34825ea893213ef4e6190e').className='modal active'">Show Full Data</button>
               <div class="modal" id="be0ca39e8b34825ea893213ef4e6190e"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('be0ca39e8b34825ea893213ef4e6190e').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('be0ca39e8b34825ea893213ef4e6190e').className='modal'"></a>
@@ -327,16 +354,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Circles&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1601,
-    &quot;brotli&quot;: 460,
-    &quot;gzip&quot;: 552
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 1581,
-    &quot;brotli&quot;: 444,
-    &quot;gzip&quot;: 537
-  },
   &quot;svgByteLength&quot;: 1601,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 1772,
@@ -350,36 +367,45 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%236a676e' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='%23c9bcca' cx='120' cy='16' rx='88' ry='88'/%3e%3cellipse cy='99' rx='49' ry='49'/%3e%3cellipse fill='%2306100d' cx='255' cy='120' rx='66' ry='66'/%3e%3cellipse cx='108' cy='127' rx='31' ry='31'/%3e%3cellipse fill='%23bfa8a6' cx='193' cy='75' rx='33' ry='33'/%3e%3cellipse cx='167' cy='127' rx='27' ry='27'/%3e%3cellipse cx='65' cy='127' rx='28' ry='28'/%3e%3cellipse fill='%23eebac2' cx='50' cy='84' rx='18' ry='18'/%3e%3cellipse fill='black109' cy='54' rx='35' ry='35'/%3e%3cellipse fill='black508' cx='238' cy='55' rx='17' ry='17'/%3e%3cellipse fill='%23a4becb' cx='205' cy='24' rx='19' ry='19'/%3e%3cellipse fill='%23f7ffff' cx='166' cy='95' rx='9' ry='9'/%3e%3cellipse cx='225' cy='120' rx='17' ry='17'/%3e%3cellipse cx='18' cy='127' rx='30' ry='30'/%3e%3cellipse fill='%23adb8d8' cx='131' cy='32' rx='28' ry='28'/%3e%3cellipse fill='%23a45b5b' cx='67' cy='3' rx='31' ry='31'/%3e%3cellipse fill='%23213f50' cx='2' cy='15' rx='32' ry='32'/%3e%3cellipse fill='%23080401' cx='143' cy='127' rx='25' ry='25'/%3e%3cellipse fill='black41a' cx='233' cy='8' rx='10' ry='10'/%3e%3cellipse fill='%23577371' cx='182' rx='32' ry='32'/%3e%3cellipse fill='%230b0e0b' cx='191' cy='127' rx='25' ry='25'/%3e%3cellipse fill='blackc16' cx='234' cy='31' rx='11' ry='11'/%3e%3cellipse fill='%23034e42' cx='74' cy='60' rx='10' ry='10'/%3e%3cellipse fill='%23ce8b88' cx='75' cy='84' rx='18' ry='18'/%3e%3cellipse fill='%239b5a52' cx='177' cy='69' rx='16' ry='16'/%3e%3c/g%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/igor-ovsyannykov-307432-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Igor Ovsyannykov 307432 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Circles — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Igor Ovsyannykov 307432 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 4.47s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Circles</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>1488B</td>
+                  <td>Original</td>
+                  <td>1483.75B</td>
                   <td>1.45 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>509B</td>
-                  <td>509.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>501B</td>
+                  <td>501.00 Bytes</td>
+                  <td>33.77 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>421B</td>
-                <td>421.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>421.75B</td>
+                  <td>421.75 Bytes</td>
+                  <td>28.42 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('96f2cccc6774a28b333ddfbcfb98374e').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('96f2cccc6774a28b333ddfbcfb98374e').className='modal active'">Show Full Data</button>
               <div class="modal" id="96f2cccc6774a28b333ddfbcfb98374e"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('96f2cccc6774a28b333ddfbcfb98374e').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('96f2cccc6774a28b333ddfbcfb98374e').className='modal'"></a>
@@ -402,16 +428,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Circles&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1508,
-    &quot;brotli&quot;: 436,
-    &quot;gzip&quot;: 524
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 1488,
-    &quot;brotli&quot;: 421,
-    &quot;gzip&quot;: 509
-  },
   &quot;svgByteLength&quot;: 1508,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 1663,
@@ -425,36 +441,45 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23d2d2d3' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse cx='59' cy='17' rx='33' ry='33'/%3e%3cellipse fill='%23320900' cx='64' cy='29' rx='32' ry='32'/%3e%3cellipse fill='%23f6fafc' cx='219' cy='70' rx='119' ry='119'/%3e%3cellipse fill='%23f1f5f8' cx='18' cy='97' rx='56' ry='56'/%3e%3cellipse fill='%23421c16' cx='57' cy='20' rx='31' ry='31'/%3e%3cellipse fill='%2393a0a1' cx='93' cy='52' rx='18' ry='18'/%3e%3cellipse fill='white' cy='20' rx='25' ry='25'/%3e%3cellipse fill='%23e8edee' cx='119' cy='21' rx='30' ry='30'/%3e%3cellipse fill='%2397a7a8' cx='63' cy='63' rx='15' ry='15'/%3e%3cellipse fill='%23f2f5f8' cx='88' cy='119' rx='26' ry='26'/%3e%3cellipse fill='%23fcffff' cx='165' cy='96' rx='27' ry='27'/%3e%3cellipse fill='%23d6d8d8' cx='255' cy='103' rx='63' ry='63'/%3e%3cellipse fill='%2378827c' cx='80' cy='55' rx='11' ry='11'/%3e%3cellipse cx='73' cy='27' rx='7' ry='7'/%3e%3cellipse fill='%23a0a8a6' cx='97' cy='38' rx='11' ry='11'/%3e%3cellipse fill='%237aa267' cx='62' rx='7' ry='7'/%3e%3cellipse fill='%23dcdee2' cx='109' cy='76' rx='23' ry='23'/%3e%3cellipse fill='%23e9f4f8' cx='6' rx='25' ry='25'/%3e%3cellipse fill='%23c391b7' cx='52' cy='20' rx='3' ry='3'/%3e%3cellipse fill='%234e000b' cx='82' cy='7' rx='9' ry='9'/%3e%3cellipse fill='%23a5d1cc' cx='36' cy='47' rx='7' ry='7'/%3e%3cellipse fill='%23eef0f2' cy='54' rx='33' ry='33'/%3e%3cellipse fill='%235f5143' cx='35' cy='20' rx='11' ry='11'/%3e%3cellipse fill='%23eff0f0' cx='148' cy='7' rx='44' ry='44'/%3e%3cellipse fill='%23ff9dce' cx='61' cy='28' rx='2' ry='2'/%3e%3c/g%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/neven-krcmarek-264325-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Neven Krcmarek 264325 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Circles — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Neven Krcmarek 264325 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 4.96s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Circles</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>1513B</td>
-                  <td>1.48 kB</td>
+                  <td>Original</td>
+                  <td>1529.25B</td>
+                  <td>1.49 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>529B</td>
-                  <td>529.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>534.25B</td>
+                  <td>534.25 Bytes</td>
+                  <td>34.94 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>440B</td>
-                <td>440.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>439B</td>
+                  <td>439.00 Bytes</td>
+                  <td>28.71 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('7ea4918bb19d84a7769dc640127deb50').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('7ea4918bb19d84a7769dc640127deb50').className='modal active'">Show Full Data</button>
               <div class="modal" id="7ea4918bb19d84a7769dc640127deb50"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('7ea4918bb19d84a7769dc640127deb50').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('7ea4918bb19d84a7769dc640127deb50').className='modal'"></a>
@@ -477,16 +502,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Circles&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1533,
-    &quot;brotli&quot;: 456,
-    &quot;gzip&quot;: 543
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 1513,
-    &quot;brotli&quot;: 440,
-    &quot;gzip&quot;: 529
-  },
   &quot;svgByteLength&quot;: 1533,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 1699,
@@ -500,36 +515,45 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23494949' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='%23c2c2c2' cx='107' cy='56' rx='36' ry='36'/%3e%3cellipse cx='237' cy='19' rx='48' ry='48'/%3e%3cellipse cx='13' cy='32' rx='28' ry='28'/%3e%3cellipse cx='118' rx='29' ry='29'/%3e%3cellipse fill='%23898989' cx='135' cy='56' rx='31' ry='31'/%3e%3cellipse fill='%23949494' cx='83' cy='127' rx='38' ry='38'/%3e%3cellipse fill='%23b1b1b1' cx='66' cy='23' rx='18' ry='18'/%3e%3cellipse cx='187' cy='35' rx='19' ry='19'/%3e%3cellipse cx='241' cy='31' rx='36' ry='36'/%3e%3cellipse cx='162' cy='95' rx='19' ry='19'/%3e%3cellipse fill='%23a8a8a8' cx='45' rx='23' ry='23'/%3e%3cellipse fill='%23c6c6c6' cx='88' cy='43' rx='21' ry='21'/%3e%3cellipse fill='%23747474' cx='210' cy='92' rx='34' ry='34'/%3e%3cellipse cx='94' rx='22' ry='22'/%3e%3cellipse cx='4' cy='28' rx='29' ry='29'/%3e%3cellipse fill='%23bababa' cx='145' cy='33' rx='15' ry='15'/%3e%3cellipse fill='%23363636' cx='121' cy='42' rx='15' ry='15'/%3e%3cellipse fill='%23848484' cx='183' rx='23' ry='23'/%3e%3cellipse cx='44' cy='39' rx='14' ry='14'/%3e%3cellipse fill='%23030303' cx='180' cy='78' rx='16' ry='16'/%3e%3cellipse cx='122' rx='27' ry='27'/%3e%3cellipse fill='%23c3c3c3' cx='100' cy='33' rx='14' ry='14'/%3e%3cellipse cx='102' cy='89' rx='7' ry='7'/%3e%3cellipse cx='199' cy='34' rx='21' ry='21'/%3e%3cellipse fill='%23151515' cx='58' cy='77' rx='17' ry='17'/%3e%3c/g%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/quino-al-101314-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Quino Al 101314 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Circles — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Quino Al 101314 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 4.27s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Circles</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>1377B</td>
-                  <td>1.34 kB</td>
+                  <td>Original</td>
+                  <td>1378.75B</td>
+                  <td>1.35 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>464B</td>
-                  <td>464.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>466.5B</td>
+                  <td>466.50 Bytes</td>
+                  <td>33.83 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>395B</td>
-                <td>395.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>389.25B</td>
+                  <td>389.25 Bytes</td>
+                  <td>28.23 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('57d3879371d872bcc72e6229a5779864').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('57d3879371d872bcc72e6229a5779864').className='modal active'">Show Full Data</button>
               <div class="modal" id="57d3879371d872bcc72e6229a5779864"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('57d3879371d872bcc72e6229a5779864').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('57d3879371d872bcc72e6229a5779864').className='modal'"></a>
@@ -552,16 +576,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Circles&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1397,
-    &quot;brotli&quot;: 399,
-    &quot;gzip&quot;: 479
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 1377,
-    &quot;brotli&quot;: 395,
-    &quot;gzip&quot;: 464
-  },
   &quot;svgByteLength&quot;: 1397,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 1544,
@@ -575,36 +589,45 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23857a71' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='%23d2e7fc' cx='112' rx='58' ry='58'/%3e%3cellipse fill='%232e351b' cx='223' cy='28' rx='40' ry='40'/%3e%3cellipse fill='%23f6ffff' cx='26' rx='27' ry='27'/%3e%3cellipse fill='%233e3f2d' cx='31' cy='46' rx='30' ry='30'/%3e%3cellipse fill='%233c3922' cx='67' cy='34' rx='18' ry='18'/%3e%3cellipse fill='%23010' cx='179' cy='49' rx='15' ry='15'/%3e%3cellipse fill='%23633b28' cx='41' cy='127' rx='43' ry='43'/%3e%3cellipse fill='%233d4e6f' cx='126' cy='44' rx='19' ry='19'/%3e%3cellipse fill='white' cx='131' rx='20' ry='20'/%3e%3cellipse fill='white' cx='60' rx='17' ry='17'/%3e%3cellipse fill='%23a5c4e8' cx='150' cy='46' rx='17' ry='17'/%3e%3cellipse fill='%23343647' cx='115' cy='79' rx='20' ry='20'/%3e%3cellipse fill='white' cx='96' rx='21' ry='21'/%3e%3cellipse fill='white' cx='99' cy='56' rx='10' ry='10'/%3e%3cellipse fill='%23e0b8a9' cx='170' cy='78' rx='17' ry='17'/%3e%3cellipse fill='%23e9ffff' cx='9' rx='22' ry='22'/%3e%3cellipse fill='white' cx='163' rx='13' ry='13'/%3e%3cellipse fill='%234c4e2a' cx='172' cy='21' rx='14' ry='14'/%3e%3cellipse fill='%23b08979' cx='58' cy='82' rx='28' ry='28'/%3e%3cellipse fill='%23745144' cx='112' cy='127' rx='39' ry='39'/%3e%3cellipse fill='%23c79c86' cx='232' cy='79' rx='18' ry='18'/%3e%3cellipse fill='blackc00' cx='247' cy='53' rx='10' ry='10'/%3e%3cellipse fill='%23e5fcff' cx='42' cy='1' rx='16' ry='16'/%3e%3cellipse fill='white' cx='181' rx='6' ry='6'/%3e%3cellipse fill='%23555241' cy='52' rx='30' ry='30'/%3e%3c/g%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/samuel-zeller-16570-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Samuel Zeller 16570 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Circles — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Samuel Zeller 16570 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 4.47s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Circles</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>1502B</td>
-                  <td>1.47 kB</td>
+                  <td>Original</td>
+                  <td>1514.75B</td>
+                  <td>1.48 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>504B</td>
-                  <td>504.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>511.25B</td>
+                  <td>511.25 Bytes</td>
+                  <td>33.75 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>424B</td>
-                <td>424.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>424B</td>
+                  <td>424.00 Bytes</td>
+                  <td>27.99 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('74c5d8ab47383d034133fb0b3083f045').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('74c5d8ab47383d034133fb0b3083f045').className='modal active'">Show Full Data</button>
               <div class="modal" id="74c5d8ab47383d034133fb0b3083f045"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('74c5d8ab47383d034133fb0b3083f045').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('74c5d8ab47383d034133fb0b3083f045').className='modal'"></a>
@@ -627,16 +650,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Circles&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1522,
-    &quot;brotli&quot;: 437,
-    &quot;gzip&quot;: 519
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 1502,
-    &quot;brotli&quot;: 424,
-    &quot;gzip&quot;: 504
-  },
   &quot;svgByteLength&quot;: 1522,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 1686,
@@ -650,36 +663,45 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%239e8a6e' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='%23fbe8c5' cx='87' rx='79' ry='79'/%3e%3cellipse fill='%2347331a' cx='87' cy='127' rx='87' ry='87'/%3e%3cellipse fill='%231a0c00' cx='211' cy='127' rx='47' ry='47'/%3e%3cellipse fill='%23f9e6c4' cx='204' rx='57' ry='57'/%3e%3cellipse fill='white7d6' cx='20' cy='9' rx='40' ry='40'/%3e%3cellipse fill='%23947a5a' cx='204' cy='68' rx='39' ry='39'/%3e%3cellipse fill='%23ad9373' cx='131' cy='67' rx='25' ry='25'/%3e%3cellipse fill='%23ead8b9' cx='97' rx='55' ry='55'/%3e%3cellipse fill='%2357452e' cx='20' cy='127' rx='58' ry='58'/%3e%3cellipse fill='%234e3e27' cx='122' cy='127' rx='43' ry='43'/%3e%3cellipse fill='%23957e5f' cx='33' cy='72' rx='29' ry='29'/%3e%3cellipse fill='%23f0e1c1' cx='158' cy='8' rx='34' ry='34'/%3e%3cellipse fill='%23312512' cx='209' cy='127' rx='30' ry='30'/%3e%3cellipse fill='%23977f62' cx='120' cy='75' rx='32' ry='32'/%3e%3cellipse fill='%23e8d8bd' cx='248' cy='6' rx='30' ry='30'/%3e%3cellipse fill='%2369573a' cx='246' cy='97' rx='16' ry='16'/%3e%3cellipse fill='%23a58b6a' cx='81' cy='61' rx='21' ry='21'/%3e%3cellipse fill='%23a88f6e' cx='223' cy='59' rx='30' ry='30'/%3e%3cellipse fill='%23746247' cx='165' cy='94' rx='21' ry='21'/%3e%3cellipse fill='%23f2dcbc' cy='23' rx='26' ry='26'/%3e%3cellipse fill='%23312514' cx='149' cy='127' rx='16' ry='16'/%3e%3cellipse fill='%23493923' cx='67' cy='127' rx='26' ry='26'/%3e%3cellipse fill='%232e2212' cx='250' cy='127' rx='19' ry='19'/%3e%3cellipse fill='%23a28a6a' cx='165' cy='61' rx='23' ry='23'/%3e%3cellipse fill='%23ac9474' cx='43' cy='59' rx='15' ry='15'/%3e%3c/g%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/tyler-lastovich-205631-unsplash-400px.jpg"/></div>
               </div>
             </div>
-            <div class="card-header">
-              <div class="card-title h5">Tyler Lastovich 205631 Unsplash</div>
-              <div class="card-subtitle text-gray">25 × Circles — 400px</div>
-            </div>
+            <div class="card-header"><strong class="card-title">Tyler Lastovich 205631 Unsplash @ 400px</strong></div>
             <div class="card-body">
-              <table class="table table-hover">
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-auto"><i class="icon icon-time"></i><span> 5.51s</span></div>
+                  <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Circles</span></div>
+                </div>
+              </div>
+              <table class="table table-nowrap">
                 <tr>
-                  <td>Original size:</td>
-                  <td>1571B</td>
+                  <td>Original</td>
+                  <td>1566.25B</td>
                   <td>1.53 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
-                  <td>Gzip size:</td>
-                  <td>530B</td>
-                  <td>530.00 Bytes</td>
+                  <td>Gzip</td>
+                  <td>525.5B</td>
+                  <td>525.50 Bytes</td>
+                  <td>33.55 %</td>
                 </tr>
-                <tr></tr>
-                <td>Brotli size:</td>
-                <td>436B</td>
-                <td>436.00 Bytes</td>
+                <tr>
+                  <td>Brotli</td>
+                  <td>435.5B</td>
+                  <td>435.50 Bytes</td>
+                  <td>27.81 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('c3adc5e61546d677581daed2e81c240e').className='modal active'">Show Full Data</button>
+                  </td>
+                </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('c3adc5e61546d677581daed2e81c240e').className='modal active'">Show Full Data</button>
               <div class="modal" id="c3adc5e61546d677581daed2e81c240e"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('c3adc5e61546d677581daed2e81c240e').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('c3adc5e61546d677581daed2e81c240e').className='modal'"></a>
@@ -702,16 +724,6 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Circles&quot;
   },
-  &quot;sizes&quot;: {
-    &quot;original&quot;: 1591,
-    &quot;brotli&quot;: 454,
-    &quot;gzip&quot;: 545
-  },
-  &quot;optimizedSizes&quot;: {
-    &quot;original&quot;: 1571,
-    &quot;brotli&quot;: 436,
-    &quot;gzip&quot;: 530
-  },
   &quot;svgByteLength&quot;: 1591,
   &quot;dataURI&quot;: {
     &quot;original&quot;: 1761,
@@ -726,7 +738,7 @@ footer {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </div>
     <footer>
       <button class="btn" onClick="document.querySelector('body').className = document.querySelector('body').className ? '' : 'hide-images'">Toggle images</button>
