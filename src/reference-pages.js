@@ -1,5 +1,3 @@
-const { ensureDir } = require('fs-extra')
-
 const lqip = require('lqip')
 
 const readInputImages = require('./utils/read-input-images')

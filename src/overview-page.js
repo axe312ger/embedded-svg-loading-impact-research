@@ -5,12 +5,12 @@ const { readdir, readFile, writeFile } = require('fs-extra')
 const prettysize = require('prettysize')
 const pug = require('pug')
 
-const { baseDir, templatesDir } = require('./config')
+const { publicDir, templatesDir } = require('./config')
 const getFileSizes = require('./utils/get-file-sizes')
 
 async function run () {
   try {
-    const allFiles = await readdir(baseDir)
+    const allFiles = await readdir(publicDir)
 
     const pagenames = allFiles
       .filter(filename => filename.match(/\.html$/))
@@ -19,7 +19,7 @@ async function run () {
     const pages = []
     for (const pagename of pagenames) {
       const { name } = parse(pagename)
-      const content = await readFile(join(baseDir, pagename))
+      const content = await readFile(join(publicDir, pagename))
       const sizes = getFileSizes(content)
       const title = titleCase(name)
       const page = {
@@ -36,7 +36,7 @@ async function run () {
       pages,
       prettysize: size => prettysize(size, { places: 2 })
     })
-    await writeFile(join(baseDir, 'index.html'), html)
+    await writeFile(join(publicDir, 'index.html'), html)
   } catch (err) {
     console.error(err)
     throw err

@@ -8,10 +8,10 @@ const prettysize = require('prettysize')
 const pug = require('pug')
 
 const getFileSizes = require('./get-file-sizes')
-const { baseDir, templatesDir } = require('../config')
+const { publicDir, templatesDir } = require('../config')
 
 module.exports = async function createGridPage ({ slug, title, images }) {
-  const dest = join(baseDir, `${slug}.html`)
+  const dest = join(publicDir, `${slug}.html`)
   for (const image of images) {
     const preparedImage = await readFile(image.prepared.path)
     let imageStats = {

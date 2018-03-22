@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "compare-performance-impact": "node src/performance-impact",
-    "compare-primitive-methods": "node src/primitive-methods"
+    "compare-primitive-methods": "node src/primitive-methods",
+    "compare-count-impace": "node src/count-impact",
+    "generate-overview-page": "node src/overview-page",
+    "generate-reference-pages": "node src/reference-pages",
+    "serve": "serve public"
   },
   "keywords": [],
   "author": "",
