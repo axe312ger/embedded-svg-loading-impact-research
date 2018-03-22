@@ -6,10 +6,12 @@
   "scripts": {
     "compare-performance-impact": "node src/performance-impact",
     "compare-primitive-methods": "node src/primitive-methods",
-    "compare-count-impace": "node src/count-impact",
+    "compare-count-impact": "node src/count-impact",
     "generate-overview-page": "node src/overview-page",
     "generate-reference-pages": "node src/reference-pages",
-    "serve": "serve public"
+    "generate-all": "npm run compare-performance-impact && npm run compare-primitive-methods && npm run compare-count-impact && npm run generate-reference-pages && npm run generate-overview-page",
+    "serve": "serve public",
+    "deploy": "gh-pages -d public"
   },
   "keywords": [],
   "author": "",
@@ -25,7 +27,7 @@
     "mini-svg-data-uri": "^1.0.0",
     "prettysize": "^1.1.0",
     "pug": "^2.0.0-rc.4",
-    "sharp": "^0.20.0",
+    "sharp": "^0.18.4",
     "spectre.css": "^0.5.1",
     "sqip": "^0.3.2",
     "svgo": "^1.0.5"
@@ -38,6 +40,7 @@
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
+    "gh-pages": "^1.1.0",
     "nodemon": "^1.17.1",
     "serve": "^6.5.2",
     "systeminformation": "^3.37.4"
