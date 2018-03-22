@@ -23,6 +23,7 @@
     "fs-extra": "^5.0.0",
     "gzip-size": "^4.1.0",
     "json-stringify-safe": "^5.0.1",
+    "lodash": "^4.17.5",
     "lqip": "^2.0.2",
     "mini-svg-data-uri": "^1.0.0",
     "prettysize": "^1.1.0",
@@ -30,6 +31,7 @@
     "sharp": "^0.18.4",
     "spectre.css": "^0.5.1",
     "sqip": "^0.3.2",
+    "stats-lite": "^2.1.0",
     "svgo": "^1.0.5"
   },
   "devDependencies": {

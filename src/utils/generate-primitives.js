@@ -82,8 +82,7 @@ module.exports = async function generatePrimitives (file, options = {}) {
 
   file.primitive = {
     ...cache.results,
-    // @todo Calc average instead of hacky grabbing first one
-    ...cache.runs[Object.keys(cache.runs)[0]][0],
+    runs: cache.runs,
     name,
     path
   }
