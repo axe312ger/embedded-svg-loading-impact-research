@@ -45,6 +45,19 @@
           "brotli": 1618,
           "gzip": 1840
         }
+      },
+      {
+        "duration": 4806,
+        "sizes": {
+          "original": 5963,
+          "brotli": 1960,
+          "gzip": 2143
+        },
+        "optimizedSizes": {
+          "original": 5005,
+          "brotli": 1597,
+          "gzip": 1856
+        }
       }
     ]
   }
