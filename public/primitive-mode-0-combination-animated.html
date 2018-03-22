@@ -28,6 +28,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2vmin;
+  margin-bottom: 4rem;
 }
 
 .image-wrapper {
@@ -46,13 +47,30 @@ footer {
   z-index: 1;
 }
 
+.table-nowrap td {
+  font-size: 0.8em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.center-text {
+  text-align: center;
+}
+
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>Primitive mode 0 (Combination) animated</h1>
-      <div class="grid">
-        <div>
+      <header class="navbar">
+        <section class="navbar-section">
+          <div class="navbar-brand mr-2">SQIP Research</div><a class="btn btn-link" href="index.html">Home</a>
+        </section>
+      </header>
+      <div class="divider"></div>
+      <main>
+        <h1 class="h3">Primitive mode 0 (Combination) animated</h1>
+        <div class="grid">
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%23544b47' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='%23dbf3ff' cx='165' cy='62' rx='32' ry='25' style='animation-delay:0s'/%3e%3cellipse fill='%23bfa98e' rx='1' ry='1' transform='matrix(5.0791 -16.61296 75.24332 23.0042 126 118)' style='animation-delay:.188s'/%3e%3cellipse fill='%23060a13' rx='1' ry='1' transform='matrix(9.2657 -52.54843 26.25588 4.62962 76 30)' style='animation-delay:.376s'/%3e%3cellipse fill='%23040000' rx='1' ry='1' transform='matrix(-6.41523 27.9861 -48.6567 -11.15353 15 118)' style='animation-delay:.562s'/%3e%3cellipse fill='%232e221a' rx='1' ry='1' transform='rotate(173 115 45) scale(30.21683 139.46801)' style='animation-delay:.746s'/%3e%3cellipse fill='%23c2afa8' cx='158' cy='44' rx='24' ry='20' style='animation-delay:.927s'/%3e%3cpath fill='%23adaba0' d='M50 40L14 98 7 74z' style='animation-delay:1.104s'/%3e%3cpath fill='%23b8c6c5' d='M4 63l-7-7 23-23 7 7z' style='animation-delay:1.277s'/%3e%3cellipse fill='%23020701' rx='1' ry='1' transform='matrix(8.55631 8.82345 -25.65688 24.88008 158 4)' style='animation-delay:1.445s'/%3e%3cpath fill='%23cfe3ec' d='M130 32l40 41-23 10z' style='animation-delay:1.607s'/%3e%3cpath fill='%237e99a4' d='M115 12l-7 43 25-40 10-24z' style='animation-delay:1.763s'/%3e%3cpath fill='%23bebeb4' d='M58 87l-13 1 25-31z' style='animation-delay:1.912s'/%3e%3cpath fill='%23777a84' d='M183 38l25 28-25 23-38-53z' style='animation-delay:2.054s'/%3e%3cellipse fill='%23a9a093' rx='1' ry='1' transform='matrix(1.2719 -4.7068 66.62458 18.00378 209 128)' style='animation-delay:2.187s'/%3e%3cellipse fill='%231d0100' rx='1' ry='1' transform='matrix(-7.19791 -6.48103 18.59543 -20.65231 204 82)' style='animation-delay:2.312s'/%3e%3cellipse fill='%23af5238' rx='1' ry='1' transform='matrix(14.02724 -13.40472 10.91338 11.4202 120 82)' style='animation-delay:2.427s'/%3e%3cellipse fill='%231d232c' rx='1' ry='1' transform='matrix(9.55003 22.20885 -45.86784 19.72363 0 20)' style='animation-delay:2.533s'/%3e%3cpath fill='%232e0900' d='M77 58l14 36 24-15-8-15z' style='animation-delay:2.629s'/%3e%3cpath fill='%23110d0f' d='M74 49l7-26 20-39-115 150z' style='animation-delay:2.714s'/%3e%3cpath d='M246 103l-6 40 31-10-14-102z' style='animation-delay:2.789s'/%3e%3cpath fill='%2397acb7' d='M245 82l5 1-11 54-5-1z' style='animation-delay:2.853s'/%3e%3cellipse fill='%2314050c' rx='1' ry='1' transform='matrix(-17.2956 20.65298 -3.84567 -3.22051 19 57)' style='animation-delay:2.906s'/%3e%3cpath fill='%23530b00' d='M118 46l8-7 15 18-9 6z' style='animation-delay:2.947s'/%3e%3cellipse fill='%2333322a' rx='1' ry='1' transform='matrix(-19.32236 -2.04374 2.61823 -24.75375 198 27)' style='animation-delay:2.976s'/%3e%3cpath fill='%237d4817' d='M105 112l56 3 95 28-92-15z' style='animation-delay:2.994s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
@@ -67,24 +85,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Combination</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>1890.5B</td>
                   <td>1.85 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>798.5B</td>
                   <td>798.50 Bytes</td>
+                  <td>42.24 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>721.25B</td>
                   <td>721.25 Bytes</td>
+                  <td>38.15 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('c6cb94cf46c7692add369e96f1d3fe63').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('c6cb94cf46c7692add369e96f1d3fe63').className='modal active'">Show Full Data</button>
               <div class="modal" id="c6cb94cf46c7692add369e96f1d3fe63"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('c6cb94cf46c7692add369e96f1d3fe63').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('c6cb94cf46c7692add369e96f1d3fe63').className='modal'"></a>
@@ -120,8 +145,6 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%23909b99' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='%2391e3ff' cx='183' rx='74' ry='52' style='animation-delay:0s'/%3e%3cellipse fill='%23003438' rx='1' ry='1' transform='matrix(-70.24615 -37.35054 4.99029 -9.38537 49 62)' style='animation-delay:.188s'/%3e%3cellipse fill='white' rx='1' ry='1' transform='matrix(-49.76807 -25.59427 4.79324 -9.32045 38 79)' style='animation-delay:.376s'/%3e%3cellipse fill='white' rx='1' ry='1' transform='rotate(-130 115 23) scale(34.23845 16.18895)' style='animation-delay:.562s'/%3e%3cellipse fill='white' rx='1' ry='1' transform='matrix(79.37476 48.06379 -2.81326 4.64595 57 41)' style='animation-delay:.746s'/%3e%3cpath fill='%230b353b' d='M-13 104l10-24 116 46-10 24z' style='animation-delay:.927s'/%3e%3cpath fill='%232a0e00' d='M264 94l7 8-67 25-19-8z' style='animation-delay:1.104s'/%3e%3cellipse fill='%23244646' rx='1' ry='1' transform='matrix(132.41785 85.66495 -3.6492 5.64081 79 39)' style='animation-delay:1.277s'/%3e%3cpath fill='white6d9' d='M142 58l-8 10L37-6l7-10z' style='animation-delay:1.445s'/%3e%3cellipse fill='%238f7369' rx='1' ry='1' transform='matrix(55.36545 -30.34436 14.73523 26.88548 223 76)' style='animation-delay:1.607s'/%3e%3cellipse fill='%231f342f' rx='1' ry='1' transform='matrix(-2.74272 4.1438 -36.87489 -24.40696 111 29)' style='animation-delay:1.763s'/%3e%3cpath fill='white' d='M83 143l-89-3-10-37z' style='animation-delay:1.912s'/%3e%3cpath fill='%23614a3e' d='M107 96l13 22-43 24-13-23z' style='animation-delay:2.054s'/%3e%3cellipse fill='%23ffd5b5' rx='1' ry='1' transform='matrix(-58.19537 -42.0899 4.14999 -5.73796 128 26)' style='animation-delay:2.187s'/%3e%3cellipse fill='%23d8e9f2' rx='1' ry='1' transform='rotate(163 7 1) scale(20.39056 16.17967)' style='animation-delay:2.312s'/%3e%3cpath fill='black803' d='M144 50l36 25-2 3-36-25z' style='animation-delay:2.427s'/%3e%3cellipse fill='%23201502' rx='1' ry='1' transform='matrix(.91165 2.1477 -54.77438 23.25035 231 84)' style='animation-delay:2.533s'/%3e%3cpath fill='white' d='M157 76L28-16l101 62 48 37z' style='animation-delay:2.629s'/%3e%3cpath fill='whiteffd' d='M199 131l-14 12 75-30-4-4z' style='animation-delay:2.714s'/%3e%3cellipse fill='whiteff1' rx='1' ry='1' transform='matrix(-2.1417 4.06538 -36.04472 -18.98883 116 78)' style='animation-delay:2.789s'/%3e%3cpath fill='%23dccdc3' d='M252 75l-106 49 28 17z' style='animation-delay:2.853s'/%3e%3cpath fill='%23ffb76b' d='M39 46l3-5 55 33-3 5z' style='animation-delay:2.906s'/%3e%3cpath fill='%23feebdb' d='M-16 41L93 97l2 5-27 13z' style='animation-delay:2.947s'/%3e%3cellipse fill='%23e1a365' rx='1' ry='1' transform='matrix(2.20227 -4.68006 37.66938 17.72586 39 93)' style='animation-delay:2.976s'/%3e%3cpath fill='%23240000' d='M11 54l-27-19 36 1z' style='animation-delay:2.994s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
@@ -136,24 +159,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Combination</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>2034.25B</td>
                   <td>1.99 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>826.5B</td>
                   <td>826.50 Bytes</td>
+                  <td>40.63 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>747.25B</td>
                   <td>747.25 Bytes</td>
+                  <td>36.73 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('4a0027458e48f866e593eec4ee62d144').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('4a0027458e48f866e593eec4ee62d144').className='modal active'">Show Full Data</button>
               <div class="modal" id="4a0027458e48f866e593eec4ee62d144"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('4a0027458e48f866e593eec4ee62d144').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('4a0027458e48f866e593eec4ee62d144').className='modal'"></a>
@@ -189,8 +219,6 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%23cecec9' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse rx='1' ry='1' transform='matrix(-1.17043 20.11687 -85.78751 -4.99126 236 125)' style='animation-delay:0s'/%3e%3cellipse rx='1' ry='1' transform='matrix(48.24881 -8.41315 2.34609 13.45465 4 127)' style='animation-delay:.188s'/%3e%3cellipse fill='white' rx='1' ry='1' transform='matrix(43.7109 53.85274 -45.51938 36.94693 202 38)' style='animation-delay:.376s'/%3e%3cellipse rx='1' ry='1' transform='matrix(71.41109 .01956 -.00387 14.1465 239 119)' style='animation-delay:.562s'/%3e%3cpath fill='white' d='M-16-2l193-14-193 130z' style='animation-delay:.746s'/%3e%3cellipse fill='%23927d62' rx='1' ry='1' transform='matrix(-33.12293 13.2933 -12.77103 -31.82157 112 63)' style='animation-delay:.927s'/%3e%3cpath d='M-16 117l58 26 8-31z' style='animation-delay:1.104s'/%3e%3cpath fill='%23604217' d='M81 49l27 39-8 4-35-34z' style='animation-delay:1.277s'/%3e%3cellipse fill='%23f5fcff' rx='1' ry='1' transform='rotate(-117 39 21) scale(48.40048 32.56665)' style='animation-delay:1.445s'/%3e%3cellipse fill='%23b19464' cx='157' cy='127' rx='13' ry='44' style='animation-delay:1.607s'/%3e%3cellipse fill='%23fdffff' cx='131' cy='13' rx='255' ry='15' style='animation-delay:1.763s'/%3e%3cellipse fill='white' rx='1' ry='1' transform='rotate(-57 103 -65) scale(16.15764 5.67284)' style='animation-delay:1.912s'/%3e%3cpath fill='%23160e00' d='M170 109h86v19h-86z' style='animation-delay:2.054s'/%3e%3cpath fill='%23693410' d='M123 25l-5 6-21 12 31-4z' style='animation-delay:2.187s'/%3e%3cpath fill='%23684d28' d='M111 69L97 89v21z' style='animation-delay:2.312s'/%3e%3cellipse fill='%23f3f8f9' cx='199' cy='27' rx='57' ry='57' style='animation-delay:2.427s'/%3e%3cpath fill='%23c2c4bc' d='M155 78l-22 44-34-16 22-44z' style='animation-delay:2.533s'/%3e%3cellipse fill='%23f7fafd' cx='103' cy='6' rx='19' ry='30' style='animation-delay:2.629s'/%3e%3cpath fill='%23dce1da' d='M90 89l20-20-39 71-13-92z' style='animation-delay:2.714s'/%3e%3cpath fill='%23f0f0f1' d='M127 29l-7 59 26-86L8-16z' style='animation-delay:2.789s'/%3e%3cpath fill='%23432b13' d='M140 76h1l-7 32h-1z' style='animation-delay:2.853s'/%3e%3cpath fill='%23543309' d='M87 56H69l12 17z' style='animation-delay:2.906s'/%3e%3cpath fill='%23b9c5c3' d='M250 94l-62-1-3 11 38 4z' style='animation-delay:2.947s'/%3e%3cpath fill='%23a18765' d='M160 90l10 32-32 21z' style='animation-delay:2.976s'/%3e%3cpath fill='%23b9c2c1' d='M54 95l-42 17h62l-30 31z' style='animation-delay:2.994s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
@@ -205,24 +233,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Combination</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>1636.25B</td>
                   <td>1.60 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>715.75B</td>
                   <td>715.75 Bytes</td>
+                  <td>43.74 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>656.25B</td>
                   <td>656.25 Bytes</td>
+                  <td>40.11 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('64e112e82372541638885bd33ed0530f').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('64e112e82372541638885bd33ed0530f').className='modal active'">Show Full Data</button>
               <div class="modal" id="64e112e82372541638885bd33ed0530f"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('64e112e82372541638885bd33ed0530f').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('64e112e82372541638885bd33ed0530f').className='modal'"></a>
@@ -258,8 +293,6 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%2351564e' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='%23bebdad' rx='1' ry='1' transform='matrix(15.4365 15.98497 -30.27225 29.23357 191 77)' style='animation-delay:0s'/%3e%3cpath fill='white' d='M71 75l8-29-25 5z' style='animation-delay:.188s'/%3e%3cellipse fill='%23171309' rx='1' ry='1' transform='matrix(23.59472 3.95473 -19.643 117.19426 251 72)' style='animation-delay:.376s'/%3e%3cellipse fill='%23192119' rx='1' ry='1' transform='matrix(-16.07675 44.77257 -28.9002 -10.37736 21 48)' style='animation-delay:.562s'/%3e%3cellipse fill='%23b4b0a6' rx='1' ry='1' transform='matrix(15.66288 -3.61606 6.4904 28.11298 178 18)' style='animation-delay:.746s'/%3e%3cpath fill='%23bfd0d0' d='M189 48l29 3-3 31-29-3z' style='animation-delay:.927s'/%3e%3cellipse fill='%23141e12' rx='1' ry='1' transform='rotate(-155 20 59) scale(57.29653 15.49883)' style='animation-delay:1.104s'/%3e%3cellipse fill='%235b6569' rx='1' ry='1' transform='matrix(-4.7834 -30.1915 37.45042 -5.93346 147 66)' style='animation-delay:1.277s'/%3e%3cellipse fill='%23796749' rx='1' ry='1' transform='matrix(-62.22562 39.03406 -4.99151 -7.95715 211 93)' style='animation-delay:1.445s'/%3e%3cellipse fill='%23a09c91' rx='1' ry='1' transform='matrix(7.0041 -15.73148 7.2716 3.23753 218 21)' style='animation-delay:1.607s'/%3e%3cpath fill='%23b3b3a8' d='M90 44l-21-7 5 16 20 2z' style='animation-delay:1.763s'/%3e%3cpath fill='%23b4b8ad' d='M40 6l28 7-16-25z' style='animation-delay:1.912s'/%3e%3cpath fill='%232f3626' d='M82 111l28-57-116 87z' style='animation-delay:2.054s'/%3e%3cpath fill='%23808676' d='M150 71l7-18 78 11-79 16z' style='animation-delay:2.187s'/%3e%3cellipse fill='%2398978c' cx='175' cy='127' rx='18' ry='13' style='animation-delay:2.312s'/%3e%3cpath fill='%23949a98' d='M37 97L6 94l31 21 1-23z' style='animation-delay:2.427s'/%3e%3cpath fill='white' d='M189 73h23v6h-23z' style='animation-delay:2.533s'/%3e%3cpath fill='%23221f14' d='M196 27l-13-11 25-27 13 11z' style='animation-delay:2.629s'/%3e%3cpath fill='%238a8b83' d='M76 51l-2 4-17 29 28-5z' style='animation-delay:2.714s'/%3e%3cellipse fill='%239d998c' rx='1' ry='1' transform='matrix(4.74016 3.61634 -6.94259 9.10007 96 12)' style='animation-delay:2.789s'/%3e%3cpath fill='%231f2719' d='M46 44l-9-13L70 8l9 13z' style='animation-delay:2.853s'/%3e%3cellipse fill='%23151b18' cx='247' cy='25' rx='16' ry='30' style='animation-delay:2.906s'/%3e%3cellipse fill='%233a515b' rx='1' ry='1' transform='rotate(-91 121 -6) scale(153.59476 30.41533)' style='animation-delay:2.947s'/%3e%3cpath fill='%239a9d98' d='M72 78L42 46l14-4 1 1z' style='animation-delay:2.976s'/%3e%3cellipse fill='%23131d11' rx='1' ry='1' transform='matrix(-2.18552 -5.84358 11.0189 -4.1211 49 77)' style='animation-delay:2.994s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
@@ -274,24 +307,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Combination</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>1882.75B</td>
                   <td>1.84 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>790.25B</td>
                   <td>790.25 Bytes</td>
+                  <td>41.97 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>716.75B</td>
                   <td>716.75 Bytes</td>
+                  <td>38.07 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('22d12cae2d2af9889ea8d50bd44b1b10').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('22d12cae2d2af9889ea8d50bd44b1b10').className='modal active'">Show Full Data</button>
               <div class="modal" id="22d12cae2d2af9889ea8d50bd44b1b10"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('22d12cae2d2af9889ea8d50bd44b1b10').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('22d12cae2d2af9889ea8d50bd44b1b10').className='modal'"></a>
@@ -327,8 +367,6 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%236a676e' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='%23d2c3d1' rx='1' ry='1' transform='matrix(94.6687 20.20463 -9.66657 45.29267 128 54)' style='animation-delay:0s'/%3e%3cpath d='M77 143l-93-57 266 32z' style='animation-delay:.188s'/%3e%3cellipse rx='1' ry='1' transform='matrix(-18.14555 -1.82434 8.27177 -82.2739 15 81)' style='animation-delay:.376s'/%3e%3cellipse rx='1' ry='1' transform='matrix(-2.1777 -87.74354 20.27931 -.50331 242 118)' style='animation-delay:.562s'/%3e%3cellipse fill='%23e3c8d4' cx='72' cy='93' rx='42' ry='9' style='animation-delay:.746s'/%3e%3cellipse fill='%23acc6d0' cx='188' cy='25' rx='37' ry='22' style='animation-delay:.927s'/%3e%3cpath fill='%23020300' d='M0 104h238v24H0z' style='animation-delay:1.104s'/%3e%3cpath fill='%23f8ffff' d='M33 33h164v7H33z' style='animation-delay:1.277s'/%3e%3cpath fill='%23dee5fd' d='M54 6l-43 6 162 3 13-9z' style='animation-delay:1.445s'/%3e%3cpath fill='%23cf493c' d='M39 14h66v20H39z' style='animation-delay:1.607s'/%3e%3cellipse fill='black40a' cx='24' cy='84' rx='9' ry='185' style='animation-delay:1.763s'/%3e%3cellipse fill='black700' cx='107' cy='1' rx='139' ry='4' style='animation-delay:1.912s'/%3e%3cellipse fill='black911' cx='232' cy='23' rx='9' ry='109' style='animation-delay:2.054s'/%3e%3cpath fill='%23035045' d='M97 68l4-14-34-1-7 16z' style='animation-delay:2.187s'/%3e%3cpath fill='%23cd5146' d='M218 72l-95-2 1-16 95 2z' style='animation-delay:2.312s'/%3e%3cpath fill='%23c8cedd' d='M224 105L220 3l-5 97-95-4z' style='animation-delay:2.427s'/%3e%3cellipse fill='%23627e99' rx='1' ry='1' transform='rotate(-86 12 1) scale(29.10176 12.05238)' style='animation-delay:2.533s'/%3e%3cellipse fill='%23e6eafe' cx='148' cy='50' rx='75' ry='4' style='animation-delay:2.629s'/%3e%3cpath fill='%233c5b93' d='M89 75h67v18H89z' style='animation-delay:2.714s'/%3e%3cpath fill='%23c1a3ab' d='M36 69h85v33H36z' style='animation-delay:2.789s'/%3e%3cpath fill='%234d6c6f' d='M157 14h80v17h-80z' style='animation-delay:2.853s'/%3e%3cpath fill='%233d7161' d='M215 76v22h-41V76z' style='animation-delay:2.906s'/%3e%3cpath fill='%23a2281b' d='M56 74h20v16H56z' style='animation-delay:2.947s'/%3e%3cellipse cx='13' cy='72' rx='20' ry='20' style='animation-delay:2.976s'/%3e%3cpath fill='%23dbc8d8' d='M33-4l3 35L68 8l-23 5z' style='animation-delay:2.994s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
@@ -343,24 +381,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Combination</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>1522.5B</td>
                   <td>1.49 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>674B</td>
                   <td>674.00 Bytes</td>
+                  <td>44.27 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>614B</td>
                   <td>614.00 Bytes</td>
+                  <td>40.33 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('205653f3e1b8eef8898d489272022ab5').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('205653f3e1b8eef8898d489272022ab5').className='modal active'">Show Full Data</button>
               <div class="modal" id="205653f3e1b8eef8898d489272022ab5"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('205653f3e1b8eef8898d489272022ab5').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('205653f3e1b8eef8898d489272022ab5').className='modal'"></a>
@@ -396,8 +441,6 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%23d2d2d3' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse rx='1' ry='1' transform='matrix(17.38857 35.13068 -28.9384 14.32359 61 21)' style='animation-delay:0s'/%3e%3cellipse fill='%232d0000' cx='59' cy='17' rx='33' ry='33' style='animation-delay:.188s'/%3e%3cellipse fill='%23f6fafd' rx='1' ry='1' transform='matrix(75.87531 -243.45007 72.8112 22.69284 178 66)' style='animation-delay:.376s'/%3e%3cellipse fill='%23eff3f5' cy='108' rx='87' ry='70' style='animation-delay:.562s'/%3e%3cellipse fill='%2389928f' rx='1' ry='1' transform='matrix(-4.07352 -11.13141 31.37264 -11.48076 77 57)' style='animation-delay:.746s'/%3e%3cellipse fill='%23f9ffff' rx='1' ry='1' transform='matrix(-28.56382 53.72073 -14.88931 -7.91679 5 25)' style='animation-delay:.927s'/%3e%3cpath fill='%23c2cbcc' d='M101-16L95 89l31-42-42-8z' style='animation-delay:1.104s'/%3e%3cellipse fill='%23491911' cx='64' cy='20' rx='26' ry='29' style='animation-delay:1.277s'/%3e%3cpath fill='%23fbfeff' d='M179 63l21 46-45 20-21-46z' style='animation-delay:1.445s'/%3e%3cpath fill='%23f0f3f3' d='M77-15l49 63h60l-11-64z' style='animation-delay:1.607s'/%3e%3cellipse fill='%23d7dada' rx='1' ry='1' transform='matrix(17.49747 -48.62785 32.95375 11.85755 230 94)' style='animation-delay:1.763s'/%3e%3cpath fill='%23818981' d='M88 59l-37 3 52-36z' style='animation-delay:1.912s'/%3e%3cpath fill='%23c3c8ca' d='M29 48v2l37 1 5 47z' style='animation-delay:2.054s'/%3e%3cpath fill='%233e746c' d='M28 35l10 11 7 3-21-36z' style='animation-delay:2.187s'/%3e%3cpath fill='%236d8253' d='M72-4l-1 15-15-1 1-15z' style='animation-delay:2.312s'/%3e%3cpath fill='%23100000' d='M69 14l18 22-20-5 7-30z' style='animation-delay:2.427s'/%3e%3cellipse fill='%23acadae' cx='177' cy='52' rx='91' ry='2' style='animation-delay:2.533s'/%3e%3cpath fill='%23edeff2' d='M-1-16L-2 91l52-3-29-67z' style='animation-delay:2.629s'/%3e%3cpath fill='%23a1a3a6' d='M191 92h65v3h-65z' style='animation-delay:2.714s'/%3e%3cpath fill='%23685c54' d='M42 12l19 11-35-1 6-28z' style='animation-delay:2.789s'/%3e%3cpath fill='%23a0a1a6' d='M4 92h135v2H4z' style='animation-delay:2.853s'/%3e%3cellipse fill='%23b9bbbc' cx='182' cy='12' rx='91' ry='2' style='animation-delay:2.906s'/%3e%3cpath fill='%23767771' d='M90 50l-41 7 21 8 20-13z' style='animation-delay:2.947s'/%3e%3cpath fill='%23c2d1d0' d='M91 5l1 24 25 20z' style='animation-delay:2.976s'/%3e%3cpath fill='%23b7c2c1' d='M0 51h58v3H0z' style='animation-delay:2.994s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
@@ -412,24 +455,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Combination</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>1675.5B</td>
                   <td>1.64 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>734.5B</td>
                   <td>734.50 Bytes</td>
+                  <td>43.84 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>668.75B</td>
                   <td>668.75 Bytes</td>
+                  <td>39.91 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('6c44e82d75820c69bf983a36104c8069').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('6c44e82d75820c69bf983a36104c8069').className='modal active'">Show Full Data</button>
               <div class="modal" id="6c44e82d75820c69bf983a36104c8069"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('6c44e82d75820c69bf983a36104c8069').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('6c44e82d75820c69bf983a36104c8069').className='modal'"></a>
@@ -465,8 +515,6 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%23494949' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='%23c9c9c9' rx='1' ry='1' transform='matrix(-1.21568 -29.00517 47.3626 -1.98508 118 53)' style='animation-delay:0s'/%3e%3cpath d='M255 73l5-89-107 51z' style='animation-delay:.196s'/%3e%3cellipse rx='1' ry='1' transform='matrix(-53.59103 -20.78659 8.78005 -22.6363 0 25)' style='animation-delay:.392s'/%3e%3cellipse rx='1' ry='1' transform='matrix(-1.94022 -26.17196 42.12565 -3.12293 117 0)' style='animation-delay:.585s'/%3e%3cpath fill='%23bcbcbc' d='M20 4l21-24 71 64-21 24z' style='animation-delay:.776s'/%3e%3cellipse fill='%238f8f8f' cx='78' cy='113' rx='46' ry='21' style='animation-delay:.964s'/%3e%3cellipse cx='234' cy='37' rx='73' ry='20' style='animation-delay:1.148s'/%3e%3cpath d='M171 114l-47-19 64-30z' style='animation-delay:1.327s'/%3e%3cpath fill='%23b1b1b1' d='M118 34l69-46 7 10-69 46z' style='animation-delay:1.5s'/%3e%3cpath fill='%23131313' d='M106 56l30-1V41l-10-56z' style='animation-delay:1.667s'/%3e%3cpath fill='%238b8b8b' d='M237 72l11-13-71 84 22-92z' style='animation-delay:1.826s'/%3e%3cellipse rx='1' ry='1' transform='matrix(-51.23476 1.19042 -.51506 -22.16806 6 34)' style='animation-delay:1.978s'/%3e%3cpath fill='%23b4b4b4' d='M111 24l-17 89-9-9-18-88z' style='animation-delay:2.121s'/%3e%3cellipse rx='1' ry='1' transform='matrix(-2.53047 -17.32455 47.95586 -7.00455 118 2)' style='animation-delay:2.256s'/%3e%3cpath fill='%23b0b0b0' d='M101 32l13 12 50 4-11-21z' style='animation-delay:2.38s'/%3e%3cpath d='M267-16l-8 89-98-35z' style='animation-delay:2.494s'/%3e%3cpath fill='%230d0d0d' d='M47 64l25-6 7 28-25 6z' style='animation-delay:2.598s'/%3e%3cpath d='M126-5l16 18-24 20-16-18zM21 143l-5-32 3-5 25 25z' style='animation-delay:2.691s'/%3e%3cellipse fill='%23717171' cx='128' cy='76' rx='32' ry='15' style='animation-delay:2.772s'/%3e%3cellipse fill='%236f6f6f' rx='1' ry='1' transform='matrix(6.79784 20.9216 -32.10045 10.43007 203 114)' style='animation-delay:2.841s'/%3e%3cellipse fill='%23949494' rx='1' ry='1' transform='matrix(43.2476 17.91374 -2.69074 6.496 225 71)' style='animation-delay:2.898s'/%3e%3cellipse cy='30' rx='30' ry='30' style='animation-delay:2.942s'/%3e%3cpath fill='%23020202' d='M200 72l-27-11-32 45z' style='animation-delay:2.974s'/%3e%3cpath fill='%23727272' d='M29 49l38 4-5 5-78 21z' style='animation-delay:2.994s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
@@ -481,24 +529,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Combination</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>1674.5B</td>
                   <td>1.64 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>710.25B</td>
                   <td>710.25 Bytes</td>
+                  <td>42.42 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>654.75B</td>
                   <td>654.75 Bytes</td>
+                  <td>39.10 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('134eb1df6461f49ace74a99d1e497741').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('134eb1df6461f49ace74a99d1e497741').className='modal active'">Show Full Data</button>
               <div class="modal" id="134eb1df6461f49ace74a99d1e497741"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('134eb1df6461f49ace74a99d1e497741').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('134eb1df6461f49ace74a99d1e497741').className='modal'"></a>
@@ -534,8 +589,6 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%23857a71' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='white' rx='1' ry='1' transform='matrix(-.28065 -16.0783 105.06103 -1.83385 81 3)' style='animation-delay:0s'/%3e%3cpath fill='%23242e12' d='M166 61l5-56 93 8-5 56z' style='animation-delay:.188s'/%3e%3cellipse fill='white' cx='98' cy='32' rx='12' ry='35' style='animation-delay:.376s'/%3e%3cellipse fill='%23383f2d' rx='1' ry='1' transform='matrix(6.1868 22.1586 -43.48381 12.1409 34 42)' style='animation-delay:.562s'/%3e%3cellipse fill='%23c1d8f3' rx='1' ry='1' transform='matrix(22.1752 58.52554 -13.8812 5.25955 143 23)' style='animation-delay:.746s'/%3e%3cellipse fill='%235a3625' rx='1' ry='1' transform='rotate(-176 23 59) scale(80.79367 20.44438)' style='animation-delay:.927s'/%3e%3cellipse fill='azure' cx='15' rx='173' ry='17' style='animation-delay:1.104s'/%3e%3cpath fill='%23080917' d='M119 97l-20 3-4-33 20-3z' style='animation-delay:1.277s'/%3e%3cpath fill='%23d8a892' d='M165 63h91v25h-91z' style='animation-delay:1.445s'/%3e%3cpath fill='%230c1707' d='M166 46h43v17h-43z' style='animation-delay:1.607s'/%3e%3cpath fill='%236a6651' d='M215 58l-75-43L266-3z' style='animation-delay:1.763s'/%3e%3cellipse fill='%23374159' rx='1' ry='1' transform='matrix(3.22808 -10.40588 22.58844 7.00731 130 70)' style='animation-delay:1.912s'/%3e%3cellipse fill='%23c8a497' rx='1' ry='1' transform='rotate(118 16 59) scale(14.45998 23.13289)' style='animation-delay:2.054s'/%3e%3cpath fill='%23dbeaff' d='M22 20L180 0-11-2l-5 27z' style='animation-delay:2.187s'/%3e%3cpath fill='%23c1c6cd' d='M64-1l64 27V3l-25 51z' style='animation-delay:2.312s'/%3e%3cpath fill='%235e7292' d='M136 31l20 44-51-15 15-49z' style='animation-delay:2.427s'/%3e%3cpath fill='%236d6966' d='M84 43L-4 26l85-14 20 82z' style='animation-delay:2.533s'/%3e%3cellipse fill='%230d1707' rx='1' ry='1' transform='matrix(-.80045 -8.13198 27.09816 -2.66733 249 54)' style='animation-delay:2.629s'/%3e%3cpath fill='%23283444' d='M123 26l-11 69-2-52 8-17z' style='animation-delay:2.714s'/%3e%3cpath fill='%23f9ffff' d='M116-10l16 30 102-35z' style='animation-delay:2.789s'/%3e%3cpath fill='%23454432' d='M-16 120l38-57 56-14-67-13z' style='animation-delay:2.853s'/%3e%3cellipse fill='%23d7ada3' rx='1' ry='1' transform='matrix(16.02493 4.41002 -.8754 3.18097 219 41)' style='animation-delay:2.906s'/%3e%3cellipse fill='%23edf4f9' rx='1' ry='1' transform='matrix(3.7448 14.69142 -8.31384 2.11917 101 52)' style='animation-delay:2.947s'/%3e%3cellipse fill='%23cab0a6' rx='1' ry='1' transform='matrix(-13.98958 17.96478 -8.36863 -6.51684 163 87)' style='animation-delay:2.976s'/%3e%3cpath fill='%238ba6c8' d='M114 71l48-46-46 14 11 38z' style='animation-delay:2.994s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
@@ -550,24 +603,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Combination</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>1796.25B</td>
                   <td>1.75 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>766B</td>
                   <td>766.00 Bytes</td>
+                  <td>42.64 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>699.25B</td>
                   <td>699.25 Bytes</td>
+                  <td>38.93 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('2dbb8dc5fc217b8c9eb8c8ccaed466ae').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('2dbb8dc5fc217b8c9eb8c8ccaed466ae').className='modal active'">Show Full Data</button>
               <div class="modal" id="2dbb8dc5fc217b8c9eb8c8ccaed466ae"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('2dbb8dc5fc217b8c9eb8c8ccaed466ae').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('2dbb8dc5fc217b8c9eb8c8ccaed466ae').className='modal'"></a>
@@ -603,8 +663,6 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%239e8a6e' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='whitefe9' rx='1' ry='1' transform='matrix(-1.5059 -29.126 245.66796 -12.70173 124 15)' style='animation-delay:0s'/%3e%3cellipse fill='%23261602' rx='1' ry='1' transform='matrix(244.42471 15.58359 -2.81478 44.14916 137 127)' style='animation-delay:.188s'/%3e%3cellipse fill='%23836d50' rx='1' ry='1' transform='matrix(-.42505 17.3921 -150.96242 -3.68944 115 87)' style='animation-delay:.376s'/%3e%3cellipse fill='%23291d0e' rx='1' ry='1' transform='matrix(.6505 12.4124 -152.1174 7.97214 185 125)' style='animation-delay:.562s'/%3e%3cellipse fill='%23f5dbb6' cx='61' cy='13' rx='132' ry='30' style='animation-delay:.746s'/%3e%3cellipse fill='%23aa8d6b' rx='1' ry='1' transform='matrix(-47.85268 4.8607 -2.5328 -24.93493 207 55)' style='animation-delay:.927s'/%3e%3cpath fill='%239b8364' d='M152 101l109-35L87 40l-37 7z' style='animation-delay:1.104s'/%3e%3cpath fill='white8d5' d='M267 39l-30-6 26-22 8-9z' style='animation-delay:1.277s'/%3e%3cellipse fill='%23725e44' cx='10' cy='86' rx='66' ry='18' style='animation-delay:1.445s'/%3e%3cellipse fill='%23fae3bd' cx='140' cy='37' rx='24' ry='8' style='animation-delay:1.607s'/%3e%3cpath fill='%23716146' d='M131 83h125v20H131z' style='animation-delay:1.763s'/%3e%3cellipse fill='%23af9575' rx='1' ry='1' transform='rotate(-81 146 -111) scale(17.07922 55.75855)' style='animation-delay:1.912s'/%3e%3cellipse fill='%23ccba9b' cx='109' cy='24' rx='35' ry='8' style='animation-delay:2.054s'/%3e%3cellipse fill='%2355442c' cx='21' cy='116' rx='136' ry='12' style='animation-delay:2.187s'/%3e%3cpath fill='%233c2f1d' d='M226 105l45 31-161 4 110-41z' style='animation-delay:2.312s'/%3e%3cellipse fill='%23f2e1c1' rx='1' ry='1' transform='matrix(-57.57609 -7.25455 1.60676 -12.75212 7 5)' style='animation-delay:2.427s'/%3e%3cpath fill='%23f7e5c5' d='M178-1l-72-1 33 2 15 31z' style='animation-delay:2.533s'/%3e%3cellipse fill='%23dac2a1' rx='1' ry='1' transform='matrix(1.7898 14.19607 -56.0135 7.062 220 15)' style='animation-delay:2.629s'/%3e%3cellipse fill='%23d4bb8f' cx='23' cy='46' rx='27' ry='3' style='animation-delay:2.714s'/%3e%3cpath fill='%239e8666' d='M74 42h30v41H74z' style='animation-delay:2.789s'/%3e%3cellipse fill='%23a58d6e' rx='1' ry='1' transform='matrix(-5.3772 -11.0249 37.11131 -18.1004 154 58)' style='animation-delay:2.853s'/%3e%3cpath fill='%23c8b99e' d='M133 14l-25-3 3-25 25 3z' style='animation-delay:2.906s'/%3e%3cellipse fill='%23685439' cx='145' cy='107' rx='66' ry='10' style='animation-delay:2.947s'/%3e%3cellipse fill='%23867459' cx='175' cy='85' rx='50' ry='8' style='animation-delay:2.976s'/%3e%3cpath fill='%23f0dcba' d='M177 38l-18 1-108-6 133-2z' style='animation-delay:2.994s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
@@ -619,24 +677,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 25 × Combination</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>2029B</td>
                   <td>1.98 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>806.25B</td>
                   <td>806.25 Bytes</td>
+                  <td>39.74 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>722.75B</td>
                   <td>722.75 Bytes</td>
+                  <td>35.62 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('37aa59152178e9c95fbf208d58533b60').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('37aa59152178e9c95fbf208d58533b60').className='modal active'">Show Full Data</button>
               <div class="modal" id="37aa59152178e9c95fbf208d58533b60"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('37aa59152178e9c95fbf208d58533b60').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('37aa59152178e9c95fbf208d58533b60').className='modal'"></a>
@@ -673,7 +738,7 @@ footer {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </div>
     <footer>
       <button class="btn" onClick="document.querySelector('body').className = document.querySelector('body').className ? '' : 'hide-images'">Toggle images</button>

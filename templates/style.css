@@ -23,6 +23,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2vmin;
+  margin-bottom: 4rem;
 }
 
 .image-wrapper {
@@ -39,4 +40,15 @@ footer {
   width: 100%;
   height: auto;
   z-index: 1;
+}
+
+.table-nowrap td {
+  font-size: 0.8em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.center-text {
+  text-align: center;
 }

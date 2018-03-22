@@ -8,5 +8,11 @@ html(lang="en")
       include style.css
   body
     .container
-      block content
+      header.navbar
+        section.navbar-section
+          .navbar-brand.mr-2 SQIP Research
+          a.btn.btn-link(href='index.html') Home
+      .divider
+      main
+        block content
     block footer

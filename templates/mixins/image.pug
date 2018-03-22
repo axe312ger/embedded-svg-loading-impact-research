@@ -19,20 +19,25 @@ mixin image(image)
             .column.col-auto
               i.icon.icon-apps
               span=` ${image.primitiveOptions.numberOfPrimitives} × ${image.primitiveOptions.modeTitle}`
-        table.table
+        table.table.table-nowrap
           tr
             td Original
             td=`${image.meanSizes.original}B`
             td=prettysize(image.meanSizes.original)
+            td=`${(image.meanSizes.original / image.meanSizes.original * 100).toFixed(2)} %`
           tr
             td Gzip
             td=`${image.meanSizes.gzip}B`
             td=prettysize(image.meanSizes.gzip)
+            td=`${(image.meanSizes.gzip / image.meanSizes.original * 100).toFixed(2)} %`
           tr
             td Brotli
             td=`${image.meanSizes.brotli}B`
             td=prettysize(image.meanSizes.brotli)
-      button.btn(onClick=`document.getElementById('${image.hash}').className='modal active'`) Show Full Data
+            td=`${(image.meanSizes.brotli / image.meanSizes.original * 100).toFixed(2)} %`
+          tr
+            td.center-text(colspan='4')
+              button.btn(onClick=`document.getElementById('${image.hash}').className='modal active'`) Show Full Data
       .modal(id=image.hash)
         a.modal-overlay(href='#close', aria-label='Close', onClick=`document.getElementById('${image.hash}').className='modal'`)
         .modal-container

@@ -28,6 +28,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2vmin;
+  margin-bottom: 4rem;
 }
 
 .image-wrapper {
@@ -46,13 +47,30 @@ footer {
   z-index: 1;
 }
 
+.table-nowrap td {
+  font-size: 0.8em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.center-text {
+  text-align: center;
+}
+
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>10 rotated triangles</h1>
-      <div class="grid">
-        <div>
+      <header class="navbar">
+        <section class="navbar-section">
+          <div class="navbar-brand mr-2">SQIP Research</div><a class="btn btn-link" href="index.html">Home</a>
+        </section>
+      </header>
+      <div class="divider"></div>
+      <main>
+        <h1 class="h3">10 rotated triangles</h1>
+        <div class="grid">
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cfilter id='a'%3e%3cfeGaussianBlur stdDeviation='55'/%3e%3c/filter%3e%3cpath fill='%23544b47' d='M0 0h400v200H0z'/%3e%3cg filter='url(%23a)'%3e%3cpath fill='%23d4ecfc' d='M204 96l66-54 50 61-67 54z'/%3e%3cpath fill='%23bdac93' d='M287 237L87 188l12-52 201 50z'/%3e%3cpath fill='%23050812' d='M71 109L94-24l77 14-23 132z'/%3e%3cpath d='M5 135l117 52-31 70-117-52z'/%3e%3cpath fill='%23c3b8b5' d='M262 40l7 85-60 6-8-86z'/%3e%3cpath fill='%2331160d' d='M350 75l109 110-70 69-109-109z'/%3e%3cpath fill='%231f1b10' d='M434 79L274 50l9-49 160 28z'/%3e%3cpath fill='black100' d='M261 2l-42 50-22-18 42-50z'/%3e%3cpath fill='%23bebfb4' d='M64 70l10 9-52 56-10-10z'/%3e%3cpath fill='%23b5c3c1' d='M-5 90l50-43 8 9L4 99z'/%3e%3c/g%3e%3c/svg%3e&quot;);">
@@ -67,24 +85,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 10 × Rotated rectangles</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>719.5B</td>
                   <td>719.50 Bytes</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>407B</td>
                   <td>407.00 Bytes</td>
+                  <td>56.57 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>370.75B</td>
                   <td>370.75 Bytes</td>
+                  <td>51.53 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('85159b33521877d09e716d476ee894b8').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('85159b33521877d09e716d476ee894b8').className='modal active'">Show Full Data</button>
               <div class="modal" id="85159b33521877d09e716d476ee894b8"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('85159b33521877d09e716d476ee894b8').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('85159b33521877d09e716d476ee894b8').className='modal'"></a>
@@ -120,8 +145,6 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cfilter id='a'%3e%3cfeGaussianBlur stdDeviation='55'/%3e%3c/filter%3e%3cpath fill='%23909b99' d='M0 0h400v200H0z'/%3e%3cg filter='url(%23a)'%3e%3cpath fill='%23002932' d='M-8 34l184 106-14 24L-22 59z'/%3e%3cpath fill='%2394e3ff' d='M302 119L164 15l76-101L378 18z'/%3e%3cpath fill='white' d='M141 150l-14 28-157-80 14-28z'/%3e%3cpath fill='whiteff5' d='M209 154L-9 18 2 0l218 137z'/%3e%3cpath fill='%2300313a' d='M-28 114l207 92-15 35-207-93z'/%3e%3cpath fill='white' d='M222 183l18-30 71 44-19 29z'/%3e%3cpath fill='%2300323e' d='M111 66l10-16 151 95-10 16z'/%3e%3cpath fill='%237c5f53' d='M300 208l-40-104 126-48 40 104z'/%3e%3cpath fill='whitebe1' d='M81 9L91-5l161 117-10 14z'/%3e%3cpath fill='%232e2816' d='M107 63L40 21 51 4l66 42z'/%3e%3c/g%3e%3c/svg%3e&quot;);">
@@ -136,24 +159,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 10 × Rotated rectangles</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>719.5B</td>
                   <td>719.50 Bytes</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>393.5B</td>
                   <td>393.50 Bytes</td>
+                  <td>54.69 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>364.5B</td>
                   <td>364.50 Bytes</td>
+                  <td>50.66 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('9c44328c179855db000b2841f7baaa58').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('9c44328c179855db000b2841f7baaa58').className='modal active'">Show Full Data</button>
               <div class="modal" id="9c44328c179855db000b2841f7baaa58"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('9c44328c179855db000b2841f7baaa58').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('9c44328c179855db000b2841f7baaa58').className='modal'"></a>
@@ -189,8 +219,6 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cfilter id='a'%3e%3cfeGaussianBlur stdDeviation='55'/%3e%3c/filter%3e%3cpath fill='%23cecec9' d='M0 0h400v200H0z'/%3e%3cg filter='url(%23a)'%3e%3cpath d='M419 163l1 57-181 3-1-57zm-431 63l-2-49 90-4 3 48z'/%3e%3cpath fill='white' d='M270 171L188-5l166-77 82 176zm-221-5L-62 70 68-80l111 96z'/%3e%3cpath d='M267 214l-1-43 156-5 1 42z'/%3e%3cpath fill='%23897054' d='M110 96l87-57 42 64-88 57z'/%3e%3cpath d='M76 177l1 28-76 4-2-28z'/%3e%3cpath fill='white' d='M353 9L-15 88l-15-68 369-78z'/%3e%3cpath fill='%234e2900' d='M132 117l-25-28 16-14 24 29z'/%3e%3cpath fill='%23bd9e6d' d='M263 139l2 72-32 1-3-72z'/%3e%3c/g%3e%3c/svg%3e&quot;);">
@@ -205,24 +233,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 10 × Rotated rectangles</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>637.75B</td>
                   <td>637.75 Bytes</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>383B</td>
                   <td>383.00 Bytes</td>
+                  <td>60.05 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>355.25B</td>
                   <td>355.25 Bytes</td>
+                  <td>55.70 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('6bcc47f837bf73efdf2e07fbc12074ae').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('6bcc47f837bf73efdf2e07fbc12074ae').className='modal active'">Show Full Data</button>
               <div class="modal" id="6bcc47f837bf73efdf2e07fbc12074ae"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('6bcc47f837bf73efdf2e07fbc12074ae').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('6bcc47f837bf73efdf2e07fbc12074ae').className='modal'"></a>
@@ -258,8 +293,6 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cfilter id='a'%3e%3cfeGaussianBlur stdDeviation='55'/%3e%3c/filter%3e%3cpath fill='%2351564e' d='M0 0h400v200H0z'/%3e%3cg filter='url(%23a)'%3e%3cpath fill='%23c3c1ae' d='M337 66l20 66-95 29-21-66z'/%3e%3cpath fill='%23131c13' d='M21 145l-59-47L47-6l58 47z'/%3e%3cpath fill='%23dedfda' d='M109 113L84 97l24-40 26 16z'/%3e%3cpath fill='%23b8b2a6' d='M302 60l-44 14-21-64 44-14z'/%3e%3cpath fill='%231f180b' d='M472-128l-75 351-70-15 74-351z'/%3e%3cpath fill='%23b9caca' d='M335 132l-46-11 12-48 45 10z'/%3e%3cpath fill='%23847d6d' d='M241 89l45-7 31 196-45 7z'/%3e%3cpath fill='%23101a0e' d='M-74 161l19-36 137 72-19 36z'/%3e%3cpath fill='%237f653a' d='M381 112l-58 72-24-20 58-71z'/%3e%3cpath fill='%23a39b8e' d='M330 58l-15-20 31-25 16 19z'/%3e%3c/g%3e%3c/svg%3e&quot;);">
@@ -274,24 +307,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 10 × Rotated rectangles</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>729B</td>
                   <td>729.00 Bytes</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>408.25B</td>
                   <td>408.25 Bytes</td>
+                  <td>56.00 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>375.75B</td>
                   <td>375.75 Bytes</td>
+                  <td>51.54 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('f1729e7ec455fad497ab07abb1f92499').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('f1729e7ec455fad497ab07abb1f92499').className='modal active'">Show Full Data</button>
               <div class="modal" id="f1729e7ec455fad497ab07abb1f92499"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('f1729e7ec455fad497ab07abb1f92499').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('f1729e7ec455fad497ab07abb1f92499').className='modal'"></a>
@@ -327,8 +367,6 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cfilter id='a'%3e%3cfeGaussianBlur stdDeviation='55'/%3e%3c/filter%3e%3cpath fill='%236a676e' d='M0 0h400v200H0z'/%3e%3cg filter='url(%23a)'%3e%3cpath fill='%23d2c4d2' d='M54 8h294v148H54z'/%3e%3cpath d='M385 234l-398-7 1-69 399 7z'/%3e%3cpath d='M54 33l-3 171-63-1 3-171zm298 17l72 1-3 182-72-2z'/%3e%3cpath fill='%23cc392b' d='M84 52V22h81v30z'/%3e%3cpath d='M5 82l50 4-6 69-49-5z'/%3e%3cpath fill='%23245c57' d='M170 84l-1 26-128-4 1-27z'/%3e%3cpath fill='blackb12' d='M377-7v200h-25V-7z'/%3e%3cpath fill='%2383abce' d='M382 18l33 2-5 61-32-3z'/%3e%3cpath fill='%23d15a51' d='M184 81l150 5-1 28-150-5z'/%3e%3c/g%3e%3c/svg%3e&quot;);">
@@ -343,24 +381,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 10 × Rotated rectangles</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>631B</td>
                   <td>631.00 Bytes</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>371.25B</td>
                   <td>371.25 Bytes</td>
+                  <td>58.84 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>344.25B</td>
                   <td>344.25 Bytes</td>
+                  <td>54.56 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('ca80d461bb8df2e4969a30e130784c7b').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('ca80d461bb8df2e4969a30e130784c7b').className='modal active'">Show Full Data</button>
               <div class="modal" id="ca80d461bb8df2e4969a30e130784c7b"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('ca80d461bb8df2e4969a30e130784c7b').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('ca80d461bb8df2e4969a30e130784c7b').className='modal'"></a>
@@ -396,8 +441,6 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cfilter id='a'%3e%3cfeGaussianBlur stdDeviation='55'/%3e%3c/filter%3e%3cpath fill='%23d2d2d3' d='M0 0h400v200H0z'/%3e%3cg filter='url(%23a)'%3e%3cpath d='M142 82l-97-2 2-92 97 2z'/%3e%3cpath fill='%23300000' d='M39 49l45-73 69 43-45 73z'/%3e%3cpath fill='%23f7fbfe' d='M441-24L262 328 85 238l180-352z'/%3e%3cpath fill='%23f5fbfe' d='M127 165l-54 37L-41 40 13 2z'/%3e%3cpath fill='%237f8a86' d='M153 52l16 29-70 40-17-28z'/%3e%3cpath fill='%23ebedef' d='M-1 267L-126 82 3-6l125 185z'/%3e%3cpath fill='%23f2fafb' d='M156-47l67 12-14 83-68-12z'/%3e%3cpath fill='%234b2419' d='M123 20l-21 47-64-29L59-9z'/%3e%3cpath fill='%2375857b' d='M133 75l2 18-48 6-2-19z'/%3e%3cpath fill='%23fbffff' d='M236 196l-22-69 74-24 22 68z'/%3e%3c/g%3e%3c/svg%3e&quot;);">
@@ -412,24 +455,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 10 × Rotated rectangles</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>704B</td>
                   <td>704.00 Bytes</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>395.75B</td>
                   <td>395.75 Bytes</td>
+                  <td>56.21 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>365.25B</td>
                   <td>365.25 Bytes</td>
+                  <td>51.88 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('ee723c3a8b7531dc94bb75a5f9a9af32').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('ee723c3a8b7531dc94bb75a5f9a9af32').className='modal active'">Show Full Data</button>
               <div class="modal" id="ee723c3a8b7531dc94bb75a5f9a9af32"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('ee723c3a8b7531dc94bb75a5f9a9af32').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('ee723c3a8b7531dc94bb75a5f9a9af32').className='modal'"></a>
@@ -465,8 +515,6 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cfilter id='a'%3e%3cfeGaussianBlur stdDeviation='55'/%3e%3c/filter%3e%3cpath fill='%23494949' d='M0 0h400v200H0z'/%3e%3cg filter='url(%23a)'%3e%3cpath fill='%23c7c7c7' d='M113 126l3-86 138 5-3 86z'/%3e%3cpath d='M310-30l148 56-38 100-148-57zM76 60l-56 50-63-71 55-50zm37-48l24-53 92 43-24 53z'/%3e%3cpath fill='%23bbb' d='M144 121L33-6l37-32L181 89z'/%3e%3cpath fill='%23949494' d='M141 121l57 64-78 70-57-64z'/%3e%3cpath d='M310 119l-55 59-32-30 55-59zm-49-88l188 33-8 44-188-33z'/%3e%3cpath fill='%239a9a9a' d='M196 48l142-89 18 29-142 89z'/%3e%3cpath fill='%23a5a5a5' d='M304 81l102 43-8 19-102-44z'/%3e%3c/g%3e%3c/svg%3e&quot;);">
@@ -481,24 +529,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 10 × Rotated rectangles</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>629B</td>
                   <td>629.00 Bytes</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>381B</td>
                   <td>381.00 Bytes</td>
+                  <td>60.57 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>352.25B</td>
                   <td>352.25 Bytes</td>
+                  <td>56.00 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('23e6b5f8e3116f95891f1af43b707981').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('23e6b5f8e3116f95891f1af43b707981').className='modal active'">Show Full Data</button>
               <div class="modal" id="23e6b5f8e3116f95891f1af43b707981"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('23e6b5f8e3116f95891f1af43b707981').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('23e6b5f8e3116f95891f1af43b707981').className='modal'"></a>
@@ -534,8 +589,6 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cfilter id='a'%3e%3cfeGaussianBlur stdDeviation='55'/%3e%3c/filter%3e%3cpath fill='%23857a71' d='M0 0h400v200H0z'/%3e%3cg filter='url(%23a)'%3e%3cpath fill='%23e7ffff' d='M30-80l246 66-26 96L4 16z'/%3e%3cpath fill='%231f2a0e' d='M402 101l-145-3 1-81 146 2z'/%3e%3cpath fill='%23333927' d='M141 69L-4 119l-17-49 145-50z'/%3e%3cpath fill='white' d='M305 12L-10 34l-2-35 314-22zm-160 92l-4-64 28-2 4 64z'/%3e%3cpath fill='%235e3d30' d='M-6 229l-6-76 197-18 7 76z'/%3e%3cpath fill='%2339496b' d='M201 146l-44-11 25-98 44 11z'/%3e%3cpath fill='%23b7b1bc' d='M200 52l105 76-16 22-105-77z'/%3e%3cpath fill='%23635d51' d='M234 55l-9-25 149-49 8 26z'/%3e%3cpath fill='%230c0404' d='M158 152l-9-46 20-4 9 46z'/%3e%3c/g%3e%3c/svg%3e&quot;);">
@@ -550,24 +603,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 10 × Rotated rectangles</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>712.25B</td>
                   <td>712.25 Bytes</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>397.25B</td>
                   <td>397.25 Bytes</td>
+                  <td>55.77 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>365.5B</td>
                   <td>365.50 Bytes</td>
+                  <td>51.32 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('17cc21f6a2b5ab7ba519f7be44cdaca9').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('17cc21f6a2b5ab7ba519f7be44cdaca9').className='modal active'">Show Full Data</button>
               <div class="modal" id="17cc21f6a2b5ab7ba519f7be44cdaca9"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('17cc21f6a2b5ab7ba519f7be44cdaca9').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('17cc21f6a2b5ab7ba519f7be44cdaca9').className='modal'"></a>
@@ -603,8 +663,6 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cfilter id='a'%3e%3cfeGaussianBlur stdDeviation='55'/%3e%3c/filter%3e%3cpath fill='%239e8a6e' d='M0 0h400v200H0z'/%3e%3cg filter='url(%23a)'%3e%3cpath fill='whitefeb' d='M-1-23l398-21 5 100L5 77z'/%3e%3cpath fill='%23271703' d='M5 120l398 21-6 125-398-21z'/%3e%3cpath fill='%23251b0c' d='M434 201L61 234l-3-36 373-33z'/%3e%3cpath fill='%23887254' d='M6 109h399v50H6z'/%3e%3cpath fill='%23f6ddb6' d='M-62-37h326V70H-62z'/%3e%3cpath fill='%23b49570' d='M284 78l4-36 133 16-4 36z'/%3e%3cpath fill='%23a28764' d='M161 64l2 30-66 3-2-30z'/%3e%3cpath fill='%236f5b42' d='M-72 150l6-50 186 20-5 50z'/%3e%3cpath fill='%23ac9271' d='M409 129l-115-12 8-70 115 12z'/%3e%3cpath fill='%23503e28' d='M-70 158l299 26-5 56-298-26z'/%3e%3c/g%3e%3c/svg%3e&quot;);">
@@ -619,24 +677,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 10 × Rotated rectangles</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>718.5B</td>
                   <td>718.50 Bytes</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>402.75B</td>
                   <td>402.75 Bytes</td>
+                  <td>56.05 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>368.25B</td>
                   <td>368.25 Bytes</td>
+                  <td>51.25 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('bf4f18f79c3c0bd7748f3714fd727b39').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('bf4f18f79c3c0bd7748f3714fd727b39').className='modal active'">Show Full Data</button>
               <div class="modal" id="bf4f18f79c3c0bd7748f3714fd727b39"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('bf4f18f79c3c0bd7748f3714fd727b39').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('bf4f18f79c3c0bd7748f3714fd727b39').className='modal'"></a>
@@ -673,7 +738,7 @@ footer {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </div>
     <footer>
       <button class="btn" onClick="document.querySelector('body').className = document.querySelector('body').className ? '' : 'hide-images'">Toggle images</button>

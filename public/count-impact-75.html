@@ -28,6 +28,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2vmin;
+  margin-bottom: 4rem;
 }
 
 .image-wrapper {
@@ -46,13 +47,30 @@ footer {
   z-index: 1;
 }
 
+.table-nowrap td {
+  font-size: 0.8em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.center-text {
+  text-align: center;
+}
+
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>75 rotated triangles</h1>
-      <div class="grid">
-        <div>
+      <header class="navbar">
+        <section class="navbar-section">
+          <div class="navbar-brand mr-2">SQIP Research</div><a class="btn btn-link" href="index.html">Home</a>
+        </section>
+      </header>
+      <div class="divider"></div>
+      <main>
+        <h1 class="h3">75 rotated triangles</h1>
+        <div class="grid">
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23544b47' d='M0 0h400v200H0z'/%3e%3cpath fill='%23d2e5f4' d='M268 37l53 66-68 55-53-66z'/%3e%3cpath fill='%23c1af97' d='M294 242l-194-52 14-53 194 52z'/%3e%3cpath fill='%230a0c13' d='M153 122l-89-7L77-33l89 8z'/%3e%3cpath d='M91 243l-113-55 27-54 112 54z'/%3e%3cpath fill='%23381f12' d='M334 12l73 17-40 173-73-17z'/%3e%3cpath fill='%23cbc9c9' d='M203 48l33-4 9 81-32 4z'/%3e%3cpath d='M396 252l-24-4 31-192 23 3z'/%3e%3cpath fill='%23b7b8ad' d='M79 79l-54 56-12-12 54-56z'/%3e%3cpath fill='%23bbc9c7' d='M-2 98l-7-10 50-37 7 10z'/%3e%3cpath d='M261 0l-42 52-19-16 42-52z'/%3e%3cpath fill='%23591807' d='M149 140l-15-21 74-55 16 22z'/%3e%3cpath fill='%239ab5bf' d='M221-5l-38 57-12-8 39-57z'/%3e%3cpath fill='%23c45c3d' d='M188 157l-27-23 31-37 27 23z'/%3e%3cpath fill='%23d2e9f0' d='M255 129l-43-9 10-45 43 10z'/%3e%3cpath fill='%23ccd4d4' d='M112 84l4 3-33 49-4-3z'/%3e%3cpath fill='%231b1c1f' d='M253 164l-11-29 20-7 10 30z'/%3e%3cpath fill='%2331322c' d='M299 92L260 8l83-39 39 84z'/%3e%3cpath fill='%231b222c' d='M50-17l24 57-91 39-24-58z'/%3e%3cpath fill='%23ab9171' d='M114 171l-50-22 11-25 50 23z'/%3e%3cpath fill='%2390695b' d='M222 75l1-36h47l-1 36z'/%3e%3cpath fill='%231d0f0e' d='M28 187l-17-11L95 52l17 11z'/%3e%3cpath fill='%23090f1d' d='M3 126l-9-9L99 16l8 9z'/%3e%3cpath fill='%237d4818' d='M214 189l6-17 77 25-6 17z'/%3e%3cpath fill='%23bccfda' d='M168 155l198 49-2 5-197-49z'/%3e%3cpath fill='%231e0605' d='M366 109l-65 53-16-19 66-53z'/%3e%3cpath fill='%237397b7' d='M324 97l-20 29-27-18 20-30z'/%3e%3cpath fill='%23606f6e' d='M353 99l7-35 39 8-8 35z'/%3e%3cpath fill='%23222219' d='M211 28l9-31 77 20-9 32z'/%3e%3cpath fill='%238698a0' d='M390 124l-18 111-7-1 17-111z'/%3e%3cpath fill='%237e7b72' d='M124-29L-9 124l-7-6L117-35z'/%3e%3cpath fill='%2316181b' d='M186 121l-10 14-82-55 10-14z'/%3e%3cpath fill='%2399aab5' d='M231 196l-4 16-75-21 4-17z'/%3e%3cpath fill='%238b5938' d='M282 165l61-20 8 23-61 19z'/%3e%3cpath fill='%23d2f4ff' d='M216 154l15 5-2 5-14-6z'/%3e%3cpath fill='%23a68866' d='M328 120l3-4 39 28-2 4z'/%3e%3cpath fill='%23110e00' d='M82 201l-26-2 4-48 26 2z'/%3e%3cpath fill='%23936435' d='M61 147l3-12 127 32-3 12z'/%3e%3cpath fill='%237f7e77' d='M365 69l-1 6-87-20 1-6z'/%3e%3cpath fill='%235997bf' d='M163 91l-6-6 22-22 7 7z'/%3e%3cpath fill='%23834957' d='M28 123l-2 106H15l2-106z'/%3e%3cpath fill='%2385a3b3' d='M84 51l3 1-23 30-2-2z'/%3e%3cpath fill='%23cde5ef' d='M217 62l20 22-9 9-20-22z'/%3e%3cpath fill='blackb10' d='M148 0L90 109l-8-4L140-4z'/%3e%3cpath fill='%23a8adb2' d='M118 124l19 2-1 11-18-2z'/%3e%3cpath fill='black001' d='M429 56l-35 222-25-4 36-222z'/%3e%3cpath fill='%2344759b' d='M180 64l-27-83 9-3 27 83z'/%3e%3cpath fill='%233e1a00' d='M302 185l-68-17 3-11 68 17z'/%3e%3cpath fill='%23260b00' d='M376 176l-42 21-9-19 42-20z'/%3e%3cpath fill='%230d130b' d='M135 113l-28 27-9-10 28-28z'/%3e%3cpath fill='%235e6b73' d='M89 175l15-20 62 47-15 20z'/%3e%3cpath fill='%23e3ffff' d='M227 47v-2l32-6v2z'/%3e%3cpath fill='%23c1d5e2' d='M171 159l-81-23v-3l82 23z'/%3e%3cpath fill='%231b0200' d='M196 37l9 2-8 51-10-2z'/%3e%3cpath fill='black10a' d='M354-8l49 10-2 7-49-9z'/%3e%3cpath fill='%234f6371' d='M286 51l9 2-14 82-9-2z'/%3e%3cpath fill='%23917f6f' d='M313 121l-116 64-2-4 116-64z'/%3e%3cpath fill='%238c735a' d='M376 146l-11-5 10-29 12 4z'/%3e%3cpath fill='%2316160e' d='M82 37l-26 4-2-17 26-4z'/%3e%3cpath fill='%239b9a83' d='M24 143l-11-17 21-14 11 17z'/%3e%3cpath fill='black80d' d='M256 40l1-5 132 33-1 5z'/%3e%3cpath fill='%23b33b27' d='M137 101l14-12 7 8-14 13z'/%3e%3cpath fill='%23826052' d='M124 14l-30-2 2-24 30 2z'/%3e%3cpath fill='%23eb986f' d='M192 123l9-8 12 14-9 8z'/%3e%3cpath fill='%23a5c3d3' d='M201 137l29 37-1 1-29-37z'/%3e%3cpath fill='%23281425' d='M156 20l11-3 10 49-11 3z'/%3e%3cpath fill='%23857d82' d='M51 144h2l-9 60h-1z'/%3e%3cpath fill='%23a99091' d='M25 57L10 14h1l15 42z'/%3e%3cpath fill='%236f3f14' d='M275 198l-2 5-109-28 2-4z'/%3e%3cpath fill='%23bc9ba4' d='M260 159h13v8h-13z'/%3e%3cpath fill='%232b1815' d='M346 105l-65-39 6-10 64 39z'/%3e%3cpath fill='%235f392d' d='M218 59l12-10 13 16-12 10z'/%3e%3cpath fill='%236b3324' d='M172 88l40-17 9 20-41 17z'/%3e%3cpath fill='%23596a7a' d='M244-1l1-5 131 18v5z'/%3e%3cpath fill='%2364527c' d='M129 50l10 3-10 30-10-3z'/%3e%3cpath fill='%2398a1a4' d='M17 67l6 24-38 9-6-24z'/%3e%3c/svg%3e&quot;);">
@@ -67,24 +85,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 75 × Rotated rectangles</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>3982B</td>
                   <td>3.89 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>1565.5B</td>
                   <td>1.53 kB</td>
+                  <td>39.31 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>1342.75B</td>
                   <td>1.31 kB</td>
+                  <td>33.72 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('8b9f656aa2011478027b0778e98c927c').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('8b9f656aa2011478027b0778e98c927c').className='modal active'">Show Full Data</button>
               <div class="modal" id="8b9f656aa2011478027b0778e98c927c"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('8b9f656aa2011478027b0778e98c927c').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('8b9f656aa2011478027b0778e98c927c').className='modal'"></a>
@@ -120,8 +145,6 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23909b99' d='M0 0h400v200H0z'/%3e%3cpath fill='%23002d37' d='M2 41l192 111-13 21L-11 62z'/%3e%3cpath fill='white' d='M133 173L-5 103 6 82l138 70z'/%3e%3cpath fill='%2396e6ff' d='M155 7l77-102L371 11l-76 101z'/%3e%3cpath fill='%2306333b' d='M-18 161l15-36 182 78-15 36z'/%3e%3cpath fill='white' d='M298 234l-77-50 20-32 77 50zm-87-82L-34-1l9-15 245 153z'/%3e%3cpath fill='%23002f3d' d='M265 143l-9 14L89 49l10-14z'/%3e%3cpath d='M313 201l-5-11 90-37 5 12z'/%3e%3cpath fill='white1d2' d='M55-31l196 142-11 15L44-16z'/%3e%3cpath fill='%233e3b29' d='M77-16l7-10L241 80l-7 10z'/%3e%3cpath fill='%237e6157' d='M446 88l-154 79-27-53 154-79z'/%3e%3cpath fill='white' d='M-9 195l9-23 74 31-10 23z'/%3e%3cpath fill='%233b1a00' d='M90 51L43 23l9-16 47 28z'/%3e%3cpath fill='%2373c2ea' d='M263 33l136-73 33 62-136 73z'/%3e%3cpath fill='%23614739' d='M109 228l-19-37 71-36 19 37z'/%3e%3cpath fill='%23fcdbc5' d='M279 76l-17 23-126-89 16-23z'/%3e%3cpath fill='%2306130e' d='M219 81l5-6 58 42-4 6z'/%3e%3cpath fill='%23150000' d='M23 85l-27-9 8-22 26 9z'/%3e%3cpath fill='white9f0' d='M134 149l-11 22L2 109l11-22z'/%3e%3cpath fill='white5ec' d='M370 99l1 1-159 74v-1z'/%3e%3cpath fill='%237d787c' d='M234 217l-48 2-3-72 48-2z'/%3e%3cpath fill='white' d='M176 65l3-4 91 66-3 4z'/%3e%3cpath fill='%23f5ad67' d='M-12 117l5-10 133 65-5 10z'/%3e%3cpath fill='%23cfb4a1' d='M171 171l3-45 22 1-3 46z'/%3e%3cpath fill='%231b0d00' d='M403 108l3 7-44 19-4-7z'/%3e%3cpath fill='white' d='M408 177l-87 33-3-7 88-34z'/%3e%3cpath fill='%23a66f3b' d='M60 7l7-10 162 113-7 11z'/%3e%3cpath fill='%23eba761' d='M180 129l-5 8L56 66l5-8z'/%3e%3cpath fill='white' d='M279 172l125-53v1l-125 53z'/%3e%3cpath fill='%23301705' d='M269 150l-43-10 4-14 42 10z'/%3e%3cpath fill='white5e9' d='M283 172l-2 39-50-3 2-39z'/%3e%3cpath fill='%23271903' d='M279 169l-2-5 98-44 3 6z'/%3e%3cpath fill='whiteff7' d='M211 148L-56-19l6-9 267 167z'/%3e%3cpath fill='%2300799f' d='M26 86l6-13 122 68-7 12z'/%3e%3cpath fill='%23006083' d='M88 186l-8 17-91-41 7-17z'/%3e%3cpath fill='white' d='M212 86l-4 6L45-22l5-6z'/%3e%3cpath fill='%230082a4' d='M98 58l5-8 141 88-5 8z'/%3e%3cpath fill='%236d534c' d='M443 137l-80 35-11-26 80-35z'/%3e%3cpath fill='%23100700' d='M463 50L251 153v-1L463 48z'/%3e%3cpath fill='%23b77d4b' d='M54 55L43 75l-61-34 11-21z'/%3e%3cpath fill='%237db1ca' d='M82 182l-99-48 2-5 99 48z'/%3e%3cpath fill='%233e1800' d='M69 76l106 67-1 1L68 78z'/%3e%3cpath fill='%23143d44' d='M140 11l64 55-5 6-64-55z'/%3e%3cpath fill='%234b2700' d='M25 144l2-4 90 40-2 4z'/%3e%3cpath fill='white' d='M79 222l-81-38 6-11 80 38z'/%3e%3cpath fill='%23462c2b' d='M306 222l119-50 2 4-119 51z'/%3e%3cpath fill='%23f7e7dc' d='M263 171l-6 8-53-43 7-7z'/%3e%3cpath fill='%23b1a097' d='M363 105l6 12-106 51-5-11z'/%3e%3cpath fill='%237eb6d0' d='M305 93L149-8l48-74L353 19z'/%3e%3cpath fill='%23b89062' d='M228 69l-4 5-85-69 4-5z'/%3e%3cpath fill='%23ddedf7' d='M283 72l-16 20-39-31 16-20z'/%3e%3cpath fill='%23443319' d='M29 58l2-3 98 64-2 3z'/%3e%3cpath fill='%2367655e' d='M85 195l77-41 20 37-77 41z'/%3e%3cpath fill='%23a6d6f1' d='M57-4L34 24 20 12l23-28z'/%3e%3cpath fill='%23fef8f4' d='M332 119l-1-1 82-42 1 1z'/%3e%3cpath fill='%23c09266' d='M210 106l5-7 48 31-4 7z'/%3e%3cpath fill='%2388c6de' d='M423 27l-82 45-25-44 82-45z'/%3e%3cpath fill='%238f6f62' d='M292 189l-6-14 58-25 6 14z'/%3e%3cpath fill='%23fbf6ef' d='M149 150l3 5-34 19-3-5z'/%3e%3cpath fill='white6e9' d='M242 71l3-3 43 34-3 4z'/%3e%3cpath fill='%232e2c1d' d='M102 37l1-1 162 109-1 2z'/%3e%3cpath fill='%23a6b2b8' d='M125 52l24 17-3 5-25-16z'/%3e%3cpath fill='whiteaf5' d='M143-9l85 62-4 5-85-62z'/%3e%3cpath fill='%2318859d' d='M140 30l1-1 146 102-1 1z'/%3e%3cpath fill='%233e2307' d='M290 165l-20 9-2-6 19-9z'/%3e%3cpath fill='%23b09f93' d='M275 123l70-38 6 12-69 39z'/%3e%3cpath fill='%23d2ae85' d='M221 102l-3 4L84 22l3-4z'/%3e%3cpath fill='%23392616' d='M323 185l77-33 3 9-76 32z'/%3e%3cpath fill='%237f8487' d='M182 188l-4-39 51-4 4 39z'/%3e%3cpath fill='%23452b02' d='M116 107v-2l64 37-1 1z'/%3e%3cpath fill='%23ae8f6f' d='M81 31L50 11l8-12 31 20z'/%3e%3cpath fill='whiteefa' d='M339 90l67-36 1 1-68 36z'/%3e%3cpath fill='%23412d24' d='M247 151l-23-16 9-13 23 17z'/%3e%3cpath fill='%23e4d8ce' d='M404 116l1 1-45 19-1-2z'/%3e%3cpath fill='whiteaec' d='M342 147l-59 28-1-1 59-29z'/%3e%3c/svg%3e&quot;);">
@@ -136,24 +159,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 75 × Rotated rectangles</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>3978.75B</td>
                   <td>3.89 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>1536.5B</td>
                   <td>1.50 kB</td>
+                  <td>38.62 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>1332.75B</td>
                   <td>1.30 kB</td>
+                  <td>33.50 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('f12fba16c5d4182db0dbc89d7c9f1f82').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('f12fba16c5d4182db0dbc89d7c9f1f82').className='modal active'">Show Full Data</button>
               <div class="modal" id="f12fba16c5d4182db0dbc89d7c9f1f82"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('f12fba16c5d4182db0dbc89d7c9f1f82').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('f12fba16c5d4182db0dbc89d7c9f1f82').className='modal'"></a>
@@ -189,8 +219,6 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23cecec9' d='M0 0h400v200H0z'/%3e%3cpath d='M417 163l2 69-182 3-1-69zM77 174l1 28-91 3-1-28z'/%3e%3cpath fill='white' d='M437 107l-175 63L203 7l174-63z'/%3e%3cpath d='M402 166l2 61-136 5-2-61z'/%3e%3cpath fill='white' d='M229-10L15 170-71 68l214-180z'/%3e%3cpath fill='%238d7659' d='M238 122l-87 46-43-82 87-46z'/%3e%3cpath d='M2 221l-2-39 74-5 3 39z'/%3e%3cpath fill='%23543204' d='M121 78l37 42-15 13-37-42z'/%3e%3cpath fill='%23bfa171' d='M228 136l32-3 8 83-33 2z'/%3e%3cpath fill='%23f5fcff' d='M35 172L28 43l80-4 6 129z'/%3e%3cpath fill='%23feffff' d='M-32-6l398 7-1 47-398-7z'/%3e%3cpath fill='white' d='M181 80l-24 29-14-12 24-29z'/%3e%3cpath fill='%23170e00' d='M399 200l-133 5-1-29 133-4z'/%3e%3cpath fill='%23c1c0b9' d='M246 75l-46 119-45-17 46-120z'/%3e%3cpath fill='%23673c11' d='M191 45l4 6-50 31-4-7z'/%3e%3cpath fill='%23f1f8f8' d='M226 116L256 3l192 51-31 114z'/%3e%3cpath fill='%237a5b45' d='M201 46l-45 118-6-2 45-118z'/%3e%3cpath fill='%2386583f' d='M217 55l6 2-17 49-6-2z'/%3e%3cpath fill='%23806e5c' d='M198 233l28-162 3 1-28 161z'/%3e%3cpath fill='%23dce2dc' d='M83 181l35-63 38 21-35 63z'/%3e%3cpath fill='%23784200' d='M146 61v-6l10 1-1 6z'/%3e%3cpath fill='%23f8fafb' d='M140 26l41-29 24 35-41 29z'/%3e%3cpath fill='%23d6cbac' d='M151 59l5 12-40 18-5-11z'/%3e%3cpath fill='%23c8cbc4' d='M175 199l-29-15 43-82 29 16z'/%3e%3cpath fill='%23573d2a' d='M200 132l-3-1 11-36 3 1z'/%3e%3cpath fill='%239e8767' d='M255 214l-26-9 17-52 27 9z'/%3e%3cpath fill='%231d1900' d='M73 184l1 28-99 2v-28z'/%3e%3cpath fill='%23e3e9e0' d='M174 110l-30 2-1-30 30-1z'/%3e%3cpath fill='%23f3f7f9' d='M-94 53L154-79l54 102-248 132z'/%3e%3cpath fill='%2398a09b' d='M75 207l4-33 17 2-4 33z'/%3e%3cpath fill='%23f2f4f5' d='M259 139L210 38l167-82 49 102z'/%3e%3cpath fill='%23694d28' d='M122 114l-11-22 21-11 11 23z'/%3e%3cpath fill='%23e4e5e2' d='M184 142l23-121 8 1-24 121z'/%3e%3cpath fill='%23231f08' d='M345 207l-14-26 38-21 14 26z'/%3e%3cpath fill='%236a5b46' d='M153 156l-4-2 37-62 4 3z'/%3e%3cpath fill='%23794836' d='M194 40l5 3-16 25-5-3z'/%3e%3cpath fill='%23dbe3e1' d='M426 154l-167 9-2-53 167-9z'/%3e%3cpath fill='%233d2b1c' d='M217 130h1l-5 23h-2z'/%3e%3cpath fill='%239e9087' d='M169 110l8-40 15 3-8 40z'/%3e%3cpath fill='%235e4a2b' d='M151 110l8 5-12 20-8-5z'/%3e%3cpath fill='%23b2a48c' d='M133 100l9-9 20 20-9 9z'/%3e%3cpath fill='white' d='M179 72l-7 3-3-8 8-2z'/%3e%3cpath fill='%23cdc8b5' d='M228 145l-7-23 28-9 7 23z'/%3e%3cpath fill='%238f9898' d='M315 158l1 4-38 10-1-5z'/%3e%3cpath fill='%23ccccc2' d='M166 149l47 2-3 52-46-3z'/%3e%3cpath fill='%23ad9587' d='M224 59v28h-15V59z'/%3e%3cpath fill='%23917e6a' d='M198 152h-3l6-53 3 1z'/%3e%3cpath fill='%2337301b' d='M264 169h23l1 17h-24z'/%3e%3cpath fill='%23919ca3' d='M84 174l-139 5v-2l139-4z'/%3e%3cpath fill='%23d2c9ae' d='M257 151h2l10 74-1 1z'/%3e%3cpath fill='%23eef6f4' d='M159 106l-8-5 17-33 8 4z'/%3e%3cpath fill='%235e3700' d='M167 67l-1 1-13-11 1-2z'/%3e%3cpath fill='%23a29177' d='M213 232l38-89 10 4-38 90z'/%3e%3cpath fill='%23c4bfad' d='M151 111l-29 18-3-4 30-18z'/%3e%3cpath fill='%23431300' d='M193 45l-23 19-1-1 23-19z'/%3e%3cpath fill='%23e9eeee' d='M26 173l-38-61 72-46 38 61z'/%3e%3cpath fill='%23414137' d='M78 178l-126 7v-2l126-7z'/%3e%3cpath fill='%2396a29e' d='M469 164v2l-167-3v-2z'/%3e%3cpath fill='%23c6cac4' d='M161 177h-1l18-75 2 1z'/%3e%3cpath fill='%23b39a6b' d='M154 146l6 2-9 33-6-2z'/%3e%3cpath fill='%23e2e6e0' d='M127 64l1-1 37 34-1 1z'/%3e%3cpath fill='%23d0c1b7' d='M184 85l14-31 14 6-14 32z'/%3e%3cpath fill='%232a1703' d='M168 127l1 1-7 12-1-1z'/%3e%3cpath fill='%23a79c7d' d='M231 173h-3l8-51h3z'/%3e%3cpath fill='%23d7e1e1' d='M220 153l1-36h11l-1 36z'/%3e%3cpath fill='%23f3f5f6' d='M149 29l25-73L277-8l-25 72z'/%3e%3cpath fill='%23a5aea7' d='M291 166v-2h64v2z'/%3e%3cpath fill='%23372100' d='M186 60l-23 8-1-1 24-9z'/%3e%3cpath fill='%23312b17' d='M332 181h-44v-14h44z'/%3e%3cpath fill='%231a1706' d='M270 223l-3-31 193-17 3 31z'/%3e%3cpath fill='%235d4426' d='M150 134l-34-34 4-5 35 35z'/%3e%3cpath fill='%23837258' d='M158 68l4 4-25 24-3-4z'/%3e%3cpath fill='%23c0ae8f' d='M147 77l1 9-28 1-1-9z'/%3e%3cpath fill='%2358452f' d='M180 97l-20 55-1-1 20-54z'/%3e%3cpath fill='%23c7d1cf' d='M275 169l-4-13 46-14 4 13z'/%3e%3c/svg%3e&quot;);">
@@ -205,24 +233,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 75 × Rotated rectangles</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>3885.5B</td>
                   <td>3.79 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>1532.75B</td>
                   <td>1.50 kB</td>
+                  <td>39.45 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>1320B</td>
                   <td>1.29 kB</td>
+                  <td>33.97 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('3fca9c4e246119427aaf983d17ba1fc4').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('3fca9c4e246119427aaf983d17ba1fc4').className='modal active'">Show Full Data</button>
               <div class="modal" id="3fca9c4e246119427aaf983d17ba1fc4"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('3fca9c4e246119427aaf983d17ba1fc4').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('3fca9c4e246119427aaf983d17ba1fc4').className='modal'"></a>
@@ -258,8 +293,6 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%2351564e' d='M0 0h400v200H0z'/%3e%3cpath fill='%23a69f8c' d='M348 28l-2 142-102-2 3-142z'/%3e%3cpath fill='%23e0e1dc' d='M137 73l-34 39-20-18 35-38z'/%3e%3cpath fill='%23231b0c' d='M405 212l-82-20L371-1l82 20z'/%3e%3cpath fill='%23161f16' d='M102 37L-11 199l-67-47L35-9z'/%3e%3cpath fill='%23c1d5d5' d='M291 125V73h53v52z'/%3e%3cpath fill='%231c150d' d='M294 72l3-87 23 1-3 87z'/%3e%3cpath fill='%23aaaba6' d='M287 41l-48-11 13-57 48 11z'/%3e%3cpath fill='%2375603d' d='M302 212l-29-27 86-95 29 26z'/%3e%3cpath fill='%232d3428' d='M157 108l20 39L0 237l-19-39z'/%3e%3cpath fill='%23979e9b' d='M13 154l8-17 43 20-9 17z'/%3e%3cpath fill='%23bbbdb8' d='M132 120l-10 9-43-51 10-9z'/%3e%3cpath fill='%23bdc1b6' d='M65 10l5-14L99 7l-5 15z'/%3e%3cpath fill='%239c9a8e' d='M256 221l-5-36 44-7 6 35z'/%3e%3cpath fill='white' d='M294 113l40 4-1 9-40-4z'/%3e%3cpath fill='%232d352b' d='M94 144l-51-6 5-46 52 6z'/%3e%3cpath fill='%23bcb8aa' d='M149 36l-13-7 11-19 12 6z'/%3e%3cpath fill='%23435965' d='M241 213l-86-9 18-171 86 9z'/%3e%3cpath fill='%23081314' d='M378-10l46 2-3 95-47-2z'/%3e%3cpath fill='%23262e24' d='M286 75l3 35-14 1-3-35z'/%3e%3cpath fill='%2344473a' d='M81 34l39-14 16 48-38 13z'/%3e%3cpath fill='%23a9aba5' d='M344 34l-6-21 13-4 7 20z'/%3e%3cpath fill='%23737d73' d='M361 110l-137 12-2-18 137-12z'/%3e%3cpath fill='%234b4230' d='M367 49l4 23-40 6-4-23z'/%3e%3cpath fill='%23959790' d='M100 137l-11-8 25-36 11 8z'/%3e%3cpath fill='%23bfc5c1' d='M95 189l1 19-14 1-1-19z'/%3e%3cpath fill='%2320291e' d='M82 245l-106-56 19-36 106 57z'/%3e%3cpath fill='%23383e2c' d='M157 141l-43-49 18-16 43 50z'/%3e%3cpath fill='%237c827a' d='M415 99l-10 23-22-10 11-23z'/%3e%3cpath fill='%23102426' d='M226 193l6-32 22 4-7 32z'/%3e%3cpath fill='%23dee1dd' d='M91 91l33-25 5 8-32 24z'/%3e%3cpath fill='%23121d1a' d='M144 175l22 13-21 35-22-13z'/%3e%3cpath fill='%23b3aea3' d='M264 60l29-19 7 10-29 19z'/%3e%3cpath fill='%23bcb6a7' d='M298 141l-26-6 4-18 26 6z'/%3e%3cpath fill='%2326281e' d='M338-16l13 14-46 44-13-13z'/%3e%3cpath fill='%235c4829' d='M327 143l13 72-34 6-13-72z'/%3e%3cpath fill='%23a29f90' d='M244 84l25 9-8 25-26-9z'/%3e%3cpath fill='%23262923' d='M413 133l-59 106-37-20 59-107z'/%3e%3cpath fill='%23b2b6b4' d='M55 176H44v-22h11z'/%3e%3cpath fill='%2396927e' d='M135 92l-6-10 25-16 6 9z'/%3e%3cpath fill='%2328241b' d='M274 77l31-24 4 6-31 24z'/%3e%3cpath fill='%23747368' d='M152 167l-57-10 2-10 57 10z'/%3e%3cpath fill='%23304e5a' d='M161 39l-1-53 80-2 1 54z'/%3e%3cpath fill='%23262d23' d='M142 26L25 86 15 66 132 7z'/%3e%3cpath fill='%235d6154' d='M274 5l4-12 43 13-3 12z'/%3e%3cpath fill='%233f3f37' d='M248 68l20 7-5 15-21-7z'/%3e%3cpath fill='%23213032' d='M167 18l7 1-14 102-8-1z'/%3e%3cpath fill='%23726a5f' d='M322 71l-14-36 40-17 15 36z'/%3e%3cpath fill='%23232f1b' d='M124 163l5 24-27 5-4-25z'/%3e%3cpath fill='%235b665b' d='M41 15l-9 20L2 21l9-20z'/%3e%3cpath fill='%23717368' d='M95 50l31-10 9 27-32 10z'/%3e%3cpath fill='%23958d7c' d='M293 175l-42-6 5-33 41 6z'/%3e%3cpath fill='%23b3b9b4' d='M330 31l-1-1 36-25 1 1z'/%3e%3cpath fill='%23787971' d='M107-3l13-5 12 32-13 5z'/%3e%3cpath fill='%232b3530' d='M231 137l21-13 6 9-21 13z'/%3e%3cpath fill='%23546266' d='M232 72l7 105-38 2-7-104z'/%3e%3cpath fill='%231c251b' d='M101 105l3 11-56 15-3-11z'/%3e%3cpath fill='%2349422f' d='M261 105l23-6 3 14-22 5z'/%3e%3cpath fill='%2340463e' d='M21 146l21-69 30 10-21 68z'/%3e%3cpath fill='%23d3d5d2' d='M136 79l-31-21 1-1 31 21z'/%3e%3cpath fill='%23101915' d='M-2 78l50-22 6 14L4 93z'/%3e%3cpath fill='%23191711' d='M344 59l10 5-6 13-10-5z'/%3e%3cpath fill='%233b392f' d='M273 143l12 36-3 1-12-36z'/%3e%3cpath fill='%23fbf7ee' d='M363 34l-1 1-11-12 1-1z'/%3e%3cpath fill='%2391938d' d='M283 6l6 26-46 10-6-25z'/%3e%3cpath fill='whitedee' d='M334 117l1 4-33 7-1-4z'/%3e%3cpath fill='%2319201b' d='M411 69L293-38l1-1L412 68z'/%3e%3cpath fill='%231c231b' d='M60 165v-14l35 1-1 14z'/%3e%3cpath fill='%23908d7d' d='M160 81l-4 2-21-40 5-2z'/%3e%3cpath fill='%23a5afae' d='M345 7l31 5v1l-31-5z'/%3e%3cpath fill='%23111818' d='M9 118l19 13-10 15-20-12z'/%3e%3cpath fill='%23746541' d='M320 132l34-22 15 22-34 22z'/%3e%3cpath fill='%23b1bbb8' d='M309 102l-2-16 39-5 2 16z'/%3e%3cpath fill='%23555a4b' d='M-16 95l41-10 5 22-41 9z'/%3e%3cpath fill='%236c7169' d='M97 72L85 86 70 74l13-15z'/%3e%3cpath fill='%230c0f0d' d='M103 98l7 6-2 3-7-7z'/%3e%3c/svg%3e&quot;);">
@@ -274,24 +307,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 75 × Rotated rectangles</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>3978B</td>
                   <td>3.88 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>1544.75B</td>
                   <td>1.51 kB</td>
+                  <td>38.83 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>1330.75B</td>
                   <td>1.30 kB</td>
+                  <td>33.45 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('65786a47ad1bd8fbcff01327884dd4c8').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('65786a47ad1bd8fbcff01327884dd4c8').className='modal active'">Show Full Data</button>
               <div class="modal" id="65786a47ad1bd8fbcff01327884dd4c8"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('65786a47ad1bd8fbcff01327884dd4c8').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('65786a47ad1bd8fbcff01327884dd4c8').className='modal'"></a>
@@ -327,8 +367,6 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%236a676e' d='M0 0h400v200H0z'/%3e%3cpath fill='%23d1c4d1' d='M346 164l-290-5L58 6l291 5z'/%3e%3cpath d='M-1 158l399 7-2 76-398-7z'/%3e%3cpath d='M54 32l-3 177-103-2 3-177z'/%3e%3cpath fill='black103' d='M353 49l61 1-3 172-61-2z'/%3e%3cpath fill='black003' d='M22 264l6-345h27l-6 345z'/%3e%3cpath fill='%23cb352a' d='M157 23v25l-90 2-1-25z'/%3e%3cpath fill='%23225c54' d='M52 86l108 2-1 22-108-2z'/%3e%3cpath fill='white' d='M305 49v11l-127 5V54z'/%3e%3cpath fill='%2387aed0' d='M379 78l2-59 32 1-1 60z'/%3e%3cpath fill='blackc12' d='M348-24l25-2 12 177-25 1z'/%3e%3cpath d='M82-9l175 4v15L82 7z'/%3e%3cpath fill='%23ce4e44' d='M338 114l-125-3 1-26 125 2z'/%3e%3cpath fill='%233d7263' d='M333 152l-59-1 1-36 59 1z'/%3e%3cpath fill='%231f4f96' d='M244 120l-1 27-61-3 1-27z'/%3e%3cpath fill='%23080804' d='M51 236l3-78 115 4-2 78z'/%3e%3cpath fill='%23b14d46' d='M132 143l-78-3v-25l78 3z'/%3e%3cpath fill='white' d='M234 13v8L86 23v-8z'/%3e%3cpath fill='%23f3ffff' d='M62 65v-9l131-7v9z'/%3e%3cpath d='M51 84v62h-85V84z'/%3e%3cpath fill='%23637f9c' d='M9-11l31 5-13 72-31-5z'/%3e%3cpath fill='%23e3e6fc' d='M101 69l222 4-1 13-221-4z'/%3e%3cpath d='M246 10l-1-16 99-2V8z'/%3e%3cpath fill='%233e746d' d='M245 23h90v27h-91z'/%3e%3cpath fill='%231850a2' d='M215 23v25l-29-1 1-25z'/%3e%3cpath fill='%23030705' d='M368 161l6 48-132 16-5-48z'/%3e%3cpath fill='%23e2efff' d='M270 113l-1 7-175-3 1-8z'/%3e%3cpath fill='%23d1e1f9' d='M213 23V10h132v13z'/%3e%3cpath fill='%232a2d34' d='M98 69l247-5v3L98 72z'/%3e%3cpath fill='%23ecf8ff' d='M243 153l6-16 25 9-6 16z'/%3e%3cpath fill='%23e9f6ff' d='M234 63V20h12v43z'/%3e%3cpath d='M204 223l-27-18 21-30 27 19z'/%3e%3cpath fill='%23d2dbf2' d='M351 48v16l-47 2V50z'/%3e%3cpath fill='%23505250' d='M397 230l-22 1-2-116h22z'/%3e%3cpath fill='%23e1e6f7' d='M58 143l183 6-1 7-182-7z'/%3e%3cpath fill='%23e8f7ff' d='M88 138l-5-1 2-64 5 1z'/%3e%3cpath fill='%23b07b6d' d='M89 206l-25-39 5-3 24 40z'/%3e%3cpath fill='%23b8c0d2' d='M24 82l-1-5 24-1v5z'/%3e%3cpath fill='%23d5b1be' d='M55 9l18 1-1 42-19-1z'/%3e%3cpath fill='%237b706c' d='M28 143l-9 48-8-2 9-47z'/%3e%3cpath fill='%23d3cfcb' d='M313 140l-7 8-24-20 8-9z'/%3e%3cpath fill='%23dbe5ff' d='M74 12h100v9H74z'/%3e%3cpath fill='%23d9988f' d='M329 185l-25 31-4-3 26-31z'/%3e%3cpath fill='%23e99381' d='M171 206l-4-3 23-29 4 3z'/%3e%3cpath fill='%23c66863' d='M187 83h37v27l-37-1z'/%3e%3cpath fill='%235977ac' d='M206 114l2 23-59 7-2-24z'/%3e%3cpath fill='%23373b3b' d='M362 68l-1 11-40-5 1-10z'/%3e%3cpath fill='%2386b2e9' d='M359 52l-1-1 3-48h2z'/%3e%3cpath fill='%23305856' d='M257 38h-9l-1-31h10z'/%3e%3cpath fill='%23e3f0ff' d='M170 13l8 50-6 1-8-50z'/%3e%3cpath fill='%233b6466' d='M171 90L2 81l1-3 168 8z'/%3e%3cpath fill='%2311443f' d='M312 161l-5-7 27-19 4 6z'/%3e%3cpath fill='white' d='M257 26l2-1 7 39h-1z'/%3e%3cpath fill='%23081a17' d='M60 8V-6l66 3v14z'/%3e%3cpath fill='black004' d='M386 148l-45 62-16-12 45-62z'/%3e%3cpath fill='%23d5cdde' d='M314 23h11v22h-11z'/%3e%3cpath fill='%23cd8273' d='M216 171l24 42-4 2-24-42z'/%3e%3cpath fill='%23ba6455' d='M167 51l-34 1-1-26 34-2z'/%3e%3cpath fill='%23bccce9' d='M63 150l-3 1-6-53h3z'/%3e%3cpath fill='%23c1a8ac' d='M255 84l2 17-45 7-2-17z'/%3e%3cpath fill='%23b6bbc2' d='M363 88l6-11 4 2-6 11z'/%3e%3cpath fill='%23eaffff' d='M146 42l-3-4 9-6 3 3z'/%3e%3cpath fill='%23b85c54' d='M145 145l-42-1v-28l43 1z'/%3e%3cpath fill='%23efeef0' d='M131 93l1-1 8 48h-2z'/%3e%3cpath fill='%23416961' d='M268 114l27 33-11 9-27-33z'/%3e%3cpath fill='%23bb6c69' d='M75 54L60 18l13-5 15 36z'/%3e%3cpath d='M221 205l-14 4-14-43 14-5z'/%3e%3cpath fill='%232a3742' d='M143 65v2L12 71v-1z'/%3e%3cpath fill='%238392ad' d='M-11 125L10 19l3 1-21 106z'/%3e%3cpath d='M-6 91l20-15 31 41-20 15z'/%3e%3cpath fill='%23ddd5cb' d='M286 120v-9l39-2v10z'/%3e%3cpath fill='%23e7edf8' d='M252 118l5 37-8 1-4-37z'/%3e%3cpath fill='%23d9ddef' d='M343 81l1 71h-4l-2-71z'/%3e%3cpath fill='%23bcc8db' d='M55 71l-2-87h6l2 87z'/%3e%3cpath fill='%238d96a2' d='M387 133l6 42h-3l-6-42z'/%3e%3cpath fill='%23840000' d='M164 23h1l-2 25h-2z'/%3e%3c/svg%3e&quot;);">
@@ -343,24 +381,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 75 × Rotated rectangles</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>3658.75B</td>
                   <td>3.57 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>1450.5B</td>
                   <td>1.42 kB</td>
+                  <td>39.64 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>1265.75B</td>
                   <td>1.24 kB</td>
+                  <td>34.60 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('d6059829b05b8cdbcad724567d57902d').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('d6059829b05b8cdbcad724567d57902d').className='modal active'">Show Full Data</button>
               <div class="modal" id="d6059829b05b8cdbcad724567d57902d"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('d6059829b05b8cdbcad724567d57902d').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('d6059829b05b8cdbcad724567d57902d').className='modal'"></a>
@@ -396,8 +441,6 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23d2d2d3' d='M0 0h400v200H0z'/%3e%3cpath d='M145-8l-4 90-96-3 3-91z'/%3e%3cpath fill='%232f0000' d='M37 30l56-54 60 61-57 55z'/%3e%3cpath fill='%23f6fafd' d='M416 198H164V0h252z'/%3e%3cpath fill='%23f5fafd' d='M-10-20l169 217-63 49L-73 30z'/%3e%3cpath fill='%237b8682' d='M95 123L77 91l76-43 18 31z'/%3e%3cpath fill='%23410000' d='M123-20l20 7-30 88-20-8z'/%3e%3cpath fill='%23442215' d='M39 47L74 7l41 35-34 41z'/%3e%3cpath fill='%23e6e8ea' d='M149 156L29 284l-145-135L4 21z'/%3e%3cpath fill='%23fbffff' d='M233 202l-27-67 78-32 27 67z'/%3e%3cpath fill='%23606058' d='M139 78l3 12-42 9-2-12z'/%3e%3cpath fill='%23ced5d7' d='M172 97l-33-67 25-13 33 68z'/%3e%3cpath fill='%23f4fbfd' d='M39 66l-45-4 6-73 45 4z'/%3e%3cpath fill='%23d5d7d8' d='M451 76l5 144-149 5-5-143z'/%3e%3cpath fill='%23ecffff' d='M144 53l-23 24-1-1 23-24z'/%3e%3cpath fill='%23c1c5c7' d='M69 85l35-5 10 68-36 5z'/%3e%3cpath fill='white' d='M157 20L132-4l13-14 25 24z'/%3e%3cpath fill='%23060000' d='M138 54l-25 22-3-4 25-21z'/%3e%3cpath fill='%23e3e5e7' d='M134 116h84v89h-84z'/%3e%3cpath fill='%235e3f38' d='M73 46L39 27l36-65 35 19z'/%3e%3cpath fill='%2339271a' d='M98 9h46v21H99z'/%3e%3cpath fill='%23939b93' d='M154 38l-14 64-8-1 14-64z'/%3e%3cpath fill='%23827b5b' d='M122 31l-22 4-1-8 21-4z'/%3e%3cpath fill='%23030000' d='M101 42l11-11 17 16-11 11z'/%3e%3cpath fill='%2357a8a7' d='M38 36l10-1 3 21-10 2z'/%3e%3cpath fill='%23c4eee2' d='M123 77L79 89v-2l43-12z'/%3e%3cpath fill='%23b9bbbb' d='M406 22H249v-5h157z'/%3e%3cpath fill='%23f1f2f3' d='M269-39l25 90-108 31-26-90z'/%3e%3cpath fill='%23a2213e' d='M119 60l-7 7-20-22 7-7z'/%3e%3cpath fill='%23e0b8de' d='M79 39l-2-10h5l1 9z'/%3e%3cpath fill='%23a9abab' d='M208 85v-1l126-5v2z'/%3e%3cpath fill='%23a5a6ac' d='M58 145v-2l126 4v2z'/%3e%3cpath fill='%23959799' d='M299 144l100 2v2l-100-2z'/%3e%3cpath fill='%236d8d51' d='M89 6l29-21 7 10-29 21z'/%3e%3cpath fill='%23300000' d='M61 60l-4-2L84 4l5 2z'/%3e%3cpath fill='%23e8eaec' d='M104 136L33 258l-94-55L9 81z'/%3e%3cpath fill='%23b0b4b5' d='M295 19l-151 3v-2l151-3z'/%3e%3cpath fill='%2370746d' d='M120 84v11l-35 1-1-11z'/%3e%3cpath fill='%23a9aaae' d='M1 148v-2l97-2v2z'/%3e%3cpath fill='%23b8babb' d='M463 87l-268-5v-1l268 4z'/%3e%3cpath fill='%2392b0ae' d='M31 85l62-8v2l-62 8z'/%3e%3cpath fill='%23babdc4' d='M117 126l-10-14 59-43 10 14z'/%3e%3cpath fill='%23900324' d='M119-7l13-5 10 24-13 5z'/%3e%3cpath d='M83 79v-2l29-4v1z'/%3e%3cpath fill='%23989a9b' d='M220 145l-28 3-1-1 28-3z'/%3e%3cpath fill='%232d2210' d='M76 29l27 48-9 5-26-48z'/%3e%3cpath fill='%23e8eff1' d='M34 47L-4 32l22-55L55-9z'/%3e%3cpath fill='%23200000' d='M116 29v1L67 20v-2z'/%3e%3cpath fill='%23d8e7e6' d='M169 41l-26 2-1-17 26-2z'/%3e%3cpath fill='%2352583f' d='M56 4l18 34-12 7-19-35z'/%3e%3cpath fill='%23509342' d='M96 63l1 3-29 10-1-3z'/%3e%3cpath fill='%23a9b3b6' d='M-2 20l46-2v1l-46 2z'/%3e%3cpath fill='%23378d86' d='M66 69l-3 4-15-12 3-4z'/%3e%3cpath fill='%23250203' d='M132-17l-8 38-14-3 8-38z'/%3e%3cpath fill='%23140005' d='M129 33l9-23 6 2-9 23z'/%3e%3cpath fill='%23420003' d='M95 57l-1-6 41-7 1 7z'/%3e%3cpath fill='%23707064' d='M150 71l-40 24-5-8 40-24z'/%3e%3cpath fill='%23d898ae' d='M131 10h-1l3-19 2 1z'/%3e%3cpath fill='%23a85765' d='M103 70l-1-1 9-18h1z'/%3e%3cpath fill='%23b2b1b3' d='M-5 84l52-5v2l-51 4z'/%3e%3cpath fill='%23240c07' d='M64 68l-1-8 43-5 1 8z'/%3e%3cpath fill='%237e233a' d='M44 28l73-53 4 5-74 53z'/%3e%3cpath fill='%23ebedf0' d='M137 150l31 3-4 39-31-3z'/%3e%3cpath fill='%23977262' d='M102 42l1 1-31 23-1-1z'/%3e%3cpath fill='%23310909' d='M76 61l17-51 8 3-18 50z'/%3e%3cpath fill='%2372a199' d='M144 64l-4-58h2l4 58z'/%3e%3cpath fill='%23e8ebec' d='M36 99L11 45l23-11 25 54z'/%3e%3cpath fill='%23f490b2' d='M70 27l-6 1-1-3 6-1z'/%3e%3cpath fill='%23336363' d='M71-23l7 5-29 42-6-4z'/%3e%3cpath fill='%23afb1b2' d='M421 81l-87 4v-2l87-4z'/%3e%3cpath d='M91-3l1-1 12 9-1 1z'/%3e%3cpath fill='%23a2866d' d='M109 13v2l-23 4v-1z'/%3e%3cpath fill='%23bbe590' d='M107 35l-14-8 1-1 14 7z'/%3e%3cpath fill='%23e6e8e9' d='M377 84l1 48-85 1V86z'/%3e%3cpath fill='%23ffb2e3' d='M133 40l-4 4-1-1 4-4z'/%3e%3cpath fill='%23cc9cab' d='M57 49l-3-7 3-2 3 7z'/%3e%3c/svg%3e&quot;);">
@@ -412,24 +455,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 75 × Rotated rectangles</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>3796.5B</td>
                   <td>3.71 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>1480.25B</td>
                   <td>1.45 kB</td>
+                  <td>38.99 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>1271.5B</td>
                   <td>1.24 kB</td>
+                  <td>33.49 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('36e648970bffea2bba00f3fe41ae4766').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('36e648970bffea2bba00f3fe41ae4766').className='modal active'">Show Full Data</button>
               <div class="modal" id="36e648970bffea2bba00f3fe41ae4766"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('36e648970bffea2bba00f3fe41ae4766').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('36e648970bffea2bba00f3fe41ae4766').className='modal'"></a>
@@ -465,8 +515,6 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23494949' d='M0 0h400v200H0z'/%3e%3cpath fill='%23cacaca' d='M109 118l6-81 137 9-6 81z'/%3e%3cpath d='M271 70l44-121L465 3l-44 122zM77 61l-55 45-63-78 56-45zM241-47l29 41-87 61-29-41z'/%3e%3cpath fill='%23b6b6b6' d='M36-9l36-30 116 144-36 29z'/%3e%3cpath fill='%23929292' d='M194 187l-82 65-54-69 82-64z'/%3e%3cpath d='M219 0l-6 40-99-14 6-40zm27 179l-27-28 58-57 27 29z'/%3e%3cpath fill='%238c8c8c' d='M273 179l49-92 38 20-49 93z'/%3e%3cpath d='M390 46l-4 45-131-14 5-45z'/%3e%3cpath fill='%239b9b9b' d='M206 41l143-86 16 27-143 86z'/%3e%3cpath d='M170 65l39 6-3 18-38-5zM93 82L0 77l2-39 94 5zm3 64l-12-45 28-8 12 45zM348-12l87 43-41 85-87-42z'/%3e%3cpath fill='%23939393' d='M292 102l9-21 147 62-10 22z'/%3e%3cpath fill='%236a6a6a' d='M157 156l-15-36 115-49 15 36z'/%3e%3cpath fill='%23d6d6d6' d='M175 64l-35 1-1-30 35-1z'/%3e%3cpath d='M66 51L26 90l-69-71 41-39z'/%3e%3cpath fill='%23787878' d='M60 103L2 122l-7-24 58-19z'/%3e%3cpath d='M221 153l-1 6-68-10 1-6zM54 220l-32-35 13-12 32 34zM107-2l37-34 35 40-37 33z'/%3e%3cpath fill='%23010101' d='M262 77l-20-26 26-20 20 26z'/%3e%3cpath d='M25 133l-5-12 47-24 6 11zm161-81L150-5l63-39 35 57z'/%3e%3cpath fill='%23868686' d='M-18-23L6-58l136 95-25 35z'/%3e%3cpath fill='%23adadad' d='M207 41l18-12 44 63-18 12z'/%3e%3cpath d='M262 124l24 36-27 18-25-36z'/%3e%3cpath fill='%237f7f7f' d='M372 190l-25 5-11-49 24-5z'/%3e%3cpath fill='%23737373' d='M24 142l29-19 30 46-28 19z'/%3e%3cpath fill='darkgrey' d='M129 138l-2-11 96-20 2 11z'/%3e%3cpath fill='%23a2a2a2' d='M171 141l70-18 2 6-70 18z'/%3e%3cpath d='M361 147l7-6 32 32-7 7zm-56-21l-23-7 5-18 24 7zM-4 96l-8-28 85-25 8 29z'/%3e%3cpath fill='%23c3c3c3' d='M164 76l-30 55-15-9 30-54z'/%3e%3cpath fill='%23a2a2a2' d='M128 142l36 12-9 25-36-12z'/%3e%3cpath fill='%234b4b4b' d='M338 112l6 28-58 12-6-28z'/%3e%3cpath fill='%232e2e2e' d='M203 112l-2-3 79-38 1 3z'/%3e%3cpath fill='%23525252' d='M367 2L236 58l-7-18 130-55z'/%3e%3cpath d='M456 103l-35 40L305 43l35-41z'/%3e%3cpath fill='%23434343' d='M398 50l-25-19 12-16 25 18z'/%3e%3cpath fill='%23acacac' d='M396 192v-51h6v51z'/%3e%3cpath d='M234 144l-1 13-50-3 1-12z'/%3e%3cpath fill='%23050505' d='M350 197l50-7 1 11-49 7z'/%3e%3cpath fill='%23b8b8b8' d='M254 68l-53 36-7-11 53-36z'/%3e%3cpath d='M200 88l-5-6 16-12 5 6z'/%3e%3cpath fill='%231c1c1c' d='M159 119l58-17 1 3-59 17z'/%3e%3cpath fill='%23292929' d='M191 134l52-23 2 4-52 23z'/%3e%3cpath d='M157 147l2-16 14 2-2 15z'/%3e%3cpath fill='%235d5d5d' d='M113 86L48 23l9-10 66 63z'/%3e%3cpath fill='%237c7c7c' d='M52 83l64-1v11l-64 1zm195-11l94 29-5 16-94-29z'/%3e%3cpath fill='%23959595' d='M370 107l-10 21-47-21 10-21z'/%3e%3cpath fill='%23383838' d='M69 105l17-6 25 76-18 6z'/%3e%3cpath fill='%23616161' d='M178 245l-40-43 51-48 41 43z'/%3e%3cpath fill='%23202020' d='M330 183l-11-1 3-29 11 1z'/%3e%3cpath d='M193 46L112 5l19-37 81 41z'/%3e%3cpath fill='%238c8c8c' d='M317 170l-40 57-11-8 39-57z'/%3e%3cpath d='M326 90l-65-17 8-33 66 16zM-48 45L8-8l51 52L4 98z'/%3e%3cpath fill='%23878787' d='M275-5l12 18-54 37-12-18z'/%3e%3cpath fill='%23010101' d='M108 108l23 28-6 5-23-28z'/%3e%3cpath d='M198 78v8h-22v-8z'/%3e%3cpath fill='%230a0a0a' d='M366 149l-3 3-21-18 3-4z'/%3e%3cpath d='M205 40L182 8l65-46 23 31zM71 218l-41-29 7-9 40 30z'/%3e%3cpath fill='%23515151' d='M268 123l4-9 49 28-4 8z'/%3e%3cpath fill='%23555' d='M380 152l-18-38 16-8 18 38zM154 48l18 29-3 2-17-30z'/%3e%3cpath fill='%23828282' d='M379 162l-6 9-47-28 6-9z'/%3e%3cpath fill='%23070707' d='M215 58l-14 24h-1l13-25z'/%3e%3cpath fill='%23606060' d='M181 101l-22-5 3-11 21 5z'/%3e%3cpath fill='%23c4c4c4' d='M142 93l-20-5 13-45 19 5z'/%3e%3c/svg%3e&quot;);">
@@ -481,24 +529,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 75 × Rotated rectangles</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>3462B</td>
                   <td>3.38 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>1392B</td>
                   <td>1.36 kB</td>
+                  <td>40.21 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>1199.25B</td>
                   <td>1.17 kB</td>
+                  <td>34.64 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('540eafc7be8beffbb6973a93ad467569').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('540eafc7be8beffbb6973a93ad467569').className='modal active'">Show Full Data</button>
               <div class="modal" id="540eafc7be8beffbb6973a93ad467569"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('540eafc7be8beffbb6973a93ad467569').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('540eafc7be8beffbb6973a93ad467569').className='modal'"></a>
@@ -534,8 +589,6 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23857a71' d='M0 0h400v200H0z'/%3e%3cpath fill='white' d='M-14-17l294-11 1 50-293 11z'/%3e%3cpath fill='%23222b10' d='M260 96l6-82 188 13-6 83z'/%3e%3cpath fill='%23fdffff' d='M136 100l6-113 36 2-6 113z'/%3e%3cpath fill='%23333b28' d='M-18 51L90 22l17 63-108 29z'/%3e%3cpath fill='%23c5e5ff' d='M169-43l39-16 56 138-39 16z'/%3e%3cpath fill='%235d3c2f' d='M-23 160l207-25 12 104-206 25z'/%3e%3cpath fill='%23eaffff' d='M0 36l-7-49 150-21 7 49z'/%3e%3cpath fill='%23222a3e' d='M146 110l65-17 10 36-65 17z'/%3e%3cpath fill='%23cfa492' d='M364 145l-120 8-3-46 120-9z'/%3e%3cpath fill='white' d='M300-36l11 36-122 37-11-35z'/%3e%3cpath fill='%23c9a598' d='M86 98l38-22 35 59-37 22z'/%3e%3cpath fill='%235c5d4a' d='M272 82l-24-56 162-72 25 56z'/%3e%3cpath fill='%23d8ac94' d='M356 133l1-34 61 1-1 34z'/%3e%3cpath fill='%235f7aa3' d='M166 65l50-21 23 55-50 21z'/%3e%3cpath fill='%23c2a28d' d='M339 83l-9-23 26-10 9 23z'/%3e%3cpath fill='%23986d5a' d='M182 145l222-16 6 94-221 15z'/%3e%3cpath fill='%232e3928' d='M47 78l77-39 11 22-76 39z'/%3e%3cpath fill='%23e9edf3' d='M170 101l-15 5-29-90 15-4z'/%3e%3cpath fill='%23273040' d='M162 133l21-92 13 3-21 91z'/%3e%3cpath fill='%230b1e08' d='M261 69h64v26h-64z'/%3e%3cpath fill='%23beaea7' d='M287 103l-19 71-38-10 19-71z'/%3e%3cpath fill='%232e300d' d='M266 38l-3 8-40-14 3-7z'/%3e%3cpath fill='%23dbaa96' d='M312 27l-42 11-2-8 42-10z'/%3e%3cpath fill='%230b1707' d='M443 80l-2 25-86-9 3-25z'/%3e%3cpath fill='%236f747f' d='M143 62l1 52h-23l-1-51z'/%3e%3cpath fill='%2391a2bb' d='M198 57l-4 89-13-1 5-89z'/%3e%3cpath fill='%233c1e11' d='M89 226l-44-19 15-34 43 18z'/%3e%3cpath fill='%234f3120' d='M-32 139l53-42 13 16-53 41z'/%3e%3cpath fill='%2399786d' d='M52 106l124 56-11 24-124-55z'/%3e%3cpath fill='black00d' d='M184 30l13-14 2 3-13 13z'/%3e%3cpath fill='%23bbbec2' d='M136 20l48 4-2 32-49-3z'/%3e%3cpath fill='%231b0a02' d='M174 149l-14 3-10-43 14-3z'/%3e%3cpath fill='%236f6a5f' d='M111 71l-77-6 4-38 76 7z'/%3e%3cpath fill='%23c7a796' d='M292 76l-6-5 18-18 5 6z'/%3e%3cpath fill='%23463c3e' d='M206 94l36 20-12 22-37-20z'/%3e%3cpath fill='%23eaf7ff' d='M251 23L75 16l1-25 176 7z'/%3e%3cpath fill='black00d' d='M126 31l-1 1-12-18 1-1z'/%3e%3cpath fill='%2397a8c2' d='M187 80l18-47 60 23-18 47z'/%3e%3cpath fill='%23d8b49e' d='M351 66l81 3v4l-81-3z'/%3e%3cpath fill='%23f3b99c' d='M221 128l7 14-20 10-6-14z'/%3e%3cpath fill='%23e3c1a8' d='M321 77l20 1-1 6-20-1z'/%3e%3cpath fill='%23142615' d='M376 67l-13-11 25-28 13 12z'/%3e%3cpath fill='%23100e0c' d='M371 97H268v-8h103z'/%3e%3cpath fill='%23253622' d='M234 34h-32v-4h32z'/%3e%3cpath fill='%23e1bba4' d='M133 79l-30 26-10-10 31-27z'/%3e%3cpath fill='%23462a27' d='M173 71l-3-5 33-26 4 5z'/%3e%3cpath fill='%236e3a22' d='M231 161l-4 24-22-4 4-24z'/%3e%3cpath fill='%23c3a299' d='M305 63v-6h45v6z'/%3e%3cpath fill='%23967465' d='M14 137l26-53 95 46-26 54z'/%3e%3cpath fill='%2314280d' d='M325 25l2 11-31 6-2-11z'/%3e%3cpath fill='%23dae7fd' d='M114-5l2 29-82 5-1-30z'/%3e%3cpath fill='%23715545' d='M412 150l-2 26-76-5 1-27z'/%3e%3cpath fill='%23c1a189' d='M362 210l-7-16 51-21 6 16z'/%3e%3cpath fill='%23f0f0f0' d='M163 41l13 5-19 52-13-4z'/%3e%3cpath fill='%23274400' d='M350 79l-37-3 1-10 37 4z'/%3e%3cpath fill='%238fa6c1' d='M161 156l14-2 3 20-14 2z'/%3e%3cpath fill='%2320292f' d='M153 176l25 1-1 14-25-1z'/%3e%3cpath fill='%23b5c7d7' d='M254 98l6 1-21 64-6-2z'/%3e%3cpath fill='%23b19d98' d='M109 53l-19 6-4-14 20-5z'/%3e%3cpath fill='%23233e2c' d='M262 21l19-13 3 4-20 13z'/%3e%3cpath fill='%23595852' d='M365-35l37 58-50 32-37-57z'/%3e%3cpath fill='%23907366' d='M239 180l13-53 58 14-14 53z'/%3e%3cpath fill='%23b7989b' d='M399 45l8 25-7 2-9-25z'/%3e%3cpath fill='%23b79d8f' d='M74 106l50-13 7 28-50 12z'/%3e%3cpath fill='%231c3125' d='M-15 34l33 4-1 8-33-5z'/%3e%3cpath fill='%23a19e9d' d='M183 20l1 11-56 3-1-11z'/%3e%3cpath fill='%232c3a23' d='M63 93l-6-22 50-13 6 23z'/%3e%3cpath fill='%237f6355' d='M-2 165l5-38 113 16-5 38z'/%3e%3cpath fill='%233e1c09' d='M195 137l8-18 10 5-8 18z'/%3e%3cpath fill='%23b6c0cc' d='M246 56v49h-15V56z'/%3e%3cpath fill='%23eafdff' d='M291-13l5 19-38 9-5-20z'/%3e%3cpath fill='%23355377' d='M189 137l-7 39-10-2 6-39z'/%3e%3cpath fill='%235e5538' d='M267 19l1 6-37 7-1-6z'/%3e%3cpath fill='%23daab90' d='M243 30l28-4v5l-28 4z'/%3e%3cpath fill='black009' d='M140 68l-15-16 2-2 15 15z'/%3e%3c/svg%3e&quot;);">
@@ -550,24 +603,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 75 × Rotated rectangles</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>3941.5B</td>
                   <td>3.85 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>1531B</td>
                   <td>1.50 kB</td>
+                  <td>38.84 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>1328.75B</td>
                   <td>1.30 kB</td>
+                  <td>33.71 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('e7bcd1220b45ea52d41f6e85c3da1899').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('e7bcd1220b45ea52d41f6e85c3da1899').className='modal active'">Show Full Data</button>
               <div class="modal" id="e7bcd1220b45ea52d41f6e85c3da1899"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('e7bcd1220b45ea52d41f6e85c3da1899').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('e7bcd1220b45ea52d41f6e85c3da1899').className='modal'"></a>
@@ -603,8 +663,6 @@ footer {
               </div>
             </div>
           </div>
-        </div>
-        <div>
           <div class="card">
             <div class="card-image">
               <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%239e8a6e' d='M0 0h400v200H0z'/%3e%3cpath fill='whitefea' d='M-1-1l398-28 5 81L5 80z'/%3e%3cpath fill='%23271602' d='M5 118l398 27-10 136-397-28z'/%3e%3cpath fill='%23846e51' d='M398 166L0 159l1-48 398 7z'/%3e%3cpath fill='%23251a0c' d='M75 196l373-33 4 39-374 33z'/%3e%3cpath fill='%23f6dcb7' d='M-134-42h397V69h-397z'/%3e%3cpath fill='%23b49672' d='M398 103L284 93l4-48 114 10z'/%3e%3cpath fill='%239e8361' d='M157 104l-79 11-5-42 78-11z'/%3e%3cpath fill='white5d4' d='M420 62l-45-8 4-23 45 8z'/%3e%3cpath fill='%23a98f6c' d='M-76 80l250-13v11L-75 91z'/%3e%3cpath fill='%23aa9170' d='M254 101l-8-33 114-27 8 34z'/%3e%3cpath fill='%23d8c7a8' d='M220 76l-96-33 20-58 96 33z'/%3e%3cpath fill='%23f6e2c1' d='M280-40l19 62-65 19-18-61z'/%3e%3cpath fill='%236d5b41' d='M443 125l3 44-90 8-4-44z'/%3e%3cpath fill='%233e311e' d='M287 173l70-22 14 43-71 22z'/%3e%3cpath fill='%23503e28' d='M203 246l-305-32 7-61 304 32z'/%3e%3cpath fill='%23817054' d='M365 148l-241-9 1-14 240 9z'/%3e%3cpath fill='%23766348' d='M121 157l-192-27 5-35 192 27z'/%3e%3cpath fill='%23ddc5a2' d='M415 41L264 54l-2-28 151-13z'/%3e%3cpath fill='%23f4e0bd' d='M189 73l-3-22 89-13 3 22z'/%3e%3cpath fill='%23f2e2c2' d='M-67 75l-19-38L68-42 88-4z'/%3e%3cpath fill='%23a68c6d' d='M309 131l-1-42 100-3 1 42z'/%3e%3cpath fill='%23d0be9f' d='M98 48V31h121v17z'/%3e%3cpath fill='%239f8768' d='M120 106l3-42 43 3-3 42z'/%3e%3cpath fill='%23d8c2a3' d='M356 53L318 7l72-58 37 46z'/%3e%3cpath fill='%23827155' d='M296 121l2 24-86 7-2-23z'/%3e%3cpath fill='%239f8667' d='M331 73l3 42-197 17-4-42z'/%3e%3cpath fill='%23b79f7d' d='M449 88L346 70l4-22 103 18z'/%3e%3cpath fill='%239d8464' d='M-4 76l94 1v33l-94-1z'/%3e%3cpath fill='%23ecdab9' d='M237 70l-34 1-1-27 34-1z'/%3e%3cpath fill='%23705a42' d='M184 139l-2 31-192-10 2-31z'/%3e%3cpath fill='%23e5d1b0' d='M59 74l-2-32 33-2 2 33z'/%3e%3cpath fill='%23635036' d='M181 177l135-33 5 21-135 34z'/%3e%3cpath fill='%23aa9071' d='M329 46l6 22-71 19-6-22z'/%3e%3cpath fill='%23d3c0a3' d='M-23 41l1-11 122 9-1 11z'/%3e%3cpath fill='%23cabaa0' d='M170 15l1-29h42l-1 30z'/%3e%3cpath fill='%23ffeed1' d='M391 57l-9-10 25-22 9 11z'/%3e%3cpath fill='%23efdbbb' d='M136 64l1-13 63 6-1 12z'/%3e%3cpath fill='%2377654a' d='M424 161l-132-7 1-19 132 7z'/%3e%3cpath fill='%23d2b88b' d='M2 71l57-4 1 4-58 4z'/%3e%3cpath fill='%23fae5c2' d='M343 45v-2l57 10-1 2z'/%3e%3cpath fill='%23eddbbb' d='M121 16l-5 26-69-13 5-26z'/%3e%3cpath fill='%23d3c1a2' d='M293 57l-41-17 10-23 40 17z'/%3e%3cpath fill='%23ad9271' d='M248 89l-83-3 1-17 83 3z'/%3e%3cpath fill='%23725f41' d='M328 176l-11-5 6-17 12 4z'/%3e%3cpath fill='%23867355' d='M-39 113l107-7 1 17-107 7z'/%3e%3cpath fill='%233a2d1b' d='M91 196l209-11 1 17-209 11z'/%3e%3cpath fill='%23d4c3a6' d='M67-15l71 19-4 13L63-2z'/%3e%3cpath fill='%23ead8b8' d='M337 14v27l-16-1V15z'/%3e%3cpath fill='%236e583e' d='M180 170v-14l114 4v14z'/%3e%3cpath fill='%2340311f' d='M375 183l-12 20-40-26 13-19z'/%3e%3cpath fill='%23d1bfa0' d='M139 21l47 10-4 24-48-9z'/%3e%3cpath fill='%23eddaba' d='M82 53l-3 20-59-8 3-21z'/%3e%3cpath fill='%23a99071' d='M216 89l-3-14 88-19 3 14z'/%3e%3cpath fill='%23d2bd9d' d='M323 6l-2 44-23-1 1-44z'/%3e%3cpath fill='%23e3ceb1' d='M268 18l31-46 22 15-31 45z'/%3e%3cpath fill='%23d1c1a4' d='M450 9L350 49l-10-25 100-40z'/%3e%3cpath fill='%23a48d6f' d='M64 97l-3-20 83-13 3 20z'/%3e%3cpath fill='%239b8365' d='M311 104v19l-199-4 1-18z'/%3e%3cpath fill='%235d4b30' d='M31 169l2-14 175 28-2 14z'/%3e%3cpath fill='%23ead8b5' d='M250 65l-32 6-1-7 32-5z'/%3e%3cpath fill='%23746047' d='M356 165l-13-9 12-17 13 10z'/%3e%3cpath fill='%23f0e1c1' d='M246 39L212 0l22-19 34 39z'/%3e%3cpath fill='%2354442c' d='M295 176v7l-98 5v-6z'/%3e%3cpath fill='%23dcc9a8' d='M-2 54l9-1 3 23-9 1z'/%3e%3cpath fill='%23745f45' d='M202 136l-4 33-92-10 4-33z'/%3e%3cpath fill='%233c2e1e' d='M281 207l3-28 118 12-3 28z'/%3e%3cpath fill='%23af9676' d='M471 88l-9 26-134-41 8-27z'/%3e%3cpath fill='%23edd9ba' d='M160 65l-72-2V49l72 2z'/%3e%3cpath fill='%23e8d9b9' d='M170-16l8 16-37 18-8-17z'/%3e%3cpath fill='%2369523c' d='M143 97l8-9 1 1-8 9z'/%3e%3cpath fill='%23705a42' d='M18 166l-29 5-6-36 30-4z'/%3e%3cpath fill='%23ccb790' d='M12 73l1-6 58 5-1 6z'/%3e%3cpath fill='%23ead7b8' d='M203 26l-8 13-21-13 8-13z'/%3e%3cpath fill='%23e9d8b8' d='M-18 27L59 6l5 19-77 20z'/%3e%3cpath fill='%23988164' d='M188 118l-2 12-194-27 1-13z'/%3e%3c/svg%3e&quot;);">
@@ -619,24 +677,31 @@ footer {
                   <div class="column col-auto"><i class="icon icon-apps"></i><span> 75 × Rotated rectangles</span></div>
                 </div>
               </div>
-              <table class="table">
+              <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
                   <td>3957.25B</td>
                   <td>3.86 kB</td>
+                  <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
                   <td>1542.25B</td>
                   <td>1.51 kB</td>
+                  <td>38.97 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
                   <td>1321B</td>
                   <td>1.29 kB</td>
+                  <td>33.38 %</td>
+                </tr>
+                <tr>
+                  <td class="center-text" colspan="4">
+                    <button class="btn" onClick="document.getElementById('3f48390083ca8ab3e90f38f47e5b849f').className='modal active'">Show Full Data</button>
+                  </td>
                 </tr>
               </table>
-              <button class="btn" onClick="document.getElementById('3f48390083ca8ab3e90f38f47e5b849f').className='modal active'">Show Full Data</button>
               <div class="modal" id="3f48390083ca8ab3e90f38f47e5b849f"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('3f48390083ca8ab3e90f38f47e5b849f').className='modal'"></a>
                 <div class="modal-container">
                   <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('3f48390083ca8ab3e90f38f47e5b849f').className='modal'"></a>
@@ -673,7 +738,7 @@ footer {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </div>
     <footer>
       <button class="btn" onClick="document.querySelector('body').className = document.querySelector('body').className ? '' : 'hide-images'">Toggle images</button>

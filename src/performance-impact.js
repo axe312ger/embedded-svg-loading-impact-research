@@ -38,7 +38,7 @@ async function run () {
       }
     }
 
-    const title = 'Input dimension to performance inpact ratio'
+    const title = 'Input image dimension to performance impact ratio'
     const slug = 'performance-check'
     await createGridPage({ slug, title, images })
   } catch (err) {

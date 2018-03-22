@@ -2,11 +2,10 @@ extends layout.pug
 include mixins/image.pug
 
 block content
-  h1 #{title}
+  h1.h3 #{title}
   div.grid
     each image in images
-      div
-        +image(image)
+      +image(image)
 
 block footer
   footer
