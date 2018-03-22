@@ -54,7 +54,7 @@ module.exports = async function createGridPage ({ slug, title, images }) {
   }
   try {
     const html = pug.renderFile(join(templatesDir, 'grid.pug'), {
-      pretty: false,
+      pretty: true,
       title,
       images,
       prettysize: size => prettysize(size, { places: 2 })
