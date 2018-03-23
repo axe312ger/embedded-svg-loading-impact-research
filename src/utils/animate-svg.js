@@ -31,21 +31,24 @@ module.exports = async function animate (
 
   const $ = cheerio.load(file.primitive.svg, { xmlMode: true })
 
-  const animation = `@keyframes a{
+  let nodes = $('g > *')
+  if (!nodes.length) {
+    nodes = $('svg > *')
+  }
+
+  const animation = `@keyframes fade {
     from {opacity: 0}
     to {opacity: 1}
   }
-  g > * {
+  ellipse, path {
     opacity: 0;
-    animation: a .5s forwards;
+    animation: fade .5s forwards;
   }`
-
-  const nodes = $('g > *')
 
   nodes.map((index, element) => {
     const linear = index / nodes.length
     const eased = easing(linear)
-    const animationDelay = (opts.totalAnimationTime * eased).toFixed(3)
+    const animationDelay = (opts.totalAnimationTime * eased).toFixed(2)
     $(element).css('animation-delay', `${animationDelay}s`)
   })
 

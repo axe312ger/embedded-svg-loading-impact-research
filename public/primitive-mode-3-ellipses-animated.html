@@ -37,6 +37,12 @@ footer {
   background-size: contain;
 }
 
+.image-wrapper::before {
+  display: block;
+  content: "";
+  padding-top: 50%;
+}
+
 .image {
   position: absolute;
   left: 0;
@@ -45,6 +51,19 @@ footer {
   width: 100%;
   height: auto;
   z-index: 1;
+}
+
+.image.not-cached {
+  opacity: 0;
+}
+
+.image.fade-in {
+  animation: fade-in 1s forwards;
+}
+
+@keyframes fade-in{
+  from {opacity: 0}
+  to {opacity: 1}
 }
 
 .table-nowrap td {
@@ -73,9 +92,7 @@ footer {
         <div class="grid">
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%23544b47' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='%23d6eaf9' cx='165' cy='61' rx='34' ry='26' style='animation-delay:0s'/%3e%3cellipse fill='%23b6a794' cx='111' cy='113' rx='48' ry='20' style='animation-delay:.188s'/%3e%3cellipse fill='%23090c14' cx='72' cy='27' rx='30' ry='53' style='animation-delay:.376s'/%3e%3cellipse fill='%23030000' cx='18' cy='120' rx='43' ry='30' style='animation-delay:.562s'/%3e%3cellipse fill='%23302721' cx='238' cy='48' rx='56' ry='83' style='animation-delay:.746s'/%3e%3cellipse fill='%23b1c5d2' cx='170' cy='65' rx='35' ry='17' style='animation-delay:.927s'/%3e%3cellipse fill='%23b29a93' cx='154' cy='37' rx='26' ry='13' style='animation-delay:1.104s'/%3e%3cellipse fill='black100' cx='149' cy='8' rx='13' ry='18' style='animation-delay:1.277s'/%3e%3cellipse fill='%23a3896f' cx='66' cy='91' rx='27' ry='11' style='animation-delay:1.445s'/%3e%3cellipse fill='%23837d79' cx='12' cy='63' rx='22' ry='23' style='animation-delay:1.607s'/%3e%3cellipse fill='%23a59076' cx='156' cy='127' rx='54' ry='14' style='animation-delay:1.763s'/%3e%3cellipse fill='%23a24931' cx='121' cy='84' rx='19' ry='17' style='animation-delay:1.912s'/%3e%3cellipse cx='255' cy='119' rx='9' ry='58' style='animation-delay:2.054s'/%3e%3cellipse fill='%231a202a' cx='8' cy='1' rx='30' ry='39' style='animation-delay:2.187s'/%3e%3cellipse fill='%2383afc8' cx='116' cy='24' rx='6' ry='15' style='animation-delay:2.312s'/%3e%3cellipse fill='%23858283' cx='174' cy='60' rx='11' ry='32' style='animation-delay:2.427s'/%3e%3cellipse fill='%23450f06' cx='99' cy='77' rx='13' ry='18' style='animation-delay:2.533s'/%3e%3cellipse fill='%23878a88' cx='241' cy='100' rx='4' ry='27' style='animation-delay:2.629s'/%3e%3cellipse fill='%234b2213' cx='212' cy='96' rx='29' ry='28' style='animation-delay:2.714s'/%3e%3cellipse fill='%23a9aca9' cx='129' cy='4' rx='9' ry='11' style='animation-delay:2.789s'/%3e%3cellipse cx='22' cy='52' rx='8' ry='7' style='animation-delay:2.853s'/%3e%3cellipse fill='%23daeaee' cx='149' cy='64' rx='11' ry='17' style='animation-delay:2.906s'/%3e%3cellipse fill='%23651100' cx='127' cy='54' rx='13' ry='7' style='animation-delay:2.947s'/%3e%3cellipse fill='black908' cx='47' cy='68' rx='12' ry='9' style='animation-delay:2.976s'/%3e%3cellipse fill='%237f584e' cx='157' cy='40' rx='16' ry='10' style='animation-delay:2.994s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/alisa-anton-166247-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3eellipse%7bopacity:0%3banimation:fade .5s forwards%7d%3c/style%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='%23d6eaf9' cx='165' cy='61' rx='34' ry='26' style='animation-delay:0s'/%3e%3cellipse fill='%23b6a794' cx='111' cy='113' rx='48' ry='20' style='animation-delay:.19s'/%3e%3cellipse fill='%23090c14' cx='72' cy='27' rx='30' ry='53' style='animation-delay:.38s'/%3e%3cellipse fill='%23030000' cx='18' cy='120' rx='43' ry='30' style='animation-delay:.56s'/%3e%3cellipse fill='%23302721' cx='238' cy='48' rx='56' ry='83' style='animation-delay:.75s'/%3e%3cellipse fill='%23b1c5d2' cx='170' cy='65' rx='35' ry='17' style='animation-delay:.93s'/%3e%3cellipse fill='%23b29a93' cx='154' cy='37' rx='26' ry='13' style='animation-delay:1.1s'/%3e%3cellipse fill='black100' cx='149' cy='8' rx='13' ry='18' style='animation-delay:1.28s'/%3e%3cellipse fill='%23a3896f' cx='66' cy='91' rx='27' ry='11' style='animation-delay:1.45s'/%3e%3cellipse fill='%23837d79' cx='12' cy='63' rx='22' ry='23' style='animation-delay:1.61s'/%3e%3cellipse fill='%23a59076' cx='156' cy='127' rx='54' ry='14' style='animation-delay:1.76s'/%3e%3cellipse fill='%23a24931' cx='121' cy='84' rx='19' ry='17' style='animation-delay:1.91s'/%3e%3cellipse cx='255' cy='119' rx='9' ry='58' style='animation-delay:2.05s'/%3e%3cellipse fill='%231a202a' cx='8' cy='1' rx='30' ry='39' style='animation-delay:2.19s'/%3e%3cellipse fill='%2383afc8' cx='116' cy='24' rx='6' ry='15' style='animation-delay:2.31s'/%3e%3cellipse fill='%23858283' cx='174' cy='60' rx='11' ry='32' style='animation-delay:2.43s'/%3e%3cellipse fill='%23450f06' cx='99' cy='77' rx='13' ry='18' style='animation-delay:2.53s'/%3e%3cellipse fill='%23878a88' cx='241' cy='100' rx='4' ry='27' style='animation-delay:2.63s'/%3e%3cellipse fill='%234b2213' cx='212' cy='96' rx='29' ry='28' style='animation-delay:2.71s'/%3e%3cellipse fill='%23a9aca9' cx='129' cy='4' rx='9' ry='11' style='animation-delay:2.79s'/%3e%3cellipse cx='22' cy='52' rx='8' ry='7' style='animation-delay:2.85s'/%3e%3cellipse fill='%23daeaee' cx='149' cy='64' rx='11' ry='17' style='animation-delay:2.91s'/%3e%3cellipse fill='%23651100' cx='127' cy='54' rx='13' ry='7' style='animation-delay:2.95s'/%3e%3cellipse fill='black908' cx='47' cy='68' rx='12' ry='9' style='animation-delay:2.98s'/%3e%3cellipse fill='%237f584e' cx='157' cy='40' rx='16' ry='10' style='animation-delay:2.99s'/%3e%3c/g%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/alisa-anton-166247-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Alisa Anton 166247 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -106,13 +123,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('1192308ca954267124d6e6c0c2de746f').className='modal active'">Show Full Data</button>
+                    <button class="btn" onClick="document.getElementById('b1bf7c0c4ba7fe37d3d0158f7ac785ba').className='modal active'">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="1192308ca954267124d6e6c0c2de746f"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('1192308ca954267124d6e6c0c2de746f').className='modal'"></a>
+              <div class="modal" id="b1bf7c0c4ba7fe37d3d0158f7ac785ba"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('b1bf7c0c4ba7fe37d3d0158f7ac785ba').className='modal'"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('1192308ca954267124d6e6c0c2de746f').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('b1bf7c0c4ba7fe37d3d0158f7ac785ba').className='modal'"></a>
                     <div class="modal-title h5">Alisa Anton 166247 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -132,11 +149,11 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Ellipses&quot;
   },
-  &quot;svgByteLength&quot;: 2521,
+  &quot;svgByteLength&quot;: 2511,
   &quot;dataURI&quot;: {
-    &quot;original&quot;: 2649,
-    &quot;brotli&quot;: 638,
-    &quot;gzip&quot;: 767
+    &quot;original&quot;: 2516,
+    &quot;brotli&quot;: 561,
+    &quot;gzip&quot;: 687
   }
 }</code></pre>
                     </div>
@@ -147,9 +164,7 @@ footer {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%23909b99' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='%238ee3ff' cx='185' cy='7' rx='70' ry='44' style='animation-delay:0s'/%3e%3cellipse fill='%23233a3a' cx='70' cy='117' rx='46' ry='11' style='animation-delay:.188s'/%3e%3cellipse fill='white' cx='165' cy='127' rx='21' ry='23' style='animation-delay:.376s'/%3e%3cellipse fill='%23816a5f' cx='235' cy='82' rx='90' ry='36' style='animation-delay:.562s'/%3e%3cellipse cx='14' cy='44' rx='18' ry='9' style='animation-delay:.746s'/%3e%3cellipse fill='%23003747' cx='19' cy='102' rx='22' ry='13' style='animation-delay:.927s'/%3e%3cellipse fill='ivory' cx='40' cy='83' rx='22' ry='12' style='animation-delay:1.104s'/%3e%3cellipse fill='ivory' cx='71' cy='99' rx='20' ry='11' style='animation-delay:1.277s'/%3e%3cellipse fill='whiteffc' cy='68' rx='34' ry='12' style='animation-delay:1.445s'/%3e%3cellipse fill='%23003c42' cx='42' cy='57' rx='18' ry='10' style='animation-delay:1.607s'/%3e%3cellipse fill='%23003c45' cx='65' cy='70' rx='17' ry='9' style='animation-delay:1.763s'/%3e%3cellipse fill='white' cy='127' rx='34' ry='13' style='animation-delay:1.912s'/%3e%3cellipse fill='%2300363f' cx='93' cy='86' rx='15' ry='9' style='animation-delay:2.054s'/%3e%3cellipse fill='whiteee2' cx='62' cy='48' rx='15' ry='9' style='animation-delay:2.187s'/%3e%3cellipse fill='%234f2d0b' cx='53' cy='21' rx='14' ry='9' style='animation-delay:2.312s'/%3e%3cellipse fill='%23bcdfea' cx='179' cy='52' rx='22' ry='14' style='animation-delay:2.427s'/%3e%3cellipse fill='whiteede' cx='84' cy='61' rx='15' ry='8' style='animation-delay:2.533s'/%3e%3cellipse fill='%23e6e3de' cx='14' cy='5' rx='15' ry='24' style='animation-delay:2.629s'/%3e%3cellipse fill='white1d1' cx='36' cy='33' rx='15' ry='9' style='animation-delay:2.714s'/%3e%3cellipse fill='%233a2010' cx='206' cy='118' rx='17' ry='6' style='animation-delay:2.789s'/%3e%3cellipse fill='%230e1207' cx='161' cy='88' rx='16' ry='6' style='animation-delay:2.853s'/%3e%3cellipse fill='whiteee4' cx='109' cy='75' rx='13' ry='8' style='animation-delay:2.906s'/%3e%3cellipse fill='%23003c4d' cx='122' cy='67' rx='10' ry='7' style='animation-delay:2.947s'/%3e%3cellipse fill='white8e4' cx='125' cy='87' rx='13' ry='8' style='animation-delay:2.976s'/%3e%3cellipse fill='%23716968' cx='115' cy='118' rx='34' ry='26' style='animation-delay:2.994s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/anthony-esau-173126-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3eellipse%7bopacity:0%3banimation:fade .5s forwards%7d%3c/style%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='%238ee3ff' cx='185' cy='7' rx='70' ry='44' style='animation-delay:0s'/%3e%3cellipse fill='%23233a3a' cx='70' cy='117' rx='46' ry='11' style='animation-delay:.19s'/%3e%3cellipse fill='white' cx='165' cy='127' rx='21' ry='23' style='animation-delay:.38s'/%3e%3cellipse fill='%23816a5f' cx='235' cy='82' rx='90' ry='36' style='animation-delay:.56s'/%3e%3cellipse cx='14' cy='44' rx='18' ry='9' style='animation-delay:.75s'/%3e%3cellipse fill='%23003747' cx='19' cy='102' rx='22' ry='13' style='animation-delay:.93s'/%3e%3cellipse fill='ivory' cx='40' cy='83' rx='22' ry='12' style='animation-delay:1.1s'/%3e%3cellipse fill='ivory' cx='71' cy='99' rx='20' ry='11' style='animation-delay:1.28s'/%3e%3cellipse fill='whiteffc' cy='68' rx='34' ry='12' style='animation-delay:1.45s'/%3e%3cellipse fill='%23003c42' cx='42' cy='57' rx='18' ry='10' style='animation-delay:1.61s'/%3e%3cellipse fill='%23003c45' cx='65' cy='70' rx='17' ry='9' style='animation-delay:1.76s'/%3e%3cellipse fill='white' cy='127' rx='34' ry='13' style='animation-delay:1.91s'/%3e%3cellipse fill='%2300363f' cx='93' cy='86' rx='15' ry='9' style='animation-delay:2.05s'/%3e%3cellipse fill='whiteee2' cx='62' cy='48' rx='15' ry='9' style='animation-delay:2.19s'/%3e%3cellipse fill='%234f2d0b' cx='53' cy='21' rx='14' ry='9' style='animation-delay:2.31s'/%3e%3cellipse fill='%23bcdfea' cx='179' cy='52' rx='22' ry='14' style='animation-delay:2.43s'/%3e%3cellipse fill='whiteede' cx='84' cy='61' rx='15' ry='8' style='animation-delay:2.53s'/%3e%3cellipse fill='%23e6e3de' cx='14' cy='5' rx='15' ry='24' style='animation-delay:2.63s'/%3e%3cellipse fill='white1d1' cx='36' cy='33' rx='15' ry='9' style='animation-delay:2.71s'/%3e%3cellipse fill='%233a2010' cx='206' cy='118' rx='17' ry='6' style='animation-delay:2.79s'/%3e%3cellipse fill='%230e1207' cx='161' cy='88' rx='16' ry='6' style='animation-delay:2.85s'/%3e%3cellipse fill='whiteee4' cx='109' cy='75' rx='13' ry='8' style='animation-delay:2.91s'/%3e%3cellipse fill='%23003c4d' cx='122' cy='67' rx='10' ry='7' style='animation-delay:2.95s'/%3e%3cellipse fill='white8e4' cx='125' cy='87' rx='13' ry='8' style='animation-delay:2.98s'/%3e%3cellipse fill='%23716968' cx='115' cy='118' rx='34' ry='26' style='animation-delay:2.99s'/%3e%3c/g%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/anthony-esau-173126-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Anthony Esau 173126 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -180,13 +195,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('73f651e59b5450c30aa3d1f2fcb6ade7').className='modal active'">Show Full Data</button>
+                    <button class="btn" onClick="document.getElementById('1b8d95aa8ba40e6ed7b990887f5c71cd').className='modal active'">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="73f651e59b5450c30aa3d1f2fcb6ade7"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('73f651e59b5450c30aa3d1f2fcb6ade7').className='modal'"></a>
+              <div class="modal" id="1b8d95aa8ba40e6ed7b990887f5c71cd"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('1b8d95aa8ba40e6ed7b990887f5c71cd').className='modal'"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('73f651e59b5450c30aa3d1f2fcb6ade7').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('1b8d95aa8ba40e6ed7b990887f5c71cd').className='modal'"></a>
                     <div class="modal-title h5">Anthony Esau 173126 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -206,11 +221,11 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Ellipses&quot;
   },
-  &quot;svgByteLength&quot;: 2502,
+  &quot;svgByteLength&quot;: 2492,
   &quot;dataURI&quot;: {
-    &quot;original&quot;: 2622,
-    &quot;brotli&quot;: 625,
-    &quot;gzip&quot;: 724
+    &quot;original&quot;: 2489,
+    &quot;brotli&quot;: 542,
+    &quot;gzip&quot;: 642
   }
 }</code></pre>
                     </div>
@@ -221,9 +236,7 @@ footer {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%23cecec9' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse cx='219' cy='119' rx='73' ry='16' style='animation-delay:0s'/%3e%3cellipse cx='21' cy='121' rx='30' ry='11' style='animation-delay:.188s'/%3e%3cellipse fill='white' cx='204' cy='35' rx='62' ry='70' style='animation-delay:.376s'/%3e%3cellipse cx='223' cy='121' rx='55' ry='16' style='animation-delay:.562s'/%3e%3cellipse fill='white' cx='18' cy='12' rx='64' ry='94' style='animation-delay:.746s'/%3e%3cellipse fill='%238f785b' cx='110' cy='60' rx='39' ry='29' style='animation-delay:.927s'/%3e%3cellipse fill='white' cx='108' cy='14' rx='255' ry='17' style='animation-delay:1.104s'/%3e%3cellipse cx='20' cy='123' rx='29' ry='11' style='animation-delay:1.277s'/%3e%3cellipse fill='%23b89b6c' cx='157' cy='127' rx='13' ry='46' style='animation-delay:1.445s'/%3e%3cellipse fill='%233c1700' cx='82' cy='64' rx='8' ry='10' style='animation-delay:1.607s'/%3e%3cellipse fill='white' cx='101' cy='59' rx='9' ry='11' style='animation-delay:1.763s'/%3e%3cellipse fill='%23724028' cx='119' cy='36' rx='8' ry='10' style='animation-delay:1.912s'/%3e%3cellipse fill='%23796341' cx='100' cy='84' rx='8' ry='17' style='animation-delay:2.054s'/%3e%3cellipse fill='%23170f00' cx='227' cy='124' rx='58' ry='17' style='animation-delay:2.187s'/%3e%3cellipse fill='%23f9fdff' cx='74' cy='13' rx='50' ry='30' style='animation-delay:2.312s'/%3e%3cellipse fill='%23bfbcb3' cx='132' cy='88' rx='20' ry='57' style='animation-delay:2.427s'/%3e%3cellipse fill='%23303026' cx='38' cy='114' rx='13' ry='5' style='animation-delay:2.533s'/%3e%3cellipse fill='%23ecf4f6' cx='38' cy='75' rx='36' ry='37' style='animation-delay:2.629s'/%3e%3cellipse fill='%23f5fbfc' cx='200' cy='50' rx='55' ry='28' style='animation-delay:2.714s'/%3e%3cellipse fill='%23835300' cx='104' cy='37' rx='12' ry='3' style='animation-delay:2.789s'/%3e%3cellipse fill='%235c3904' cx='75' cy='59' rx='7' ry='6' style='animation-delay:2.853s'/%3e%3cellipse fill='%23b4beb9' cx='197' cy='101' rx='40' ry='6' style='animation-delay:2.906s'/%3e%3cellipse fill='%235a3e17' cx='92' cy='76' rx='7' ry='6' style='animation-delay:2.947s'/%3e%3cellipse fill='%235d472f' cx='136' cy='94' rx='2' ry='11' style='animation-delay:2.976s'/%3e%3cellipse fill='%23f3f6f7' cx='41' cy='28' rx='53' ry='31' style='animation-delay:2.994s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/beth-solano-313648-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3eellipse%7bopacity:0%3banimation:fade .5s forwards%7d%3c/style%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse cx='219' cy='119' rx='73' ry='16' style='animation-delay:0s'/%3e%3cellipse cx='21' cy='121' rx='30' ry='11' style='animation-delay:.19s'/%3e%3cellipse fill='white' cx='204' cy='35' rx='62' ry='70' style='animation-delay:.38s'/%3e%3cellipse cx='223' cy='121' rx='55' ry='16' style='animation-delay:.56s'/%3e%3cellipse fill='white' cx='18' cy='12' rx='64' ry='94' style='animation-delay:.75s'/%3e%3cellipse fill='%238f785b' cx='110' cy='60' rx='39' ry='29' style='animation-delay:.93s'/%3e%3cellipse fill='white' cx='108' cy='14' rx='255' ry='17' style='animation-delay:1.1s'/%3e%3cellipse cx='20' cy='123' rx='29' ry='11' style='animation-delay:1.28s'/%3e%3cellipse fill='%23b89b6c' cx='157' cy='127' rx='13' ry='46' style='animation-delay:1.45s'/%3e%3cellipse fill='%233c1700' cx='82' cy='64' rx='8' ry='10' style='animation-delay:1.61s'/%3e%3cellipse fill='white' cx='101' cy='59' rx='9' ry='11' style='animation-delay:1.76s'/%3e%3cellipse fill='%23724028' cx='119' cy='36' rx='8' ry='10' style='animation-delay:1.91s'/%3e%3cellipse fill='%23796341' cx='100' cy='84' rx='8' ry='17' style='animation-delay:2.05s'/%3e%3cellipse fill='%23170f00' cx='227' cy='124' rx='58' ry='17' style='animation-delay:2.19s'/%3e%3cellipse fill='%23f9fdff' cx='74' cy='13' rx='50' ry='30' style='animation-delay:2.31s'/%3e%3cellipse fill='%23bfbcb3' cx='132' cy='88' rx='20' ry='57' style='animation-delay:2.43s'/%3e%3cellipse fill='%23303026' cx='38' cy='114' rx='13' ry='5' style='animation-delay:2.53s'/%3e%3cellipse fill='%23ecf4f6' cx='38' cy='75' rx='36' ry='37' style='animation-delay:2.63s'/%3e%3cellipse fill='%23f5fbfc' cx='200' cy='50' rx='55' ry='28' style='animation-delay:2.71s'/%3e%3cellipse fill='%23835300' cx='104' cy='37' rx='12' ry='3' style='animation-delay:2.79s'/%3e%3cellipse fill='%235c3904' cx='75' cy='59' rx='7' ry='6' style='animation-delay:2.85s'/%3e%3cellipse fill='%23b4beb9' cx='197' cy='101' rx='40' ry='6' style='animation-delay:2.91s'/%3e%3cellipse fill='%235a3e17' cx='92' cy='76' rx='7' ry='6' style='animation-delay:2.95s'/%3e%3cellipse fill='%235d472f' cx='136' cy='94' rx='2' ry='11' style='animation-delay:2.98s'/%3e%3cellipse fill='%23f3f6f7' cx='41' cy='28' rx='53' ry='31' style='animation-delay:2.99s'/%3e%3c/g%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/beth-solano-313648-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Beth Solano 313648 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -254,13 +267,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('2e7efd36392a9dbaa8df1aeb7a10aa62').className='modal active'">Show Full Data</button>
+                    <button class="btn" onClick="document.getElementById('4fee4e8dced3b4496b19e75c1009bf13').className='modal active'">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="2e7efd36392a9dbaa8df1aeb7a10aa62"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('2e7efd36392a9dbaa8df1aeb7a10aa62').className='modal'"></a>
+              <div class="modal" id="4fee4e8dced3b4496b19e75c1009bf13"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('4fee4e8dced3b4496b19e75c1009bf13').className='modal'"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('2e7efd36392a9dbaa8df1aeb7a10aa62').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('4fee4e8dced3b4496b19e75c1009bf13').className='modal'"></a>
                     <div class="modal-title h5">Beth Solano 313648 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -280,11 +293,11 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Ellipses&quot;
   },
-  &quot;svgByteLength&quot;: 2481,
+  &quot;svgByteLength&quot;: 2471,
   &quot;dataURI&quot;: {
-    &quot;original&quot;: 2603,
-    &quot;brotli&quot;: 614,
-    &quot;gzip&quot;: 731
+    &quot;original&quot;: 2470,
+    &quot;brotli&quot;: 538,
+    &quot;gzip&quot;: 651
   }
 }</code></pre>
                     </div>
@@ -295,9 +308,7 @@ footer {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%2351564e' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='%239e9786' cx='187' cy='54' rx='34' ry='71' style='animation-delay:0s'/%3e%3cellipse fill='%23131108' cx='251' cy='99' rx='23' ry='132' style='animation-delay:.188s'/%3e%3cellipse fill='%2319221a' cx='11' cy='35' rx='38' ry='58' style='animation-delay:.376s'/%3e%3cellipse fill='%23ecece8' cx='67' cy='57' rx='11' ry='12' style='animation-delay:.562s'/%3e%3cellipse fill='%23c4d9d9' cx='201' cy='64' rx='19' ry='18' style='animation-delay:.746s'/%3e%3cellipse fill='%231d1911' cx='198' rx='13' ry='46' style='animation-delay:.927s'/%3e%3cellipse fill='%234a3411' cx='211' cy='110' rx='23' ry='26' style='animation-delay:1.104s'/%3e%3cellipse fill='%23162015' cx='1' cy='127' rx='49' ry='23' style='animation-delay:1.277s'/%3e%3cellipse fill='%23d5d4cc' cx='80' cy='47' rx='10' ry='6' style='animation-delay:1.445s'/%3e%3cellipse fill='%23a8aba1' cx='57' rx='16' ry='12' style='animation-delay:1.607s'/%3e%3cellipse fill='white' cx='198' cy='76' rx='16' ry='4' style='animation-delay:1.763s'/%3e%3cellipse fill='%23bdc2c1' cx='31' cy='103' rx='5' ry='10' style='animation-delay:1.912s'/%3e%3cellipse fill='%23333d37' cx='82' cy='105' rx='37' ry='24' style='animation-delay:2.054s'/%3e%3cellipse fill='%23415965' cx='132' cy='65' rx='27' ry='147' style='animation-delay:2.187s'/%3e%3cellipse fill='%2397968f' cx='171' cy='20' rx='17' ry='24' style='animation-delay:2.312s'/%3e%3cellipse fill='%236c7266' cx='214' cy='67' rx='86' ry='7' style='animation-delay:2.427s'/%3e%3cellipse fill='%2394968f' cx='70' cy='74' rx='12' ry='9' style='animation-delay:2.533s'/%3e%3cellipse fill='%2399968d' cx='222' cy='17' rx='7' ry='15' style='animation-delay:2.629s'/%3e%3cellipse fill='%23202718' cx='50' cy='22' rx='28' ry='10' style='animation-delay:2.714s'/%3e%3cellipse fill='%23272f24' cx='48' cy='70' rx='16' ry='10' style='animation-delay:2.789s'/%3e%3cellipse fill='%233a3429' cx='210' cy='42' rx='30' ry='5' style='animation-delay:2.853s'/%3e%3cellipse fill='%23958f80' cx='175' cy='124' rx='19' ry='9' style='animation-delay:2.906s'/%3e%3cellipse fill='%23b8b3a1' cx='95' cy='15' rx='6' ry='7' style='animation-delay:2.947s'/%3e%3cellipse fill='%236c776b' cx='5' cy='7' rx='16' ry='9' style='animation-delay:2.976s'/%3e%3cellipse fill='%23242417' cx='178' cy='56' rx='4' ry='13' style='animation-delay:2.994s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/desmond-simon-412494-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3eellipse%7bopacity:0%3banimation:fade .5s forwards%7d%3c/style%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='%239e9786' cx='187' cy='54' rx='34' ry='71' style='animation-delay:0s'/%3e%3cellipse fill='%23131108' cx='251' cy='99' rx='23' ry='132' style='animation-delay:.19s'/%3e%3cellipse fill='%2319221a' cx='11' cy='35' rx='38' ry='58' style='animation-delay:.38s'/%3e%3cellipse fill='%23ecece8' cx='67' cy='57' rx='11' ry='12' style='animation-delay:.56s'/%3e%3cellipse fill='%23c4d9d9' cx='201' cy='64' rx='19' ry='18' style='animation-delay:.75s'/%3e%3cellipse fill='%231d1911' cx='198' rx='13' ry='46' style='animation-delay:.93s'/%3e%3cellipse fill='%234a3411' cx='211' cy='110' rx='23' ry='26' style='animation-delay:1.1s'/%3e%3cellipse fill='%23162015' cx='1' cy='127' rx='49' ry='23' style='animation-delay:1.28s'/%3e%3cellipse fill='%23d5d4cc' cx='80' cy='47' rx='10' ry='6' style='animation-delay:1.45s'/%3e%3cellipse fill='%23a8aba1' cx='57' rx='16' ry='12' style='animation-delay:1.61s'/%3e%3cellipse fill='white' cx='198' cy='76' rx='16' ry='4' style='animation-delay:1.76s'/%3e%3cellipse fill='%23bdc2c1' cx='31' cy='103' rx='5' ry='10' style='animation-delay:1.91s'/%3e%3cellipse fill='%23333d37' cx='82' cy='105' rx='37' ry='24' style='animation-delay:2.05s'/%3e%3cellipse fill='%23415965' cx='132' cy='65' rx='27' ry='147' style='animation-delay:2.19s'/%3e%3cellipse fill='%2397968f' cx='171' cy='20' rx='17' ry='24' style='animation-delay:2.31s'/%3e%3cellipse fill='%236c7266' cx='214' cy='67' rx='86' ry='7' style='animation-delay:2.43s'/%3e%3cellipse fill='%2394968f' cx='70' cy='74' rx='12' ry='9' style='animation-delay:2.53s'/%3e%3cellipse fill='%2399968d' cx='222' cy='17' rx='7' ry='15' style='animation-delay:2.63s'/%3e%3cellipse fill='%23202718' cx='50' cy='22' rx='28' ry='10' style='animation-delay:2.71s'/%3e%3cellipse fill='%23272f24' cx='48' cy='70' rx='16' ry='10' style='animation-delay:2.79s'/%3e%3cellipse fill='%233a3429' cx='210' cy='42' rx='30' ry='5' style='animation-delay:2.85s'/%3e%3cellipse fill='%23958f80' cx='175' cy='124' rx='19' ry='9' style='animation-delay:2.91s'/%3e%3cellipse fill='%23b8b3a1' cx='95' cy='15' rx='6' ry='7' style='animation-delay:2.95s'/%3e%3cellipse fill='%236c776b' cx='5' cy='7' rx='16' ry='9' style='animation-delay:2.98s'/%3e%3cellipse fill='%23242417' cx='178' cy='56' rx='4' ry='13' style='animation-delay:2.99s'/%3e%3c/g%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/desmond-simon-412494-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Desmond Simon 412494 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -328,13 +339,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('e10b3d74b40e7676465e888ba6ee71b4').className='modal active'">Show Full Data</button>
+                    <button class="btn" onClick="document.getElementById('52f04078cdeb342268549c1781787b74').className='modal active'">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="e10b3d74b40e7676465e888ba6ee71b4"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('e10b3d74b40e7676465e888ba6ee71b4').className='modal'"></a>
+              <div class="modal" id="52f04078cdeb342268549c1781787b74"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('52f04078cdeb342268549c1781787b74').className='modal'"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('e10b3d74b40e7676465e888ba6ee71b4').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('52f04078cdeb342268549c1781787b74').className='modal'"></a>
                     <div class="modal-title h5">Desmond Simon 412494 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -354,11 +365,11 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Ellipses&quot;
   },
-  &quot;svgByteLength&quot;: 2527,
+  &quot;svgByteLength&quot;: 2517,
   &quot;dataURI&quot;: {
-    &quot;original&quot;: 2660,
-    &quot;brotli&quot;: 628,
-    &quot;gzip&quot;: 755
+    &quot;original&quot;: 2527,
+    &quot;brotli&quot;: 561,
+    &quot;gzip&quot;: 673
   }
 }</code></pre>
                     </div>
@@ -369,9 +380,7 @@ footer {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%236a676e' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='%23d0c1cf' cx='128' cy='52' rx='95' ry='50' style='animation-delay:0s'/%3e%3cellipse cx='84' cy='127' rx='255' ry='26' style='animation-delay:.188s'/%3e%3cellipse cx='10' cy='59' rx='23' ry='234' style='animation-delay:.376s'/%3e%3cellipse cx='235' cy='87' rx='12' ry='120' style='animation-delay:.562s'/%3e%3cellipse fill='whiteeff' cx='78' cy='10' rx='47' ry='5' style='animation-delay:.746s'/%3e%3cellipse fill='%23ebf9ff' cx='182' cy='9' rx='42' ry='5' style='animation-delay:.927s'/%3e%3cellipse fill='black600' cx='140' cy='2' rx='102' ry='4' style='animation-delay:1.104s'/%3e%3cellipse fill='%23dfd8e5' cx='69' cy='95' rx='37' ry='6' style='animation-delay:1.277s'/%3e%3cellipse fill='%23d5463b' cx='72' cy='23' rx='35' ry='10' style='animation-delay:1.445s'/%3e%3cellipse fill='%237a95b5' cy='8' rx='22' ry='29' style='animation-delay:1.607s'/%3e%3cellipse fill='%23f6ffff' cx='135' cy='36' rx='90' ry='5' style='animation-delay:1.763s'/%3e%3cellipse fill='%23050d0b' cx='254' cy='78' rx='27' ry='30' style='animation-delay:1.912s'/%3e%3cellipse fill='%231c5951' cx='65' cy='60' rx='37' ry='8' style='animation-delay:2.054s'/%3e%3cellipse cx='13' cy='74' rx='20' ry='23' style='animation-delay:2.187s'/%3e%3cellipse fill='%23cf5349' cx='177' cy='62' rx='48' ry='9' style='animation-delay:2.312s'/%3e%3cellipse fill='%23b5bace' cx='219' cy='7' rx='5' ry='99' style='animation-delay:2.427s'/%3e%3cellipse fill='%23e9efff' cx='139' cy='49' rx='76' ry='4' style='animation-delay:2.533s'/%3e%3cellipse fill='limee0c' cx='48' cy='122' rx='202' ry='21' style='animation-delay:2.629s'/%3e%3cellipse fill='%23b0c0c6' cx='168' cy='97' rx='56' ry='7' style='animation-delay:2.714s'/%3e%3cellipse fill='%23d8b7c2' cx='41' cy='24' rx='9' ry='20' style='animation-delay:2.789s'/%3e%3cellipse fill='%23255294' cx='139' cy='84' rx='20' ry='10' style='animation-delay:2.853s'/%3e%3cellipse fill='%232a3137' cx='131' cy='42' rx='110' ry='2' style='animation-delay:2.906s'/%3e%3cellipse fill='%23c3645d' cx='65' cy='83' rx='32' ry='10' style='animation-delay:2.947s'/%3e%3cellipse fill='%23709bbc' cx='253' cy='19' rx='13' ry='31' style='animation-delay:2.976s'/%3e%3cellipse fill='%23f4ffff' cx='108' cy='72' rx='69' ry='2' style='animation-delay:2.994s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/igor-ovsyannykov-307432-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3eellipse%7bopacity:0%3banimation:fade .5s forwards%7d%3c/style%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='%23d0c1cf' cx='128' cy='52' rx='95' ry='50' style='animation-delay:0s'/%3e%3cellipse cx='84' cy='127' rx='255' ry='26' style='animation-delay:.19s'/%3e%3cellipse cx='10' cy='59' rx='23' ry='234' style='animation-delay:.38s'/%3e%3cellipse cx='235' cy='87' rx='12' ry='120' style='animation-delay:.56s'/%3e%3cellipse fill='whiteeff' cx='78' cy='10' rx='47' ry='5' style='animation-delay:.75s'/%3e%3cellipse fill='%23ebf9ff' cx='182' cy='9' rx='42' ry='5' style='animation-delay:.93s'/%3e%3cellipse fill='black600' cx='140' cy='2' rx='102' ry='4' style='animation-delay:1.1s'/%3e%3cellipse fill='%23dfd8e5' cx='69' cy='95' rx='37' ry='6' style='animation-delay:1.28s'/%3e%3cellipse fill='%23d5463b' cx='72' cy='23' rx='35' ry='10' style='animation-delay:1.45s'/%3e%3cellipse fill='%237a95b5' cy='8' rx='22' ry='29' style='animation-delay:1.61s'/%3e%3cellipse fill='%23f6ffff' cx='135' cy='36' rx='90' ry='5' style='animation-delay:1.76s'/%3e%3cellipse fill='%23050d0b' cx='254' cy='78' rx='27' ry='30' style='animation-delay:1.91s'/%3e%3cellipse fill='%231c5951' cx='65' cy='60' rx='37' ry='8' style='animation-delay:2.05s'/%3e%3cellipse cx='13' cy='74' rx='20' ry='23' style='animation-delay:2.19s'/%3e%3cellipse fill='%23cf5349' cx='177' cy='62' rx='48' ry='9' style='animation-delay:2.31s'/%3e%3cellipse fill='%23b5bace' cx='219' cy='7' rx='5' ry='99' style='animation-delay:2.43s'/%3e%3cellipse fill='%23e9efff' cx='139' cy='49' rx='76' ry='4' style='animation-delay:2.53s'/%3e%3cellipse fill='limee0c' cx='48' cy='122' rx='202' ry='21' style='animation-delay:2.63s'/%3e%3cellipse fill='%23b0c0c6' cx='168' cy='97' rx='56' ry='7' style='animation-delay:2.71s'/%3e%3cellipse fill='%23d8b7c2' cx='41' cy='24' rx='9' ry='20' style='animation-delay:2.79s'/%3e%3cellipse fill='%23255294' cx='139' cy='84' rx='20' ry='10' style='animation-delay:2.85s'/%3e%3cellipse fill='%232a3137' cx='131' cy='42' rx='110' ry='2' style='animation-delay:2.91s'/%3e%3cellipse fill='%23c3645d' cx='65' cy='83' rx='32' ry='10' style='animation-delay:2.95s'/%3e%3cellipse fill='%23709bbc' cx='253' cy='19' rx='13' ry='31' style='animation-delay:2.98s'/%3e%3cellipse fill='%23f4ffff' cx='108' cy='72' rx='69' ry='2' style='animation-delay:2.99s'/%3e%3c/g%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/igor-ovsyannykov-307432-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Igor Ovsyannykov 307432 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -402,13 +411,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('afba9a92f0858d3a9f3b1eca072f751e').className='modal active'">Show Full Data</button>
+                    <button class="btn" onClick="document.getElementById('cddb16f2dd387376f34f3fab52fb9732').className='modal active'">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="afba9a92f0858d3a9f3b1eca072f751e"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('afba9a92f0858d3a9f3b1eca072f751e').className='modal'"></a>
+              <div class="modal" id="cddb16f2dd387376f34f3fab52fb9732"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('cddb16f2dd387376f34f3fab52fb9732').className='modal'"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('afba9a92f0858d3a9f3b1eca072f751e').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('cddb16f2dd387376f34f3fab52fb9732').className='modal'"></a>
                     <div class="modal-title h5">Igor Ovsyannykov 307432 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -428,11 +437,11 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Ellipses&quot;
   },
-  &quot;svgByteLength&quot;: 2478,
+  &quot;svgByteLength&quot;: 2468,
   &quot;dataURI&quot;: {
-    &quot;original&quot;: 2600,
-    &quot;brotli&quot;: 644,
-    &quot;gzip&quot;: 756
+    &quot;original&quot;: 2467,
+    &quot;brotli&quot;: 571,
+    &quot;gzip&quot;: 680
   }
 }</code></pre>
                     </div>
@@ -443,9 +452,7 @@ footer {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%23d2d2d3' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse cx='59' cy='19' rx='34' ry='32' style='animation-delay:0s'/%3e%3cellipse fill='%23360800' cx='65' cy='24' rx='29' ry='39' style='animation-delay:.188s'/%3e%3cellipse fill='%23f2f7f9' cx='185' cy='64' rx='97' ry='233' style='animation-delay:.376s'/%3e%3cellipse fill='%23859191' cx='92' cy='52' rx='16' ry='19' style='animation-delay:.562s'/%3e%3cellipse fill='%23eef3f6' cx='16' cy='99' rx='67' ry='57' style='animation-delay:.746s'/%3e%3cellipse fill='%23411710' cx='58' cy='22' rx='30' ry='28' style='animation-delay:.927s'/%3e%3cellipse fill='%23feffff' cx='6' cy='1' rx='22' ry='49' style='animation-delay:1.104s'/%3e%3cellipse fill='%2395a4a4' cx='67' cy='63' rx='17' ry='15' style='animation-delay:1.277s'/%3e%3cellipse fill='%23fdffff' cx='164' cy='95' rx='28' ry='28' style='animation-delay:1.445s'/%3e%3cellipse fill='%239d9ea0' cx='229' cy='93' rx='41' ry='2' style='animation-delay:1.607s'/%3e%3cellipse fill='%23919994' cx='94' cy='38' rx='8' ry='18' style='animation-delay:1.763s'/%3e%3cellipse fill='%23d0d1d6' cx='105' cy='60' rx='10' ry='40' style='animation-delay:1.912s'/%3e%3cellipse fill='%23f0f1f2' cx='153' cy='18' rx='47' ry='33' style='animation-delay:2.054s'/%3e%3cellipse fill='%23eaebee' cx='56' cy='117' rx='118' ry='23' style='animation-delay:2.187s'/%3e%3cellipse fill='%23aaacad' cx='176' cy='52' rx='92' ry='2' style='animation-delay:2.312s'/%3e%3cellipse fill='%23769c65' cx='63' rx='8' ry='8' style='animation-delay:2.427s'/%3e%3cellipse fill='%23b8d7d3' cx='46' cy='52' rx='25' ry='2' style='animation-delay:2.533s'/%3e%3cellipse fill='%23b3b4b8' cx='81' cy='92' rx='66' ry='2' style='animation-delay:2.629s'/%3e%3cellipse fill='%23b9bbbc' cx='216' cy='12' rx='125' ry='2' style='animation-delay:2.714s'/%3e%3cellipse fill='%231a482e' cx='54' cy='47' rx='13' ry='4' style='animation-delay:2.789s'/%3e%3cellipse fill='%23060000' cx='74' cy='28' rx='7' ry='7' style='animation-delay:2.853s'/%3e%3cellipse fill='%23eff1f4' cx='9' cy='51' rx='20' ry='39' style='animation-delay:2.906s'/%3e%3cellipse fill='%23738077' cx='79' cy='53' rx='10' ry='9' style='animation-delay:2.947s'/%3e%3cellipse fill='%23d4d5da' cx='77' cy='79' rx='33' ry='12' style='animation-delay:2.976s'/%3e%3cellipse fill='%23aa6a8c' cx='50' cy='20' rx='4' ry='4' style='animation-delay:2.994s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/neven-krcmarek-264325-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3eellipse%7bopacity:0%3banimation:fade .5s forwards%7d%3c/style%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse cx='59' cy='19' rx='34' ry='32' style='animation-delay:0s'/%3e%3cellipse fill='%23360800' cx='65' cy='24' rx='29' ry='39' style='animation-delay:.19s'/%3e%3cellipse fill='%23f2f7f9' cx='185' cy='64' rx='97' ry='233' style='animation-delay:.38s'/%3e%3cellipse fill='%23859191' cx='92' cy='52' rx='16' ry='19' style='animation-delay:.56s'/%3e%3cellipse fill='%23eef3f6' cx='16' cy='99' rx='67' ry='57' style='animation-delay:.75s'/%3e%3cellipse fill='%23411710' cx='58' cy='22' rx='30' ry='28' style='animation-delay:.93s'/%3e%3cellipse fill='%23feffff' cx='6' cy='1' rx='22' ry='49' style='animation-delay:1.1s'/%3e%3cellipse fill='%2395a4a4' cx='67' cy='63' rx='17' ry='15' style='animation-delay:1.28s'/%3e%3cellipse fill='%23fdffff' cx='164' cy='95' rx='28' ry='28' style='animation-delay:1.45s'/%3e%3cellipse fill='%239d9ea0' cx='229' cy='93' rx='41' ry='2' style='animation-delay:1.61s'/%3e%3cellipse fill='%23919994' cx='94' cy='38' rx='8' ry='18' style='animation-delay:1.76s'/%3e%3cellipse fill='%23d0d1d6' cx='105' cy='60' rx='10' ry='40' style='animation-delay:1.91s'/%3e%3cellipse fill='%23f0f1f2' cx='153' cy='18' rx='47' ry='33' style='animation-delay:2.05s'/%3e%3cellipse fill='%23eaebee' cx='56' cy='117' rx='118' ry='23' style='animation-delay:2.19s'/%3e%3cellipse fill='%23aaacad' cx='176' cy='52' rx='92' ry='2' style='animation-delay:2.31s'/%3e%3cellipse fill='%23769c65' cx='63' rx='8' ry='8' style='animation-delay:2.43s'/%3e%3cellipse fill='%23b8d7d3' cx='46' cy='52' rx='25' ry='2' style='animation-delay:2.53s'/%3e%3cellipse fill='%23b3b4b8' cx='81' cy='92' rx='66' ry='2' style='animation-delay:2.63s'/%3e%3cellipse fill='%23b9bbbc' cx='216' cy='12' rx='125' ry='2' style='animation-delay:2.71s'/%3e%3cellipse fill='%231a482e' cx='54' cy='47' rx='13' ry='4' style='animation-delay:2.79s'/%3e%3cellipse fill='%23060000' cx='74' cy='28' rx='7' ry='7' style='animation-delay:2.85s'/%3e%3cellipse fill='%23eff1f4' cx='9' cy='51' rx='20' ry='39' style='animation-delay:2.91s'/%3e%3cellipse fill='%23738077' cx='79' cy='53' rx='10' ry='9' style='animation-delay:2.95s'/%3e%3cellipse fill='%23d4d5da' cx='77' cy='79' rx='33' ry='12' style='animation-delay:2.98s'/%3e%3cellipse fill='%23aa6a8c' cx='50' cy='20' rx='4' ry='4' style='animation-delay:2.99s'/%3e%3c/g%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/neven-krcmarek-264325-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Neven Krcmarek 264325 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -476,13 +483,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('4ebdc2af4c19212f4fcd9cb010479046').className='modal active'">Show Full Data</button>
+                    <button class="btn" onClick="document.getElementById('0a28e397201014367bf51e31794eb425').className='modal active'">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="4ebdc2af4c19212f4fcd9cb010479046"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('4ebdc2af4c19212f4fcd9cb010479046').className='modal'"></a>
+              <div class="modal" id="0a28e397201014367bf51e31794eb425"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('0a28e397201014367bf51e31794eb425').className='modal'"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('4ebdc2af4c19212f4fcd9cb010479046').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('0a28e397201014367bf51e31794eb425').className='modal'"></a>
                     <div class="modal-title h5">Neven Krcmarek 264325 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -502,11 +509,11 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Ellipses&quot;
   },
-  &quot;svgByteLength&quot;: 2512,
+  &quot;svgByteLength&quot;: 2502,
   &quot;dataURI&quot;: {
-    &quot;original&quot;: 2644,
-    &quot;brotli&quot;: 624,
-    &quot;gzip&quot;: 756
+    &quot;original&quot;: 2511,
+    &quot;brotli&quot;: 547,
+    &quot;gzip&quot;: 670
   }
 }</code></pre>
                     </div>
@@ -517,9 +524,7 @@ footer {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%23494949' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='%23c7c7c7' cx='113' cy='51' rx='51' ry='30' style='animation-delay:0s'/%3e%3cellipse cx='255' cy='32' rx='84' ry='33' style='animation-delay:.188s'/%3e%3cellipse cy='31' rx='47' ry='27' style='animation-delay:.376s'/%3e%3cellipse cx='115' rx='41' ry='27' style='animation-delay:.562s'/%3e%3cellipse fill='%238f8f8f' cx='78' cy='113' rx='46' ry='21' style='animation-delay:.746s'/%3e%3cellipse fill='%23b0b0b0' cx='53' cy='12' rx='23' ry='16' style='animation-delay:.927s'/%3e%3cellipse cx='239' cy='35' rx='81' ry='22' style='animation-delay:1.104s'/%3e%3cellipse fill='silver' cx='87' cy='35' rx='28' ry='16' style='animation-delay:1.277s'/%3e%3cellipse cx='163' cy='94' rx='17' ry='18' style='animation-delay:1.445s'/%3e%3cellipse fill='%23797979' cx='208' cy='92' rx='27' ry='36' style='animation-delay:1.607s'/%3e%3cellipse cx='120' cy='49' rx='15' ry='6' style='animation-delay:1.763s'/%3e%3cellipse cx='23' cy='35' rx='32' ry='18' style='animation-delay:1.912s'/%3e%3cellipse fill='%23c3c3c3' cx='90' cy='66' rx='10' ry='43' style='animation-delay:2.054s'/%3e%3cellipse cx='113' cy='1' rx='45' ry='20' style='animation-delay:2.187s'/%3e%3cellipse fill='%238d8d8d' cx='167' cy='17' rx='25' ry='10' style='animation-delay:2.312s'/%3e%3cellipse fill='%23252525' cx='60' cy='66' rx='13' ry='34' style='animation-delay:2.427s'/%3e%3cellipse cx='179' cy='76' rx='18' ry='12' style='animation-delay:2.533s'/%3e%3cellipse cx='119' cy='11' rx='11' ry='21' style='animation-delay:2.629s'/%3e%3cellipse cy='29' rx='28' ry='30' style='animation-delay:2.714s'/%3e%3cellipse cx='255' cy='38' rx='51' ry='32' style='animation-delay:2.789s'/%3e%3cellipse fill='%23b5b5b5' cx='146' cy='36' rx='11' ry='21' style='animation-delay:2.853s'/%3e%3cellipse cx='145' cy='95' rx='34' ry='5' style='animation-delay:2.906s'/%3e%3cellipse fill='%23888' cx='181' cy='58' rx='31' ry='6' style='animation-delay:2.947s'/%3e%3cellipse fill='%23aeaeae' cx='224' cy='70' rx='16' ry='6' style='animation-delay:2.976s'/%3e%3cellipse fill='%23898989' cx='185' cy='5' rx='25' ry='7' style='animation-delay:2.994s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/quino-al-101314-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3eellipse%7bopacity:0%3banimation:fade .5s forwards%7d%3c/style%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='%23c7c7c7' cx='113' cy='51' rx='51' ry='30' style='animation-delay:0s'/%3e%3cellipse cx='255' cy='32' rx='84' ry='33' style='animation-delay:.19s'/%3e%3cellipse cy='31' rx='47' ry='27' style='animation-delay:.38s'/%3e%3cellipse cx='115' rx='41' ry='27' style='animation-delay:.56s'/%3e%3cellipse fill='%238f8f8f' cx='78' cy='113' rx='46' ry='21' style='animation-delay:.75s'/%3e%3cellipse fill='%23b0b0b0' cx='53' cy='12' rx='23' ry='16' style='animation-delay:.93s'/%3e%3cellipse cx='239' cy='35' rx='81' ry='22' style='animation-delay:1.1s'/%3e%3cellipse fill='silver' cx='87' cy='35' rx='28' ry='16' style='animation-delay:1.28s'/%3e%3cellipse cx='163' cy='94' rx='17' ry='18' style='animation-delay:1.45s'/%3e%3cellipse fill='%23797979' cx='208' cy='92' rx='27' ry='36' style='animation-delay:1.61s'/%3e%3cellipse cx='120' cy='49' rx='15' ry='6' style='animation-delay:1.76s'/%3e%3cellipse cx='23' cy='35' rx='32' ry='18' style='animation-delay:1.91s'/%3e%3cellipse fill='%23c3c3c3' cx='90' cy='66' rx='10' ry='43' style='animation-delay:2.05s'/%3e%3cellipse cx='113' cy='1' rx='45' ry='20' style='animation-delay:2.19s'/%3e%3cellipse fill='%238d8d8d' cx='167' cy='17' rx='25' ry='10' style='animation-delay:2.31s'/%3e%3cellipse fill='%23252525' cx='60' cy='66' rx='13' ry='34' style='animation-delay:2.43s'/%3e%3cellipse cx='179' cy='76' rx='18' ry='12' style='animation-delay:2.53s'/%3e%3cellipse cx='119' cy='11' rx='11' ry='21' style='animation-delay:2.63s'/%3e%3cellipse cy='29' rx='28' ry='30' style='animation-delay:2.71s'/%3e%3cellipse cx='255' cy='38' rx='51' ry='32' style='animation-delay:2.79s'/%3e%3cellipse fill='%23b5b5b5' cx='146' cy='36' rx='11' ry='21' style='animation-delay:2.85s'/%3e%3cellipse cx='145' cy='95' rx='34' ry='5' style='animation-delay:2.91s'/%3e%3cellipse fill='%23888' cx='181' cy='58' rx='31' ry='6' style='animation-delay:2.95s'/%3e%3cellipse fill='%23aeaeae' cx='224' cy='70' rx='16' ry='6' style='animation-delay:2.98s'/%3e%3cellipse fill='%23898989' cx='185' cy='5' rx='25' ry='7' style='animation-delay:2.99s'/%3e%3c/g%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/quino-al-101314-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Quino Al 101314 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -550,13 +555,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('5ddf2d3a6af8d34c5c94740725ea2cd5').className='modal active'">Show Full Data</button>
+                    <button class="btn" onClick="document.getElementById('f27e13d87845204c29c901194cfe1986').className='modal active'">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="5ddf2d3a6af8d34c5c94740725ea2cd5"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('5ddf2d3a6af8d34c5c94740725ea2cd5').className='modal'"></a>
+              <div class="modal" id="f27e13d87845204c29c901194cfe1986"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('f27e13d87845204c29c901194cfe1986').className='modal'"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('5ddf2d3a6af8d34c5c94740725ea2cd5').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('f27e13d87845204c29c901194cfe1986').className='modal'"></a>
                     <div class="modal-title h5">Quino Al 101314 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -576,11 +581,11 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Ellipses&quot;
   },
-  &quot;svgByteLength&quot;: 2329,
+  &quot;svgByteLength&quot;: 2319,
   &quot;dataURI&quot;: {
-    &quot;original&quot;: 2435,
-    &quot;brotli&quot;: 573,
-    &quot;gzip&quot;: 687
+    &quot;original&quot;: 2302,
+    &quot;brotli&quot;: 494,
+    &quot;gzip&quot;: 612
   }
 }</code></pre>
                     </div>
@@ -591,9 +596,7 @@ footer {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%23857a71' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='white' cx='60' rx='128' ry='19' style='animation-delay:0s'/%3e%3cellipse fill='%232b341a' cx='219' cy='33' rx='58' ry='34' style='animation-delay:.188s'/%3e%3cellipse fill='white' cx='99' cy='18' rx='14' ry='48' style='animation-delay:.376s'/%3e%3cellipse fill='%23353d2b' cx='38' cy='39' rx='39' ry='23' style='animation-delay:.562s'/%3e%3cellipse fill='%23a3cbfb' cx='147' cy='42' rx='20' ry='21' style='animation-delay:.746s'/%3e%3cellipse fill='%235a3625' cx='32' cy='123' rx='91' ry='26' style='animation-delay:.927s'/%3e%3cellipse fill='azure' cx='16' rx='173' ry='16' style='animation-delay:1.104s'/%3e%3cellipse fill='%230b0e1b' cx='107' cy='79' rx='10' ry='18' style='animation-delay:1.277s'/%3e%3cellipse fill='%23d6aa95' cx='214' cy='76' rx='63' ry='14' style='animation-delay:1.445s'/%3e%3cellipse fill='%23080f05' cx='206' cy='57' rx='50' ry='6' style='animation-delay:1.607s'/%3e%3cellipse fill='%23475978' cx='123' cy='57' rx='16' ry='34' style='animation-delay:1.763s'/%3e%3cellipse fill='%23f3ffff' cx='131' rx='24' ry='20' style='animation-delay:1.912s'/%3e%3cellipse fill='%23c3a094' cx='74' cy='71' rx='20' ry='22' style='animation-delay:2.054s'/%3e%3cellipse fill='%23494531' cy='54' rx='20' ry='33' style='animation-delay:2.187s'/%3e%3cellipse fill='%23797d82' cx='92' cy='16' rx='31' ry='4' style='animation-delay:2.312s'/%3e%3cellipse fill='%23f8ffff' cx='101' cy='53' rx='8' ry='14' style='animation-delay:2.427s'/%3e%3cellipse fill='%23d5e9ff' cx='8' rx='24' ry='22' style='animation-delay:2.533s'/%3e%3cellipse fill='%23b8aaa8' cx='159' cy='79' rx='11' ry='27' style='animation-delay:2.629s'/%3e%3cellipse fill='%23c09f91' cx='208' cy='38' rx='22' ry='4' style='animation-delay:2.714s'/%3e%3cellipse fill='%233b2c2a' cx='139' cy='76' rx='15' ry='8' style='animation-delay:2.789s'/%3e%3cellipse fill='%23986c59' cx='219' cy='113' rx='105' ry='31' style='animation-delay:2.853s'/%3e%3cellipse fill='%239cb0ca' cx='140' cy='44' rx='25' ry='12' style='animation-delay:2.906s'/%3e%3cellipse fill='%23061808' cx='179' cy='52' rx='14' ry='9' style='animation-delay:2.947s'/%3e%3cellipse fill='%23847863' cx='185' cy='13' rx='20' ry='9' style='animation-delay:2.976s'/%3e%3cellipse fill='%23876454' cx='47' cy='99' rx='58' ry='14' style='animation-delay:2.994s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/samuel-zeller-16570-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3eellipse%7bopacity:0%3banimation:fade .5s forwards%7d%3c/style%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='white' cx='60' rx='128' ry='19' style='animation-delay:0s'/%3e%3cellipse fill='%232b341a' cx='219' cy='33' rx='58' ry='34' style='animation-delay:.19s'/%3e%3cellipse fill='white' cx='99' cy='18' rx='14' ry='48' style='animation-delay:.38s'/%3e%3cellipse fill='%23353d2b' cx='38' cy='39' rx='39' ry='23' style='animation-delay:.56s'/%3e%3cellipse fill='%23a3cbfb' cx='147' cy='42' rx='20' ry='21' style='animation-delay:.75s'/%3e%3cellipse fill='%235a3625' cx='32' cy='123' rx='91' ry='26' style='animation-delay:.93s'/%3e%3cellipse fill='azure' cx='16' rx='173' ry='16' style='animation-delay:1.1s'/%3e%3cellipse fill='%230b0e1b' cx='107' cy='79' rx='10' ry='18' style='animation-delay:1.28s'/%3e%3cellipse fill='%23d6aa95' cx='214' cy='76' rx='63' ry='14' style='animation-delay:1.45s'/%3e%3cellipse fill='%23080f05' cx='206' cy='57' rx='50' ry='6' style='animation-delay:1.61s'/%3e%3cellipse fill='%23475978' cx='123' cy='57' rx='16' ry='34' style='animation-delay:1.76s'/%3e%3cellipse fill='%23f3ffff' cx='131' rx='24' ry='20' style='animation-delay:1.91s'/%3e%3cellipse fill='%23c3a094' cx='74' cy='71' rx='20' ry='22' style='animation-delay:2.05s'/%3e%3cellipse fill='%23494531' cy='54' rx='20' ry='33' style='animation-delay:2.19s'/%3e%3cellipse fill='%23797d82' cx='92' cy='16' rx='31' ry='4' style='animation-delay:2.31s'/%3e%3cellipse fill='%23f8ffff' cx='101' cy='53' rx='8' ry='14' style='animation-delay:2.43s'/%3e%3cellipse fill='%23d5e9ff' cx='8' rx='24' ry='22' style='animation-delay:2.53s'/%3e%3cellipse fill='%23b8aaa8' cx='159' cy='79' rx='11' ry='27' style='animation-delay:2.63s'/%3e%3cellipse fill='%23c09f91' cx='208' cy='38' rx='22' ry='4' style='animation-delay:2.71s'/%3e%3cellipse fill='%233b2c2a' cx='139' cy='76' rx='15' ry='8' style='animation-delay:2.79s'/%3e%3cellipse fill='%23986c59' cx='219' cy='113' rx='105' ry='31' style='animation-delay:2.85s'/%3e%3cellipse fill='%239cb0ca' cx='140' cy='44' rx='25' ry='12' style='animation-delay:2.91s'/%3e%3cellipse fill='%23061808' cx='179' cy='52' rx='14' ry='9' style='animation-delay:2.95s'/%3e%3cellipse fill='%23847863' cx='185' cy='13' rx='20' ry='9' style='animation-delay:2.98s'/%3e%3cellipse fill='%23876454' cx='47' cy='99' rx='58' ry='14' style='animation-delay:2.99s'/%3e%3c/g%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/samuel-zeller-16570-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Samuel Zeller 16570 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -624,13 +627,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('d3c4d617d1bd5516fdb65f298c60dc07').className='modal active'">Show Full Data</button>
+                    <button class="btn" onClick="document.getElementById('761663dd762d3c4cd46f813170edae2d').className='modal active'">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="d3c4d617d1bd5516fdb65f298c60dc07"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('d3c4d617d1bd5516fdb65f298c60dc07').className='modal'"></a>
+              <div class="modal" id="761663dd762d3c4cd46f813170edae2d"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('761663dd762d3c4cd46f813170edae2d').className='modal'"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('d3c4d617d1bd5516fdb65f298c60dc07').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('761663dd762d3c4cd46f813170edae2d').className='modal'"></a>
                     <div class="modal-title h5">Samuel Zeller 16570 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -650,11 +653,11 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Ellipses&quot;
   },
-  &quot;svgByteLength&quot;: 2505,
+  &quot;svgByteLength&quot;: 2495,
   &quot;dataURI&quot;: {
-    &quot;original&quot;: 2635,
-    &quot;brotli&quot;: 639,
-    &quot;gzip&quot;: 751
+    &quot;original&quot;: 2502,
+    &quot;brotli&quot;: 561,
+    &quot;gzip&quot;: 672
   }
 }</code></pre>
                     </div>
@@ -665,9 +668,7 @@ footer {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%239e8a6e' d='M0 0h400v200H0z'/%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='whitefea' cx='51' cy='13' rx='253' ry='32' style='animation-delay:0s'/%3e%3cellipse fill='%23271702' cx='54' cy='111' rx='254' ry='31' style='animation-delay:.188s'/%3e%3cellipse fill='%23856f52' cx='72' cy='86' rx='218' ry='17' style='animation-delay:.376s'/%3e%3cellipse fill='%23291e0f' cx='252' cy='127' rx='198' ry='16' style='animation-delay:.562s'/%3e%3cellipse fill='%23f4dab4' cy='15' rx='192' ry='33' style='animation-delay:.746s'/%3e%3cellipse fill='%23ab8f6c' cx='219' cy='56' rx='67' ry='26' style='animation-delay:.927s'/%3e%3cellipse fill='%239e8463' cx='89' cy='61' rx='45' ry='21' style='animation-delay:1.104s'/%3e%3cellipse fill='white5d4' cx='255' cy='28' rx='20' ry='8' style='animation-delay:1.277s'/%3e%3cellipse fill='%236f5c42' cx='23' cy='87' rx='70' ry='16' style='animation-delay:1.445s'/%3e%3cellipse fill='%23f6e0bc' cx='141' cy='36' rx='24' ry='9' style='animation-delay:1.607s'/%3e%3cellipse fill='%2357452d' cx='15' cy='116' rx='151' ry='10' style='animation-delay:1.763s'/%3e%3cellipse fill='%23847356' cx='172' cy='86' rx='88' ry='8' style='animation-delay:1.912s'/%3e%3cellipse fill='%23ae9473' cx='213' cy='43' rx='40' ry='14' style='animation-delay:2.054s'/%3e%3cellipse fill='%233b2e1d' cx='213' cy='127' rx='39' ry='23' style='animation-delay:2.187s'/%3e%3cellipse fill='%23cab89a' cx='108' cy='25' rx='33' ry='7' style='animation-delay:2.312s'/%3e%3cellipse fill='%23f2e2c2' cx='22' cy='9' rx='42' ry='10' style='animation-delay:2.427s'/%3e%3cellipse fill='%23766448' cx='248' cy='94' rx='31' ry='12' style='animation-delay:2.533s'/%3e%3cellipse fill='%23f8e7c8' cx='156' rx='16' ry='22' style='animation-delay:2.629s'/%3e%3cellipse fill='%23d7c09d' cx='206' cy='22' rx='44' ry='8' style='animation-delay:2.714s'/%3e%3cellipse fill='%23a68e6e' cx='87' cy='49' rx='34' ry='8' style='animation-delay:2.789s'/%3e%3cellipse fill='%2368553a' cx='136' cy='107' rx='75' ry='11' style='animation-delay:2.853s'/%3e%3cellipse fill='%239f886a' cx='175' cy='57' rx='33' ry='19' style='animation-delay:2.906s'/%3e%3cellipse fill='%23c9baa0' cx='122' cy='1' rx='15' ry='12' style='animation-delay:2.947s'/%3e%3cellipse fill='%23f0dcba' cx='154' cy='33' rx='30' ry='6' style='animation-delay:2.976s'/%3e%3cellipse fill='%23ecd9ba' cx='77' cy='36' rx='100' ry='5' style='animation-delay:2.994s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/tyler-lastovich-205631-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3eellipse%7bopacity:0%3banimation:fade .5s forwards%7d%3c/style%3e%3cg transform='translate(1 1) scale(1.5625)'%3e%3cellipse fill='whitefea' cx='51' cy='13' rx='253' ry='32' style='animation-delay:0s'/%3e%3cellipse fill='%23271702' cx='54' cy='111' rx='254' ry='31' style='animation-delay:.19s'/%3e%3cellipse fill='%23856f52' cx='72' cy='86' rx='218' ry='17' style='animation-delay:.38s'/%3e%3cellipse fill='%23291e0f' cx='252' cy='127' rx='198' ry='16' style='animation-delay:.56s'/%3e%3cellipse fill='%23f4dab4' cy='15' rx='192' ry='33' style='animation-delay:.75s'/%3e%3cellipse fill='%23ab8f6c' cx='219' cy='56' rx='67' ry='26' style='animation-delay:.93s'/%3e%3cellipse fill='%239e8463' cx='89' cy='61' rx='45' ry='21' style='animation-delay:1.1s'/%3e%3cellipse fill='white5d4' cx='255' cy='28' rx='20' ry='8' style='animation-delay:1.28s'/%3e%3cellipse fill='%236f5c42' cx='23' cy='87' rx='70' ry='16' style='animation-delay:1.45s'/%3e%3cellipse fill='%23f6e0bc' cx='141' cy='36' rx='24' ry='9' style='animation-delay:1.61s'/%3e%3cellipse fill='%2357452d' cx='15' cy='116' rx='151' ry='10' style='animation-delay:1.76s'/%3e%3cellipse fill='%23847356' cx='172' cy='86' rx='88' ry='8' style='animation-delay:1.91s'/%3e%3cellipse fill='%23ae9473' cx='213' cy='43' rx='40' ry='14' style='animation-delay:2.05s'/%3e%3cellipse fill='%233b2e1d' cx='213' cy='127' rx='39' ry='23' style='animation-delay:2.19s'/%3e%3cellipse fill='%23cab89a' cx='108' cy='25' rx='33' ry='7' style='animation-delay:2.31s'/%3e%3cellipse fill='%23f2e2c2' cx='22' cy='9' rx='42' ry='10' style='animation-delay:2.43s'/%3e%3cellipse fill='%23766448' cx='248' cy='94' rx='31' ry='12' style='animation-delay:2.53s'/%3e%3cellipse fill='%23f8e7c8' cx='156' rx='16' ry='22' style='animation-delay:2.63s'/%3e%3cellipse fill='%23d7c09d' cx='206' cy='22' rx='44' ry='8' style='animation-delay:2.71s'/%3e%3cellipse fill='%23a68e6e' cx='87' cy='49' rx='34' ry='8' style='animation-delay:2.79s'/%3e%3cellipse fill='%2368553a' cx='136' cy='107' rx='75' ry='11' style='animation-delay:2.85s'/%3e%3cellipse fill='%239f886a' cx='175' cy='57' rx='33' ry='19' style='animation-delay:2.91s'/%3e%3cellipse fill='%23c9baa0' cx='122' cy='1' rx='15' ry='12' style='animation-delay:2.95s'/%3e%3cellipse fill='%23f0dcba' cx='154' cy='33' rx='30' ry='6' style='animation-delay:2.98s'/%3e%3cellipse fill='%23ecd9ba' cx='77' cy='36' rx='100' ry='5' style='animation-delay:2.99s'/%3e%3c/g%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/tyler-lastovich-205631-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Tyler Lastovich 205631 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -698,13 +699,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('8c4aa1723c9804ef5d804cba0c3c0124').className='modal active'">Show Full Data</button>
+                    <button class="btn" onClick="document.getElementById('84ed3c2319977f619c27c6b2275b8450').className='modal active'">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="8c4aa1723c9804ef5d804cba0c3c0124"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('8c4aa1723c9804ef5d804cba0c3c0124').className='modal'"></a>
+              <div class="modal" id="84ed3c2319977f619c27c6b2275b8450"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('84ed3c2319977f619c27c6b2275b8450').className='modal'"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('8c4aa1723c9804ef5d804cba0c3c0124').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('84ed3c2319977f619c27c6b2275b8450').className='modal'"></a>
                     <div class="modal-title h5">Tyler Lastovich 205631 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -724,11 +725,11 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Ellipses&quot;
   },
-  &quot;svgByteLength&quot;: 2542,
+  &quot;svgByteLength&quot;: 2532,
   &quot;dataURI&quot;: {
-    &quot;original&quot;: 2674,
-    &quot;brotli&quot;: 651,
-    &quot;gzip&quot;: 768
+    &quot;original&quot;: 2541,
+    &quot;brotli&quot;: 573,
+    &quot;gzip&quot;: 684
   }
 }</code></pre>
                     </div>
@@ -743,5 +744,17 @@ footer {
     <footer>
       <button class="btn" onClick="document.querySelector('body').className = document.querySelector('body').className ? '' : 'hide-images'">Toggle images</button>
     </footer>
+    <script>document.querySelectorAll('img').forEach(function (img) {
+  if (!img.complete) {
+    img.classList.add('not-cached')
+    img.addEventListener('load', function (e) {
+      e.target.classList.add('fade-in')
+    })
+  } else {
+    img.classList.add('cached')
+  }
+})
+
+    </script>
   </body>
 </html>

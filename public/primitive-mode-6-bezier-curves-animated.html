@@ -37,6 +37,12 @@ footer {
   background-size: contain;
 }
 
+.image-wrapper::before {
+  display: block;
+  content: "";
+  padding-top: 50%;
+}
+
 .image {
   position: absolute;
   left: 0;
@@ -45,6 +51,19 @@ footer {
   width: 100%;
   height: auto;
   z-index: 1;
+}
+
+.image.not-cached {
+  opacity: 0;
+}
+
+.image.fade-in {
+  animation: fade-in 1s forwards;
+}
+
+@keyframes fade-in{
+  from {opacity: 0}
+  to {opacity: 1}
 }
 
 .table-nowrap td {
@@ -73,9 +92,7 @@ footer {
         <div class="grid">
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%23544b47' d='M0 0h400v200H0z'/%3e%3cg fill='none'%3e%3cpath stroke='%23fdffff' d='M312 113q-81 45-96-63' style='animation-delay:0s'/%3e%3cpath stroke='%23e7f7fa' d='M340 204Q75 122 62 144' style='animation-delay:.188s'/%3e%3cpath stroke='azure' d='M214 45q29 113 106 58' style='animation-delay:.376s'/%3e%3cpath stroke='%23e9ffff' d='M319 103q-69 61-115-55' style='animation-delay:.562s'/%3e%3cpath stroke='%23f8ffff' d='M312 101q-56-58-111 35' style='animation-delay:.746s'/%3e%3cpath stroke='%23dde3dd' d='M69 141q59-5 327 83' style='animation-delay:.927s'/%3e%3cpath stroke='%23f9ffff' d='M221 49q-12 88 67 81' style='animation-delay:1.104s'/%3e%3cpath stroke='%23efffff' d='M216 52q31 95 100 51' style='animation-delay:1.277s'/%3e%3cpath stroke='%23ced0cf' d='M109 178q138 46 151-138' style='animation-delay:1.445s'/%3e%3cpath stroke='%23d2dde2' d='M415 224q-283-88-350-88' style='animation-delay:1.607s'/%3e%3cpath stroke='%23ccf1ff' d='M275 141Q185 36 163 3' style='animation-delay:1.763s'/%3e%3cpath stroke='%23e3ffff' d='M315 99q-53 45-109-57' style='animation-delay:1.912s'/%3e%3cpath stroke='%23e7edea' d='M75 129q69 23 208 61' style='animation-delay:2.054s'/%3e%3cpath stroke='%23eaffff' d='M215 95q18 57 100 6' style='animation-delay:2.187s'/%3e%3cpath stroke='%23dfffff' d='M203 57q63 103 116 36' style='animation-delay:2.312s'/%3e%3cpath stroke='%23f8ffff' d='M277 50q11 88-73 57' style='animation-delay:2.427s'/%3e%3cpath stroke='%23d4e2e3' d='M422 221q-21-10-294-72' style='animation-delay:2.533s'/%3e%3cpath stroke='%23e5ffff' d='M317 99q-41-55-104 21' style='animation-delay:2.629s'/%3e%3cpath stroke='%23e7f8ff' d='M251 151q-61-58 23-108' style='animation-delay:2.714s'/%3e%3cpath stroke='%23e9fdff' d='M212 127q54-76 99-21' style='animation-delay:2.789s'/%3e%3cpath stroke='%23dafaff' d='M304 122q-82 30-89-76' style='animation-delay:2.853s'/%3e%3cpath stroke='%23c8c9c9' d='M109 182q138 42 158-141' style='animation-delay:2.906s'/%3e%3cpath stroke='%23f7ffff' d='M201 100q60 41 80-46' style='animation-delay:2.947s'/%3e%3cpath stroke='%23d7ffff' d='M321 106q-87 44-107-1' style='animation-delay:2.976s'/%3e%3cpath stroke='%23cad1d2' d='M120 186q139 38 117-131' style='animation-delay:2.994s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/alisa-anton-166247-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3epath%7bopacity:0%3banimation:fade .5s forwards%7d%3c/style%3e%3cpath fill='%23544b47' d='M0 0h400v200H0z'/%3e%3cg fill='none'%3e%3cpath stroke='%23fdffff' d='M312 113q-81 45-96-63' style='animation-delay:0s'/%3e%3cpath stroke='%23e7f7fa' d='M340 204Q75 122 62 144' style='animation-delay:.19s'/%3e%3cpath stroke='azure' d='M214 45q29 113 106 58' style='animation-delay:.38s'/%3e%3cpath stroke='%23e9ffff' d='M319 103q-69 61-115-55' style='animation-delay:.56s'/%3e%3cpath stroke='%23f8ffff' d='M312 101q-56-58-111 35' style='animation-delay:.75s'/%3e%3cpath stroke='%23dde3dd' d='M69 141q59-5 327 83' style='animation-delay:.93s'/%3e%3cpath stroke='%23f9ffff' d='M221 49q-12 88 67 81' style='animation-delay:1.1s'/%3e%3cpath stroke='%23efffff' d='M216 52q31 95 100 51' style='animation-delay:1.28s'/%3e%3cpath stroke='%23ced0cf' d='M109 178q138 46 151-138' style='animation-delay:1.45s'/%3e%3cpath stroke='%23d2dde2' d='M415 224q-283-88-350-88' style='animation-delay:1.61s'/%3e%3cpath stroke='%23ccf1ff' d='M275 141Q185 36 163 3' style='animation-delay:1.76s'/%3e%3cpath stroke='%23e3ffff' d='M315 99q-53 45-109-57' style='animation-delay:1.91s'/%3e%3cpath stroke='%23e7edea' d='M75 129q69 23 208 61' style='animation-delay:2.05s'/%3e%3cpath stroke='%23eaffff' d='M215 95q18 57 100 6' style='animation-delay:2.19s'/%3e%3cpath stroke='%23dfffff' d='M203 57q63 103 116 36' style='animation-delay:2.31s'/%3e%3cpath stroke='%23f8ffff' d='M277 50q11 88-73 57' style='animation-delay:2.43s'/%3e%3cpath stroke='%23d4e2e3' d='M422 221q-21-10-294-72' style='animation-delay:2.53s'/%3e%3cpath stroke='%23e5ffff' d='M317 99q-41-55-104 21' style='animation-delay:2.63s'/%3e%3cpath stroke='%23e7f8ff' d='M251 151q-61-58 23-108' style='animation-delay:2.71s'/%3e%3cpath stroke='%23e9fdff' d='M212 127q54-76 99-21' style='animation-delay:2.79s'/%3e%3cpath stroke='%23dafaff' d='M304 122q-82 30-89-76' style='animation-delay:2.85s'/%3e%3cpath stroke='%23c8c9c9' d='M109 182q138 42 158-141' style='animation-delay:2.91s'/%3e%3cpath stroke='%23f7ffff' d='M201 100q60 41 80-46' style='animation-delay:2.95s'/%3e%3cpath stroke='%23d7ffff' d='M321 106q-87 44-107-1' style='animation-delay:2.98s'/%3e%3cpath stroke='%23cad1d2' d='M120 186q139 38 117-131' style='animation-delay:2.99s'/%3e%3c/g%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/alisa-anton-166247-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Alisa Anton 166247 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -106,13 +123,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('866aa30b47bc8ba011c91c773dd6c9d5').className='modal active'">Show Full Data</button>
+                    <button class="btn" onClick="document.getElementById('e45cd6ca1b4dee141d13568a41a2a702').className='modal active'">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="866aa30b47bc8ba011c91c773dd6c9d5"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('866aa30b47bc8ba011c91c773dd6c9d5').className='modal'"></a>
+              <div class="modal" id="e45cd6ca1b4dee141d13568a41a2a702"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('e45cd6ca1b4dee141d13568a41a2a702').className='modal'"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('866aa30b47bc8ba011c91c773dd6c9d5').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('e45cd6ca1b4dee141d13568a41a2a702').className='modal'"></a>
                     <div class="modal-title h5">Alisa Anton 166247 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -132,11 +149,11 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Bezier curves&quot;
   },
-  &quot;svgByteLength&quot;: 2589,
+  &quot;svgByteLength&quot;: 2579,
   &quot;dataURI&quot;: {
-    &quot;original&quot;: 2469,
-    &quot;brotli&quot;: 714,
-    &quot;gzip&quot;: 793
+    &quot;original&quot;: 2381,
+    &quot;brotli&quot;: 663,
+    &quot;gzip&quot;: 746
   }
 }</code></pre>
                     </div>
@@ -147,9 +164,7 @@ footer {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%23909b99' d='M0 0h400v200H0z'/%3e%3cg fill='none'%3e%3cpath stroke='white' d='M318 208Q188 115-24-2m0 5q343 186 334 221m32 0Q295 191-24 4' style='animation-delay:0s'/%3e%3cpath stroke='black' d='M173 143Q53 61-2 61' style='animation-delay:.248s'/%3e%3cpath stroke='white' d='M332 224Q294 175-19-2M4 5q309 219 360 219M-6 10q67 43 330 197' style='animation-delay:.494s'/%3e%3cpath stroke='%2300333f' d='M388 109Q292 217 54 16' style='animation-delay:.736s'/%3e%3cpath stroke='%232a1300' d='M118 44q226 174 276 118' style='animation-delay:.974s'/%3e%3cpath stroke='black' d='M-19 85q35-42 194 56' style='animation-delay:1.205s'/%3e%3cpath stroke='white' d='M-24 5l366 218m-63-88Q69-11 27-24' style='animation-delay:1.428s'/%3e%3cpath stroke='%23381e00' d='M44 21Q81 8 314 185' style='animation-delay:1.641s'/%3e%3cpath stroke='%23160000' d='M181 201Q-24 136-24 91' style='animation-delay:1.843s'/%3e%3cpath stroke='%231a2422' d='M-9 170q168 40 414-93' style='animation-delay:2.032s'/%3e%3cpath stroke='%2302353c' d='M42 19q221 121 281 183' style='animation-delay:2.207s'/%3e%3cpath stroke='%23160600' d='M279 117Q174 37 110 0' style='animation-delay:2.367s'/%3e%3cpath stroke='%23002e3f' d='M-24 47q213 151 321 83' style='animation-delay:2.511s'/%3e%3cpath stroke='%2300303f' d='M320 119Q193 198 1 68' style='animation-delay:2.638s'/%3e%3cpath stroke='%23191500' d='M-13 48q194 62 178 149' style='animation-delay:2.747s'/%3e%3cpath stroke='blacke12' d='M290 133Q207 66 106 2' style='animation-delay:2.837s'/%3e%3cpath stroke='white' d='M298 207Q81 45 1 9' style='animation-delay:2.908s'/%3e%3cpath stroke='%23073b44' d='M48 19q279 205 353 145' style='animation-delay:2.959s'/%3e%3cpath stroke='white' d='M274 132Q144 33 67-5m193 129Q147 53 52-24' style='animation-delay:2.99s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/anthony-esau-173126-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3epath%7bopacity:0%3banimation:fade .5s forwards%7d%3c/style%3e%3cpath fill='%23909b99' d='M0 0h400v200H0z'/%3e%3cg fill='none'%3e%3cpath stroke='white' d='M318 208Q188 115-24-2m0 5q343 186 334 221m32 0Q295 191-24 4' style='animation-delay:0s'/%3e%3cpath stroke='black' d='M173 143Q53 61-2 61' style='animation-delay:.25s'/%3e%3cpath stroke='white' d='M332 224Q294 175-19-2M4 5q309 219 360 219M-6 10q67 43 330 197' style='animation-delay:.49s'/%3e%3cpath stroke='%2300333f' d='M388 109Q292 217 54 16' style='animation-delay:.74s'/%3e%3cpath stroke='%232a1300' d='M118 44q226 174 276 118' style='animation-delay:.97s'/%3e%3cpath stroke='black' d='M-19 85q35-42 194 56' style='animation-delay:1.21s'/%3e%3cpath stroke='white' d='M-24 5l366 218m-63-88Q69-11 27-24' style='animation-delay:1.43s'/%3e%3cpath stroke='%23381e00' d='M44 21Q81 8 314 185' style='animation-delay:1.64s'/%3e%3cpath stroke='%23160000' d='M181 201Q-24 136-24 91' style='animation-delay:1.84s'/%3e%3cpath stroke='%231a2422' d='M-9 170q168 40 414-93' style='animation-delay:2.03s'/%3e%3cpath stroke='%2302353c' d='M42 19q221 121 281 183' style='animation-delay:2.21s'/%3e%3cpath stroke='%23160600' d='M279 117Q174 37 110 0' style='animation-delay:2.37s'/%3e%3cpath stroke='%23002e3f' d='M-24 47q213 151 321 83' style='animation-delay:2.51s'/%3e%3cpath stroke='%2300303f' d='M320 119Q193 198 1 68' style='animation-delay:2.64s'/%3e%3cpath stroke='%23191500' d='M-13 48q194 62 178 149' style='animation-delay:2.75s'/%3e%3cpath stroke='blacke12' d='M290 133Q207 66 106 2' style='animation-delay:2.84s'/%3e%3cpath stroke='white' d='M298 207Q81 45 1 9' style='animation-delay:2.91s'/%3e%3cpath stroke='%23073b44' d='M48 19q279 205 353 145' style='animation-delay:2.96s'/%3e%3cpath stroke='white' d='M274 132Q144 33 67-5m193 129Q147 53 52-24' style='animation-delay:2.99s'/%3e%3c/g%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/anthony-esau-173126-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Anthony Esau 173126 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -180,13 +195,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('d77de5e54e478a426cd92b97946df82f').className='modal active'">Show Full Data</button>
+                    <button class="btn" onClick="document.getElementById('f57d253f8aaa3049f99749dd18f4461c').className='modal active'">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="d77de5e54e478a426cd92b97946df82f"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('d77de5e54e478a426cd92b97946df82f').className='modal'"></a>
+              <div class="modal" id="f57d253f8aaa3049f99749dd18f4461c"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('f57d253f8aaa3049f99749dd18f4461c').className='modal'"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('d77de5e54e478a426cd92b97946df82f').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('f57d253f8aaa3049f99749dd18f4461c').className='modal'"></a>
                     <div class="modal-title h5">Anthony Esau 173126 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -206,11 +221,11 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Bezier curves&quot;
   },
-  &quot;svgByteLength&quot;: 2194,
+  &quot;svgByteLength&quot;: 2190,
   &quot;dataURI&quot;: {
-    &quot;original&quot;: 2030,
-    &quot;brotli&quot;: 653,
-    &quot;gzip&quot;: 735
+    &quot;original&quot;: 1950,
+    &quot;brotli&quot;: 611,
+    &quot;gzip&quot;: 692
   }
 }</code></pre>
                     </div>
@@ -221,9 +236,7 @@ footer {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%23cecec9' d='M0 0h400v200H0z'/%3e%3cg fill='none'%3e%3cpath stroke='black' d='M-24 195q331 19 448-18m-189 1q156 46 169-16' style='animation-delay:0s'/%3e%3cpath stroke='%23090100' d='M-24 173q98 51 448 1' style='animation-delay:.261s'/%3e%3cpath stroke='black' d='M227 178q96-16 197 33m-192-19q161-44 167 10' style='animation-delay:.521s'/%3e%3cpath stroke='%23160a00' d='M112 106q262 108 288 92' style='animation-delay:.776s'/%3e%3cpath stroke='%23190500' d='M403 168q-186 56-291-84' style='animation-delay:1.026s'/%3e%3cpath stroke='%23040000' d='M424 160q-88 59-423 34' style='animation-delay:1.268s'/%3e%3cpath stroke='%23190a00' d='M110 100q200 124 314 84' style='animation-delay:1.5s'/%3e%3cpath stroke='%231c1501' d='M424 140q0 58-435 50' style='animation-delay:1.721s'/%3e%3cpath stroke='%23130e00' d='M424 199Q-3 154-24 224' style='animation-delay:1.928s'/%3e%3cpath stroke='black' d='M-24 168q2 54 435 25m13-28q-105 32-194 34' style='animation-delay:2.121s'/%3e%3cpath stroke='%23080000' d='M208 92q-2 112 212 89' style='animation-delay:2.298s'/%3e%3cpath stroke='black' d='M240 169q149 55 160 14' style='animation-delay:2.457s'/%3e%3cpath stroke='%23241e0c' d='M-24 157q30 59 417 12' style='animation-delay:2.598s'/%3e%3cpath stroke='black' d='M233 165q58 59 191 20m-180-5q126-20 180 1m-13-16q-239 58-435 26m268-24q168 56 180-35m-199 39q135-1 183 22' style='animation-delay:2.719s'/%3e%3cpath stroke='%231d1805' d='M-12 186q334-25 436 13' style='animation-delay:2.819s'/%3e%3cpath stroke='black' d='M235 173q35 51 189 5' style='animation-delay:2.898s'/%3e%3cpath stroke='%23251500' d='M424 193q-201 31-306-99' style='animation-delay:2.954s'/%3e%3cpath stroke='%23292514' d='M424 186q-261-44-438 16' style='animation-delay:2.989s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/beth-solano-313648-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3epath%7bopacity:0%3banimation:fade .5s forwards%7d%3c/style%3e%3cpath fill='%23cecec9' d='M0 0h400v200H0z'/%3e%3cg fill='none'%3e%3cpath stroke='black' d='M-24 195q331 19 448-18m-189 1q156 46 169-16' style='animation-delay:0s'/%3e%3cpath stroke='%23090100' d='M-24 173q98 51 448 1' style='animation-delay:.26s'/%3e%3cpath stroke='black' d='M227 178q96-16 197 33m-192-19q161-44 167 10' style='animation-delay:.52s'/%3e%3cpath stroke='%23160a00' d='M112 106q262 108 288 92' style='animation-delay:.78s'/%3e%3cpath stroke='%23190500' d='M403 168q-186 56-291-84' style='animation-delay:1.03s'/%3e%3cpath stroke='%23040000' d='M424 160q-88 59-423 34' style='animation-delay:1.27s'/%3e%3cpath stroke='%23190a00' d='M110 100q200 124 314 84' style='animation-delay:1.5s'/%3e%3cpath stroke='%231c1501' d='M424 140q0 58-435 50' style='animation-delay:1.72s'/%3e%3cpath stroke='%23130e00' d='M424 199Q-3 154-24 224' style='animation-delay:1.93s'/%3e%3cpath stroke='black' d='M-24 168q2 54 435 25m13-28q-105 32-194 34' style='animation-delay:2.12s'/%3e%3cpath stroke='%23080000' d='M208 92q-2 112 212 89' style='animation-delay:2.3s'/%3e%3cpath stroke='black' d='M240 169q149 55 160 14' style='animation-delay:2.46s'/%3e%3cpath stroke='%23241e0c' d='M-24 157q30 59 417 12' style='animation-delay:2.6s'/%3e%3cpath stroke='black' d='M233 165q58 59 191 20m-180-5q126-20 180 1m-13-16q-239 58-435 26m268-24q168 56 180-35m-199 39q135-1 183 22' style='animation-delay:2.72s'/%3e%3cpath stroke='%231d1805' d='M-12 186q334-25 436 13' style='animation-delay:2.82s'/%3e%3cpath stroke='black' d='M235 173q35 51 189 5' style='animation-delay:2.9s'/%3e%3cpath stroke='%23251500' d='M424 193q-201 31-306-99' style='animation-delay:2.95s'/%3e%3cpath stroke='%23292514' d='M424 186q-261-44-438 16' style='animation-delay:2.99s'/%3e%3c/g%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/beth-solano-313648-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Beth Solano 313648 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -254,13 +267,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('e8da0ae61c55b05b0b497cef1e17c903').className='modal active'">Show Full Data</button>
+                    <button class="btn" onClick="document.getElementById('669985baf9b9390972b66e7c56e92c66').className='modal active'">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="e8da0ae61c55b05b0b497cef1e17c903"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('e8da0ae61c55b05b0b497cef1e17c903').className='modal'"></a>
+              <div class="modal" id="669985baf9b9390972b66e7c56e92c66"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('669985baf9b9390972b66e7c56e92c66').className='modal'"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('e8da0ae61c55b05b0b497cef1e17c903').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('669985baf9b9390972b66e7c56e92c66').className='modal'"></a>
                     <div class="modal-title h5">Beth Solano 313648 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -280,11 +293,11 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Bezier curves&quot;
   },
-  &quot;svgByteLength&quot;: 2162,
+  &quot;svgByteLength&quot;: 2159,
   &quot;dataURI&quot;: {
-    &quot;original&quot;: 1997,
-    &quot;brotli&quot;: 640,
-    &quot;gzip&quot;: 715
+    &quot;original&quot;: 1915,
+    &quot;brotli&quot;: 603,
+    &quot;gzip&quot;: 671
   }
 }</code></pre>
                     </div>
@@ -295,9 +308,7 @@ footer {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%2351564e' d='M0 0h400v200H0z'/%3e%3cg fill='none'%3e%3cpath stroke='white' d='M338 122q-68-21-70 42' style='animation-delay:0s'/%3e%3cpath stroke='whiteff6' d='M242 109q27 20 108 8' style='animation-delay:.196s'/%3e%3cpath stroke='%23fcfff5' d='M346 81q-4 58-97 30' style='animation-delay:.392s'/%3e%3cpath stroke='%23f9fdf0' d='M272 132q77-3 74-52' style='animation-delay:.585s'/%3e%3cpath stroke='whitefe9' d='M258 128q20-6 93-5' style='animation-delay:.776s'/%3e%3cpath stroke='%23e0e0d7' d='M291-24Q238 90 344 94' style='animation-delay:.964s'/%3e%3cpath stroke='%23eff0e4' d='M348 78q-18 50-100 70' style='animation-delay:1.148s'/%3e%3cpath stroke='white' d='M144 83q-11-23-65 15m259-20q8 55-51 38' style='animation-delay:1.327s'/%3e%3cpath stroke='%23e0e1d3' d='M290 224Q279 74 347 83' style='animation-delay:1.5s'/%3e%3cpath stroke='%23d4d6cc' d='M289-24Q247 98 338 96' style='animation-delay:1.667s'/%3e%3cpath stroke='white' d='M83 96q46-20 64-37' style='animation-delay:1.826s'/%3e%3cpath stroke='%23c1bbae' d='M241 221q122-119-1-233' style='animation-delay:1.978s'/%3e%3cpath stroke='white' d='M108 119q-24-39 28-46' style='animation-delay:2.121s'/%3e%3cpath stroke='%23cac9bc' d='M251 162q65-15 100-144' style='animation-delay:2.256s'/%3e%3cpath stroke='%23d9dacd' d='M346 77q-79 50-53 119' style='animation-delay:2.38s'/%3e%3cpath stroke='%23beb7a9' d='M236-24q144 145-10 248' style='animation-delay:2.494s'/%3e%3cpath stroke='whiteceb' d='M256 168q27-65 82-43' style='animation-delay:2.598s'/%3e%3cpath stroke='%23e4eae2' d='M348 91q-27-4-103 8' style='animation-delay:2.691s'/%3e%3cpath stroke='white' d='M86 97q43-23 55-22' style='animation-delay:2.772s'/%3e%3cpath stroke='%23d1ccbc' d='M270-24q-46 148 78 150' style='animation-delay:2.841s'/%3e%3cpath stroke='%23dae0d8' d='M243 111q55 33 102-29' style='animation-delay:2.898s'/%3e%3cpath stroke='%23ccc9bb' d='M250 159q87-12 93-144' style='animation-delay:2.942s'/%3e%3cpath stroke='%23d0d2ca' d='M345 93q-65 1-94-81' style='animation-delay:2.974s'/%3e%3cpath stroke='white' d='M144 76q-43 8-58 8' style='animation-delay:2.994s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/desmond-simon-412494-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3epath%7bopacity:0%3banimation:fade .5s forwards%7d%3c/style%3e%3cpath fill='%2351564e' d='M0 0h400v200H0z'/%3e%3cg fill='none'%3e%3cpath stroke='white' d='M338 122q-68-21-70 42' style='animation-delay:0s'/%3e%3cpath stroke='whiteff6' d='M242 109q27 20 108 8' style='animation-delay:.2s'/%3e%3cpath stroke='%23fcfff5' d='M346 81q-4 58-97 30' style='animation-delay:.39s'/%3e%3cpath stroke='%23f9fdf0' d='M272 132q77-3 74-52' style='animation-delay:.59s'/%3e%3cpath stroke='whitefe9' d='M258 128q20-6 93-5' style='animation-delay:.78s'/%3e%3cpath stroke='%23e0e0d7' d='M291-24Q238 90 344 94' style='animation-delay:.96s'/%3e%3cpath stroke='%23eff0e4' d='M348 78q-18 50-100 70' style='animation-delay:1.15s'/%3e%3cpath stroke='white' d='M144 83q-11-23-65 15m259-20q8 55-51 38' style='animation-delay:1.33s'/%3e%3cpath stroke='%23e0e1d3' d='M290 224Q279 74 347 83' style='animation-delay:1.5s'/%3e%3cpath stroke='%23d4d6cc' d='M289-24Q247 98 338 96' style='animation-delay:1.67s'/%3e%3cpath stroke='white' d='M83 96q46-20 64-37' style='animation-delay:1.83s'/%3e%3cpath stroke='%23c1bbae' d='M241 221q122-119-1-233' style='animation-delay:1.98s'/%3e%3cpath stroke='white' d='M108 119q-24-39 28-46' style='animation-delay:2.12s'/%3e%3cpath stroke='%23cac9bc' d='M251 162q65-15 100-144' style='animation-delay:2.26s'/%3e%3cpath stroke='%23d9dacd' d='M346 77q-79 50-53 119' style='animation-delay:2.38s'/%3e%3cpath stroke='%23beb7a9' d='M236-24q144 145-10 248' style='animation-delay:2.49s'/%3e%3cpath stroke='whiteceb' d='M256 168q27-65 82-43' style='animation-delay:2.6s'/%3e%3cpath stroke='%23e4eae2' d='M348 91q-27-4-103 8' style='animation-delay:2.69s'/%3e%3cpath stroke='white' d='M86 97q43-23 55-22' style='animation-delay:2.77s'/%3e%3cpath stroke='%23d1ccbc' d='M270-24q-46 148 78 150' style='animation-delay:2.84s'/%3e%3cpath stroke='%23dae0d8' d='M243 111q55 33 102-29' style='animation-delay:2.9s'/%3e%3cpath stroke='%23ccc9bb' d='M250 159q87-12 93-144' style='animation-delay:2.94s'/%3e%3cpath stroke='%23d0d2ca' d='M345 93q-65 1-94-81' style='animation-delay:2.97s'/%3e%3cpath stroke='white' d='M144 76q-43 8-58 8' style='animation-delay:2.99s'/%3e%3c/g%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/desmond-simon-412494-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Desmond Simon 412494 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -328,13 +339,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('8ff97fa3b0d56b4d1bdde65c02a6e43d').className='modal active'">Show Full Data</button>
+                    <button class="btn" onClick="document.getElementById('d0fb4c6e4669c558f2cfed144c28ca1a').className='modal active'">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="8ff97fa3b0d56b4d1bdde65c02a6e43d"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('8ff97fa3b0d56b4d1bdde65c02a6e43d').className='modal'"></a>
+              <div class="modal" id="d0fb4c6e4669c558f2cfed144c28ca1a"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('d0fb4c6e4669c558f2cfed144c28ca1a').className='modal'"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('8ff97fa3b0d56b4d1bdde65c02a6e43d').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('d0fb4c6e4669c558f2cfed144c28ca1a').className='modal'"></a>
                     <div class="modal-title h5">Desmond Simon 412494 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -354,11 +365,11 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Bezier curves&quot;
   },
-  &quot;svgByteLength&quot;: 2495,
+  &quot;svgByteLength&quot;: 2486,
   &quot;dataURI&quot;: {
-    &quot;original&quot;: 2354,
-    &quot;brotli&quot;: 702,
-    &quot;gzip&quot;: 780
+    &quot;original&quot;: 2267,
+    &quot;brotli&quot;: 663,
+    &quot;gzip&quot;: 732
   }
 }</code></pre>
                     </div>
@@ -369,9 +380,7 @@ footer {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%236a676e' d='M0 0h400v200H0z'/%3e%3cg fill='none'%3e%3cpath stroke='white' d='M52 58h306m-7-2q-128-2-294 1m294-43Q75 16 50 13m-1 63q31 4 289 5m18-26q-1-2-284-1M58 77q285-6 290 19M66 15q2 8 283 4M44 79q180 3 304 7' style='animation-delay:0s'/%3e%3cpath stroke='black' d='M4 85q10 139 408 105m-31 4Q-4 224 11 79m399 82q-4 11-420-2' style='animation-delay:.521s'/%3e%3cpath stroke='white' d='M57 61l295-2M63 112q81-1 288 6' style='animation-delay:1.026s'/%3e%3cpath stroke='black' d='M414 175Q0 206 2 104' style='animation-delay:1.5s'/%3e%3cpath stroke='white' d='M336 14q-156 9-293-2m13 48l292-5' style='animation-delay:1.928s'/%3e%3cpath stroke='black' d='M-24 168q203-3 440 0m-6 18Q-7 224 6 67m398 129q-23-52-407-3m420-21Q13 224 0 177m-3 14q392 16 391-70' style='animation-delay:2.298s'/%3e%3cpath stroke='white' d='M343 18Q66 10 57 26M40 79q235-5 309 11' style='animation-delay:2.598s'/%3e%3cpath stroke='black' d='M424 168q-92 13-427 16' style='animation-delay:2.819s'/%3e%3cpath stroke='white' d='M58 114l269 2' style='animation-delay:2.954s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/igor-ovsyannykov-307432-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3epath%7bopacity:0%3banimation:fade .5s forwards%7d%3c/style%3e%3cpath fill='%236a676e' d='M0 0h400v200H0z'/%3e%3cg fill='none'%3e%3cpath stroke='white' d='M52 58h306m-7-2q-128-2-294 1m294-43Q75 16 50 13m-1 63q31 4 289 5m18-26q-1-2-284-1M58 77q285-6 290 19M66 15q2 8 283 4M44 79q180 3 304 7' style='animation-delay:0s'/%3e%3cpath stroke='black' d='M4 85q10 139 408 105m-31 4Q-4 224 11 79m399 82q-4 11-420-2' style='animation-delay:.52s'/%3e%3cpath stroke='white' d='M57 61l295-2M63 112q81-1 288 6' style='animation-delay:1.03s'/%3e%3cpath stroke='black' d='M414 175Q0 206 2 104' style='animation-delay:1.5s'/%3e%3cpath stroke='white' d='M336 14q-156 9-293-2m13 48l292-5' style='animation-delay:1.93s'/%3e%3cpath stroke='black' d='M-24 168q203-3 440 0m-6 18Q-7 224 6 67m398 129q-23-52-407-3m420-21Q13 224 0 177m-3 14q392 16 391-70' style='animation-delay:2.3s'/%3e%3cpath stroke='white' d='M343 18Q66 10 57 26M40 79q235-5 309 11' style='animation-delay:2.6s'/%3e%3cpath stroke='black' d='M424 168q-92 13-427 16' style='animation-delay:2.82s'/%3e%3cpath stroke='white' d='M58 114l269 2' style='animation-delay:2.95s'/%3e%3c/g%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/igor-ovsyannykov-307432-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Igor Ovsyannykov 307432 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -402,13 +411,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('64dc75b0b80800b4a0e70559e422d860').className='modal active'">Show Full Data</button>
+                    <button class="btn" onClick="document.getElementById('5aa53d88e7e810a5c92e9b914c288c15').className='modal active'">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="64dc75b0b80800b4a0e70559e422d860"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('64dc75b0b80800b4a0e70559e422d860').className='modal'"></a>
+              <div class="modal" id="5aa53d88e7e810a5c92e9b914c288c15"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('5aa53d88e7e810a5c92e9b914c288c15').className='modal'"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('64dc75b0b80800b4a0e70559e422d860').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('5aa53d88e7e810a5c92e9b914c288c15').className='modal'"></a>
                     <div class="modal-title h5">Igor Ovsyannykov 307432 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -428,11 +437,11 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Bezier curves&quot;
   },
-  &quot;svgByteLength&quot;: 1505,
+  &quot;svgByteLength&quot;: 1511,
   &quot;dataURI&quot;: {
-    &quot;original&quot;: 1302,
-    &quot;brotli&quot;: 540,
-    &quot;gzip&quot;: 591
+    &quot;original&quot;: 1230,
+    &quot;brotli&quot;: 504,
+    &quot;gzip&quot;: 554
   }
 }</code></pre>
                     </div>
@@ -443,9 +452,7 @@ footer {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%23d2d2d3' d='M0 0h400v200H0z'/%3e%3cpath d='M154 0Q95-3 78 77M44 25q51 72 101-13M44 51q97 51 96-52M41 44q83 58 98-38M39 34q73 69 99-30m-31 105Q148 2 44 3m2 19q108-17 75 89M42 35q84-59 103 31M69 77q87 1 64-73m7-7Q111 88 37 26m7 13q58 73 101 3m-29 53q15-99-77-65m104 67Q130-17 41 44m74 70Q149 43 46 6m94-2q-21 97-100 36m7-43q23 88 97 26m2-13Q83 97 40 22m82 78q21-87-78-90m15 63q-3-84 92-50m-18 71q22-118-89-82m2 41q76 56 100-46M61 72q10-96 86-53M129 2q-12 74-83 25m65 81q38-62-64-97m-1 16q61 67 91-21' stroke='black' fill='none'/%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/neven-krcmarek-264325-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3epath%7bopacity:0%3banimation:fade .5s forwards%7d%3c/style%3e%3cpath fill='%23d2d2d3' d='M0 0h400v200H0z' style='animation-delay:0s'/%3e%3cpath d='M154 0Q95-3 78 77M44 25q51 72 101-13M44 51q97 51 96-52M41 44q83 58 98-38M39 34q73 69 99-30m-31 105Q148 2 44 3m2 19q108-17 75 89M42 35q84-59 103 31M69 77q87 1 64-73m7-7Q111 88 37 26m7 13q58 73 101 3m-29 53q15-99-77-65m104 67Q130-17 41 44m74 70Q149 43 46 6m94-2q-21 97-100 36m7-43q23 88 97 26m2-13Q83 97 40 22m82 78q21-87-78-90m15 63q-3-84 92-50m-18 71q22-118-89-82m2 41q76 56 100-46M61 72q10-96 86-53M129 2q-12 74-83 25m65 81q38-62-64-97m-1 16q61 67 91-21' stroke='black' fill='none' style='animation-delay:2.12s'/%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/neven-krcmarek-264325-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Neven Krcmarek 264325 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -476,13 +483,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('9fae15fa35c5ff5f6ae7f94c05edd975').className='modal active'">Show Full Data</button>
+                    <button class="btn" onClick="document.getElementById('296747f7b0e3ffe232ae8dbb8ae45bad').className='modal active'">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="9fae15fa35c5ff5f6ae7f94c05edd975"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('9fae15fa35c5ff5f6ae7f94c05edd975').className='modal'"></a>
+              <div class="modal" id="296747f7b0e3ffe232ae8dbb8ae45bad"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('296747f7b0e3ffe232ae8dbb8ae45bad').className='modal'"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('9fae15fa35c5ff5f6ae7f94c05edd975').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('296747f7b0e3ffe232ae8dbb8ae45bad').className='modal'"></a>
                     <div class="modal-title h5">Neven Krcmarek 264325 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -502,11 +509,11 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Bezier curves&quot;
   },
-  &quot;svgByteLength&quot;: 968,
+  &quot;svgByteLength&quot;: 1047,
   &quot;dataURI&quot;: {
-    &quot;original&quot;: 775,
-    &quot;brotli&quot;: 464,
-    &quot;gzip&quot;: 515
+    &quot;original&quot;: 769,
+    &quot;brotli&quot;: 444,
+    &quot;gzip&quot;: 503
   }
 }</code></pre>
                     </div>
@@ -517,9 +524,7 @@ footer {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%23494949' d='M0 0h400v200H0z'/%3e%3cg fill='none'%3e%3cpath stroke='white' d='M245 54q-84 98-134-6' style='animation-delay:0s'/%3e%3cpath stroke='%23dbdbdb' d='M34-5q200 57 59 205' style='animation-delay:.188s'/%3e%3cpath stroke='%23fefefe' d='M132 141Q151 9 251 72' style='animation-delay:.376s'/%3e%3cpath stroke='%23cacaca' d='M372 110Q90 44 28-9' style='animation-delay:.562s'/%3e%3cpath stroke='%23e3e3e3' d='M125 158Q199 28-1-8' style='animation-delay:.746s'/%3e%3cpath stroke='%23eee' d='M60-24q106 171 188 87' style='animation-delay:.927s'/%3e%3cpath stroke='%23ececec' d='M103 42q21 134 160 46' style='animation-delay:1.104s'/%3e%3cpath stroke='%23cecece' d='M69 26q201 63 286 93' style='animation-delay:1.277s'/%3e%3cpath stroke='%23dbdbdb' d='M281-4Q142 127 74 3' style='animation-delay:1.445s'/%3e%3cpath stroke='%23e0e0e0' d='M33-7q179 51 93 174' style='animation-delay:1.607s'/%3e%3cpath stroke='white' d='M239 56q-74 105-136-13' style='animation-delay:1.763s'/%3e%3cpath stroke='%23ededed' d='M254 67q-110 83-145-36' style='animation-delay:1.912s'/%3e%3cpath stroke='%23f7f7f7' d='M132 131q19-119 124-54' style='animation-delay:2.054s'/%3e%3cpath stroke='%23bbb' d='M417 130Q40 12-2-15' style='animation-delay:2.187s'/%3e%3cpath stroke='%23f6f6f6' d='M244 62q-124-47-114 71' style='animation-delay:2.312s'/%3e%3cpath stroke='%23f7f7f7' d='M172 40q-69 5-24 131' style='animation-delay:2.427s'/%3e%3cpath stroke='%23d0d0d0' d='M53 2q146 22 84 186' style='animation-delay:2.533s'/%3e%3cpath stroke='%23fafafa' d='M109 76q74 64 127-20' style='animation-delay:2.629s'/%3e%3cpath stroke='%23e2e2e2' d='M-8-11q187 31 150 143' style='animation-delay:2.714s'/%3e%3cpath stroke='%23d3d3d3' d='M131 173Q209 27 48-3' style='animation-delay:2.789s'/%3e%3cpath stroke='%23c7c7c7' d='M161 211Q73 94 285 2' style='animation-delay:2.853s'/%3e%3cpath stroke='%23dadada' d='M158 178Q88 46 229 47' style='animation-delay:2.906s'/%3e%3cpath stroke='white' d='M169 128q-79-29-18-92' style='animation-delay:2.947s'/%3e%3cpath stroke='%23eee' d='M243 72q-122-48-124 40' style='animation-delay:2.976s'/%3e%3cpath stroke='%23cdcdcd' d='M53 10q160 112 225-34' style='animation-delay:2.994s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/quino-al-101314-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3epath%7bopacity:0%3banimation:fade .5s forwards%7d%3c/style%3e%3cpath fill='%23494949' d='M0 0h400v200H0z'/%3e%3cg fill='none'%3e%3cpath stroke='white' d='M245 54q-84 98-134-6' style='animation-delay:0s'/%3e%3cpath stroke='%23dbdbdb' d='M34-5q200 57 59 205' style='animation-delay:.19s'/%3e%3cpath stroke='%23fefefe' d='M132 141Q151 9 251 72' style='animation-delay:.38s'/%3e%3cpath stroke='%23cacaca' d='M372 110Q90 44 28-9' style='animation-delay:.56s'/%3e%3cpath stroke='%23e3e3e3' d='M125 158Q199 28-1-8' style='animation-delay:.75s'/%3e%3cpath stroke='%23eee' d='M60-24q106 171 188 87' style='animation-delay:.93s'/%3e%3cpath stroke='%23ececec' d='M103 42q21 134 160 46' style='animation-delay:1.1s'/%3e%3cpath stroke='%23cecece' d='M69 26q201 63 286 93' style='animation-delay:1.28s'/%3e%3cpath stroke='%23dbdbdb' d='M281-4Q142 127 74 3' style='animation-delay:1.45s'/%3e%3cpath stroke='%23e0e0e0' d='M33-7q179 51 93 174' style='animation-delay:1.61s'/%3e%3cpath stroke='white' d='M239 56q-74 105-136-13' style='animation-delay:1.76s'/%3e%3cpath stroke='%23ededed' d='M254 67q-110 83-145-36' style='animation-delay:1.91s'/%3e%3cpath stroke='%23f7f7f7' d='M132 131q19-119 124-54' style='animation-delay:2.05s'/%3e%3cpath stroke='%23bbb' d='M417 130Q40 12-2-15' style='animation-delay:2.19s'/%3e%3cpath stroke='%23f6f6f6' d='M244 62q-124-47-114 71' style='animation-delay:2.31s'/%3e%3cpath stroke='%23f7f7f7' d='M172 40q-69 5-24 131' style='animation-delay:2.43s'/%3e%3cpath stroke='%23d0d0d0' d='M53 2q146 22 84 186' style='animation-delay:2.53s'/%3e%3cpath stroke='%23fafafa' d='M109 76q74 64 127-20' style='animation-delay:2.63s'/%3e%3cpath stroke='%23e2e2e2' d='M-8-11q187 31 150 143' style='animation-delay:2.71s'/%3e%3cpath stroke='%23d3d3d3' d='M131 173Q209 27 48-3' style='animation-delay:2.79s'/%3e%3cpath stroke='%23c7c7c7' d='M161 211Q73 94 285 2' style='animation-delay:2.85s'/%3e%3cpath stroke='%23dadada' d='M158 178Q88 46 229 47' style='animation-delay:2.91s'/%3e%3cpath stroke='white' d='M169 128q-79-29-18-92' style='animation-delay:2.95s'/%3e%3cpath stroke='%23eee' d='M243 72q-122-48-124 40' style='animation-delay:2.98s'/%3e%3cpath stroke='%23cdcdcd' d='M53 10q160 112 225-34' style='animation-delay:2.99s'/%3e%3c/g%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/quino-al-101314-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Quino Al 101314 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -550,13 +555,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('ad8fc704118284b42b877f18d958cb0d').className='modal active'">Show Full Data</button>
+                    <button class="btn" onClick="document.getElementById('470cbaa921262509044afccc0a1a9f05').className='modal active'">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="ad8fc704118284b42b877f18d958cb0d"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('ad8fc704118284b42b877f18d958cb0d').className='modal'"></a>
+              <div class="modal" id="470cbaa921262509044afccc0a1a9f05"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('470cbaa921262509044afccc0a1a9f05').className='modal'"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('ad8fc704118284b42b877f18d958cb0d').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('470cbaa921262509044afccc0a1a9f05').className='modal'"></a>
                     <div class="modal-title h5">Quino Al 101314 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -576,11 +581,11 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Bezier curves&quot;
   },
-  &quot;svgByteLength&quot;: 2554,
+  &quot;svgByteLength&quot;: 2544,
   &quot;dataURI&quot;: {
-    &quot;original&quot;: 2435,
-    &quot;brotli&quot;: 689,
-    &quot;gzip&quot;: 780
+    &quot;original&quot;: 2347,
+    &quot;brotli&quot;: 641,
+    &quot;gzip&quot;: 726
   }
 }</code></pre>
                     </div>
@@ -591,9 +596,7 @@ footer {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%23857a71' d='M0 0h400v200H0z'/%3e%3cg fill='none'%3e%3cpath stroke='white' d='M306 2L-24 3m364-21Q319 24-24 10m40 6q230-40 263 17m52-34Q239 11-24 9m22 11q185-1 301-13m-19-4Q150 6-24 6m0 16Q130 7 302 7m8 3Q143 21-7 22M296 5L3 7m-16 5q158 17 437-29M-11 36q48-16 270-19m-280-4q129-4 300-2' style='animation-delay:0s'/%3e%3cpath stroke='%23f6ffff' d='M297 4Q139-24 92 136' style='animation-delay:.427s'/%3e%3cpath stroke='white' d='M271 13Q40 32-24 20M306 3Q104 19-24 17' style='animation-delay:.845s'/%3e%3cpath stroke='%23fbffff' d='M-17 16q283-40 265 125' style='animation-delay:1.246s'/%3e%3cpath stroke='white' d='M-22 8Q161-2 293 7m13-1Q5 27-24 27' style='animation-delay:1.622s'/%3e%3cpath stroke='%23fcffff' d='M37 16q239-40 220 128' style='animation-delay:1.965s'/%3e%3cpath stroke='white' d='M250 20q-266-3-274 6M293 9Q180 19 0 13' style='animation-delay:2.267s'/%3e%3cpath stroke='%23eff' d='M-20 8q292-32 268 132' style='animation-delay:2.524s'/%3e%3cpath stroke='white' d='M0 15Q271 49 277-7' style='animation-delay:2.729s'/%3e%3cpath stroke='%23e7ffff' d='M240 178Q286-24 1 17' style='animation-delay:2.878s'/%3e%3cpath stroke='white' d='M-24 14Q6 3 283 6' style='animation-delay:2.969s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/samuel-zeller-16570-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3epath%7bopacity:0%3banimation:fade .5s forwards%7d%3c/style%3e%3cpath fill='%23857a71' d='M0 0h400v200H0z'/%3e%3cg fill='none'%3e%3cpath stroke='white' d='M306 2L-24 3m364-21Q319 24-24 10m40 6q230-40 263 17m52-34Q239 11-24 9m22 11q185-1 301-13m-19-4Q150 6-24 6m0 16Q130 7 302 7m8 3Q143 21-7 22M296 5L3 7m-16 5q158 17 437-29M-11 36q48-16 270-19m-280-4q129-4 300-2' style='animation-delay:0s'/%3e%3cpath stroke='%23f6ffff' d='M297 4Q139-24 92 136' style='animation-delay:.43s'/%3e%3cpath stroke='white' d='M271 13Q40 32-24 20M306 3Q104 19-24 17' style='animation-delay:.85s'/%3e%3cpath stroke='%23fbffff' d='M-17 16q283-40 265 125' style='animation-delay:1.25s'/%3e%3cpath stroke='white' d='M-22 8Q161-2 293 7m13-1Q5 27-24 27' style='animation-delay:1.62s'/%3e%3cpath stroke='%23fcffff' d='M37 16q239-40 220 128' style='animation-delay:1.96s'/%3e%3cpath stroke='white' d='M250 20q-266-3-274 6M293 9Q180 19 0 13' style='animation-delay:2.27s'/%3e%3cpath stroke='%23eff' d='M-20 8q292-32 268 132' style='animation-delay:2.52s'/%3e%3cpath stroke='white' d='M0 15Q271 49 277-7' style='animation-delay:2.73s'/%3e%3cpath stroke='%23e7ffff' d='M240 178Q286-24 1 17' style='animation-delay:2.88s'/%3e%3cpath stroke='white' d='M-24 14Q6 3 283 6' style='animation-delay:2.97s'/%3e%3c/g%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/samuel-zeller-16570-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Samuel Zeller 16570 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -624,13 +627,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('ed96a3546be92e15ad0bd89e06590684').className='modal active'">Show Full Data</button>
+                    <button class="btn" onClick="document.getElementById('2d0e5baa5a5e4d505e9714e699684d8b').className='modal active'">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="ed96a3546be92e15ad0bd89e06590684"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('ed96a3546be92e15ad0bd89e06590684').className='modal'"></a>
+              <div class="modal" id="2d0e5baa5a5e4d505e9714e699684d8b"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('2d0e5baa5a5e4d505e9714e699684d8b').className='modal'"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('ed96a3546be92e15ad0bd89e06590684').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('2d0e5baa5a5e4d505e9714e699684d8b').className='modal'"></a>
                     <div class="modal-title h5">Samuel Zeller 16570 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -650,11 +653,11 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Bezier curves&quot;
   },
-  &quot;svgByteLength&quot;: 1626,
+  &quot;svgByteLength&quot;: 1630,
   &quot;dataURI&quot;: {
-    &quot;original&quot;: 1454,
-    &quot;brotli&quot;: 562,
-    &quot;gzip&quot;: 621
+    &quot;original&quot;: 1381,
+    &quot;brotli&quot;: 523,
+    &quot;gzip&quot;: 582
   }
 }</code></pre>
                     </div>
@@ -665,9 +668,7 @@ footer {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%239e8a6e' d='M0 0h400v200H0z'/%3e%3cg fill='none'%3e%3cpath stroke='black' d='M424 194q-148 3-435 4m435 0l-433 2m433-8H-3m-21-6h448' style='animation-delay:0s'/%3e%3cpath stroke='whiteff4' d='M2 13q6-26 406-2' style='animation-delay:.224s'/%3e%3cpath stroke='black' d='M4 192q217 12 420-14' style='animation-delay:.447s'/%3e%3cpath stroke='%23080000' d='M424 162q-29 43-442 6' style='animation-delay:.668s'/%3e%3cpath stroke='black' d='M-24 186q328 18 427-1' style='animation-delay:.884s'/%3e%3cpath stroke='%23070000' d='M408 177q-168 10-432 7' style='animation-delay:1.096s'/%3e%3cpath stroke='black' d='M422 200q-446 3-446-16' style='animation-delay:1.302s'/%3e%3cpath stroke='whiteffa' d='M-24 45q75 20 430-2' style='animation-delay:1.5s'/%3e%3cpath stroke='whiteff7' d='M424 14q-86 4-448 2' style='animation-delay:1.69s'/%3e%3cpath stroke='whiteff3' d='M-5-9q20 130 429 23' style='animation-delay:1.87s'/%3e%3cpath stroke='%23030000' d='M-24 196q68 4 429 1' style='animation-delay:2.041s'/%3e%3cpath stroke='%23120400' d='M-24 157q18 43 448 13' style='animation-delay:2.199s'/%3e%3cpath stroke='whiteff2' d='M-10 22q80-2 434-1' style='animation-delay:2.345s'/%3e%3cpath stroke='%23050000' d='M39 189l385-1' style='animation-delay:2.479s'/%3e%3cpath stroke='whiteff4' d='M-13 15q215-31 433 48' style='animation-delay:2.598s'/%3e%3cpath stroke='%23180a00' d='M-24 186q208-26 448-3' style='animation-delay:2.703s'/%3e%3cpath stroke='whiteff1' d='M424 13H5m2 11h417' style='animation-delay:2.793s'/%3e%3cpath stroke='%23ffe' d='M424 11Q24 122-7-24' style='animation-delay:2.867s'/%3e%3cpath stroke='whitefea' d='M3 26q163 2 410 2' style='animation-delay:2.925s'/%3e%3cpath stroke='%23180900' d='M-24 162q411 40 418-3' style='animation-delay:2.966s'/%3e%3cpath stroke='ivory' d='M395 16Q128-8-24 15' style='animation-delay:2.992s'/%3e%3c/g%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/tyler-lastovich-205631-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3epath%7bopacity:0%3banimation:fade .5s forwards%7d%3c/style%3e%3cpath fill='%239e8a6e' d='M0 0h400v200H0z'/%3e%3cg fill='none'%3e%3cpath stroke='black' d='M424 194q-148 3-435 4m435 0l-433 2m433-8H-3m-21-6h448' style='animation-delay:0s'/%3e%3cpath stroke='whiteff4' d='M2 13q6-26 406-2' style='animation-delay:.22s'/%3e%3cpath stroke='black' d='M4 192q217 12 420-14' style='animation-delay:.45s'/%3e%3cpath stroke='%23080000' d='M424 162q-29 43-442 6' style='animation-delay:.67s'/%3e%3cpath stroke='black' d='M-24 186q328 18 427-1' style='animation-delay:.88s'/%3e%3cpath stroke='%23070000' d='M408 177q-168 10-432 7' style='animation-delay:1.1s'/%3e%3cpath stroke='black' d='M422 200q-446 3-446-16' style='animation-delay:1.3s'/%3e%3cpath stroke='whiteffa' d='M-24 45q75 20 430-2' style='animation-delay:1.5s'/%3e%3cpath stroke='whiteff7' d='M424 14q-86 4-448 2' style='animation-delay:1.69s'/%3e%3cpath stroke='whiteff3' d='M-5-9q20 130 429 23' style='animation-delay:1.87s'/%3e%3cpath stroke='%23030000' d='M-24 196q68 4 429 1' style='animation-delay:2.04s'/%3e%3cpath stroke='%23120400' d='M-24 157q18 43 448 13' style='animation-delay:2.2s'/%3e%3cpath stroke='whiteff2' d='M-10 22q80-2 434-1' style='animation-delay:2.35s'/%3e%3cpath stroke='%23050000' d='M39 189l385-1' style='animation-delay:2.48s'/%3e%3cpath stroke='whiteff4' d='M-13 15q215-31 433 48' style='animation-delay:2.6s'/%3e%3cpath stroke='%23180a00' d='M-24 186q208-26 448-3' style='animation-delay:2.7s'/%3e%3cpath stroke='whiteff1' d='M424 13H5m2 11h417' style='animation-delay:2.79s'/%3e%3cpath stroke='%23ffe' d='M424 11Q24 122-7-24' style='animation-delay:2.87s'/%3e%3cpath stroke='whitefea' d='M3 26q163 2 410 2' style='animation-delay:2.92s'/%3e%3cpath stroke='%23180900' d='M-24 162q411 40 418-3' style='animation-delay:2.97s'/%3e%3cpath stroke='ivory' d='M395 16Q128-8-24 15' style='animation-delay:2.99s'/%3e%3c/g%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/tyler-lastovich-205631-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Tyler Lastovich 205631 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -698,13 +699,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('f6549261da4a7d4748f2fdae3bccccb6').className='modal active'">Show Full Data</button>
+                    <button class="btn" onClick="document.getElementById('99d9a0390613a61e00c2504cc640ae89').className='modal active'">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="f6549261da4a7d4748f2fdae3bccccb6"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('f6549261da4a7d4748f2fdae3bccccb6').className='modal'"></a>
+              <div class="modal" id="99d9a0390613a61e00c2504cc640ae89"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('99d9a0390613a61e00c2504cc640ae89').className='modal'"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('f6549261da4a7d4748f2fdae3bccccb6').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('99d9a0390613a61e00c2504cc640ae89').className='modal'"></a>
                     <div class="modal-title h5">Tyler Lastovich 205631 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -724,11 +725,11 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Bezier curves&quot;
   },
-  &quot;svgByteLength&quot;: 2265,
+  &quot;svgByteLength&quot;: 2259,
   &quot;dataURI&quot;: {
-    &quot;original&quot;: 2087,
-    &quot;brotli&quot;: 611,
-    &quot;gzip&quot;: 683
+    &quot;original&quot;: 2002,
+    &quot;brotli&quot;: 571,
+    &quot;gzip&quot;: 636
   }
 }</code></pre>
                     </div>
@@ -743,5 +744,17 @@ footer {
     <footer>
       <button class="btn" onClick="document.querySelector('body').className = document.querySelector('body').className ? '' : 'hide-images'">Toggle images</button>
     </footer>
+    <script>document.querySelectorAll('img').forEach(function (img) {
+  if (!img.complete) {
+    img.classList.add('not-cached')
+    img.addEventListener('load', function (e) {
+      e.target.classList.add('fade-in')
+    })
+  } else {
+    img.classList.add('cached')
+  }
+})
+
+    </script>
   </body>
 </html>
