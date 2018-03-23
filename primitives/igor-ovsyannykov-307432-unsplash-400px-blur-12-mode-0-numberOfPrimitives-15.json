@@ -1,0 +1,36 @@
+{
+  "results": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><filter id=\"b\"><feGaussianBlur stdDeviation=\"12\" /></filter><path fill=\"#6a676e\" d=\"M0 0h400v200H0z\"/><g filter=\"url(#b)\" transform=\"translate(.8 .8) scale(1.5625)\" fill-opacity=\".5\"><path fill=\"#d2c4d2\" d=\"M34.9 3l172 3-1.8 99-172-3z\"/><ellipse rx=\"1\" ry=\"1\" transform=\"matrix(-246.98657 -7.33039 .74 -24.9331 138.5 127)\"/><ellipse cx=\"15\" cy=\"63\" rx=\"18\" ry=\"205\"/><ellipse fill=\"#000203\" rx=\"1\" ry=\"1\" transform=\"rotate(-92.5 157.5 -76.3) scale(55.06499 16.9332)\"/><ellipse fill=\"#afaeb9\" cx=\"214\" cy=\"36\" rx=\"10\" ry=\"70\"/><path fill=\"#829cbd\" d=\"M6-15l18 29-28 33z\"/><path d=\"M0 54h33v40H0z\"/><ellipse cx=\"129\" rx=\"114\" ry=\"5\"/><ellipse fill=\"#fff\" cx=\"132\" cy=\"35\" rx=\"92\" ry=\"4\"/><path fill=\"#ca3a2f\" d=\"M40 15h65v18H40z\"/><path fill=\"#25605b\" d=\"M30 52h83v16H30z\"/><ellipse fill=\"#cf4e45\" cx=\"172\" cy=\"63\" rx=\"50\" ry=\"8\"/><path fill=\"#000d13\" d=\"M224 0h17v128h-17z\"/><ellipse fill=\"#dfebff\" cx=\"133\" cy=\"9\" rx=\"90\" ry=\"5\"/><ellipse fill=\"#e7ecff\" cx=\"140\" cy=\"49\" rx=\"80\" ry=\"4\"/></g></svg>",
+    "optimizedSVG": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><filter id=\"a\"><feGaussianBlur stdDeviation=\"12\"/></filter><path fill=\"#6a676e\" d=\"M0 0h400v200H0z\"/><g filter=\"url(#a)\" transform=\"translate(1 1) scale(1.5625)\"><path fill=\"#d2c4d2\" d=\"M35 3l172 3-2 99-172-3z\"/><ellipse rx=\"1\" ry=\"1\" transform=\"matrix(-246.98657 -7.33039 .74 -24.9331 139 127)\"/><ellipse cx=\"15\" cy=\"63\" rx=\"18\" ry=\"205\"/><ellipse fill=\"#000203\" rx=\"1\" ry=\"1\" transform=\"matrix(-2.88188 -54.98953 16.91 -.88622 242 78)\"/><ellipse fill=\"#afaeb9\" cx=\"214\" cy=\"36\" rx=\"10\" ry=\"70\"/><path fill=\"#829cbd\" d=\"M6-15l18 29-28 33z\"/><path d=\"M0 54h33v40H0z\"/><ellipse cx=\"129\" rx=\"114\" ry=\"5\"/><ellipse fill=\"#fff\" cx=\"132\" cy=\"35\" rx=\"92\" ry=\"4\"/><path fill=\"#ca3a2f\" d=\"M40 15h65v18H40z\"/><path fill=\"#25605b\" d=\"M30 52h83v16H30z\"/><ellipse fill=\"#cf4e45\" cx=\"172\" cy=\"63\" rx=\"50\" ry=\"8\"/><path fill=\"#000d13\" d=\"M224 0h17v128h-17z\"/><ellipse fill=\"#dfebff\" cx=\"133\" cy=\"9\" rx=\"90\" ry=\"5\"/><ellipse fill=\"#e7ecff\" cx=\"140\" cy=\"49\" rx=\"80\" ry=\"4\"/></g></svg>"
+  },
+  "runs": {
+    "Intel® Core™ i7-6920HQ": [
+      {
+        "duration": 1828,
+        "sizes": {
+          "original": 1059,
+          "brotli": 493,
+          "gzip": 537
+        },
+        "optimizedSizes": {
+          "original": 1030,
+          "brotli": 468,
+          "gzip": 514
+        }
+      },
+      {
+        "duration": 1936,
+        "sizes": {
+          "original": 1195,
+          "brotli": 529,
+          "gzip": 579
+        },
+        "optimizedSizes": {
+          "original": 1141,
+          "brotli": 508,
+          "gzip": 553
+        }
+      }
+    ]
+  }
+}
