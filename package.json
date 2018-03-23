@@ -7,9 +7,10 @@
     "compare-performance-impact": "node src/performance-impact",
     "compare-primitive-methods": "node src/primitive-methods",
     "compare-count-impact": "node src/count-impact",
+    "compare-blur-impact": "node src/blur-impact",
     "generate-overview-page": "node src/overview-page",
     "generate-reference-pages": "node src/reference-pages",
-    "generate-all": "npm run compare-performance-impact && npm run compare-primitive-methods && npm run compare-count-impact && npm run generate-reference-pages && npm run generate-overview-page",
+    "generate-all": "npm run compare-performance-impact && npm run compare-primitive-methods && npm run compare-count-impact && npm run generate-reference-pages && npm run compare-blur-impact && npm run generate-overview-page",
     "serve": "serve public",
     "deploy": "gh-pages -d public"
   },

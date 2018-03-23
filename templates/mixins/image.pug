@@ -2,7 +2,8 @@ mixin image(image)
   .card
     .card-image
       if image.dataURI
-        div.image-wrapper(style=`background-image: url("${image.dataURI}");`)
+        div.image-wrapper
+          img.preview(src=image.dataURI)
           img.image(src=`./prepared/${image.prepared.name}.jpg`)
       else
         img(src=`./prepared/${image.prepared.name}.jpg` style=`display: block !important;`)

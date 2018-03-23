@@ -31,18 +31,25 @@ module.exports = async function animate (
 
   const $ = cheerio.load(file.primitive.svg, { xmlMode: true })
 
-  let nodes = $('g > *')
-  if (!nodes.length) {
-    nodes = $('svg > *')
+  if (!$('g > *').length) {
+    const groupNodes = $('svg > *').slice(1)
+    const group = $('<g class="animated" />')
+    $('svg').append(group)
+    groupNodes.appendTo(group)
+    console.log('fixed', $.html())
+  } else {
+    $('g').addClass('animated')
   }
+  const nodes = $('g > *')
 
-  const animation = `@keyframes fade {
+  const animation = `
+  @keyframes fadeIn {
     from {opacity: 0}
     to {opacity: 1}
   }
-  ellipse, path {
+  g.animated > * {
     opacity: 0;
-    animation: fade .5s forwards;
+    animation: fadeIn .5s forwards;
   }`
 
   nodes.map((index, element) => {
@@ -52,7 +59,7 @@ module.exports = async function animate (
     $(element).css('animation-delay', `${animationDelay}s`)
   })
 
-  $('svg').prepend(`<style>${animation.replace(/\s+/g, ' ')}</style>`)
+  $('svg').prepend(`<style>${animation}</style>`)
   const svg = $.html()
 
   // Optimize result

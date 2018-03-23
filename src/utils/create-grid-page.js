@@ -24,7 +24,7 @@ function getMeanFromRuns (image, valuePath) {
   return stats.mean(values)
 }
 
-module.exports = async function createGridPage ({ slug, title, images }) {
+module.exports = async function createGridPage ({ slug, title, images, bodyClass }) {
   const dest = join(publicDir, `${slug}.html`)
   for (const image of images) {
     const preparedImage = await readFile(image.prepared.path)
@@ -75,6 +75,7 @@ module.exports = async function createGridPage ({ slug, title, images }) {
       pretty: true,
       title,
       images,
+      bodyClass,
       prettysize: size => prettysize(size, { places: 2 })
     })
     await writeFile(dest, html)
