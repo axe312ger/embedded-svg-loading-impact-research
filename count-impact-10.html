@@ -37,7 +37,14 @@ footer {
   background-size: contain;
 }
 
+.image-wrapper::before {
+  display: block;
+  content: "";
+  padding-top: 50%;
+}
+
 .image {
+  display: block;
   position: absolute;
   left: 0;
   top: 0;
@@ -58,20 +65,8 @@ footer {
   text-align: center;
 }
 
-img.not-cached {
-  opacity: 0;
-}
-
-@keyframes fade-in{
-  from {opacity: 0}
-  to {opacity: 1}
-}
-
-img.fade-in {
-  animation: fade-in 1s forwards;
-}
-
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -86,9 +81,7 @@ img.fade-in {
         <div class="grid">
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23544b47' d='M0 0h400v200H0z'/%3e%3cpath fill='%23d2e4f2' d='M253 157l-54-69 68-53 54 69z'/%3e%3cpath fill='%23c6b398' d='M293 187l-11 42-192-51 11-43z'/%3e%3cpath fill='%23080a12' d='M79-13l86 8-11 126-86-8z'/%3e%3cpath fill='%23050000' d='M84 234l-112-35 21-68 112 34z'/%3e%3cpath fill='%23e2f4f9' d='M255 131l-43-9 10-49 43 9z'/%3e%3cpath fill='%2331160c' d='M474 138l-41 96-143-61 41-96z'/%3e%3cpath fill='%23bcb9aa' d='M25 139l-13-12 49-55 13 12z'/%3e%3cpath fill='%23322e27' d='M226 15l80-89L453 59l-79 88z'/%3e%3cpath fill='%23b19991' d='M274 61l-65 16-7-27 66-16z'/%3e%3cpath fill='%23b0bfbf' d='M53 57l-87 70-8-10 87-70z'/%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/alisa-anton-166247-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23544b47' d='M0 0h400v200H0z'/%3e%3cpath fill='%23d2e4f2' d='M253 157l-54-69 68-53 54 69z'/%3e%3cpath fill='%23c6b398' d='M293 187l-11 42-192-51 11-43z'/%3e%3cpath fill='%23080a12' d='M79-13l86 8-11 126-86-8z'/%3e%3cpath fill='%23050000' d='M84 234l-112-35 21-68 112 34z'/%3e%3cpath fill='%23e2f4f9' d='M255 131l-43-9 10-49 43 9z'/%3e%3cpath fill='%2331160c' d='M474 138l-41 96-143-61 41-96z'/%3e%3cpath fill='%23bcb9aa' d='M25 139l-13-12 49-55 13 12z'/%3e%3cpath fill='%23322e27' d='M226 15l80-89L453 59l-79 88z'/%3e%3cpath fill='%23b19991' d='M274 61l-65 16-7-27 66-16z'/%3e%3cpath fill='%23b0bfbf' d='M53 57l-87 70-8-10 87-70z'/%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/alisa-anton-166247-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Alisa Anton 166247 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -119,13 +112,13 @@ img.fade-in {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('6679e9a782f98814e2a0d67c3d62cc89').className='modal active'">Show Full Data</button>
+                    <button class="btn open-modal">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="6679e9a782f98814e2a0d67c3d62cc89"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('6679e9a782f98814e2a0d67c3d62cc89').className='modal'"></a>
+              <div class="modal" id="6679e9a782f98814e2a0d67c3d62cc89"><a class="modal-overlay close-modal" aria-label="Close"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('6679e9a782f98814e2a0d67c3d62cc89').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right close-modal" aria-label="Close"></a>
                     <div class="modal-title h5">Alisa Anton 166247 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -160,9 +153,7 @@ img.fade-in {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23909b99' d='M0 0h400v200H0z'/%3e%3cpath fill='%2300262d' d='M-15 64l13-23 175 93-13 24z'/%3e%3cpath fill='white' d='M134 175L-15 99l11-22 149 76z'/%3e%3cpath fill='%2387e0ff' d='M363-77l57 107-156 83L207 6z'/%3e%3cpath fill='%2303323c' d='M252 277L-28 158l15-36 280 119z'/%3e%3cpath fill='white' d='M40 43l7-12 168 106-7 11zm253 186l-73-45 19-30 73 45z'/%3e%3cpath fill='%23090000' d='M317 201l-6-15 96-38 6 14z'/%3e%3cpath fill='%2300242e' d='M92 29l169 113-8 12L85 40z'/%3e%3cpath fill='whiteffd' d='M-16 10l8-14 129 77-8 14z'/%3e%3cpath fill='white' d='M90-5l159 116-6 8L84 4z'/%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/anthony-esau-173126-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23909b99' d='M0 0h400v200H0z'/%3e%3cpath fill='%2300262d' d='M-15 64l13-23 175 93-13 24z'/%3e%3cpath fill='white' d='M134 175L-15 99l11-22 149 76z'/%3e%3cpath fill='%2387e0ff' d='M363-77l57 107-156 83L207 6z'/%3e%3cpath fill='%2303323c' d='M252 277L-28 158l15-36 280 119z'/%3e%3cpath fill='white' d='M40 43l7-12 168 106-7 11zm253 186l-73-45 19-30 73 45z'/%3e%3cpath fill='%23090000' d='M317 201l-6-15 96-38 6 14z'/%3e%3cpath fill='%2300242e' d='M92 29l169 113-8 12L85 40z'/%3e%3cpath fill='whiteffd' d='M-16 10l8-14 129 77-8 14z'/%3e%3cpath fill='white' d='M90-5l159 116-6 8L84 4z'/%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/anthony-esau-173126-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Anthony Esau 173126 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -193,13 +184,13 @@ img.fade-in {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('6f715e4edb5037c009801da5b482f391').className='modal active'">Show Full Data</button>
+                    <button class="btn open-modal">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="6f715e4edb5037c009801da5b482f391"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('6f715e4edb5037c009801da5b482f391').className='modal'"></a>
+              <div class="modal" id="6f715e4edb5037c009801da5b482f391"><a class="modal-overlay close-modal" aria-label="Close"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('6f715e4edb5037c009801da5b482f391').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right close-modal" aria-label="Close"></a>
                     <div class="modal-title h5">Anthony Esau 173126 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -234,9 +225,7 @@ img.fade-in {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23cecec9' d='M0 0h400v200H0z'/%3e%3cpath d='M434 163l1 69-198 3-2-68zM-3 219l-2-42 81-4 2 42z'/%3e%3cpath fill='white' d='M437 101l-168 67-64-158 168-67z'/%3e%3cpath fill='white' d='M-80 66l300-225 80 107L1 174z'/%3e%3cpath d='M267 217l-2-45 163-9 3 45z'/%3e%3cpath fill='%238a7051' d='M151 155l-43-67 83-54 44 67z'/%3e%3cpath d='M-10 182l84-6 3 41-84 6z'/%3e%3cpath fill='%235a3b0f' d='M161 122l-15 14-40-44 15-14z'/%3e%3cpath fill='%23beac89' d='M206 126l48-8 19 120-47 8z'/%3e%3cpath fill='%23fdffff' d='M380 13L-13 83l-12-73 392-69z'/%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/beth-solano-313648-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23cecec9' d='M0 0h400v200H0z'/%3e%3cpath d='M434 163l1 69-198 3-2-68zM-3 219l-2-42 81-4 2 42z'/%3e%3cpath fill='white' d='M437 101l-168 67-64-158 168-67z'/%3e%3cpath fill='white' d='M-80 66l300-225 80 107L1 174z'/%3e%3cpath d='M267 217l-2-45 163-9 3 45z'/%3e%3cpath fill='%238a7051' d='M151 155l-43-67 83-54 44 67z'/%3e%3cpath d='M-10 182l84-6 3 41-84 6z'/%3e%3cpath fill='%235a3b0f' d='M161 122l-15 14-40-44 15-14z'/%3e%3cpath fill='%23beac89' d='M206 126l48-8 19 120-47 8z'/%3e%3cpath fill='%23fdffff' d='M380 13L-13 83l-12-73 392-69z'/%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/beth-solano-313648-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Beth Solano 313648 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -267,13 +256,13 @@ img.fade-in {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('f790c65877b5c35732c24ebc315f9613').className='modal active'">Show Full Data</button>
+                    <button class="btn open-modal">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="f790c65877b5c35732c24ebc315f9613"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('f790c65877b5c35732c24ebc315f9613').className='modal'"></a>
+              <div class="modal" id="f790c65877b5c35732c24ebc315f9613"><a class="modal-overlay close-modal" aria-label="Close"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('f790c65877b5c35732c24ebc315f9613').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right close-modal" aria-label="Close"></a>
                     <div class="modal-title h5">Beth Solano 313648 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -308,9 +297,7 @@ img.fade-in {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%2351564e' d='M0 0h400v200H0z'/%3e%3cpath fill='%23a39c8b' d='M247 10l100 4-5 153-100-4z'/%3e%3cpath fill='%23e0e1dc' d='M106 112L83 95l29-39 22 16z'/%3e%3cpath fill='%231a2319' d='M108 28L51 155l-70-31L38-3z'/%3e%3cpath fill='%23161208' d='M375 1l61 11-34 195-62-11z'/%3e%3cpath fill='%23c7dbda' d='M290 121l7-48 49 7-7 48z'/%3e%3cpath fill='%23241f16' d='M289 72l9-87 34 4-9 87z'/%3e%3cpath fill='%23121b10' d='M-66 174l27-46 166 96-27 46z'/%3e%3cpath fill='%23705830' d='M358 97l26 24-78 84-26-25z'/%3e%3cpath fill='%23bcc0b5' d='M70-6l31 12-7 17-31-11z'/%3e%3cpath fill='%23978f7e' d='M261 115l41 5-11 95-42-5z'/%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/desmond-simon-412494-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%2351564e' d='M0 0h400v200H0z'/%3e%3cpath fill='%23a39c8b' d='M247 10l100 4-5 153-100-4z'/%3e%3cpath fill='%23e0e1dc' d='M106 112L83 95l29-39 22 16z'/%3e%3cpath fill='%231a2319' d='M108 28L51 155l-70-31L38-3z'/%3e%3cpath fill='%23161208' d='M375 1l61 11-34 195-62-11z'/%3e%3cpath fill='%23c7dbda' d='M290 121l7-48 49 7-7 48z'/%3e%3cpath fill='%23241f16' d='M289 72l9-87 34 4-9 87z'/%3e%3cpath fill='%23121b10' d='M-66 174l27-46 166 96-27 46z'/%3e%3cpath fill='%23705830' d='M358 97l26 24-78 84-26-25z'/%3e%3cpath fill='%23bcc0b5' d='M70-6l31 12-7 17-31-11z'/%3e%3cpath fill='%23978f7e' d='M261 115l41 5-11 95-42-5z'/%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/desmond-simon-412494-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Desmond Simon 412494 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -341,13 +328,13 @@ img.fade-in {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('aa0d10b60106e8564cbc03b8b6fc01c4').className='modal active'">Show Full Data</button>
+                    <button class="btn open-modal">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="aa0d10b60106e8564cbc03b8b6fc01c4"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('aa0d10b60106e8564cbc03b8b6fc01c4').className='modal'"></a>
+              <div class="modal" id="aa0d10b60106e8564cbc03b8b6fc01c4"><a class="modal-overlay close-modal" aria-label="Close"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('aa0d10b60106e8564cbc03b8b6fc01c4').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right close-modal" aria-label="Close"></a>
                     <div class="modal-title h5">Desmond Simon 412494 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -382,9 +369,7 @@ img.fade-in {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%236a676e' d='M0 0h400v200H0z'/%3e%3cpath fill='%23d2c4d2' d='M53 9h277v150H53z'/%3e%3cpath d='M8 59l167 135-85 105-166-135z'/%3e%3cpath d='M405 237H88v-75h317z'/%3e%3cpath fill='black305' d='M350 204l3-158 80 2-3 157z'/%3e%3cpath fill='%23e6b1b8' d='M52 158l1-49 88 3-2 49z'/%3e%3cpath d='M22 202V-32h30v234z'/%3e%3cpath fill='%23c93226' d='M165 23v27H74V23z'/%3e%3cpath fill='%23014f45' d='M159 106l-69 1V86l68-1z'/%3e%3cpath fill='%23a08b85' d='M259 81l91 2-2 81-90-2z'/%3e%3cpath fill='blackc14' d='M351 133l3-161h25l-3 161z'/%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/igor-ovsyannykov-307432-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%236a676e' d='M0 0h400v200H0z'/%3e%3cpath fill='%23d2c4d2' d='M53 9h277v150H53z'/%3e%3cpath d='M8 59l167 135-85 105-166-135z'/%3e%3cpath d='M405 237H88v-75h317z'/%3e%3cpath fill='black305' d='M350 204l3-158 80 2-3 157z'/%3e%3cpath fill='%23e6b1b8' d='M52 158l1-49 88 3-2 49z'/%3e%3cpath d='M22 202V-32h30v234z'/%3e%3cpath fill='%23c93226' d='M165 23v27H74V23z'/%3e%3cpath fill='%23014f45' d='M159 106l-69 1V86l68-1z'/%3e%3cpath fill='%23a08b85' d='M259 81l91 2-2 81-90-2z'/%3e%3cpath fill='blackc14' d='M351 133l3-161h25l-3 161z'/%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/igor-ovsyannykov-307432-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Igor Ovsyannykov 307432 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -415,13 +400,13 @@ img.fade-in {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('e78cd4fa682eed054908401c650629a7').className='modal active'">Show Full Data</button>
+                    <button class="btn open-modal">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="e78cd4fa682eed054908401c650629a7"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('e78cd4fa682eed054908401c650629a7').className='modal'"></a>
+              <div class="modal" id="e78cd4fa682eed054908401c650629a7"><a class="modal-overlay close-modal" aria-label="Close"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('e78cd4fa682eed054908401c650629a7').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right close-modal" aria-label="Close"></a>
                     <div class="modal-title h5">Igor Ovsyannykov 307432 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -456,9 +441,7 @@ img.fade-in {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23d2d2d3' d='M0 0h400v200H0z'/%3e%3cpath d='M45 79l2-95 97 1-2 96z'/%3e%3cpath fill='%232e0000' d='M110 92L37 48l42-70 73 45z'/%3e%3cpath fill='%23f7fbfd' d='M419 193l-248 8-7-198 248-9z'/%3e%3cpath fill='%23fbffff' d='M15 2l68 109-46 29-68-109z'/%3e%3cpath fill='%23798580' d='M167 78l-65 41-17-27 65-40z'/%3e%3cpath fill='%23eff2f6' d='M295 263H-55V116h350z'/%3e%3cpath fill='%234e2519' d='M39 36l26-59 66 29-26 59z'/%3e%3cpath fill='%23838a84' d='M93 91l50-35 13 18-50 34z'/%3e%3cpath fill='%23d6d8da' d='M425 59l26 162-131 21-26-162z'/%3e%3cpath fill='%23e4f3f5' d='M159-17l6 49-20 3-6-50z'/%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/neven-krcmarek-264325-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23d2d2d3' d='M0 0h400v200H0z'/%3e%3cpath d='M45 79l2-95 97 1-2 96z'/%3e%3cpath fill='%232e0000' d='M110 92L37 48l42-70 73 45z'/%3e%3cpath fill='%23f7fbfd' d='M419 193l-248 8-7-198 248-9z'/%3e%3cpath fill='%23fbffff' d='M15 2l68 109-46 29-68-109z'/%3e%3cpath fill='%23798580' d='M167 78l-65 41-17-27 65-40z'/%3e%3cpath fill='%23eff2f6' d='M295 263H-55V116h350z'/%3e%3cpath fill='%234e2519' d='M39 36l26-59 66 29-26 59z'/%3e%3cpath fill='%23838a84' d='M93 91l50-35 13 18-50 34z'/%3e%3cpath fill='%23d6d8da' d='M425 59l26 162-131 21-26-162z'/%3e%3cpath fill='%23e4f3f5' d='M159-17l6 49-20 3-6-50z'/%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/neven-krcmarek-264325-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Neven Krcmarek 264325 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -489,13 +472,13 @@ img.fade-in {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('8d1a21d43b01acd95d30bd49fc2e718f').className='modal active'">Show Full Data</button>
+                    <button class="btn open-modal">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="8d1a21d43b01acd95d30bd49fc2e718f"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('8d1a21d43b01acd95d30bd49fc2e718f').className='modal'"></a>
+              <div class="modal" id="8d1a21d43b01acd95d30bd49fc2e718f"><a class="modal-overlay close-modal" aria-label="Close"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('8d1a21d43b01acd95d30bd49fc2e718f').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right close-modal" aria-label="Close"></a>
                     <div class="modal-title h5">Neven Krcmarek 264325 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -530,9 +513,7 @@ img.fade-in {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23494949' d='M0 0h400v200H0z'/%3e%3cpath fill='%23c5c5c5' d='M251 54l-15 75-147-28 14-75z'/%3e%3cpath d='M408 119L272 73l47-138 136 47zM-66 19l44-50L123 95l-44 50zm250 39L143 7l81-64 41 52z'/%3e%3cpath fill='%23b6b6b6' d='M153 235l-44-5 21-197 44 4z'/%3e%3cpath fill='%23b2b2b2' d='M96 53L2-18l26-33 93 70z'/%3e%3cpath d='M221 157l55-63 30 25-56 64zm179-50L256 73l11-50 145 33z'/%3e%3cpath fill='%23a0a0a0' d='M220 70l-17-28 116-70 17 29z'/%3e%3cpath d='M126 41l-13-58 94-22 13 58z'/%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/quino-al-101314-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23494949' d='M0 0h400v200H0z'/%3e%3cpath fill='%23c5c5c5' d='M251 54l-15 75-147-28 14-75z'/%3e%3cpath d='M408 119L272 73l47-138 136 47zM-66 19l44-50L123 95l-44 50zm250 39L143 7l81-64 41 52z'/%3e%3cpath fill='%23b6b6b6' d='M153 235l-44-5 21-197 44 4z'/%3e%3cpath fill='%23b2b2b2' d='M96 53L2-18l26-33 93 70z'/%3e%3cpath d='M221 157l55-63 30 25-56 64zm179-50L256 73l11-50 145 33z'/%3e%3cpath fill='%23a0a0a0' d='M220 70l-17-28 116-70 17 29z'/%3e%3cpath d='M126 41l-13-58 94-22 13 58z'/%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/quino-al-101314-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Quino Al 101314 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -563,13 +544,13 @@ img.fade-in {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('7543b36f684d9531868c26182961b955').className='modal active'">Show Full Data</button>
+                    <button class="btn open-modal">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="7543b36f684d9531868c26182961b955"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('7543b36f684d9531868c26182961b955').className='modal'"></a>
+              <div class="modal" id="7543b36f684d9531868c26182961b955"><a class="modal-overlay close-modal" aria-label="Close"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('7543b36f684d9531868c26182961b955').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right close-modal" aria-label="Close"></a>
                     <div class="modal-title h5">Quino Al 101314 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -604,9 +585,7 @@ img.fade-in {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23857a71' d='M0 0h400v200H0z'/%3e%3cpath fill='white' d='M-38-21l316-11 2 55-316 11z'/%3e%3cpath fill='%231f2b0f' d='M259 13h199v85H259z'/%3e%3cpath fill='%23feffff' d='M171 105l-33-4L150-6l32 3z'/%3e%3cpath fill='%23333a26' d='M109 83L1 120l-21-60L88 22z'/%3e%3cpath fill='%235e3d30' d='M182 134l10 91-198 21-9-92z'/%3e%3cpath fill='%23edfcff' d='M307 2L136 58 117 0l171-56z'/%3e%3cpath fill='%23a1c7f4' d='M214 26l54 31-27 47-54-31z'/%3e%3cpath fill='%230f1323' d='M148 106l34-5 6 41-34 6z'/%3e%3cpath fill='%23e6fdff' d='M148-35l6 53L1 37l-7-53z'/%3e%3cpath fill='%23cea595' d='M328 157l-89-5 3-54 89 4z'/%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/samuel-zeller-16570-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%23857a71' d='M0 0h400v200H0z'/%3e%3cpath fill='white' d='M-38-21l316-11 2 55-316 11z'/%3e%3cpath fill='%231f2b0f' d='M259 13h199v85H259z'/%3e%3cpath fill='%23feffff' d='M171 105l-33-4L150-6l32 3z'/%3e%3cpath fill='%23333a26' d='M109 83L1 120l-21-60L88 22z'/%3e%3cpath fill='%235e3d30' d='M182 134l10 91-198 21-9-92z'/%3e%3cpath fill='%23edfcff' d='M307 2L136 58 117 0l171-56z'/%3e%3cpath fill='%23a1c7f4' d='M214 26l54 31-27 47-54-31z'/%3e%3cpath fill='%230f1323' d='M148 106l34-5 6 41-34 6z'/%3e%3cpath fill='%23e6fdff' d='M148-35l6 53L1 37l-7-53z'/%3e%3cpath fill='%23cea595' d='M328 157l-89-5 3-54 89 4z'/%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/samuel-zeller-16570-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Samuel Zeller 16570 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -637,13 +616,13 @@ img.fade-in {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('ab18b167227d12582d4b46bc1b3e20b7').className='modal active'">Show Full Data</button>
+                    <button class="btn open-modal">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="ab18b167227d12582d4b46bc1b3e20b7"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('ab18b167227d12582d4b46bc1b3e20b7').className='modal'"></a>
+              <div class="modal" id="ab18b167227d12582d4b46bc1b3e20b7"><a class="modal-overlay close-modal" aria-label="Close"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('ab18b167227d12582d4b46bc1b3e20b7').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right close-modal" aria-label="Close"></a>
                     <div class="modal-title h5">Samuel Zeller 16570 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -678,9 +657,7 @@ img.fade-in {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%239e8a6e' d='M0 0h400v200H0z'/%3e%3cpath fill='whitefea' d='M-6-49l398-21 6 127L0 78z'/%3e%3cpath fill='%23271703' d='M5 120l398 21-7 128-398-21z'/%3e%3cpath fill='%23897255' d='M395 158H-3v-52h398z'/%3e%3cpath fill='%23251a0c' d='M455 202L78 235l-3-39 377-33z'/%3e%3cpath fill='%23f6ddb7' d='M-22-55l293 21-7 109-293-20z'/%3e%3cpath fill='%23ab8e6a' d='M361 38l10 38-140 35-9-38z'/%3e%3cpath fill='white3d4' d='M380 51l19-54 19 6-19 55z'/%3e%3cpath fill='%23ae9372' d='M434 59l-6 76-123-11 6-76z'/%3e%3cpath fill='%23a08563' d='M157 63l6 45-100 12-5-45z'/%3e%3cpath fill='%23503e28' d='M-189 139l395 49-6 46-395-48z'/%3e%3c/svg%3e&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/tyler-lastovich-205631-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cpath fill='%239e8a6e' d='M0 0h400v200H0z'/%3e%3cpath fill='whitefea' d='M-6-49l398-21 6 127L0 78z'/%3e%3cpath fill='%23271703' d='M5 120l398 21-7 128-398-21z'/%3e%3cpath fill='%23897255' d='M395 158H-3v-52h398z'/%3e%3cpath fill='%23251a0c' d='M455 202L78 235l-3-39 377-33z'/%3e%3cpath fill='%23f6ddb7' d='M-22-55l293 21-7 109-293-20z'/%3e%3cpath fill='%23ab8e6a' d='M361 38l10 38-140 35-9-38z'/%3e%3cpath fill='white3d4' d='M380 51l19-54 19 6-19 55z'/%3e%3cpath fill='%23ae9372' d='M434 59l-6 76-123-11 6-76z'/%3e%3cpath fill='%23a08563' d='M157 63l6 45-100 12-5-45z'/%3e%3cpath fill='%23503e28' d='M-189 139l395 49-6 46-395-48z'/%3e%3c/svg%3e&quot;);"><img class="image" src="./prepared/tyler-lastovich-205631-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Tyler Lastovich 205631 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -711,13 +688,13 @@ img.fade-in {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('0746c3996f0b78a71aa21adcc0732fe4').className='modal active'">Show Full Data</button>
+                    <button class="btn open-modal">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="0746c3996f0b78a71aa21adcc0732fe4"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('0746c3996f0b78a71aa21adcc0732fe4').className='modal'"></a>
+              <div class="modal" id="0746c3996f0b78a71aa21adcc0732fe4"><a class="modal-overlay close-modal" aria-label="Close"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('0746c3996f0b78a71aa21adcc0732fe4').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right close-modal" aria-label="Close"></a>
                     <div class="modal-title h5">Tyler Lastovich 205631 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -754,15 +731,22 @@ img.fade-in {
       </main>
     </div>
     <footer>
-      <button class="btn" onClick="document.querySelector('body').className = document.querySelector('body').className ? '' : 'hide-images'">Toggle images</button>
+      <button class="btn toggle-images">Toggle images</button>
     </footer>
-    <script>document.querySelectorAll('img').forEach((img) => {
-  if (!img.complete) {
-    img.classList.add('not-cached')
-    img.addEventListener('load', (e) => {
-      e.target.classList.add('fade-in')
+    <script>$(document).ready(function () {
+  $('.open-modal').each(function (i, btn) {
+    $(btn).on('click', function (e) {
+      $(e.target).parents('.card').find('.modal').addClass('active')
     })
-  }
+  })
+  $('.close-modal').each(function (i, btn) {
+    $(btn).on('click', function (e) {
+      $(e.target).parents('.card').find('.modal').removeClass('active')
+    })
+  })
+  $('.toggle-images').on('click', function (e) {
+    $('body').toggleClass('hide-images')
+  })
 })
 
     </script>
