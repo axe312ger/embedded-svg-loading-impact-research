@@ -66,7 +66,8 @@ img.image {
 }
 
     </style>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script defer src="script.js"></script>
   </head>
   <body>
     <div class="container">
@@ -391,22 +392,5 @@ img.image {
     <footer>
       <button class="btn toggle-images">Toggle images</button>
     </footer>
-    <script>$(document).ready(function () {
-  $('.open-modal').each(function (i, btn) {
-    $(btn).on('click', function (e) {
-      $(e.target).parents('.card').find('.modal').addClass('active')
-    })
-  })
-  $('.close-modal').each(function (i, btn) {
-    $(btn).on('click', function (e) {
-      $(e.target).parents('.card').find('.modal').removeClass('active')
-    })
-  })
-  $('.toggle-images').on('click', function (e) {
-    $('body').toggleClass('hide-images')
-  })
-})
-
-    </script>
   </body>
 </html>
