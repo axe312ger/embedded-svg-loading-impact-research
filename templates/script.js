@@ -1,10 +1,15 @@
-document.querySelectorAll('img').forEach(function (img) {
-  if (!img.complete) {
-    img.classList.add('not-cached')
-    img.addEventListener('load', function (e) {
-      e.target.classList.add('fade-in')
+$(document).ready(function () {
+  $('.open-modal').each(function (i, btn) {
+    $(btn).on('click', function (e) {
+      $(e.target).parents('.card').find('.modal').addClass('active')
     })
-  } else {
-    img.classList.add('cached')
-  }
+  })
+  $('.close-modal').each(function (i, btn) {
+    $(btn).on('click', function (e) {
+      $(e.target).parents('.card').find('.modal').removeClass('active')
+    })
+  })
+  $('.toggle-images').on('click', function (e) {
+    $('body').toggleClass('hide-images')
+  })
 })

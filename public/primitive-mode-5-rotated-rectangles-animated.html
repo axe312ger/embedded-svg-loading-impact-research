@@ -44,6 +44,7 @@ footer {
 }
 
 .image {
+  display: block;
   position: absolute;
   left: 0;
   top: 0;
@@ -51,19 +52,6 @@ footer {
   width: 100%;
   height: auto;
   z-index: 1;
-}
-
-.image.not-cached {
-  opacity: 0;
-}
-
-.image.fade-in {
-  animation: fade-in 1s forwards;
-}
-
-@keyframes fade-in{
-  from {opacity: 0}
-  to {opacity: 1}
 }
 
 .table-nowrap td {
@@ -78,6 +66,7 @@ footer {
 }
 
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -123,13 +112,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('3891df71f9ea9e19ca88294b09287eea').className='modal active'">Show Full Data</button>
+                    <button class="btn open-modal">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="3891df71f9ea9e19ca88294b09287eea"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('3891df71f9ea9e19ca88294b09287eea').className='modal'"></a>
+              <div class="modal" id="3891df71f9ea9e19ca88294b09287eea"><a class="modal-overlay close-modal" aria-label="Close"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('3891df71f9ea9e19ca88294b09287eea').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right close-modal" aria-label="Close"></a>
                     <div class="modal-title h5">Alisa Anton 166247 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -195,13 +184,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('2e4ac9eab3f36193660be9304ff84565').className='modal active'">Show Full Data</button>
+                    <button class="btn open-modal">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="2e4ac9eab3f36193660be9304ff84565"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('2e4ac9eab3f36193660be9304ff84565').className='modal'"></a>
+              <div class="modal" id="2e4ac9eab3f36193660be9304ff84565"><a class="modal-overlay close-modal" aria-label="Close"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('2e4ac9eab3f36193660be9304ff84565').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right close-modal" aria-label="Close"></a>
                     <div class="modal-title h5">Anthony Esau 173126 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -267,13 +256,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('3258526d3304680f0fcf31c27fc4e321').className='modal active'">Show Full Data</button>
+                    <button class="btn open-modal">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="3258526d3304680f0fcf31c27fc4e321"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('3258526d3304680f0fcf31c27fc4e321').className='modal'"></a>
+              <div class="modal" id="3258526d3304680f0fcf31c27fc4e321"><a class="modal-overlay close-modal" aria-label="Close"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('3258526d3304680f0fcf31c27fc4e321').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right close-modal" aria-label="Close"></a>
                     <div class="modal-title h5">Beth Solano 313648 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -339,13 +328,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('c04cef2788d2b03bd1b2d9f8686ca8e7').className='modal active'">Show Full Data</button>
+                    <button class="btn open-modal">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="c04cef2788d2b03bd1b2d9f8686ca8e7"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('c04cef2788d2b03bd1b2d9f8686ca8e7').className='modal'"></a>
+              <div class="modal" id="c04cef2788d2b03bd1b2d9f8686ca8e7"><a class="modal-overlay close-modal" aria-label="Close"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('c04cef2788d2b03bd1b2d9f8686ca8e7').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right close-modal" aria-label="Close"></a>
                     <div class="modal-title h5">Desmond Simon 412494 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -411,13 +400,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('bb5d2ec7ce55946b94271fc2aa612078').className='modal active'">Show Full Data</button>
+                    <button class="btn open-modal">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="bb5d2ec7ce55946b94271fc2aa612078"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('bb5d2ec7ce55946b94271fc2aa612078').className='modal'"></a>
+              <div class="modal" id="bb5d2ec7ce55946b94271fc2aa612078"><a class="modal-overlay close-modal" aria-label="Close"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('bb5d2ec7ce55946b94271fc2aa612078').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right close-modal" aria-label="Close"></a>
                     <div class="modal-title h5">Igor Ovsyannykov 307432 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -483,13 +472,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('a68c819a57e0302ce99bed256fd9744a').className='modal active'">Show Full Data</button>
+                    <button class="btn open-modal">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="a68c819a57e0302ce99bed256fd9744a"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('a68c819a57e0302ce99bed256fd9744a').className='modal'"></a>
+              <div class="modal" id="a68c819a57e0302ce99bed256fd9744a"><a class="modal-overlay close-modal" aria-label="Close"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('a68c819a57e0302ce99bed256fd9744a').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right close-modal" aria-label="Close"></a>
                     <div class="modal-title h5">Neven Krcmarek 264325 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -555,13 +544,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('d92efed40648d86f94cd13bcecb339ed').className='modal active'">Show Full Data</button>
+                    <button class="btn open-modal">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="d92efed40648d86f94cd13bcecb339ed"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('d92efed40648d86f94cd13bcecb339ed').className='modal'"></a>
+              <div class="modal" id="d92efed40648d86f94cd13bcecb339ed"><a class="modal-overlay close-modal" aria-label="Close"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('d92efed40648d86f94cd13bcecb339ed').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right close-modal" aria-label="Close"></a>
                     <div class="modal-title h5">Quino Al 101314 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -627,13 +616,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('7e25c80e4933672f2f2f2db091150da5').className='modal active'">Show Full Data</button>
+                    <button class="btn open-modal">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="7e25c80e4933672f2f2f2db091150da5"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('7e25c80e4933672f2f2f2db091150da5').className='modal'"></a>
+              <div class="modal" id="7e25c80e4933672f2f2f2db091150da5"><a class="modal-overlay close-modal" aria-label="Close"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('7e25c80e4933672f2f2f2db091150da5').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right close-modal" aria-label="Close"></a>
                     <div class="modal-title h5">Samuel Zeller 16570 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -699,13 +688,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('85c042e74be6a1d3ba14a9a3d70df3ad').className='modal active'">Show Full Data</button>
+                    <button class="btn open-modal">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="85c042e74be6a1d3ba14a9a3d70df3ad"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('85c042e74be6a1d3ba14a9a3d70df3ad').className='modal'"></a>
+              <div class="modal" id="85c042e74be6a1d3ba14a9a3d70df3ad"><a class="modal-overlay close-modal" aria-label="Close"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('85c042e74be6a1d3ba14a9a3d70df3ad').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right close-modal" aria-label="Close"></a>
                     <div class="modal-title h5">Tyler Lastovich 205631 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -742,17 +731,22 @@ footer {
       </main>
     </div>
     <footer>
-      <button class="btn" onClick="document.querySelector('body').className = document.querySelector('body').className ? '' : 'hide-images'">Toggle images</button>
+      <button class="btn toggle-images">Toggle images</button>
     </footer>
-    <script>document.querySelectorAll('img').forEach(function (img) {
-  if (!img.complete) {
-    img.classList.add('not-cached')
-    img.addEventListener('load', function (e) {
-      e.target.classList.add('fade-in')
+    <script>$(document).ready(function () {
+  $('.open-modal').each(function (i, btn) {
+    $(btn).on('click', function (e) {
+      $(e.target).parents('.card').find('.modal').addClass('active')
     })
-  } else {
-    img.classList.add('cached')
-  }
+  })
+  $('.close-modal').each(function (i, btn) {
+    $(btn).on('click', function (e) {
+      $(e.target).parents('.card').find('.modal').removeClass('active')
+    })
+  })
+  $('.toggle-images').on('click', function (e) {
+    $('body').toggleClass('hide-images')
+  })
 })
 
     </script>

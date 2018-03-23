@@ -36,12 +36,12 @@ mixin image(image)
             td=`${(image.meanSizes.brotli / image.meanSizes.original * 100).toFixed(2)} %`
           tr
             td.center-text(colspan='4')
-              button.btn(onClick=`document.getElementById('${image.hash}').className='modal active'`) Show Full Data
+              button.btn.open-modal Show Full Data
       .modal(id=image.hash)
-        a.modal-overlay(href='#close', aria-label='Close', onClick=`document.getElementById('${image.hash}').className='modal'`)
+        a.modal-overlay.close-modal(aria-label='Close')
         .modal-container
           .modal-header
-            a.btn.btn-clear.float-right(href='#close', aria-label='Close', onClick=`document.getElementById('${image.hash}').className='modal'`)
+            a.btn.btn-clear.float-right.close-modal(aria-label='Close')
             .modal-title.h5= `${image.title} Data Set`
           .modal-body
             .content

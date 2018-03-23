@@ -44,6 +44,7 @@ footer {
 }
 
 .image {
+  display: block;
   position: absolute;
   left: 0;
   top: 0;
@@ -51,19 +52,6 @@ footer {
   width: 100%;
   height: auto;
   z-index: 1;
-}
-
-.image.not-cached {
-  opacity: 0;
-}
-
-.image.fade-in {
-  animation: fade-in 1s forwards;
-}
-
-@keyframes fade-in{
-  from {opacity: 0}
-  to {opacity: 1}
 }
 
 .table-nowrap td {
@@ -78,6 +66,7 @@ footer {
 }
 
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -96,21 +85,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>88195B</td>
-                  <td>86.13 kB</td>
+                  <td>85867B</td>
+                  <td>83.85 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>15375B</td>
-                  <td>15.01 kB</td>
-                  <td>17.43 %</td>
+                  <td>15199B</td>
+                  <td>14.84 kB</td>
+                  <td>17.70 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>12891B</td>
-                  <td>12.59 kB</td>
-                  <td>14.62 %</td>
+                  <td>12743B</td>
+                  <td>12.44 kB</td>
+                  <td>14.84 %</td>
                 </tr>
               </table>
             </div>
@@ -121,21 +110,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>88332B</td>
-                  <td>86.26 kB</td>
+                  <td>86004B</td>
+                  <td>83.99 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>15700B</td>
-                  <td>15.33 kB</td>
-                  <td>17.77 %</td>
+                  <td>15522B</td>
+                  <td>15.16 kB</td>
+                  <td>18.05 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>13130B</td>
-                  <td>12.82 kB</td>
-                  <td>14.86 %</td>
+                  <td>12964B</td>
+                  <td>12.66 kB</td>
+                  <td>15.07 %</td>
                 </tr>
               </table>
             </div>
@@ -146,21 +135,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>90814B</td>
-                  <td>88.69 kB</td>
+                  <td>88486B</td>
+                  <td>86.41 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>16637B</td>
-                  <td>16.25 kB</td>
-                  <td>18.32 %</td>
+                  <td>16453B</td>
+                  <td>16.07 kB</td>
+                  <td>18.59 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>13833B</td>
-                  <td>13.51 kB</td>
-                  <td>15.23 %</td>
+                  <td>13699B</td>
+                  <td>13.38 kB</td>
+                  <td>15.48 %</td>
                 </tr>
               </table>
             </div>
@@ -171,21 +160,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>93232B</td>
-                  <td>91.05 kB</td>
+                  <td>90904B</td>
+                  <td>88.77 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>17567B</td>
-                  <td>17.16 kB</td>
-                  <td>18.84 %</td>
+                  <td>17376B</td>
+                  <td>16.97 kB</td>
+                  <td>19.11 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>14564B</td>
-                  <td>14.22 kB</td>
-                  <td>15.62 %</td>
+                  <td>14383B</td>
+                  <td>14.05 kB</td>
+                  <td>15.82 %</td>
                 </tr>
               </table>
             </div>
@@ -196,21 +185,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>95759B</td>
-                  <td>93.51 kB</td>
+                  <td>93431B</td>
+                  <td>91.24 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>18441B</td>
-                  <td>18.01 kB</td>
-                  <td>19.26 %</td>
+                  <td>18267B</td>
+                  <td>17.84 kB</td>
+                  <td>19.55 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>15252B</td>
-                  <td>14.89 kB</td>
-                  <td>15.93 %</td>
+                  <td>15106B</td>
+                  <td>14.75 kB</td>
+                  <td>16.17 %</td>
                 </tr>
               </table>
             </div>
@@ -221,21 +210,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>108292B</td>
-                  <td>105.75 kB</td>
+                  <td>105964B</td>
+                  <td>103.48 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>22660B</td>
-                  <td>22.13 kB</td>
-                  <td>20.92 %</td>
+                  <td>22479B</td>
+                  <td>21.95 kB</td>
+                  <td>21.21 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>18666B</td>
-                  <td>18.23 kB</td>
-                  <td>17.24 %</td>
+                  <td>18488B</td>
+                  <td>18.05 kB</td>
+                  <td>17.45 %</td>
                 </tr>
               </table>
             </div>
@@ -246,21 +235,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>120748B</td>
-                  <td>117.92 kB</td>
+                  <td>118420B</td>
+                  <td>115.64 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>26742B</td>
-                  <td>26.12 kB</td>
-                  <td>22.15 %</td>
+                  <td>26549B</td>
+                  <td>25.93 kB</td>
+                  <td>22.42 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>21930B</td>
-                  <td>21.42 kB</td>
-                  <td>18.16 %</td>
+                  <td>21804B</td>
+                  <td>21.29 kB</td>
+                  <td>18.41 %</td>
                 </tr>
               </table>
             </div>
@@ -271,21 +260,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>133149B</td>
-                  <td>130.03 kB</td>
+                  <td>130821B</td>
+                  <td>127.75 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>30558B</td>
-                  <td>29.84 kB</td>
-                  <td>22.95 %</td>
+                  <td>30351B</td>
+                  <td>29.64 kB</td>
+                  <td>23.20 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>25144B</td>
-                  <td>24.55 kB</td>
-                  <td>18.88 %</td>
+                  <td>25007B</td>
+                  <td>24.42 kB</td>
+                  <td>19.12 %</td>
                 </tr>
               </table>
             </div>
@@ -296,21 +285,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>183120B</td>
-                  <td>178.83 kB</td>
+                  <td>180792B</td>
+                  <td>176.55 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>45085B</td>
-                  <td>44.03 kB</td>
-                  <td>24.62 %</td>
+                  <td>44863B</td>
+                  <td>43.81 kB</td>
+                  <td>24.81 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>37760B</td>
-                  <td>36.88 kB</td>
-                  <td>20.62 %</td>
+                  <td>37607B</td>
+                  <td>36.73 kB</td>
+                  <td>20.80 %</td>
                 </tr>
               </table>
             </div>
@@ -321,21 +310,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>330034B</td>
-                  <td>322.30 kB</td>
+                  <td>327706B</td>
+                  <td>320.03 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>85911B</td>
-                  <td>83.90 kB</td>
-                  <td>26.03 %</td>
+                  <td>85683B</td>
+                  <td>83.67 kB</td>
+                  <td>26.15 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>73112B</td>
-                  <td>71.40 kB</td>
-                  <td>22.15 %</td>
+                  <td>72988B</td>
+                  <td>71.28 kB</td>
+                  <td>22.27 %</td>
                 </tr>
               </table>
             </div>
@@ -346,21 +335,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>451391B</td>
-                  <td>440.81 kB</td>
+                  <td>449063B</td>
+                  <td>438.54 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>126204B</td>
-                  <td>123.25 kB</td>
+                  <td>125565B</td>
+                  <td>122.62 kB</td>
                   <td>27.96 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>100703B</td>
-                  <td>98.34 kB</td>
-                  <td>22.31 %</td>
+                  <td>100480B</td>
+                  <td>98.13 kB</td>
+                  <td>22.38 %</td>
                 </tr>
               </table>
             </div>
@@ -371,21 +360,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>572483B</td>
-                  <td>559.07 kB</td>
+                  <td>570155B</td>
+                  <td>556.79 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>158097B</td>
-                  <td>154.39 kB</td>
-                  <td>27.62 %</td>
+                  <td>157429B</td>
+                  <td>153.74 kB</td>
+                  <td>27.61 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>127086B</td>
-                  <td>124.11 kB</td>
-                  <td>22.20 %</td>
+                  <td>126917B</td>
+                  <td>123.94 kB</td>
+                  <td>22.26 %</td>
                 </tr>
               </table>
             </div>
@@ -396,21 +385,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>722684B</td>
-                  <td>705.75 kB</td>
+                  <td>701348B</td>
+                  <td>684.91 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>144744B</td>
-                  <td>141.35 kB</td>
-                  <td>20.03 %</td>
+                  <td>143126B</td>
+                  <td>139.77 kB</td>
+                  <td>20.41 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>118393B</td>
-                  <td>115.62 kB</td>
-                  <td>16.38 %</td>
+                  <td>117210B</td>
+                  <td>114.46 kB</td>
+                  <td>16.71 %</td>
                 </tr>
               </table>
             </div>
@@ -421,21 +410,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>99930B</td>
-                  <td>97.59 kB</td>
+                  <td>97602B</td>
+                  <td>95.31 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>19329B</td>
-                  <td>18.88 kB</td>
-                  <td>19.34 %</td>
+                  <td>19151B</td>
+                  <td>18.70 kB</td>
+                  <td>19.62 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>15947B</td>
-                  <td>15.57 kB</td>
-                  <td>15.96 %</td>
+                  <td>15800B</td>
+                  <td>15.43 kB</td>
+                  <td>16.19 %</td>
                 </tr>
               </table>
             </div>
@@ -446,21 +435,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>107322B</td>
-                  <td>104.81 kB</td>
+                  <td>104994B</td>
+                  <td>102.53 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>19890B</td>
-                  <td>19.42 kB</td>
-                  <td>18.53 %</td>
+                  <td>19717B</td>
+                  <td>19.25 kB</td>
+                  <td>18.78 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>16383B</td>
-                  <td>16.00 kB</td>
-                  <td>15.27 %</td>
+                  <td>16234B</td>
+                  <td>15.85 kB</td>
+                  <td>15.46 %</td>
                 </tr>
               </table>
             </div>
@@ -471,21 +460,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>94713B</td>
-                  <td>92.49 kB</td>
+                  <td>92385B</td>
+                  <td>90.22 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>17821B</td>
-                  <td>17.40 kB</td>
-                  <td>18.82 %</td>
+                  <td>17645B</td>
+                  <td>17.23 kB</td>
+                  <td>19.10 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>14812B</td>
-                  <td>14.46 kB</td>
-                  <td>15.64 %</td>
+                  <td>14638B</td>
+                  <td>14.29 kB</td>
+                  <td>15.84 %</td>
                 </tr>
               </table>
             </div>
@@ -496,21 +485,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>101708B</td>
-                  <td>99.32 kB</td>
+                  <td>99380B</td>
+                  <td>97.05 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>18439B</td>
-                  <td>18.01 kB</td>
-                  <td>18.13 %</td>
+                  <td>18273B</td>
+                  <td>17.84 kB</td>
+                  <td>18.39 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>15167B</td>
-                  <td>14.81 kB</td>
-                  <td>14.91 %</td>
+                  <td>15020B</td>
+                  <td>14.67 kB</td>
+                  <td>15.11 %</td>
                 </tr>
               </table>
             </div>
@@ -521,21 +510,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>93896B</td>
-                  <td>91.70 kB</td>
+                  <td>91568B</td>
+                  <td>89.42 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>17244B</td>
-                  <td>16.84 kB</td>
-                  <td>18.36 %</td>
+                  <td>17055B</td>
+                  <td>16.66 kB</td>
+                  <td>18.63 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>14382B</td>
-                  <td>14.04 kB</td>
-                  <td>15.32 %</td>
+                  <td>14217B</td>
+                  <td>13.88 kB</td>
+                  <td>15.53 %</td>
                 </tr>
               </table>
             </div>
@@ -546,21 +535,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>100891B</td>
-                  <td>98.53 kB</td>
+                  <td>98563B</td>
+                  <td>96.25 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>17868B</td>
-                  <td>17.45 kB</td>
-                  <td>17.71 %</td>
+                  <td>17698B</td>
+                  <td>17.28 kB</td>
+                  <td>17.96 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>14855B</td>
-                  <td>14.51 kB</td>
-                  <td>14.72 %</td>
+                  <td>14673B</td>
+                  <td>14.33 kB</td>
+                  <td>14.89 %</td>
                 </tr>
               </table>
             </div>
@@ -571,21 +560,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>97387B</td>
-                  <td>95.10 kB</td>
+                  <td>95059B</td>
+                  <td>92.83 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>16911B</td>
-                  <td>16.51 kB</td>
-                  <td>17.36 %</td>
+                  <td>16736B</td>
+                  <td>16.34 kB</td>
+                  <td>17.61 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>13952B</td>
-                  <td>13.63 kB</td>
-                  <td>14.33 %</td>
+                  <td>13805B</td>
+                  <td>13.48 kB</td>
+                  <td>14.52 %</td>
                 </tr>
               </table>
             </div>
@@ -596,21 +585,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>104317B</td>
-                  <td>101.87 kB</td>
+                  <td>101989B</td>
+                  <td>99.60 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>17395B</td>
-                  <td>16.99 kB</td>
-                  <td>16.68 %</td>
+                  <td>17216B</td>
+                  <td>16.81 kB</td>
+                  <td>16.88 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>14259B</td>
-                  <td>13.92 kB</td>
-                  <td>13.67 %</td>
+                  <td>14091B</td>
+                  <td>13.76 kB</td>
+                  <td>13.82 %</td>
                 </tr>
               </table>
             </div>
@@ -621,21 +610,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>97258B</td>
-                  <td>94.98 kB</td>
+                  <td>94930B</td>
+                  <td>92.71 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>16508B</td>
-                  <td>16.12 kB</td>
-                  <td>16.97 %</td>
+                  <td>16332B</td>
+                  <td>15.95 kB</td>
+                  <td>17.20 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>13723B</td>
-                  <td>13.40 kB</td>
-                  <td>14.11 %</td>
+                  <td>13592B</td>
+                  <td>13.27 kB</td>
+                  <td>14.32 %</td>
                 </tr>
               </table>
             </div>
@@ -646,21 +635,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>104188B</td>
-                  <td>101.75 kB</td>
+                  <td>101860B</td>
+                  <td>99.47 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>17047B</td>
-                  <td>16.65 kB</td>
-                  <td>16.36 %</td>
+                  <td>16863B</td>
+                  <td>16.47 kB</td>
+                  <td>16.56 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>14110B</td>
-                  <td>13.78 kB</td>
-                  <td>13.54 %</td>
+                  <td>13965B</td>
+                  <td>13.64 kB</td>
+                  <td>13.71 %</td>
                 </tr>
               </table>
             </div>
@@ -671,21 +660,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>95793B</td>
-                  <td>93.55 kB</td>
+                  <td>93465B</td>
+                  <td>91.27 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>18467B</td>
-                  <td>18.03 kB</td>
-                  <td>19.28 %</td>
+                  <td>18292B</td>
+                  <td>17.86 kB</td>
+                  <td>19.57 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>15246B</td>
-                  <td>14.89 kB</td>
-                  <td>15.92 %</td>
+                  <td>15095B</td>
+                  <td>14.74 kB</td>
+                  <td>16.15 %</td>
                 </tr>
               </table>
             </div>
@@ -696,21 +685,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>103037B</td>
-                  <td>100.62 kB</td>
+                  <td>100709B</td>
+                  <td>98.35 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>19102B</td>
-                  <td>18.65 kB</td>
-                  <td>18.54 %</td>
+                  <td>18929B</td>
+                  <td>18.49 kB</td>
+                  <td>18.80 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>15649B</td>
-                  <td>15.28 kB</td>
-                  <td>15.19 %</td>
+                  <td>15459B</td>
+                  <td>15.10 kB</td>
+                  <td>15.35 %</td>
                 </tr>
               </table>
             </div>
@@ -721,21 +710,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>93117B</td>
-                  <td>90.93 kB</td>
+                  <td>90789B</td>
+                  <td>88.66 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>17320B</td>
-                  <td>16.91 kB</td>
-                  <td>18.60 %</td>
+                  <td>17139B</td>
+                  <td>16.74 kB</td>
+                  <td>18.88 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>14346B</td>
-                  <td>14.01 kB</td>
-                  <td>15.41 %</td>
+                  <td>14207B</td>
+                  <td>13.87 kB</td>
+                  <td>15.65 %</td>
                 </tr>
               </table>
             </div>
@@ -746,21 +735,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>98331B</td>
-                  <td>96.03 kB</td>
+                  <td>96003B</td>
+                  <td>93.75 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>17863B</td>
-                  <td>17.44 kB</td>
-                  <td>18.17 %</td>
+                  <td>17683B</td>
+                  <td>17.27 kB</td>
+                  <td>18.42 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>14805B</td>
-                  <td>14.46 kB</td>
-                  <td>15.06 %</td>
+                  <td>14638B</td>
+                  <td>14.29 kB</td>
+                  <td>15.25 %</td>
                 </tr>
               </table>
             </div>
@@ -771,21 +760,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>106902B</td>
-                  <td>104.40 kB</td>
+                  <td>104574B</td>
+                  <td>102.12 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>20933B</td>
-                  <td>20.44 kB</td>
-                  <td>19.58 %</td>
+                  <td>20748B</td>
+                  <td>20.26 kB</td>
+                  <td>19.84 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>17031B</td>
-                  <td>16.63 kB</td>
-                  <td>15.93 %</td>
+                  <td>16805B</td>
+                  <td>16.41 kB</td>
+                  <td>16.07 %</td>
                 </tr>
               </table>
             </div>
@@ -796,21 +785,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>113867B</td>
-                  <td>111.20 kB</td>
+                  <td>111539B</td>
+                  <td>108.92 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>21389B</td>
-                  <td>20.89 kB</td>
-                  <td>18.78 %</td>
+                  <td>21207B</td>
+                  <td>20.71 kB</td>
+                  <td>19.01 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>17216B</td>
-                  <td>16.81 kB</td>
-                  <td>15.12 %</td>
+                  <td>17105B</td>
+                  <td>16.70 kB</td>
+                  <td>15.34 %</td>
                 </tr>
               </table>
             </div>
@@ -821,21 +810,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>96134B</td>
-                  <td>93.88 kB</td>
+                  <td>93806B</td>
+                  <td>91.61 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>18666B</td>
-                  <td>18.23 kB</td>
-                  <td>19.42 %</td>
+                  <td>18501B</td>
+                  <td>18.07 kB</td>
+                  <td>19.72 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>15382B</td>
-                  <td>15.02 kB</td>
-                  <td>16.00 %</td>
+                  <td>15188B</td>
+                  <td>14.83 kB</td>
+                  <td>16.19 %</td>
                 </tr>
               </table>
             </div>
@@ -846,21 +835,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>103258B</td>
-                  <td>100.84 kB</td>
+                  <td>100930B</td>
+                  <td>98.56 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>19284B</td>
-                  <td>18.83 kB</td>
-                  <td>18.68 %</td>
+                  <td>19112B</td>
+                  <td>18.66 kB</td>
+                  <td>18.94 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>15669B</td>
-                  <td>15.30 kB</td>
-                  <td>15.17 %</td>
+                  <td>15519B</td>
+                  <td>15.16 kB</td>
+                  <td>15.38 %</td>
                 </tr>
               </table>
             </div>
@@ -871,21 +860,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>73009B</td>
-                  <td>71.30 kB</td>
+                  <td>71437B</td>
+                  <td>69.76 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>14053B</td>
-                  <td>13.72 kB</td>
-                  <td>19.25 %</td>
+                  <td>13919B</td>
+                  <td>13.59 kB</td>
+                  <td>19.48 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>11947B</td>
-                  <td>11.67 kB</td>
-                  <td>16.36 %</td>
+                  <td>11852B</td>
+                  <td>11.57 kB</td>
+                  <td>16.59 %</td>
                 </tr>
               </table>
             </div>
@@ -896,21 +885,21 @@ footer {
               <table class="table table-nowrap">
                 <tr>
                   <td>Original</td>
-                  <td>67186B</td>
-                  <td>65.61 kB</td>
+                  <td>65614B</td>
+                  <td>64.08 kB</td>
                   <td>100.00 %</td>
                 </tr>
                 <tr>
                   <td>Gzip</td>
-                  <td>12630B</td>
-                  <td>12.33 kB</td>
-                  <td>18.80 %</td>
+                  <td>12503B</td>
+                  <td>12.21 kB</td>
+                  <td>19.06 %</td>
                 </tr>
                 <tr>
                   <td>Brotli</td>
-                  <td>10776B</td>
-                  <td>10.52 kB</td>
-                  <td>16.04 %</td>
+                  <td>10681B</td>
+                  <td>10.43 kB</td>
+                  <td>16.28 %</td>
                 </tr>
               </table>
             </div>
@@ -918,15 +907,20 @@ footer {
         </div>
       </main>
     </div>
-    <script>document.querySelectorAll('img').forEach(function (img) {
-  if (!img.complete) {
-    img.classList.add('not-cached')
-    img.addEventListener('load', function (e) {
-      e.target.classList.add('fade-in')
+    <script>$(document).ready(function () {
+  $('.open-modal').each(function (i, btn) {
+    $(btn).on('click', function (e) {
+      $(e.target).parents('.card').find('.modal').addClass('active')
     })
-  } else {
-    img.classList.add('cached')
-  }
+  })
+  $('.close-modal').each(function (i, btn) {
+    $(btn).on('click', function (e) {
+      $(e.target).parents('.card').find('.modal').removeClass('active')
+    })
+  })
+  $('.toggle-images').on('click', function (e) {
+    $('body').toggleClass('hide-images')
+  })
 })
 
     </script>
