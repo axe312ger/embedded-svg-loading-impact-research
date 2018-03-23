@@ -58,6 +58,19 @@ footer {
   text-align: center;
 }
 
+img.not-cached {
+  opacity: 0;
+}
+
+@keyframes fade-in{
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+img.fade-in {
+  animation: fade-in 1s forwards;
+}
+
     </style>
   </head>
   <body>
@@ -443,7 +456,7 @@ footer {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%23d2d2d3' d='M0 0h400v200H0z'/%3e%3cpath d='M154 0Q95-3 78 77M44 25q51 72 101-13M44 51q97 51 96-52M41 44q83 58 98-38M39 34q73 69 99-30m-31 105Q148 2 44 3m2 19q108-17 75 89M42 35q84-59 103 31M69 77q87 1 64-73m7-7Q111 88 37 26m7 13q58 73 101 3m-29 53q15-99-77-65m104 67Q130-17 41 44m74 70Q149 43 46 6m94-2q-21 97-100 36m7-43q23 88 97 26m2-13Q83 97 40 22m82 78q21-87-78-90m15 63q-3-84 92-50m-18 71q22-118-89-82m2 41q76 56 100-46M61 72q10-96 86-53M129 2q-12 74-83 25m65 81q38-62-64-97m-1 16q61 67 91-21' stroke='black' fill='none'/%3e%3c/svg%3e&quot;);">
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3e%3cstyle%3e%40keyframes a%7bfrom%7bopacity: 0%7dto%7bopacity: 1%7d%7dg%26gt%3b*%7bopacity: 0%3banimation: a .5s forwards%7d%3c/style%3e%3cpath fill='%23d2d2d3' d='M0 0h400v200H0z' style='animation-delay:0s'/%3e%3cpath d='M154 0Q95-3 78 77M44 25q51 72 101-13M44 51q97 51 96-52M41 44q83 58 98-38M39 34q73 69 99-30m-31 105Q148 2 44 3m2 19q108-17 75 89M42 35q84-59 103 31M69 77q87 1 64-73m7-7Q111 88 37 26m7 13q58 73 101 3m-29 53q15-99-77-65m104 67Q130-17 41 44m74 70Q149 43 46 6m94-2q-21 97-100 36m7-43q23 88 97 26m2-13Q83 97 40 22m82 78q21-87-78-90m15 63q-3-84 92-50m-18 71q22-118-89-82m2 41q76 56 100-46M61 72q10-96 86-53M129 2q-12 74-83 25m65 81q38-62-64-97m-1 16q61 67 91-21' stroke='black' fill='none' style='animation-delay:2.121s'/%3e%3c/svg%3e&quot;);">
                 <div style="padding-bottom: 50%;"><img class="image" src="./prepared/neven-krcmarek-264325-unsplash-400px.jpg"/></div>
               </div>
             </div>
@@ -476,13 +489,13 @@ footer {
                 </tr>
                 <tr>
                   <td class="center-text" colspan="4">
-                    <button class="btn" onClick="document.getElementById('9fae15fa35c5ff5f6ae7f94c05edd975').className='modal active'">Show Full Data</button>
+                    <button class="btn" onClick="document.getElementById('41df2835b1433a415fa5bd779dba6a30').className='modal active'">Show Full Data</button>
                   </td>
                 </tr>
               </table>
-              <div class="modal" id="9fae15fa35c5ff5f6ae7f94c05edd975"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('9fae15fa35c5ff5f6ae7f94c05edd975').className='modal'"></a>
+              <div class="modal" id="41df2835b1433a415fa5bd779dba6a30"><a class="modal-overlay" href="#close" aria-label="Close" onClick="document.getElementById('41df2835b1433a415fa5bd779dba6a30').className='modal'"></a>
                 <div class="modal-container">
-                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('9fae15fa35c5ff5f6ae7f94c05edd975').className='modal'"></a>
+                  <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close" onClick="document.getElementById('41df2835b1433a415fa5bd779dba6a30').className='modal'"></a>
                     <div class="modal-title h5">Neven Krcmarek 264325 Unsplash Data Set</div>
                   </div>
                   <div class="modal-body">
@@ -502,11 +515,11 @@ footer {
     &quot;numberOfPrimitives&quot;: 25,
     &quot;modeTitle&quot;: &quot;Bezier curves&quot;
   },
-  &quot;svgByteLength&quot;: 968,
+  &quot;svgByteLength&quot;: 1034,
   &quot;dataURI&quot;: {
-    &quot;original&quot;: 775,
-    &quot;brotli&quot;: 464,
-    &quot;gzip&quot;: 515
+    &quot;original&quot;: 833,
+    &quot;brotli&quot;: 484,
+    &quot;gzip&quot;: 536
   }
 }</code></pre>
                     </div>
@@ -743,5 +756,15 @@ footer {
     <footer>
       <button class="btn" onClick="document.querySelector('body').className = document.querySelector('body').className ? '' : 'hide-images'">Toggle images</button>
     </footer>
+    <script>document.querySelectorAll('img').forEach((img) => {
+  if (!img.complete) {
+    img.classList.add('not-cached')
+    img.addEventListener('load', (e) => {
+      e.target.classList.add('fade-in')
+    })
+  }
+})
+
+    </script>
   </body>
 </html>

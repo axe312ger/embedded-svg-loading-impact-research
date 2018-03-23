@@ -58,6 +58,19 @@ footer {
   text-align: center;
 }
 
+img.not-cached {
+  opacity: 0;
+}
+
+@keyframes fade-in{
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+img.fade-in {
+  animation: fade-in 1s forwards;
+}
+
     </style>
   </head>
   <body>
@@ -6071,5 +6084,15 @@ footer {
     <footer>
       <button class="btn" onClick="document.querySelector('body').className = document.querySelector('body').className ? '' : 'hide-images'">Toggle images</button>
     </footer>
+    <script>document.querySelectorAll('img').forEach((img) => {
+  if (!img.complete) {
+    img.classList.add('not-cached')
+    img.addEventListener('load', (e) => {
+      e.target.classList.add('fade-in')
+    })
+  }
+})
+
+    </script>
   </body>
 </html>
