@@ -37,6 +37,12 @@ footer {
   background-size: contain;
 }
 
+.image-wrapper::before {
+  display: block;
+  content: "";
+  padding-top: 50%;
+}
+
 .image {
   position: absolute;
   left: 0;
@@ -45,6 +51,19 @@ footer {
   width: 100%;
   height: auto;
   z-index: 1;
+}
+
+.image.not-cached {
+  opacity: 0;
+}
+
+.image.fade-in {
+  animation: fade-in 1s forwards;
+}
+
+@keyframes fade-in{
+  from {opacity: 0}
+  to {opacity: 1}
 }
 
 .table-nowrap td {
@@ -73,9 +92,7 @@ footer {
         <div class="grid">
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQH/8QAIhAAAQMCBgMAAAAAAAAAAAAAAQIDBAAFBhEhIjFBFDKx/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABgRAAMBAQAAAAAAAAAAAAAAAAABEgJR/9oADAMBAAIRAxEAPwDPcP21q6TRNhkqiNEtutEkLSD7ZHjMjSpsWqgxro74Md1iJtDbRXuHPY60+0pRPTuR5UN8P//Z&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/alisa-anton-166247-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQH/8QAIhAAAQMCBgMAAAAAAAAAAAAAAQIDBAAFBhEhIjFBFDKx/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABgRAAMBAQAAAAAAAAAAAAAAAAABEgJR/9oADAMBAAIRAxEAPwDPcP21q6TRNhkqiNEtutEkLSD7ZHjMjSpsWqgxro74Md1iJtDbRXuHPY60+0pRPTuR5UN8P//Z&quot;);"><img class="image" src="./prepared/alisa-anton-166247-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Alisa Anton 166247 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -109,9 +126,7 @@ footer {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAhEAACAgICAQUAAAAAAAAAAAABAgMRAAQFEzESISJhof/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAGBEBAQEBAQAAAAAAAAAAAAAAAQIDABH/2gAMAwEAAhEDEQA/ALkPJxLOvXtSST9hR+5KkVwPDgWjXVepSL9rB845vkt+DcbWEY150+TxRkNV/ZNfuMY0uazL50ZxOslWevf/2Q==&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/anthony-esau-173126-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAhEAACAgICAQUAAAAAAAAAAAABAgMRAAQFEzESISJhof/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAGBEBAQEBAQAAAAAAAAAAAAAAAQIDABH/2gAMAwEAAhEDEQA/ALkPJxLOvXtSST9hR+5KkVwPDgWjXVepSL9rB845vkt+DcbWEY150+TxRkNV/ZNfuMY0uazL50ZxOslWevf/2Q==&quot;);"><img class="image" src="./prepared/anthony-esau-173126-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Anthony Esau 173126 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -145,9 +160,7 @@ footer {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgEDBAIDAAAAAAAAAAAAAQIDAAQRBQYSMQcUISJx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAXEQEBAQEAAAAAAAAAAAAAAAABAAIR/9oADAMBAAIRAxEAPwDar3cT6nbwz6Bdq1uJCsrcCrZGDj7DrsH9HzUy78t7StJ3gutRdJ4yVkX15TxYdjIXFKVN0jIdL//Z&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/beth-solano-313648-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgEDBAIDAAAAAAAAAAAAAQIDAAQRBQYSMQcUISJx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAXEQEBAQEAAAAAAAAAAAAAAAABAAIR/9oADAMBAAIRAxEAPwDar3cT6nbwz6Bdq1uJCsrcCrZGDj7DrsH9HzUy78t7StJ3gutRdJ4yVkX15TxYdjIXFKVN0jIdL//Z&quot;);"><img class="image" src="./prepared/beth-solano-313648-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Beth Solano 313648 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -181,9 +194,7 @@ footer {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIH/8QAHxAAAgICAQUAAAAAAAAAAAAAAQIDEQAEEgYhMUFh/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABgRAAIDAAAAAAAAAAAAAAAAAAABAjFB/9oADAMBAAIRAxEAPwDPNF0TUWJ+TyMxdnLkjiRdAejd2cvrd9GWHTVTO0zDnKVIAPYBfPzGMDpBjp//2Q==&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/desmond-simon-412494-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIH/8QAHxAAAgICAQUAAAAAAAAAAAAAAQIDEQAEEgYhMUFh/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABgRAAIDAAAAAAAAAAAAAAAAAAABAjFB/9oADAMBAAIRAxEAPwDPNF0TUWJ+TyMxdnLkjiRdAejd2cvrd9GWHTVTO0zDnKVIAPYBfPzGMDpBjp//2Q==&quot;);"><img class="image" src="./prepared/desmond-simon-412494-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Desmond Simon 412494 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -217,9 +228,7 @@ footer {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQG/8QAIBAAAgEFAAIDAAAAAAAAAAAAAQIDAAQFBhESISIxof/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAECIRH/2gAMAwEAAhEDEQA/AM5pW34uHAwR5Nla8USCQBXAJ82P2Byo902qzuLu2ODMRdQ4cNG3OdHv5c/KUq1T6K1af//Z&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/igor-ovsyannykov-307432-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQG/8QAIBAAAgEFAAIDAAAAAAAAAAAAAQIDAAQFBhESISIxof/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAECIRH/2gAMAwEAAhEDEQA/AM5pW34uHAwR5Nla8USCQBXAJ82P2Byo902qzuLu2ODMRdQ4cNG3OdHv5c/KUq1T6K1af//Z&quot;);"><img class="image" src="./prepared/igor-ovsyannykov-307432-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Igor Ovsyannykov 307432 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -253,9 +262,7 @@ footer {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAYH/8QAHxAAAQQCAgMAAAAAAAAAAAAAAQADBBECBhJBEzJR/8QAFAEBAAAAAAAAAAAAAAAAAAAAAf/EABYRAQEBAAAAAAAAAAAAAAAAAAEAMf/aAAwDAQACEQMRAD8A2CBqEWBvk7ZozzwkTW/G63kbx6sj56hUsvLg4cbBrukRMKu3/9k=&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/neven-krcmarek-264325-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAYH/8QAHxAAAQQCAgMAAAAAAAAAAAAAAQADBBECBhJBEzJR/8QAFAEBAAAAAAAAAAAAAAAAAAAAAf/EABYRAQEBAAAAAAAAAAAAAAAAAAEAMf/aAAwDAQACEQMRAD8A2CBqEWBvk7ZozzwkTW/G63kbx6sj56hUsvLg4cbBrukRMKu3/9k=&quot;);"><img class="image" src="./prepared/neven-krcmarek-264325-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Neven Krcmarek 264325 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -289,9 +296,7 @@ footer {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAgEAABBAICAwEAAAAAAAAAAAACAQMEEQAFBiIUITFR/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AIXSQoTPHTY20QdpGjkBRTfozbouwoi1QrSerye2nH3Nsoz/ADHozjykosu06Dbd9UT8+Yxgf//Z&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/quino-al-101314-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAgEAABBAICAwEAAAAAAAAAAAACAQMEEQAFBiIUITFR/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AIXSQoTPHTY20QdpGjkBRTfozbouwoi1QrSerye2nH3Nsoz/ADHozjykosu06Dbd9UT8+Yxgf//Z&quot;);"><img class="image" src="./prepared/quino-al-101314-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Quino Al 101314 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -325,9 +330,7 @@ footer {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAIhAAAgEEAAcBAAAAAAAAAAAAAQIDAAQFEQYSEyEjQVFx/8QAFAEBAAAAAAAAAAAAAAAAAAAABP/EABkRAAIDAQAAAAAAAAAAAAAAAAECAAMRMf/aAAwDAQACEQMRAD8AuN4sydvHIFyt5c3MjIvllYLH3BOtfda/DWdlMcuQvZp3yN0zO5fm6QY6PrZYE6pSil2IyNFSbyf/2Q==&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/samuel-zeller-16570-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAIhAAAgEEAAcBAAAAAAAAAAAAAQIDAAQFEQYSEyEjQVFx/8QAFAEBAAAAAAAAAAAAAAAAAAAABP/EABkRAAIDAQAAAAAAAAAAAAAAAAECAAMRMf/aAAwDAQACEQMRAD8AuN4sydvHIFyt5c3MjIvllYLH3BOtfda/DWdlMcuQvZp3yN0zO5fm6QY6PrZYE6pSil2IyNFSbyf/2Q==&quot;);"><img class="image" src="./prepared/samuel-zeller-16570-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Samuel Zeller 16570 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -361,9 +364,7 @@ footer {
           </div>
           <div class="card">
             <div class="card-image">
-              <div class="image-wrapper" style="background-image: url(&quot;data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMF/8QAIBAAAgIBAwUAAAAAAAAAAAAAAQIAAxEEBxMXMVGhwf/EABUBAQEAAAAAAAAAAAAAAAAAAAQF/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAS/9oADAMBAAIRAxEAPwDQG6eosYF66xjwhP2R6oA3u1lrFj3HFkD1ESbkmrf/2Q==&quot;);">
-                <div style="padding-bottom: 50%;"><img class="image" src="./prepared/tyler-lastovich-205631-unsplash-400px.jpg"/></div>
-              </div>
+              <div class="image-wrapper" style="background-image: url(&quot;data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMF/8QAIBAAAgIBAwUAAAAAAAAAAAAAAQIAAxEEBxMXMVGhwf/EABUBAQEAAAAAAAAAAAAAAAAAAAQF/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAS/9oADAMBAAIRAxEAPwDQG6eosYF66xjwhP2R6oA3u1lrFj3HFkD1ESbkmrf/2Q==&quot;);"><img class="image" src="./prepared/tyler-lastovich-205631-unsplash-400px.jpg"/></div>
             </div>
             <div class="card-header"><strong class="card-title">Tyler Lastovich 205631 Unsplash @ 400px</strong></div>
             <div class="card-body">
@@ -401,5 +402,17 @@ footer {
     <footer>
       <button class="btn" onClick="document.querySelector('body').className = document.querySelector('body').className ? '' : 'hide-images'">Toggle images</button>
     </footer>
+    <script>document.querySelectorAll('img').forEach(function (img) {
+  if (!img.complete) {
+    img.classList.add('not-cached')
+    img.addEventListener('load', function (e) {
+      e.target.classList.add('fade-in')
+    })
+  } else {
+    img.classList.add('cached')
+  }
+})
+
+    </script>
   </body>
 </html>

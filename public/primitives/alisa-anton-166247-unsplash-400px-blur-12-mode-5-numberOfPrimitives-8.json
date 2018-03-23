@@ -1,0 +1,36 @@
+{
+  "results": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><filter id=\"c\"><feGaussianBlur stdDeviation=\"55\" /></filter><path fill=\"#544b47\" d=\"M0 0h400v200H0z\"/><g filter='url(#c)' fill-opacity='.5'><path fill=\"#d1e2ef\" fill-opacity=\".5\" d=\"M250 157.4l-52.3-72 69.5-50.6 52.3 72z\"/><path fill=\"#c6b398\" fill-opacity=\".5\" d=\"M280.8 228.6l-190.1-51 11.3-42.2 190.2 51z\"/><path fill=\"#090a12\" fill-opacity=\".5\" d=\"M78-27.9l84.3 4.4-7.5 143.6-84.3-4.4z\"/><path fill=\"#040000\" fill-opacity=\".5\" d=\"M104.6 164.1l-21.2 73.6-142.6-40.9 21-73.6z\"/><path fill=\"#2e2720\" fill-opacity=\".5\" d=\"M262.3 35l83.8-70.4 127.5 152L390 187z\"/><path fill=\"#e0f6fe\" fill-opacity=\".5\" d=\"M209 116.8L222.6 72l41.8 12.8-13.7 44.8z\"/><path fill=\"#bdb9aa\" fill-opacity=\".5\" d=\"M72 87.7l-48.8 50.6-12.4-12 48.8-50.5z\"/><path fill=\"#2c0900\" fill-opacity=\".5\" d=\"M374.4 166.8l-32.6 33.7-58.4-56.4 32.6-33.7z\"/></g></svg>",
+    "optimizedSVG": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><filter id=\"a\"><feGaussianBlur stdDeviation=\"55\"/></filter><path fill=\"#544b47\" d=\"M0 0h400v200H0z\"/><g filter=\"url(#a)\"><path fill=\"#d1e2ef\" d=\"M250 157l-52-72 69-50 52 72z\"/><path fill=\"#c6b398\" d=\"M281 229L91 178l11-43 190 51z\"/><path fill=\"#090a12\" d=\"M78-28l84 5-7 143-84-4z\"/><path fill=\"#040000\" d=\"M105 164l-22 74-142-41 21-74z\"/><path fill=\"#2e2720\" d=\"M262 35l84-70 128 152-84 70z\"/><path fill=\"#e0f6fe\" d=\"M209 117l14-45 41 13-13 45z\"/><path fill=\"#bdb9aa\" d=\"M72 88l-49 50-12-12 49-50z\"/><path fill=\"#2c0900\" d=\"M374 167l-32 34-59-57 33-34z\"/></g></svg>"
+  },
+  "runs": {
+    "Intel® Core™ i7-6920HQ": [
+      {
+        "duration": 764,
+        "sizes": {
+          "original": 892,
+          "brotli": 407,
+          "gzip": 450
+        },
+        "optimizedSizes": {
+          "original": 627,
+          "brotli": 334,
+          "gzip": 369
+        }
+      },
+      {
+        "duration": 818,
+        "sizes": {
+          "original": 880,
+          "brotli": 408,
+          "gzip": 442
+        },
+        "optimizedSizes": {
+          "original": 627,
+          "brotli": 332,
+          "gzip": 362
+        }
+      }
+    ]
+  }
+}

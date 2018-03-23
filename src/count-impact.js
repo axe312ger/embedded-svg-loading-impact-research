@@ -12,7 +12,7 @@ const {
   primitiveDir
 } = require('./config')
 
-const primitiveCount = [10, 25, 50, 75, 100, 200, 500, 750, 1000]
+const primitiveCount = [8, 10, 15, 20, 25, 50, 75, 100, 200, 500, 750, 1000]
 
 async function run () {
   await ensureDir(preparedDir)
@@ -33,7 +33,7 @@ async function run () {
           } with ${count} rotated triangles (5)`
         )
         const primitiveOptions = {
-          blur: count < 20 ? 12 : 0,
+          blur: count < 10 ? 12 : 0,
           mode: 5,
           numberOfPrimitives: count
         }

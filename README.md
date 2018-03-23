@@ -38,3 +38,68 @@ generate markdown table afterwars out of stats
 #### files
  * gzip size
  * brotly size
+
+## Basic implementation
+Embeds previews as background image into wrapping div, ensures correct aspect ratio while image is not loaded via padding trick (https://css-tricks.com/aspect-ratio-boxes/)
+
+```html
+<div class="image-wrapper" style="background-image: url(...);">
+  <img class="image" src="..." />
+</div>
+```
+
+```css
+.image-wrapper {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.image-wrapper::before {
+  display: block;
+  content: "";
+  padding-top: 50%;
+}
+
+.image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+```
+
+## Fade in uncached images
+
+A fade in animation as soon the image is loaded enhances the visual appeariance a lot. But we want to avoid to trigger the animation for images which on subsequent page loads.
+
+With a few lines of blocking js at the end of the body tag, this is possible:
+
+```js
+document.querySelectorAll('img').forEach(function (img) {
+  if (!img.complete) {
+    img.classList.add('not-cached')
+    img.addEventListener('load', function (e) {
+      e.target.classList.add('fade-in')
+    })
+  }
+})
+```
+
+```css
+@keyframes fade-in{
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+img.not-cached {
+  opacity: 0;
+}
+
+img.fade-in {
+  animation: fade-in 1s forwards;
+}
+```

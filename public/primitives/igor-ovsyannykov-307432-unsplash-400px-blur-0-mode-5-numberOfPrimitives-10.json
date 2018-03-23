@@ -1,0 +1,36 @@
+{
+  "results": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#6a676e\" d=\"M0 0h400v200H0z\"/><path fill=\"#d2c4d2\" fill-opacity=\".5\" d=\"M53.1 8.6h276.6v150H53z\"/><path fill-opacity=\".5\" d=\"M8.3 59.3L174.7 194 90 298.5-76.2 163.8z\"/><path fill-opacity=\".5\" d=\"M404.7 236.7H87.5v-75h317.2z\"/><path fill=\"#000305\" fill-opacity=\".5\" d=\"M350.2 204l2.7-157.8 79.7 1.4-2.7 157.8z\"/><path fill=\"#e6b1b8\" fill-opacity=\".5\" d=\"M51.5 157.8l1.7-48.4 87.5 3L139 161z\"/><path fill-opacity=\".5\" d=\"M21.9 202.3V-32h29.7v234.3z\"/><path fill=\"#c93226\" fill-opacity=\".5\" d=\"M164.8 23.4V50H74.2V23.4z\"/><path fill=\"#014f45\" fill-opacity=\".5\" d=\"M158.8 105.6L90 106.8l-.3-20.3 68.7-1.2z\"/><path fill=\"#a08b85\" fill-opacity=\".5\" d=\"M259.3 81.2l90.6 1.6-1.4 81.3-90.6-1.6z\"/><path fill=\"#000c14\" fill-opacity=\".5\" d=\"M351 132.6l2.8-161 25 .5-2.9 161z\"/></svg>",
+    "optimizedSVG": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#6a676e\" d=\"M0 0h400v200H0z\"/><path fill=\"#d2c4d2\" d=\"M53 9h277v150H53z\"/><path d=\"M8 59l167 135-85 105-166-135z\"/><path d=\"M405 237H88v-75h317z\"/><path fill=\"#000305\" d=\"M350 204l3-158 80 2-3 157z\"/><path fill=\"#e6b1b8\" d=\"M52 158l1-49 88 3-2 49z\"/><path d=\"M22 202V-32h30v234z\"/><path fill=\"#c93226\" d=\"M165 23v27H74V23z\"/><path fill=\"#014f45\" d=\"M159 106l-69 1V86l68-1z\"/><path fill=\"#a08b85\" d=\"M259 81l91 2-2 81-90-2z\"/><path fill=\"#000c14\" d=\"M351 133l3-161h25l-3 161z\"/></svg>"
+  },
+  "runs": {
+    "Intel® Core™ i7-6920HQ": [
+      {
+        "duration": 974,
+        "sizes": {
+          "original": 846,
+          "brotli": 353,
+          "gzip": 386
+        },
+        "optimizedSizes": {
+          "original": 557,
+          "brotli": 275,
+          "gzip": 312
+        }
+      },
+      {
+        "duration": 1070,
+        "sizes": {
+          "original": 797,
+          "brotli": 347,
+          "gzip": 377
+        },
+        "optimizedSizes": {
+          "original": 534,
+          "brotli": 290,
+          "gzip": 308
+        }
+      }
+    ]
+  }
+}

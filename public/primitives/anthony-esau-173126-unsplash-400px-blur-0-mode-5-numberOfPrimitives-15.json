@@ -1,0 +1,36 @@
+{
+  "results": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#909b99\" d=\"M0 0h400v200H0z\"/><path fill=\"#002931\" fill-opacity=\".5\" d=\"M-26.6 58.6l14.4-26 165.4 91.7-14.4 26z\"/><path fill=\"#fff\" fill-opacity=\".5\" d=\"M134.2 177.7L-20.4 98.9l12.8-25 154.5 78.7z\"/><path fill=\"#99e7ff\" fill-opacity=\".5\" d=\"M232.4-75.5l127.3 95.9-68.7 91-127.2-95.8z\"/><path fill=\"#03323b\" fill-opacity=\".5\" d=\"M1.6 126l164.2 73.2-15.9 35.7-164.1-73.1z\"/><path fill=\"#1f0300\" fill-opacity=\".5\" d=\"M311 204.5l-7-15.7 142.8-63.6 7 15.7z\"/><path fill=\"#fff\" fill-opacity=\".5\" d=\"M7.4 5.1l220 137.5-8.3 13.2L-.9 18.4zm209.3 177.4l19.9-31.8 79.5 49.6-19.9 31.8z\"/><path fill=\"#003137\" fill-opacity=\".5\" d=\"M108.7 62.7l10-16L271 142l-10 15.9z\"/><path fill=\"#fff\" fill-opacity=\".5\" d=\"M91 11.5l7-10.2L260.7 115l-7.1 10.2z\"/><path fill=\"#272a1a\" fill-opacity=\".5\" d=\"M126.1 50.1l-10.5 17.4-68.3-41L57.8 9z\"/><path fill=\"#70c2ea\" fill-opacity=\".5\" d=\"M392.9-87.4l54.3 102.1-157.3 83.6-54.3-102z\"/><path fill=\"#313428\" fill-opacity=\".5\" d=\"M168.6 221.1l-26.5-1.8 6.5-92 26.5 1.9z\"/><path fill=\"#062828\" fill-opacity=\".5\" d=\"M284 133.6L126 18.7l7.3-10 158 114.7z\"/><path fill=\"#806358\" fill-opacity=\".5\" d=\"M440.4 98L289 165.5l-24.8-55.6 151.3-67.4z\"/><path fill=\"#fff\" fill-opacity=\".5\" d=\"M70.2 225.8l-81.7-31.3 8.4-21.9L78.6 204z\"/></svg>",
+    "optimizedSVG": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><path fill=\"#909b99\" d=\"M0 0h400v200H0z\"/><path fill=\"#002931\" d=\"M-27 59l15-26 165 91-14 26z\"/><path fill=\"#fff\" d=\"M134 178L-20 99l12-25 155 79z\"/><path fill=\"#99e7ff\" d=\"M232-75l128 95-69 91-127-95z\"/><path fill=\"#03323b\" d=\"M2 126l164 73-16 36-164-73z\"/><path fill=\"#1f0300\" d=\"M311 205l-7-16 143-64 7 16z\"/><path fill=\"#fff\" d=\"M7 5l220 138-8 13L-1 18zm210 178l20-32 79 49-20 32z\"/><path fill=\"#003137\" d=\"M109 63l10-16 152 95-10 16z\"/><path fill=\"#fff\" d=\"M91 12l7-11 163 114-7 10z\"/><path fill=\"#272a1a\" d=\"M126 50l-10 18-69-41L58 9z\"/><path fill=\"#70c2ea\" d=\"M393-87l54 102-157 83L236-4z\"/><path fill=\"#313428\" d=\"M169 221l-27-2 7-92 26 2z\"/><path fill=\"#062828\" d=\"M284 134L126 19l7-10 158 114z\"/><path fill=\"#806358\" d=\"M440 98l-151 68-25-56 152-67z\"/><path fill=\"#fff\" d=\"M70 226l-81-31 8-22 82 31z\"/></svg>"
+  },
+  "runs": {
+    "Intel® Core™ i7-6920HQ": [
+      {
+        "duration": 1067,
+        "sizes": {
+          "original": 1321,
+          "brotli": 498,
+          "gzip": 543
+        },
+        "optimizedSizes": {
+          "original": 880,
+          "brotli": 394,
+          "gzip": 426
+        }
+      },
+      {
+        "duration": 1157,
+        "sizes": {
+          "original": 1286,
+          "brotli": 501,
+          "gzip": 530
+        },
+        "optimizedSizes": {
+          "original": 868,
+          "brotli": 388,
+          "gzip": 421
+        }
+      }
+    ]
+  }
+}

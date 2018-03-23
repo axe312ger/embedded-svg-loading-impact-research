@@ -3,8 +3,7 @@ mixin image(image)
     .card-image
       if image.dataURI
         div.image-wrapper(style=`background-image: url("${image.dataURI}");`)
-          div(style='padding-bottom: 50%;')
-            img.image(src=`./prepared/${image.prepared.name}.jpg`)
+          img.image(src=`./prepared/${image.prepared.name}.jpg`)
       else
         img(src=`./prepared/${image.prepared.name}.jpg` style=`display: block !important;`)
     .card-header
